@@ -1,0 +1,79 @@
+{
+  "folders": {
+    "items": {
+      "src": {},
+      "test": {},
+      "host": {}
+    }
+  },
+  "packages": {
+    "LKN.User.Domain.Shared": {
+      "path": "src/LKN.User.Domain.Shared/LKN.User.Domain.Shared.abppkg.json",
+      "folder": "src"
+    },
+    "LKN.User.Domain": {
+      "path": "src/LKN.User.Domain/LKN.User.Domain.abppkg.json",
+      "folder": "src"
+    },
+    "LKN.User.Application.Contracts": {
+      "path": "src/LKN.User.Application.Contracts/LKN.User.Application.Contracts.abppkg.json",
+      "folder": "src"
+    },
+    "LKN.User.Application": {
+      "path": "src/LKN.User.Application/LKN.User.Application.abppkg.json",
+      "folder": "src"
+    },
+    "LKN.User.EntityFrameworkCore": {
+      "path": "src/LKN.User.EntityFrameworkCore/LKN.User.EntityFrameworkCore.abppkg.json",
+      "folder": "src"
+    },
+    "LKN.User.MongoDB": {
+      "path": "src/LKN.User.MongoDB/LKN.User.MongoDB.abppkg.json",
+      "folder": "src"
+    },
+    "LKN.User.HttpApi": {
+      "path": "src/LKN.User.HttpApi/LKN.User.HttpApi.abppkg.json",
+      "folder": "src"
+    },
+    "LKN.User.HttpApi.Client": {
+      "path": "src/LKN.User.HttpApi.Client/LKN.User.HttpApi.Client.abppkg.json",
+      "folder": "src"
+    },
+    "LKN.User.TestBase": {
+      "path": "test/LKN.User.TestBase/LKN.User.TestBase.abppkg.json",
+      "folder": "test"
+    },
+    "LKN.User.EntityFrameworkCore.Tests": {
+      "path": "test/LKN.User.EntityFrameworkCore.Tests/LKN.User.EntityFrameworkCore.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "LKN.User.MongoDB.Tests": {
+      "path": "test/LKN.User.MongoDB.Tests/LKN.User.MongoDB.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "LKN.User.Domain.Tests": {
+      "path": "test/LKN.User.Domain.Tests/LKN.User.Domain.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "LKN.User.Application.Tests": {
+      "path": "test/LKN.User.Application.Tests/LKN.User.Application.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "LKN.User.HttpApi.Host": {
+      "path": "host/LKN.User.HttpApi.Host/LKN.User.HttpApi.Host.abppkg.json",
+      "folder": "host"
+    },
+    "LKN.User.HttpApi.Client.ConsoleTestApp": {
+      "path": "test/LKN.User.HttpApi.Client.ConsoleTestApp/LKN.User.HttpApi.Client.ConsoleTestApp.abppkg.json",
+      "folder": "test"
+    },
+    "LKN.User.AuthServer": {
+      "path": "host/LKN.User.AuthServer/LKN.User.AuthServer.abppkg.json",
+      "folder": "host"
+    },
+    "LKN.User.Host.Shared": {
+      "path": "host/LKN.User.Host.Shared/LKN.User.Host.Shared.abppkg.json",
+      "folder": "host"
+    }
+  }
+}

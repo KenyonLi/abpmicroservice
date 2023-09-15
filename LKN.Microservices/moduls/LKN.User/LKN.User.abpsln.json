@@ -1,0 +1,7 @@
+{
+  "modules": {
+    "LKN.User": {
+      "path": "LKN.User.abpmdl.json"
+    }
+  }
+}
