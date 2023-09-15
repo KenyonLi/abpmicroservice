@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "/wACyMoRT1d/qiim2UtCAMZ6XREdPyITAiGaJ7pB6M9BvCBxIcWMwgiThzsUIA+bJaEZsSRA5zt7bbCi0UKBrA==",
+  "dgSpecHash": "q99l3lIINQJVPpqofdoKeoyYWRC8vMXwMVAWMQbITICQrZF254br3EjtyaW+QsrauHi8xBofoK0GSh4yQsOLIQ==",
   "success": true,
   "projectFilePath": "D:\\GitRepos\\abpmicroservice\\LKN.Microservices\\moduls\\LKN.User\\src\\LKN.User.HttpApi.Client\\LKN.User.HttpApi.Client.csproj",
   "expectedPackageFiles": [
