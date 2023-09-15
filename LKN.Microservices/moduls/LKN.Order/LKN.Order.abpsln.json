@@ -1,0 +1,7 @@
+{
+  "modules": {
+    "LKN.Order": {
+      "path": "LKN.Order.abpmdl.json"
+    }
+  }
+}

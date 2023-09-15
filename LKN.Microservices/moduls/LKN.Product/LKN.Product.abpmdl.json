@@ -1,0 +1,79 @@
+{
+  "folders": {
+    "items": {
+      "src": {},
+      "test": {},
+      "host": {}
+    }
+  },
+  "packages": {
+    "LKN.Product.Domain.Shared": {
+      "path": "src/LKN.Product.Domain.Shared/LKN.Product.Domain.Shared.abppkg.json",
+      "folder": "src"
+    },
+    "LKN.Product.Domain": {
+      "path": "src/LKN.Product.Domain/LKN.Product.Domain.abppkg.json",
+      "folder": "src"
+    },
+    "LKN.Product.Application.Contracts": {
+      "path": "src/LKN.Product.Application.Contracts/LKN.Product.Application.Contracts.abppkg.json",
+      "folder": "src"
+    },
+    "LKN.Product.Application": {
+      "path": "src/LKN.Product.Application/LKN.Product.Application.abppkg.json",
+      "folder": "src"
+    },
+    "LKN.Product.EntityFrameworkCore": {
+      "path": "src/LKN.Product.EntityFrameworkCore/LKN.Product.EntityFrameworkCore.abppkg.json",
+      "folder": "src"
+    },
+    "LKN.Product.MongoDB": {
+      "path": "src/LKN.Product.MongoDB/LKN.Product.MongoDB.abppkg.json",
+      "folder": "src"
+    },
+    "LKN.Product.HttpApi": {
+      "path": "src/LKN.Product.HttpApi/LKN.Product.HttpApi.abppkg.json",
+      "folder": "src"
+    },
+    "LKN.Product.HttpApi.Client": {
+      "path": "src/LKN.Product.HttpApi.Client/LKN.Product.HttpApi.Client.abppkg.json",
+      "folder": "src"
+    },
+    "LKN.Product.TestBase": {
+      "path": "test/LKN.Product.TestBase/LKN.Product.TestBase.abppkg.json",
+      "folder": "test"
+    },
+    "LKN.Product.EntityFrameworkCore.Tests": {
+      "path": "test/LKN.Product.EntityFrameworkCore.Tests/LKN.Product.EntityFrameworkCore.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "LKN.Product.MongoDB.Tests": {
+      "path": "test/LKN.Product.MongoDB.Tests/LKN.Product.MongoDB.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "LKN.Product.Domain.Tests": {
+      "path": "test/LKN.Product.Domain.Tests/LKN.Product.Domain.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "LKN.Product.Application.Tests": {
+      "path": "test/LKN.Product.Application.Tests/LKN.Product.Application.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "LKN.Product.HttpApi.Host": {
+      "path": "host/LKN.Product.HttpApi.Host/LKN.Product.HttpApi.Host.abppkg.json",
+      "folder": "host"
+    },
+    "LKN.Product.HttpApi.Client.ConsoleTestApp": {
+      "path": "test/LKN.Product.HttpApi.Client.ConsoleTestApp/LKN.Product.HttpApi.Client.ConsoleTestApp.abppkg.json",
+      "folder": "test"
+    },
+    "LKN.Product.AuthServer": {
+      "path": "host/LKN.Product.AuthServer/LKN.Product.AuthServer.abppkg.json",
+      "folder": "host"
+    },
+    "LKN.Product.Host.Shared": {
+      "path": "host/LKN.Product.Host.Shared/LKN.Product.Host.Shared.abppkg.json",
+      "folder": "host"
+    }
+  }
+}

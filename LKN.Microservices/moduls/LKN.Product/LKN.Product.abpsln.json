@@ -1,0 +1,7 @@
+{
+  "modules": {
+    "LKN.Product": {
+      "path": "LKN.Product.abpmdl.json"
+    }
+  }
+}

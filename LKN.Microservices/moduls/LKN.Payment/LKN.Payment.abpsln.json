@@ -1,0 +1,7 @@
+{
+  "modules": {
+    "LKN.Payment": {
+      "path": "LKN.Payment.abpmdl.json"
+    }
+  }
+}

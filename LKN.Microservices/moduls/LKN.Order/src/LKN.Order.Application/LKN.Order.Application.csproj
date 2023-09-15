@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <RootNamespace>LKN.Order</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.AutoMapper" Version="7.3.0" />
+    <PackageReference Include="Volo.Abp.Ddd.Application" Version="7.3.0" />
+    <ProjectReference Include="..\LKN.Order.Application.Contracts\LKN.Order.Application.Contracts.csproj" />
+    <ProjectReference Include="..\LKN.Order.Domain\LKN.Order.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

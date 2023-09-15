@@ -1,0 +1,79 @@
+{
+  "folders": {
+    "items": {
+      "src": {},
+      "test": {},
+      "host": {}
+    }
+  },
+  "packages": {
+    "LKN.Payment.Domain.Shared": {
+      "path": "src/LKN.Payment.Domain.Shared/LKN.Payment.Domain.Shared.abppkg.json",
+      "folder": "src"
+    },
+    "LKN.Payment.Domain": {
+      "path": "src/LKN.Payment.Domain/LKN.Payment.Domain.abppkg.json",
+      "folder": "src"
+    },
+    "LKN.Payment.Application.Contracts": {
+      "path": "src/LKN.Payment.Application.Contracts/LKN.Payment.Application.Contracts.abppkg.json",
+      "folder": "src"
+    },
+    "LKN.Payment.Application": {
+      "path": "src/LKN.Payment.Application/LKN.Payment.Application.abppkg.json",
+      "folder": "src"
+    },
+    "LKN.Payment.EntityFrameworkCore": {
+      "path": "src/LKN.Payment.EntityFrameworkCore/LKN.Payment.EntityFrameworkCore.abppkg.json",
+      "folder": "src"
+    },
+    "LKN.Payment.MongoDB": {
+      "path": "src/LKN.Payment.MongoDB/LKN.Payment.MongoDB.abppkg.json",
+      "folder": "src"
+    },
+    "LKN.Payment.HttpApi": {
+      "path": "src/LKN.Payment.HttpApi/LKN.Payment.HttpApi.abppkg.json",
+      "folder": "src"
+    },
+    "LKN.Payment.HttpApi.Client": {
+      "path": "src/LKN.Payment.HttpApi.Client/LKN.Payment.HttpApi.Client.abppkg.json",
+      "folder": "src"
+    },
+    "LKN.Payment.TestBase": {
+      "path": "test/LKN.Payment.TestBase/LKN.Payment.TestBase.abppkg.json",
+      "folder": "test"
+    },
+    "LKN.Payment.EntityFrameworkCore.Tests": {
+      "path": "test/LKN.Payment.EntityFrameworkCore.Tests/LKN.Payment.EntityFrameworkCore.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "LKN.Payment.MongoDB.Tests": {
+      "path": "test/LKN.Payment.MongoDB.Tests/LKN.Payment.MongoDB.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "LKN.Payment.Domain.Tests": {
+      "path": "test/LKN.Payment.Domain.Tests/LKN.Payment.Domain.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "LKN.Payment.Application.Tests": {
+      "path": "test/LKN.Payment.Application.Tests/LKN.Payment.Application.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "LKN.Payment.HttpApi.Host": {
+      "path": "host/LKN.Payment.HttpApi.Host/LKN.Payment.HttpApi.Host.abppkg.json",
+      "folder": "host"
+    },
+    "LKN.Payment.HttpApi.Client.ConsoleTestApp": {
+      "path": "test/LKN.Payment.HttpApi.Client.ConsoleTestApp/LKN.Payment.HttpApi.Client.ConsoleTestApp.abppkg.json",
+      "folder": "test"
+    },
+    "LKN.Payment.AuthServer": {
+      "path": "host/LKN.Payment.AuthServer/LKN.Payment.AuthServer.abppkg.json",
+      "folder": "host"
+    },
+    "LKN.Payment.Host.Shared": {
+      "path": "host/LKN.Payment.Host.Shared/LKN.Payment.Host.Shared.abppkg.json",
+      "folder": "host"
+    }
+  }
+}
