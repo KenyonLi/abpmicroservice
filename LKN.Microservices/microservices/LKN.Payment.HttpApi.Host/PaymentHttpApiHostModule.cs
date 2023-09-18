@@ -11,7 +11,6 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using LKN.Payment.EntityFrameworkCore;
-using LKN.Payment.MultiTenancy;
 using StackExchange.Redis;
 using Microsoft.OpenApi.Models;
 using Volo.Abp;
@@ -64,10 +63,10 @@ public class PaymentHttpApiHostModule : AbpModule
             options.UseSqlServer();
         });
 
-        Configure<AbpMultiTenancyOptions>(options =>
-        {
-            options.IsEnabled = MultiTenancyConsts.IsEnabled;
-        });
+        //Configure<AbpMultiTenancyOptions>(options =>
+        //{
+        //    options.IsEnabled = MultiTenancyConsts.IsEnabled;
+        //});
 
         if (hostingEnvironment.IsDevelopment())
         {
@@ -177,10 +176,10 @@ public class PaymentHttpApiHostModule : AbpModule
         app.UseRouting();
         app.UseCors();
         app.UseAuthentication();
-        if (MultiTenancyConsts.IsEnabled)
-        {
-            app.UseMultiTenancy();
-        }
+        //if (MultiTenancyConsts.IsEnabled)
+        //{
+        //    app.UseMultiTenancy();
+        //}
         app.UseAbpRequestLocalization();
         app.UseAuthorization();
         app.UseSwagger();

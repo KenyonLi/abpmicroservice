@@ -30,17 +30,16 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\LKN.Payment.HttpApi\LKN.Payment.HttpApi.csproj" />
-    <ProjectReference Include="..\..\src\LKN.Payment.Application\LKN.Payment.Application.csproj" />
-    <ProjectReference Include="..\..\src\LKN.Payment.EntityFrameworkCore\LKN.Payment.EntityFrameworkCore.csproj" />
-    <ProjectReference Include="..\LKN.Payment.Host.Shared\LKN.Payment.Host.Shared.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Compile Remove="Logs\**" />
     <Content Remove="Logs\**" />
     <EmbeddedResource Remove="Logs\**" />
     <None Remove="Logs\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\moduls\LKN.Payment\src\LKN.Payment.Application\LKN.Payment.Application.csproj" />
+    <ProjectReference Include="..\..\moduls\LKN.Payment\src\LKN.Payment.EntityFrameworkCore\LKN.Payment.EntityFrameworkCore.csproj" />
+    <ProjectReference Include="..\..\moduls\LKN.Payment\src\LKN.Payment.HttpApi\LKN.Payment.HttpApi.csproj" />
   </ItemGroup>
 
 </Project>

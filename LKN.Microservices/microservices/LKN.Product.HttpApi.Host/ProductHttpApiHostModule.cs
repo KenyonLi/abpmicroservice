@@ -11,7 +11,6 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using LKN.Product.EntityFrameworkCore;
-using LKN.Product.MultiTenancy;
 using StackExchange.Redis;
 using Microsoft.OpenApi.Models;
 using Volo.Abp;
@@ -64,10 +63,10 @@ public class ProductHttpApiHostModule : AbpModule
             options.UseSqlServer();
         });
 
-        Configure<AbpMultiTenancyOptions>(options =>
-        {
-            options.IsEnabled = MultiTenancyConsts.IsEnabled;
-        });
+        //Configure<AbpMultiTenancyOptions>(options =>
+        //{
+        //    options.IsEnabled = MultiTenancyConsts.IsEnabled;
+        //});
 
         if (hostingEnvironment.IsDevelopment())
         {
@@ -177,10 +176,10 @@ public class ProductHttpApiHostModule : AbpModule
         app.UseRouting();
         app.UseCors();
         app.UseAuthentication();
-        if (MultiTenancyConsts.IsEnabled)
-        {
-            app.UseMultiTenancy();
-        }
+        //if (MultiTenancyConsts.IsEnabled)
+        //{
+        //    app.UseMultiTenancy();
+        //}
         app.UseAbpRequestLocalization();
         app.UseAuthorization();
         app.UseSwagger();

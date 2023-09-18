@@ -30,17 +30,16 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\LKN.Product.HttpApi\LKN.Product.HttpApi.csproj" />
-    <ProjectReference Include="..\..\src\LKN.Product.Application\LKN.Product.Application.csproj" />
-    <ProjectReference Include="..\..\src\LKN.Product.EntityFrameworkCore\LKN.Product.EntityFrameworkCore.csproj" />
-    <ProjectReference Include="..\LKN.Product.Host.Shared\LKN.Product.Host.Shared.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Compile Remove="Logs\**" />
     <Content Remove="Logs\**" />
     <EmbeddedResource Remove="Logs\**" />
     <None Remove="Logs\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\moduls\LKN.Product\src\LKN.Product.Application\LKN.Product.Application.csproj" />
+    <ProjectReference Include="..\..\moduls\LKN.Product\src\LKN.Product.EntityFrameworkCore\LKN.Product.EntityFrameworkCore.csproj" />
+    <ProjectReference Include="..\..\moduls\LKN.Product\src\LKN.Product.HttpApi\LKN.Product.HttpApi.csproj" />
   </ItemGroup>
 
 </Project>
