@@ -12,7 +12,7 @@ public class OrderHttpApiHostMigrationsDbContextFactory : IDesignTimeDbContextFa
         var configuration = BuildConfiguration();
 
         var builder = new DbContextOptionsBuilder<OrderHttpApiHostMigrationsDbContext>()
-            .UseSqlServer(configuration.GetConnectionString("Order"));
+            .UseMySql(configuration.GetConnectionString("Order"),MySqlServerVersion.LatestSupportedServerVersion);
 
         return new OrderHttpApiHostMigrationsDbContext(builder.Options);
     }
