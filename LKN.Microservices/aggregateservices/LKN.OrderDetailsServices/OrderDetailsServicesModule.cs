@@ -1,4 +1,5 @@
-﻿using Microsoft.OpenApi.Models;
+﻿using LKN.Order;
+using Microsoft.OpenApi.Models;
 using Volo.Abp;
 using Volo.Abp.AspNetCore.Mvc;
 using Volo.Abp.AspNetCore.Mvc.ModelBinding.Metadata;
@@ -9,6 +10,7 @@ namespace LKN.OrderDetailsServices
 {
     [DependsOn(typeof(AbpAspNetCoreMvcModule))]
     [DependsOn(typeof(AbpAutofacModule))]
+    [DependsOn(typeof(OrderHttpApiClientModule))]
     public class OrderDetailsServicesModule: AbpModule
     {
         public override void ConfigureServices(ServiceConfigurationContext context)

@@ -7764,3 +7764,939 @@ Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving 
 - ExecutionDuration      : 21
 
 2023-09-19 20:01:24.248 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:44365/api/OrderService/ordder application/json 225 - 400 0 - 28.7075ms
+2023-09-19 20:07:03.144 +08:00 [INF] Starting web host.
+2023-09-19 20:07:06.053 +08:00 [INF] Loaded ABP modules:
+2023-09-19 20:07:06.054 +08:00 [INF] - LKN.Order.OrderHttpApiHostModule
+2023-09-19 20:07:06.054 +08:00 [INF]   - LKN.Order.OrderApplicationModule
+2023-09-19 20:07:06.054 +08:00 [INF]     - LKN.Order.OrderDomainModule
+2023-09-19 20:07:06.054 +08:00 [INF]       - Volo.Abp.Domain.AbpDddDomainModule
+2023-09-19 20:07:06.054 +08:00 [INF]         - Volo.Abp.Auditing.AbpAuditingModule
+2023-09-19 20:07:06.054 +08:00 [INF]           - Volo.Abp.Data.AbpDataModule
+2023-09-19 20:07:06.054 +08:00 [INF]             - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2023-09-19 20:07:06.054 +08:00 [INF]               - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2023-09-19 20:07:06.054 +08:00 [INF]               - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2023-09-19 20:07:06.054 +08:00 [INF]             - Volo.Abp.Uow.AbpUnitOfWorkModule
+2023-09-19 20:07:06.054 +08:00 [INF]             - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2023-09-19 20:07:06.054 +08:00 [INF]           - Volo.Abp.Json.AbpJsonModule
+2023-09-19 20:07:06.054 +08:00 [INF]             - Volo.Abp.Json.SystemTextJson.AbpJsonSystemTextJsonModule
+2023-09-19 20:07:06.054 +08:00 [INF]               - Volo.Abp.Json.AbpJsonAbstractionsModule
+2023-09-19 20:07:06.054 +08:00 [INF]               - Volo.Abp.Timing.AbpTimingModule
+2023-09-19 20:07:06.054 +08:00 [INF]                 - Volo.Abp.Localization.AbpLocalizationModule
+2023-09-19 20:07:06.054 +08:00 [INF]                   - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2023-09-19 20:07:06.054 +08:00 [INF]                   - Volo.Abp.Settings.AbpSettingsModule
+2023-09-19 20:07:06.054 +08:00 [INF]                     - Volo.Abp.Security.AbpSecurityModule
+2023-09-19 20:07:06.054 +08:00 [INF]                   - Volo.Abp.Threading.AbpThreadingModule
+2023-09-19 20:07:06.054 +08:00 [INF]           - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2023-09-19 20:07:06.054 +08:00 [INF]             - Volo.Abp.MultiTenancy.AbpMultiTenancyAbstractionsModule
+2023-09-19 20:07:06.054 +08:00 [INF]           - Volo.Abp.Auditing.AbpAuditingContractsModule
+2023-09-19 20:07:06.054 +08:00 [INF]         - Volo.Abp.EventBus.AbpEventBusModule
+2023-09-19 20:07:06.054 +08:00 [INF]           - Volo.Abp.Guids.AbpGuidsModule
+2023-09-19 20:07:06.054 +08:00 [INF]           - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2023-09-19 20:07:06.054 +08:00 [INF]           - Volo.Abp.DistributedLocking.AbpDistributedLockingAbstractionsModule
+2023-09-19 20:07:06.054 +08:00 [INF]         - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2023-09-19 20:07:06.054 +08:00 [INF]         - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2023-09-19 20:07:06.054 +08:00 [INF]         - Volo.Abp.Specifications.AbpSpecificationsModule
+2023-09-19 20:07:06.054 +08:00 [INF]         - Volo.Abp.Caching.AbpCachingModule
+2023-09-19 20:07:06.054 +08:00 [INF]           - Volo.Abp.Serialization.AbpSerializationModule
+2023-09-19 20:07:06.054 +08:00 [INF]         - Volo.Abp.Domain.AbpDddDomainSharedModule
+2023-09-19 20:07:06.054 +08:00 [INF]       - LKN.Order.OrderDomainSharedModule
+2023-09-19 20:07:06.054 +08:00 [INF]         - Volo.Abp.Validation.AbpValidationModule
+2023-09-19 20:07:06.054 +08:00 [INF]     - LKN.Order.OrderApplicationContractsModule
+2023-09-19 20:07:06.054 +08:00 [INF]       - Volo.Abp.Application.AbpDddApplicationContractsModule
+2023-09-19 20:07:06.054 +08:00 [INF]       - Volo.Abp.Authorization.AbpAuthorizationModule
+2023-09-19 20:07:06.054 +08:00 [INF]         - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2023-09-19 20:07:06.054 +08:00 [INF]     - Volo.Abp.Application.AbpDddApplicationModule
+2023-09-19 20:07:06.054 +08:00 [INF]       - Volo.Abp.Http.AbpHttpAbstractionsModule
+2023-09-19 20:07:06.054 +08:00 [INF]       - Volo.Abp.Features.AbpFeaturesModule
+2023-09-19 20:07:06.054 +08:00 [INF]       - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2023-09-19 20:07:06.054 +08:00 [INF]     - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2023-09-19 20:07:06.054 +08:00 [INF]   - LKN.Order.EntityFrameworkCore.OrderEntityFrameworkCoreModule
+2023-09-19 20:07:06.054 +08:00 [INF]     - Volo.Abp.EntityFrameworkCore.MySQL.AbpEntityFrameworkCoreMySQLModule
+2023-09-19 20:07:06.054 +08:00 [INF]       - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2023-09-19 20:07:06.054 +08:00 [INF]   - LKN.Order.OrderHttpApiModule
+2023-09-19 20:07:06.054 +08:00 [INF]     - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2023-09-19 20:07:06.054 +08:00 [INF]       - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2023-09-19 20:07:06.054 +08:00 [INF]         - Volo.Abp.Http.AbpHttpModule
+2023-09-19 20:07:06.054 +08:00 [INF]           - Volo.Abp.Minify.AbpMinifyModule
+2023-09-19 20:07:06.054 +08:00 [INF]       - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2023-09-19 20:07:06.055 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2023-09-19 20:07:06.055 +08:00 [INF]       - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2023-09-19 20:07:06.055 +08:00 [INF]         - Volo.Abp.UI.AbpUiModule
+2023-09-19 20:07:06.055 +08:00 [INF]   - Volo.Abp.AspNetCore.Mvc.UI.MultiTenancy.AbpAspNetCoreMvcUiMultiTenancyModule
+2023-09-19 20:07:06.055 +08:00 [INF]     - Volo.Abp.AspNetCore.Mvc.UI.Theme.Shared.AbpAspNetCoreMvcUiThemeSharedModule
+2023-09-19 20:07:06.055 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Bootstrap.AbpAspNetCoreMvcUiBootstrapModule
+2023-09-19 20:07:06.055 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.AbpAspNetCoreMvcUiModule
+2023-09-19 20:07:06.055 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Packages.AbpAspNetCoreMvcUiPackagesModule
+2023-09-19 20:07:06.055 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingAbstractionsModule
+2023-09-19 20:07:06.055 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Widgets.AbpAspNetCoreMvcUiWidgetsModule
+2023-09-19 20:07:06.055 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingModule
+2023-09-19 20:07:06.055 +08:00 [INF]     - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2023-09-19 20:07:06.055 +08:00 [INF]   - Volo.Abp.Autofac.AbpAutofacModule
+2023-09-19 20:07:06.055 +08:00 [INF]     - Volo.Abp.Castle.AbpCastleCoreModule
+2023-09-19 20:07:06.055 +08:00 [INF]   - Volo.Abp.Caching.StackExchangeRedis.AbpCachingStackExchangeRedisModule
+2023-09-19 20:07:06.055 +08:00 [INF]   - Volo.Abp.TenantManagement.EntityFrameworkCore.AbpTenantManagementEntityFrameworkCoreModule
+2023-09-19 20:07:06.055 +08:00 [INF]     - Volo.Abp.TenantManagement.AbpTenantManagementDomainModule
+2023-09-19 20:07:06.055 +08:00 [INF]       - Volo.Abp.TenantManagement.AbpTenantManagementDomainSharedModule
+2023-09-19 20:07:06.055 +08:00 [INF]   - Volo.Abp.AspNetCore.Serilog.AbpAspNetCoreSerilogModule
+2023-09-19 20:07:06.055 +08:00 [INF]   - Volo.Abp.Swashbuckle.AbpSwashbuckleModule
+2023-09-19 20:07:06.438 +08:00 [INF] User profile is available. Using 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-09-19 20:07:06.547 +08:00 [INF] Initialized all ABP modules.
+2023-09-19 20:07:06.825 +08:00 [INF] Now listening on: https://localhost:44392
+2023-09-19 20:07:06.825 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-19 20:07:06.825 +08:00 [INF] Hosting environment: Development
+2023-09-19 20:07:06.825 +08:00 [INF] Content root path: D:\test\ABP\abpmicroservice\LKN.Microservices\microservices\LKN.Order.HttpApi.Host
+2023-09-19 20:07:08.178 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44392/ - -
+2023-09-19 20:07:08.439 +08:00 [INF] Executing endpoint 'LKN.Order.Controllers.HomeController.Index (LKN.Order.HttpApi.Host)'
+2023-09-19 20:07:08.556 +08:00 [INF] Route matched with {action = "Index", controller = "Home", area = "", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Index() on controller LKN.Order.Controllers.HomeController (LKN.Order.HttpApi.Host).
+2023-09-19 20:07:08.764 +08:00 [INF] Executing action method LKN.Order.Controllers.HomeController.Index (LKN.Order.HttpApi.Host) - Validation state: "Valid"
+2023-09-19 20:07:08.767 +08:00 [INF] Executed action method LKN.Order.Controllers.HomeController.Index (LKN.Order.HttpApi.Host), returned result Microsoft.AspNetCore.Mvc.RedirectResult in 0.3439ms.
+2023-09-19 20:07:08.776 +08:00 [INF] Executing RedirectResult, redirecting to /swagger.
+2023-09-19 20:07:08.780 +08:00 [INF] Executed action LKN.Order.Controllers.HomeController.Index (LKN.Order.HttpApi.Host) in 220.8085ms
+2023-09-19 20:07:08.781 +08:00 [INF] Executed endpoint 'LKN.Order.Controllers.HomeController.Index (LKN.Order.HttpApi.Host)'
+2023-09-19 20:07:08.790 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44392/ - - - 302 0 - 615.4708ms
+2023-09-19 20:07:08.797 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44392/swagger/index.html - -
+2023-09-19 20:07:08.990 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44392/swagger/index.html - - - 200 - text/html;charset=utf-8 193.2196ms
+2023-09-19 20:07:09.003 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - -
+2023-09-19 20:07:09.010 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44392/_vs/browserLink - -
+2023-09-19 20:07:09.014 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - - 200 12014 application/javascript;+charset=utf-8 11.5602ms
+2023-09-19 20:07:09.156 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44392/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 146.5378ms
+2023-09-19 20:07:09.279 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44392/swagger/v1/swagger.json - -
+2023-09-19 20:07:09.614 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44392/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 334.4761ms
+2023-09-19 20:07:21.351 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44392/abp/Swashbuckle/SetCsrfCookie application/json -
+2023-09-19 20:07:21.352 +08:00 [INF] Executing endpoint 'Volo.Abp.Swashbuckle.AbpSwashbuckleController.SetCsrfCookie (Volo.Abp.Swashbuckle)'
+2023-09-19 20:07:21.354 +08:00 [INF] Route matched with {area = "Abp", action = "SetCsrfCookie", controller = "AbpSwashbuckle", page = ""}. Executing controller action with signature Void SetCsrfCookie() on controller Volo.Abp.Swashbuckle.AbpSwashbuckleController (Volo.Abp.Swashbuckle).
+2023-09-19 20:07:21.392 +08:00 [INF] Executing action method Volo.Abp.Swashbuckle.AbpSwashbuckleController.SetCsrfCookie (Volo.Abp.Swashbuckle) - Validation state: "Valid"
+2023-09-19 20:07:21.398 +08:00 [INF] Executed action method Volo.Abp.Swashbuckle.AbpSwashbuckleController.SetCsrfCookie (Volo.Abp.Swashbuckle), returned result Microsoft.AspNetCore.Mvc.EmptyResult in 5.2922ms.
+2023-09-19 20:07:21.399 +08:00 [INF] Executed action Volo.Abp.Swashbuckle.AbpSwashbuckleController.SetCsrfCookie (Volo.Abp.Swashbuckle) in 44.6164ms
+2023-09-19 20:07:21.399 +08:00 [INF] Executed endpoint 'Volo.Abp.Swashbuckle.AbpSwashbuckleController.SetCsrfCookie (Volo.Abp.Swashbuckle)'
+2023-09-19 20:07:21.399 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44392/abp/Swashbuckle/SetCsrfCookie application/json - - 204 - - 48.6297ms
+2023-09-19 20:07:21.424 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44392/api/OrderService/ordder application/json 225
+2023-09-19 20:07:21.427 +08:00 [INF] CORS policy execution failed.
+2023-09-19 20:07:21.428 +08:00 [INF] Request origin https://localhost:44392 does not have permission to access the resource.
+2023-09-19 20:07:21.429 +08:00 [INF] Executing endpoint 'LKN.Order.Orders.OrdderAppService.CreateAsync (LKN.Order.Application)'
+2023-09-19 20:07:21.440 +08:00 [INF] Route matched with {action = "Create", controller = "Ordder", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[LKN.Order.Orders.OrderDto] CreateAsync(LKN.Order.Orders.CreateOrderDto) on controller LKN.Order.Orders.OrdderAppService (LKN.Order.Application).
+2023-09-19 20:07:21.659 +08:00 [INF] Executing action method LKN.Order.Orders.OrdderAppService.CreateAsync (LKN.Order.Application) - Validation state: "Valid"
+2023-09-19 20:07:23.296 +08:00 [DBG] Added 0 entity changes to the current audit log
+2023-09-19 20:07:23.308 +08:00 [INF] Executed action method LKN.Order.Orders.OrdderAppService.CreateAsync (LKN.Order.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 1649.7185ms.
+2023-09-19 20:07:23.312 +08:00 [DBG] Added 0 entity changes to the current audit log
+2023-09-19 20:07:23.322 +08:00 [DBG] Added 0 entity changes to the current audit log
+2023-09-19 20:07:23.359 +08:00 [INF] Executing ObjectResult, writing value of type 'LKN.Order.Orders.OrderDto'.
+2023-09-19 20:07:23.380 +08:00 [INF] Executed action LKN.Order.Orders.OrdderAppService.CreateAsync (LKN.Order.Application) in 1939.7146ms
+2023-09-19 20:07:23.382 +08:00 [INF] Executed endpoint 'LKN.Order.Orders.OrdderAppService.CreateAsync (LKN.Order.Application)'
+2023-09-19 20:07:23.393 +08:00 [INF] AUDIT LOG: [200: POST   ] /api/OrderService/ordder
+- UserName - UserId                 :  - 
+- ClientIpAddress        : ::1
+- ExecutionDuration      : 1955
+- Actions:
+  - LKN.Order.Orders.OrdderAppService.CreateAsync (1725 ms.)
+    {"input":{"orderTotalPrice":10,"productCount":10,"orderItems":[{"id":"3fa85f64-5717-4562-b3fc-2c963f66afa6","productId":"3fa85f64-5717-4562-b3fc-2c963f66afa6","productName":"string"}]}
+
+2023-09-19 20:07:23.394 +08:00 [INF] Request finished HTTP/2 POST https://localhost:44392/api/OrderService/ordder application/json 225 - 200 - application/json;+charset=utf-8 1969.9013ms
+2023-09-19 20:08:08.736 +08:00 [INF] Starting web host.
+2023-09-19 20:08:11.576 +08:00 [INF] Loaded ABP modules:
+2023-09-19 20:08:11.577 +08:00 [INF] - LKN.Order.OrderHttpApiHostModule
+2023-09-19 20:08:11.577 +08:00 [INF]   - LKN.Order.OrderApplicationModule
+2023-09-19 20:08:11.577 +08:00 [INF]     - LKN.Order.OrderDomainModule
+2023-09-19 20:08:11.577 +08:00 [INF]       - Volo.Abp.Domain.AbpDddDomainModule
+2023-09-19 20:08:11.577 +08:00 [INF]         - Volo.Abp.Auditing.AbpAuditingModule
+2023-09-19 20:08:11.577 +08:00 [INF]           - Volo.Abp.Data.AbpDataModule
+2023-09-19 20:08:11.577 +08:00 [INF]             - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2023-09-19 20:08:11.577 +08:00 [INF]               - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2023-09-19 20:08:11.577 +08:00 [INF]               - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2023-09-19 20:08:11.577 +08:00 [INF]             - Volo.Abp.Uow.AbpUnitOfWorkModule
+2023-09-19 20:08:11.577 +08:00 [INF]             - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2023-09-19 20:08:11.577 +08:00 [INF]           - Volo.Abp.Json.AbpJsonModule
+2023-09-19 20:08:11.577 +08:00 [INF]             - Volo.Abp.Json.SystemTextJson.AbpJsonSystemTextJsonModule
+2023-09-19 20:08:11.577 +08:00 [INF]               - Volo.Abp.Json.AbpJsonAbstractionsModule
+2023-09-19 20:08:11.577 +08:00 [INF]               - Volo.Abp.Timing.AbpTimingModule
+2023-09-19 20:08:11.577 +08:00 [INF]                 - Volo.Abp.Localization.AbpLocalizationModule
+2023-09-19 20:08:11.577 +08:00 [INF]                   - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2023-09-19 20:08:11.577 +08:00 [INF]                   - Volo.Abp.Settings.AbpSettingsModule
+2023-09-19 20:08:11.577 +08:00 [INF]                     - Volo.Abp.Security.AbpSecurityModule
+2023-09-19 20:08:11.577 +08:00 [INF]                   - Volo.Abp.Threading.AbpThreadingModule
+2023-09-19 20:08:11.577 +08:00 [INF]           - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2023-09-19 20:08:11.577 +08:00 [INF]             - Volo.Abp.MultiTenancy.AbpMultiTenancyAbstractionsModule
+2023-09-19 20:08:11.577 +08:00 [INF]           - Volo.Abp.Auditing.AbpAuditingContractsModule
+2023-09-19 20:08:11.577 +08:00 [INF]         - Volo.Abp.EventBus.AbpEventBusModule
+2023-09-19 20:08:11.577 +08:00 [INF]           - Volo.Abp.Guids.AbpGuidsModule
+2023-09-19 20:08:11.577 +08:00 [INF]           - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2023-09-19 20:08:11.577 +08:00 [INF]           - Volo.Abp.DistributedLocking.AbpDistributedLockingAbstractionsModule
+2023-09-19 20:08:11.577 +08:00 [INF]         - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2023-09-19 20:08:11.577 +08:00 [INF]         - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2023-09-19 20:08:11.577 +08:00 [INF]         - Volo.Abp.Specifications.AbpSpecificationsModule
+2023-09-19 20:08:11.577 +08:00 [INF]         - Volo.Abp.Caching.AbpCachingModule
+2023-09-19 20:08:11.577 +08:00 [INF]           - Volo.Abp.Serialization.AbpSerializationModule
+2023-09-19 20:08:11.577 +08:00 [INF]         - Volo.Abp.Domain.AbpDddDomainSharedModule
+2023-09-19 20:08:11.577 +08:00 [INF]       - LKN.Order.OrderDomainSharedModule
+2023-09-19 20:08:11.577 +08:00 [INF]         - Volo.Abp.Validation.AbpValidationModule
+2023-09-19 20:08:11.577 +08:00 [INF]     - LKN.Order.OrderApplicationContractsModule
+2023-09-19 20:08:11.577 +08:00 [INF]       - Volo.Abp.Application.AbpDddApplicationContractsModule
+2023-09-19 20:08:11.577 +08:00 [INF]       - Volo.Abp.Authorization.AbpAuthorizationModule
+2023-09-19 20:08:11.577 +08:00 [INF]         - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2023-09-19 20:08:11.577 +08:00 [INF]     - Volo.Abp.Application.AbpDddApplicationModule
+2023-09-19 20:08:11.577 +08:00 [INF]       - Volo.Abp.Http.AbpHttpAbstractionsModule
+2023-09-19 20:08:11.577 +08:00 [INF]       - Volo.Abp.Features.AbpFeaturesModule
+2023-09-19 20:08:11.577 +08:00 [INF]       - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2023-09-19 20:08:11.577 +08:00 [INF]     - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2023-09-19 20:08:11.577 +08:00 [INF]   - LKN.Order.EntityFrameworkCore.OrderEntityFrameworkCoreModule
+2023-09-19 20:08:11.577 +08:00 [INF]     - Volo.Abp.EntityFrameworkCore.MySQL.AbpEntityFrameworkCoreMySQLModule
+2023-09-19 20:08:11.577 +08:00 [INF]       - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2023-09-19 20:08:11.577 +08:00 [INF]   - LKN.Order.OrderHttpApiModule
+2023-09-19 20:08:11.577 +08:00 [INF]     - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2023-09-19 20:08:11.577 +08:00 [INF]       - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2023-09-19 20:08:11.577 +08:00 [INF]         - Volo.Abp.Http.AbpHttpModule
+2023-09-19 20:08:11.577 +08:00 [INF]           - Volo.Abp.Minify.AbpMinifyModule
+2023-09-19 20:08:11.577 +08:00 [INF]       - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2023-09-19 20:08:11.577 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2023-09-19 20:08:11.577 +08:00 [INF]       - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2023-09-19 20:08:11.577 +08:00 [INF]         - Volo.Abp.UI.AbpUiModule
+2023-09-19 20:08:11.577 +08:00 [INF]   - Volo.Abp.AspNetCore.Mvc.UI.MultiTenancy.AbpAspNetCoreMvcUiMultiTenancyModule
+2023-09-19 20:08:11.577 +08:00 [INF]     - Volo.Abp.AspNetCore.Mvc.UI.Theme.Shared.AbpAspNetCoreMvcUiThemeSharedModule
+2023-09-19 20:08:11.577 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Bootstrap.AbpAspNetCoreMvcUiBootstrapModule
+2023-09-19 20:08:11.577 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.AbpAspNetCoreMvcUiModule
+2023-09-19 20:08:11.577 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Packages.AbpAspNetCoreMvcUiPackagesModule
+2023-09-19 20:08:11.577 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingAbstractionsModule
+2023-09-19 20:08:11.577 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Widgets.AbpAspNetCoreMvcUiWidgetsModule
+2023-09-19 20:08:11.577 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingModule
+2023-09-19 20:08:11.577 +08:00 [INF]     - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2023-09-19 20:08:11.577 +08:00 [INF]   - Volo.Abp.Autofac.AbpAutofacModule
+2023-09-19 20:08:11.577 +08:00 [INF]     - Volo.Abp.Castle.AbpCastleCoreModule
+2023-09-19 20:08:11.577 +08:00 [INF]   - Volo.Abp.Caching.StackExchangeRedis.AbpCachingStackExchangeRedisModule
+2023-09-19 20:08:11.577 +08:00 [INF]   - Volo.Abp.TenantManagement.EntityFrameworkCore.AbpTenantManagementEntityFrameworkCoreModule
+2023-09-19 20:08:11.577 +08:00 [INF]     - Volo.Abp.TenantManagement.AbpTenantManagementDomainModule
+2023-09-19 20:08:11.577 +08:00 [INF]       - Volo.Abp.TenantManagement.AbpTenantManagementDomainSharedModule
+2023-09-19 20:08:11.577 +08:00 [INF]   - Volo.Abp.AspNetCore.Serilog.AbpAspNetCoreSerilogModule
+2023-09-19 20:08:11.577 +08:00 [INF]   - Volo.Abp.Swashbuckle.AbpSwashbuckleModule
+2023-09-19 20:08:12.006 +08:00 [INF] User profile is available. Using 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-09-19 20:08:12.112 +08:00 [INF] Initialized all ABP modules.
+2023-09-19 20:08:12.395 +08:00 [INF] Now listening on: https://localhost:44392
+2023-09-19 20:08:12.396 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-19 20:08:12.396 +08:00 [INF] Hosting environment: Development
+2023-09-19 20:08:12.396 +08:00 [INF] Content root path: D:\test\ABP\abpmicroservice\LKN.Microservices\microservices\LKN.Order.HttpApi.Host
+2023-09-19 20:08:13.194 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44392/ - -
+2023-09-19 20:08:13.490 +08:00 [INF] Executing endpoint 'LKN.Order.Controllers.HomeController.Index (LKN.Order.HttpApi.Host)'
+2023-09-19 20:08:13.516 +08:00 [INF] Route matched with {action = "Index", controller = "Home", area = "", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Index() on controller LKN.Order.Controllers.HomeController (LKN.Order.HttpApi.Host).
+2023-09-19 20:08:13.690 +08:00 [INF] Executing action method LKN.Order.Controllers.HomeController.Index (LKN.Order.HttpApi.Host) - Validation state: "Valid"
+2023-09-19 20:08:13.693 +08:00 [INF] Executed action method LKN.Order.Controllers.HomeController.Index (LKN.Order.HttpApi.Host), returned result Microsoft.AspNetCore.Mvc.RedirectResult in 0.34ms.
+2023-09-19 20:08:13.702 +08:00 [INF] Executing RedirectResult, redirecting to /swagger.
+2023-09-19 20:08:13.706 +08:00 [INF] Executed action LKN.Order.Controllers.HomeController.Index (LKN.Order.HttpApi.Host) in 187.0002ms
+2023-09-19 20:08:13.706 +08:00 [INF] Executed endpoint 'LKN.Order.Controllers.HomeController.Index (LKN.Order.HttpApi.Host)'
+2023-09-19 20:08:13.718 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44392/ - - - 302 0 - 524.2549ms
+2023-09-19 20:08:13.789 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44392/swagger/index.html - -
+2023-09-19 20:08:14.096 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44392/swagger/index.html - - - 200 - text/html;charset=utf-8 306.7042ms
+2023-09-19 20:08:14.150 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - -
+2023-09-19 20:08:14.197 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44392/_vs/browserLink - -
+2023-09-19 20:08:14.198 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - - 200 12014 application/javascript;+charset=utf-8 47.4241ms
+2023-09-19 20:08:14.341 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44392/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 143.9489ms
+2023-09-19 20:08:14.455 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44392/swagger/v1/swagger.json - -
+2023-09-19 20:08:14.773 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44392/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 317.7806ms
+2023-09-19 20:08:31.710 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44392/abp/Swashbuckle/SetCsrfCookie application/json -
+2023-09-19 20:08:31.712 +08:00 [INF] Executing endpoint 'Volo.Abp.Swashbuckle.AbpSwashbuckleController.SetCsrfCookie (Volo.Abp.Swashbuckle)'
+2023-09-19 20:08:31.714 +08:00 [INF] Route matched with {area = "Abp", action = "SetCsrfCookie", controller = "AbpSwashbuckle", page = ""}. Executing controller action with signature Void SetCsrfCookie() on controller Volo.Abp.Swashbuckle.AbpSwashbuckleController (Volo.Abp.Swashbuckle).
+2023-09-19 20:08:31.751 +08:00 [INF] Executing action method Volo.Abp.Swashbuckle.AbpSwashbuckleController.SetCsrfCookie (Volo.Abp.Swashbuckle) - Validation state: "Valid"
+2023-09-19 20:08:31.757 +08:00 [INF] Executed action method Volo.Abp.Swashbuckle.AbpSwashbuckleController.SetCsrfCookie (Volo.Abp.Swashbuckle), returned result Microsoft.AspNetCore.Mvc.EmptyResult in 5.3463ms.
+2023-09-19 20:08:31.757 +08:00 [INF] Executed action Volo.Abp.Swashbuckle.AbpSwashbuckleController.SetCsrfCookie (Volo.Abp.Swashbuckle) in 43.1746ms
+2023-09-19 20:08:31.757 +08:00 [INF] Executed endpoint 'Volo.Abp.Swashbuckle.AbpSwashbuckleController.SetCsrfCookie (Volo.Abp.Swashbuckle)'
+2023-09-19 20:08:31.758 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44392/abp/Swashbuckle/SetCsrfCookie application/json - - 204 - - 47.9731ms
+2023-09-19 20:08:31.783 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44392/api/OrderService/ordder application/json 223
+2023-09-19 20:08:31.787 +08:00 [INF] CORS policy execution failed.
+2023-09-19 20:08:31.787 +08:00 [INF] Request origin https://localhost:44392 does not have permission to access the resource.
+2023-09-19 20:08:31.788 +08:00 [INF] Executing endpoint 'LKN.Order.Orders.OrdderAppService.CreateAsync (LKN.Order.Application)'
+2023-09-19 20:08:31.799 +08:00 [INF] Route matched with {action = "Create", controller = "Ordder", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[LKN.Order.Orders.OrderDto] CreateAsync(LKN.Order.Orders.CreateOrderDto) on controller LKN.Order.Orders.OrdderAppService (LKN.Order.Application).
+2023-09-19 20:08:31.994 +08:00 [WRN] ---------- RemoteServiceErrorInfo ----------
+{
+  "code": null,
+  "message": "你的请求无效!",
+  "details": "验证时发现以下错误.\r\n - The JSON value could not be converted to System.Guid. Path: $.orderItems[0].id | LineNumber: 5 | BytePositionInLine: 50.\r\n",
+  "data": {},
+  "validationErrors": [
+    {
+      "message": "The JSON value could not be converted to System.Guid. Path: $.orderItems[0].id | LineNumber: 5 | BytePositionInLine: 50.",
+      "members": [
+        "$.orderItems[0].id"
+      ]
+    }
+  ]
+}
+
+2023-09-19 20:08:31.994 +08:00 [WRN] ModelState is not valid! See ValidationErrors for details.
+Volo.Abp.Validation.AbpValidationException: ModelState is not valid! See ValidationErrors for details.
+   at Volo.Abp.AspNetCore.Mvc.Validation.ModelStateValidator.Validate(ModelStateDictionary modelState)
+   at Volo.Abp.AspNetCore.Mvc.Validation.AbpValidationActionFilter.OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+2023-09-19 20:08:31.995 +08:00 [WRN] There are 1 validation errors:
+The JSON value could not be converted to System.Guid. Path: $.orderItems[0].id | LineNumber: 5 | BytePositionInLine: 50. ($.orderItems[0].id)
+
+2023-09-19 20:08:32.022 +08:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.Http.RemoteServiceErrorResponse'.
+2023-09-19 20:08:32.025 +08:00 [INF] Executed action LKN.Order.Orders.OrdderAppService.CreateAsync (LKN.Order.Application) in 226.0731ms
+2023-09-19 20:08:32.025 +08:00 [INF] Executed endpoint 'LKN.Order.Orders.OrdderAppService.CreateAsync (LKN.Order.Application)'
+2023-09-19 20:08:32.033 +08:00 [INF] AUDIT LOG: [400: POST   ] /api/OrderService/ordder
+- UserName - UserId                 :  - 
+- ClientIpAddress        : ::1
+- ExecutionDuration      : 239
+- Actions:
+  - LKN.Order.Orders.OrdderAppService.CreateAsync (2 ms.)
+    {}
+- Exceptions:
+  - ModelState is not valid! See ValidationErrors for details.
+    Volo.Abp.Validation.AbpValidationException: ModelState is not valid! See ValidationErrors for details.
+   at Volo.Abp.AspNetCore.Mvc.Validation.ModelStateValidator.Validate(ModelStateDictionary modelState)
+   at Volo.Abp.AspNetCore.Mvc.Validation.AbpValidationActionFilter.OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+
+2023-09-19 20:08:32.033 +08:00 [INF] Request finished HTTP/2 POST https://localhost:44392/api/OrderService/ordder application/json 223 - 400 - application/json;+charset=utf-8 250.5416ms
+2023-09-19 20:08:59.264 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44392/api/OrderService/ordder application/json 225
+2023-09-19 20:08:59.266 +08:00 [INF] CORS policy execution failed.
+2023-09-19 20:08:59.266 +08:00 [INF] Request origin https://localhost:44392 does not have permission to access the resource.
+2023-09-19 20:08:59.267 +08:00 [INF] Executing endpoint 'LKN.Order.Orders.OrdderAppService.CreateAsync (LKN.Order.Application)'
+2023-09-19 20:08:59.267 +08:00 [INF] Route matched with {action = "Create", controller = "Ordder", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[LKN.Order.Orders.OrderDto] CreateAsync(LKN.Order.Orders.CreateOrderDto) on controller LKN.Order.Orders.OrdderAppService (LKN.Order.Application).
+2023-09-19 20:08:59.272 +08:00 [WRN] ---------- RemoteServiceErrorInfo ----------
+{
+  "code": null,
+  "message": "你的请求无效!",
+  "details": "验证时发现以下错误.\r\n - The JSON value could not be converted to System.Guid. Path: $.orderItems[0].productId | LineNumber: 6 | BytePositionInLine: 57.\r\n",
+  "data": {},
+  "validationErrors": [
+    {
+      "message": "The JSON value could not be converted to System.Guid. Path: $.orderItems[0].productId | LineNumber: 6 | BytePositionInLine: 57.",
+      "members": [
+        "$.orderItems[0].productId"
+      ]
+    }
+  ]
+}
+
+2023-09-19 20:08:59.272 +08:00 [WRN] ModelState is not valid! See ValidationErrors for details.
+Volo.Abp.Validation.AbpValidationException: ModelState is not valid! See ValidationErrors for details.
+   at Volo.Abp.AspNetCore.Mvc.Validation.ModelStateValidator.Validate(ModelStateDictionary modelState)
+   at Volo.Abp.AspNetCore.Mvc.Validation.AbpValidationActionFilter.OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+2023-09-19 20:08:59.272 +08:00 [WRN] There are 1 validation errors:
+The JSON value could not be converted to System.Guid. Path: $.orderItems[0].productId | LineNumber: 6 | BytePositionInLine: 57. ($.orderItems[0].productId)
+
+2023-09-19 20:08:59.273 +08:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.Http.RemoteServiceErrorResponse'.
+2023-09-19 20:08:59.274 +08:00 [INF] Executed action LKN.Order.Orders.OrdderAppService.CreateAsync (LKN.Order.Application) in 7.0225ms
+2023-09-19 20:08:59.274 +08:00 [INF] Executed endpoint 'LKN.Order.Orders.OrdderAppService.CreateAsync (LKN.Order.Application)'
+2023-09-19 20:08:59.275 +08:00 [INF] AUDIT LOG: [400: POST   ] /api/OrderService/ordder
+- UserName - UserId                 :  - 
+- ClientIpAddress        : ::1
+- ExecutionDuration      : 8
+- Actions:
+  - LKN.Order.Orders.OrdderAppService.CreateAsync (1 ms.)
+    {}
+- Exceptions:
+  - ModelState is not valid! See ValidationErrors for details.
+    Volo.Abp.Validation.AbpValidationException: ModelState is not valid! See ValidationErrors for details.
+   at Volo.Abp.AspNetCore.Mvc.Validation.ModelStateValidator.Validate(ModelStateDictionary modelState)
+   at Volo.Abp.AspNetCore.Mvc.Validation.AbpValidationActionFilter.OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+
+2023-09-19 20:08:59.275 +08:00 [INF] Request finished HTTP/2 POST https://localhost:44392/api/OrderService/ordder application/json 225 - 400 - application/json;+charset=utf-8 11.0511ms
+2023-09-19 20:09:50.451 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44392/api/OrderService/ordder application/json 225
+2023-09-19 20:09:50.454 +08:00 [INF] CORS policy execution failed.
+2023-09-19 20:09:50.454 +08:00 [INF] Request origin https://localhost:44392 does not have permission to access the resource.
+2023-09-19 20:09:50.454 +08:00 [INF] Executing endpoint 'LKN.Order.Orders.OrdderAppService.CreateAsync (LKN.Order.Application)'
+2023-09-19 20:09:50.454 +08:00 [INF] Route matched with {action = "Create", controller = "Ordder", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[LKN.Order.Orders.OrderDto] CreateAsync(LKN.Order.Orders.CreateOrderDto) on controller LKN.Order.Orders.OrdderAppService (LKN.Order.Application).
+2023-09-19 20:09:50.457 +08:00 [WRN] ---------- RemoteServiceErrorInfo ----------
+{
+  "code": null,
+  "message": "你的请求无效!",
+  "details": "验证时发现以下错误.\r\n - The JSON value could not be converted to System.Guid. Path: $.orderItems[0].productId | LineNumber: 6 | BytePositionInLine: 57.\r\n",
+  "data": {},
+  "validationErrors": [
+    {
+      "message": "The JSON value could not be converted to System.Guid. Path: $.orderItems[0].productId | LineNumber: 6 | BytePositionInLine: 57.",
+      "members": [
+        "$.orderItems[0].productId"
+      ]
+    }
+  ]
+}
+
+2023-09-19 20:09:50.457 +08:00 [WRN] ModelState is not valid! See ValidationErrors for details.
+Volo.Abp.Validation.AbpValidationException: ModelState is not valid! See ValidationErrors for details.
+   at Volo.Abp.AspNetCore.Mvc.Validation.ModelStateValidator.Validate(ModelStateDictionary modelState)
+   at Volo.Abp.AspNetCore.Mvc.Validation.AbpValidationActionFilter.OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+2023-09-19 20:09:50.457 +08:00 [WRN] There are 1 validation errors:
+The JSON value could not be converted to System.Guid. Path: $.orderItems[0].productId | LineNumber: 6 | BytePositionInLine: 57. ($.orderItems[0].productId)
+
+2023-09-19 20:09:50.457 +08:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.Http.RemoteServiceErrorResponse'.
+2023-09-19 20:09:50.457 +08:00 [INF] Executed action LKN.Order.Orders.OrdderAppService.CreateAsync (LKN.Order.Application) in 3.0287ms
+2023-09-19 20:09:50.457 +08:00 [INF] Executed endpoint 'LKN.Order.Orders.OrdderAppService.CreateAsync (LKN.Order.Application)'
+2023-09-19 20:09:50.458 +08:00 [INF] AUDIT LOG: [400: POST   ] /api/OrderService/ordder
+- UserName - UserId                 :  - 
+- ClientIpAddress        : ::1
+- ExecutionDuration      : 3
+- Actions:
+  - LKN.Order.Orders.OrdderAppService.CreateAsync (1 ms.)
+    {}
+- Exceptions:
+  - ModelState is not valid! See ValidationErrors for details.
+    Volo.Abp.Validation.AbpValidationException: ModelState is not valid! See ValidationErrors for details.
+   at Volo.Abp.AspNetCore.Mvc.Validation.ModelStateValidator.Validate(ModelStateDictionary modelState)
+   at Volo.Abp.AspNetCore.Mvc.Validation.AbpValidationActionFilter.OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+
+2023-09-19 20:09:50.458 +08:00 [INF] Request finished HTTP/2 POST https://localhost:44392/api/OrderService/ordder application/json 225 - 400 - application/json;+charset=utf-8 7.0465ms
+2023-09-19 20:09:56.568 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44392/swagger/index.html - -
+2023-09-19 20:09:56.612 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44392/swagger/index.html - - - 200 - text/html;charset=utf-8 43.9005ms
+2023-09-19 20:09:56.640 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44392/_vs/browserLink - -
+2023-09-19 20:09:56.640 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - -
+2023-09-19 20:09:56.642 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - - 200 12014 application/javascript;+charset=utf-8 1.3979ms
+2023-09-19 20:09:56.672 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44392/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 32.3875ms
+2023-09-19 20:09:56.769 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44392/swagger/v1/swagger.json - -
+2023-09-19 20:09:56.795 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44392/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 26.4930ms
+2023-09-19 20:10:24.846 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44392/abp/Swashbuckle/SetCsrfCookie application/json -
+2023-09-19 20:10:24.849 +08:00 [INF] Executing endpoint 'Volo.Abp.Swashbuckle.AbpSwashbuckleController.SetCsrfCookie (Volo.Abp.Swashbuckle)'
+2023-09-19 20:10:24.849 +08:00 [INF] Route matched with {area = "Abp", action = "SetCsrfCookie", controller = "AbpSwashbuckle", page = ""}. Executing controller action with signature Void SetCsrfCookie() on controller Volo.Abp.Swashbuckle.AbpSwashbuckleController (Volo.Abp.Swashbuckle).
+2023-09-19 20:10:24.886 +08:00 [INF] Executing action method Volo.Abp.Swashbuckle.AbpSwashbuckleController.SetCsrfCookie (Volo.Abp.Swashbuckle) - Validation state: "Valid"
+2023-09-19 20:10:24.888 +08:00 [INF] Executed action method Volo.Abp.Swashbuckle.AbpSwashbuckleController.SetCsrfCookie (Volo.Abp.Swashbuckle), returned result Microsoft.AspNetCore.Mvc.EmptyResult in 1.1843ms.
+2023-09-19 20:10:24.888 +08:00 [INF] Executed action Volo.Abp.Swashbuckle.AbpSwashbuckleController.SetCsrfCookie (Volo.Abp.Swashbuckle) in 38.7706ms
+2023-09-19 20:10:24.888 +08:00 [INF] Executed endpoint 'Volo.Abp.Swashbuckle.AbpSwashbuckleController.SetCsrfCookie (Volo.Abp.Swashbuckle)'
+2023-09-19 20:10:24.888 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44392/abp/Swashbuckle/SetCsrfCookie application/json - - 204 - - 41.6123ms
+2023-09-19 20:10:24.921 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44392/api/OrderService/ordder application/json 225
+2023-09-19 20:10:24.921 +08:00 [INF] CORS policy execution failed.
+2023-09-19 20:10:24.921 +08:00 [INF] Request origin https://localhost:44392 does not have permission to access the resource.
+2023-09-19 20:10:24.921 +08:00 [INF] Executing endpoint 'LKN.Order.Orders.OrdderAppService.CreateAsync (LKN.Order.Application)'
+2023-09-19 20:10:24.922 +08:00 [INF] Route matched with {action = "Create", controller = "Ordder", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[LKN.Order.Orders.OrderDto] CreateAsync(LKN.Order.Orders.CreateOrderDto) on controller LKN.Order.Orders.OrdderAppService (LKN.Order.Application).
+2023-09-19 20:10:24.977 +08:00 [INF] Executing action method LKN.Order.Orders.OrdderAppService.CreateAsync (LKN.Order.Application) - Validation state: "Valid"
+2023-09-19 20:10:26.471 +08:00 [DBG] Added 0 entity changes to the current audit log
+2023-09-19 20:10:26.484 +08:00 [INF] Executed action method LKN.Order.Orders.OrdderAppService.CreateAsync (LKN.Order.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 1507.2036ms.
+2023-09-19 20:10:26.486 +08:00 [DBG] Added 0 entity changes to the current audit log
+2023-09-19 20:10:26.496 +08:00 [DBG] Added 0 entity changes to the current audit log
+2023-09-19 20:10:26.534 +08:00 [INF] Executing ObjectResult, writing value of type 'LKN.Order.Orders.OrderDto'.
+2023-09-19 20:10:26.549 +08:00 [INF] Executed action LKN.Order.Orders.OrdderAppService.CreateAsync (LKN.Order.Application) in 1627.1653ms
+2023-09-19 20:10:26.549 +08:00 [INF] Executed endpoint 'LKN.Order.Orders.OrdderAppService.CreateAsync (LKN.Order.Application)'
+2023-09-19 20:10:26.550 +08:00 [INF] AUDIT LOG: [200: POST   ] /api/OrderService/ordder
+- UserName - UserId                 :  - 
+- ClientIpAddress        : ::1
+- ExecutionDuration      : 1628
+- Actions:
+  - LKN.Order.Orders.OrdderAppService.CreateAsync (1589 ms.)
+    {"input":{"orderTotalPrice":10,"productCount":10,"orderItems":[{"id":"3fa85f64-5717-4562-b3fc-3c963f66afa6","productId":"3fa85f64-5717-4562-b2fc-2c963f66afa6","productName":"string"}]}
+
+2023-09-19 20:10:26.550 +08:00 [INF] Request finished HTTP/2 POST https://localhost:44392/api/OrderService/ordder application/json 225 - 200 - application/json;+charset=utf-8 1629.1422ms
+2023-09-19 20:10:35.177 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44392/api/OrderService/ordder application/json 225
+2023-09-19 20:10:35.178 +08:00 [INF] CORS policy execution failed.
+2023-09-19 20:10:35.178 +08:00 [INF] Request origin https://localhost:44392 does not have permission to access the resource.
+2023-09-19 20:10:35.178 +08:00 [INF] Executing endpoint 'LKN.Order.Orders.OrdderAppService.CreateAsync (LKN.Order.Application)'
+2023-09-19 20:10:35.178 +08:00 [INF] Route matched with {action = "Create", controller = "Ordder", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[LKN.Order.Orders.OrderDto] CreateAsync(LKN.Order.Orders.CreateOrderDto) on controller LKN.Order.Orders.OrdderAppService (LKN.Order.Application).
+2023-09-19 20:10:35.217 +08:00 [INF] Executing action method LKN.Order.Orders.OrdderAppService.CreateAsync (LKN.Order.Application) - Validation state: "Valid"
+2023-09-19 20:10:35.308 +08:00 [ERR] Failed executing DbCommand (12ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 40), @p2='?' (DbType = DateTime), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p8='?' (DbType = Int32), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (Size = 4000), @p12='?' (DbType = DateTime), @p13='?' (DbType = DateTime), @p14='?' (DbType = DateTime), @p15='?' (DbType = DateTime), @p16='?' (DbType = Guid), @p17='?' (DbType = Guid), @p18='?' (DbType = Int32), @p19='?', @p20='?', @p21='?' (DbType = Guid), @p22='?' (Size = 4000), @p23='?' (DbType = Guid), @p24='?' (Size = 4000), @p25='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `Order` (`Id`, `ConcurrencyStamp`, `Createtime`, `ExtraProperties`, `OrderAddress`, `OrderName`, `OrderRemark`, `OrderSn`, `OrderStatus`, `OrderTel`, `OrderTotalPrice`, `OrderType`, `Paytime`, `Sendtime`, `Successtime`, `Updatetime`, `UserId`)
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16);
+INSERT INTO `OrderItem` (`Id`, `ItemCount`, `ItemPrice`, `ItemTotalPrice`, `OrderId`, `OrderSn`, `ProductId`, `ProductName`, `ProductUrl`)
+VALUES (@p17, @p18, @p19, @p20, @p21, @p22, @p23, @p24, @p25);
+2023-09-19 20:10:35.370 +08:00 [ERR] An exception occurred in the database while saving changes for context type 'LKN.Order.EntityFrameworkCore.OrderDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> MySqlConnector.MySqlException (0x80004005): Duplicate entry '3fa85f64-5717-4562-b3fc-3c963f66afa6' for key 'OrderItem.PRIMARY'
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in /_/src/MySqlConnector/Core/ResultSet.cs:line 43
+   at MySqlConnector.MySqlDataReader.ActivateResultSet(CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 130
+   at MySqlConnector.MySqlDataReader.CreateAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, IDictionary`2 cachedProcedures, IMySqlCommand command, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 468
+   at MySqlConnector.Core.CommandExecutor.ExecuteReaderAsync(IReadOnlyList`1 commands, ICommandPayloadCreator payloadCreator, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/CommandExecutor.cs:line 56
+   at MySqlConnector.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 344
+   at MySqlConnector.MySqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 337
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> MySqlConnector.MySqlException (0x80004005): Duplicate entry '3fa85f64-5717-4562-b3fc-3c963f66afa6' for key 'OrderItem.PRIMARY'
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in /_/src/MySqlConnector/Core/ResultSet.cs:line 43
+   at MySqlConnector.MySqlDataReader.ActivateResultSet(CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 130
+   at MySqlConnector.MySqlDataReader.CreateAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, IDictionary`2 cachedProcedures, IMySqlCommand command, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 468
+   at MySqlConnector.Core.CommandExecutor.ExecuteReaderAsync(IReadOnlyList`1 commands, ICommandPayloadCreator payloadCreator, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/CommandExecutor.cs:line 56
+   at MySqlConnector.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 344
+   at MySqlConnector.MySqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 337
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Volo.Abp.EntityFrameworkCore.AbpDbContext`1.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Volo.Abp.Domain.Repositories.EntityFrameworkCore.EfCoreRepository`2.InsertAsync(TEntity entity, Boolean autoSave, CancellationToken cancellationToken)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Uow.UnitOfWorkInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Volo.Abp.Application.Services.AbstractKeyCrudAppService`7.CreateAsync(TCreateInput input)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+2023-09-19 20:10:35.393 +08:00 [ERR] ---------- RemoteServiceErrorInfo ----------
+{
+  "code": null,
+  "message": "对不起,在处理你的请求期间,产生了一个服务器内部错误!",
+  "details": null,
+  "data": {},
+  "validationErrors": null
+}
+
+2023-09-19 20:10:35.393 +08:00 [ERR] An error occurred while saving the entity changes. See the inner exception for details.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> MySqlConnector.MySqlException (0x80004005): Duplicate entry '3fa85f64-5717-4562-b3fc-3c963f66afa6' for key 'OrderItem.PRIMARY'
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in /_/src/MySqlConnector/Core/ResultSet.cs:line 43
+   at MySqlConnector.MySqlDataReader.ActivateResultSet(CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 130
+   at MySqlConnector.MySqlDataReader.CreateAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, IDictionary`2 cachedProcedures, IMySqlCommand command, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 468
+   at MySqlConnector.Core.CommandExecutor.ExecuteReaderAsync(IReadOnlyList`1 commands, ICommandPayloadCreator payloadCreator, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/CommandExecutor.cs:line 56
+   at MySqlConnector.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 344
+   at MySqlConnector.MySqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 337
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Volo.Abp.EntityFrameworkCore.AbpDbContext`1.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Volo.Abp.Domain.Repositories.EntityFrameworkCore.EfCoreRepository`2.InsertAsync(TEntity entity, Boolean autoSave, CancellationToken cancellationToken)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Uow.UnitOfWorkInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Volo.Abp.Application.Services.AbstractKeyCrudAppService`7.CreateAsync(TCreateInput input)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.GlobalFeatures.GlobalFeatureInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Validation.ValidationInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Auditing.AuditingInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Uow.UnitOfWorkInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at lambda_method1140(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+2023-09-19 20:10:35.393 +08:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.Http.RemoteServiceErrorResponse'.
+2023-09-19 20:10:35.393 +08:00 [INF] Executed action LKN.Order.Orders.OrdderAppService.CreateAsync (LKN.Order.Application) in 215.1635ms
+2023-09-19 20:10:35.393 +08:00 [INF] Executed endpoint 'LKN.Order.Orders.OrdderAppService.CreateAsync (LKN.Order.Application)'
+2023-09-19 20:10:35.395 +08:00 [INF] AUDIT LOG: [500: POST   ] /api/OrderService/ordder
+- UserName - UserId                 :  - 
+- ClientIpAddress        : ::1
+- ExecutionDuration      : 215
+- Actions:
+  - LKN.Order.Orders.OrdderAppService.CreateAsync (213 ms.)
+    {"input":{"orderTotalPrice":10,"productCount":10,"orderItems":[{"id":"3fa85f64-5717-4562-b3fc-3c963f66afa6","productId":"3fa85f64-5717-4562-b2fc-2c963f66afa6","productName":"string"}]}
+- Exceptions:
+  - An error occurred while saving the entity changes. See the inner exception for details.
+    Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> MySqlConnector.MySqlException (0x80004005): Duplicate entry '3fa85f64-5717-4562-b3fc-3c963f66afa6' for key 'OrderItem.PRIMARY'
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in /_/src/MySqlConnector/Core/ResultSet.cs:line 43
+   at MySqlConnector.MySqlDataReader.ActivateResultSet(CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 130
+   at MySqlConnector.MySqlDataReader.CreateAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, IDictionary`2 cachedProcedures, IMySqlCommand command, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 468
+   at MySqlConnector.Core.CommandExecutor.ExecuteReaderAsync(IReadOnlyList`1 commands, ICommandPayloadCreator payloadCreator, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/CommandExecutor.cs:line 56
+   at MySqlConnector.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 344
+   at MySqlConnector.MySqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 337
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Volo.Abp.EntityFrameworkCore.AbpDbContext`1.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Volo.Abp.Domain.Repositories.EntityFrameworkCore.EfCoreRepository`2.InsertAsync(TEntity entity, Boolean autoSave, CancellationToken cancellationToken)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Uow.UnitOfWorkInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Volo.Abp.Application.Services.AbstractKeyCrudAppService`7.CreateAsync(TCreateInput input)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.GlobalFeatures.GlobalFeatureInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Validation.ValidationInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Auditing.AuditingInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Uow.UnitOfWorkInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at lambda_method1140(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+
+2023-09-19 20:10:35.396 +08:00 [INF] Request finished HTTP/2 POST https://localhost:44392/api/OrderService/ordder application/json 225 - 500 - application/json;+charset=utf-8 218.3740ms
+2023-09-19 20:11:23.058 +08:00 [INF] Starting web host.
+2023-09-19 20:11:25.909 +08:00 [INF] Loaded ABP modules:
+2023-09-19 20:11:25.911 +08:00 [INF] - LKN.Order.OrderHttpApiHostModule
+2023-09-19 20:11:25.911 +08:00 [INF]   - LKN.Order.OrderApplicationModule
+2023-09-19 20:11:25.911 +08:00 [INF]     - LKN.Order.OrderDomainModule
+2023-09-19 20:11:25.911 +08:00 [INF]       - Volo.Abp.Domain.AbpDddDomainModule
+2023-09-19 20:11:25.911 +08:00 [INF]         - Volo.Abp.Auditing.AbpAuditingModule
+2023-09-19 20:11:25.911 +08:00 [INF]           - Volo.Abp.Data.AbpDataModule
+2023-09-19 20:11:25.911 +08:00 [INF]             - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2023-09-19 20:11:25.911 +08:00 [INF]               - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2023-09-19 20:11:25.911 +08:00 [INF]               - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2023-09-19 20:11:25.911 +08:00 [INF]             - Volo.Abp.Uow.AbpUnitOfWorkModule
+2023-09-19 20:11:25.911 +08:00 [INF]             - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2023-09-19 20:11:25.911 +08:00 [INF]           - Volo.Abp.Json.AbpJsonModule
+2023-09-19 20:11:25.911 +08:00 [INF]             - Volo.Abp.Json.SystemTextJson.AbpJsonSystemTextJsonModule
+2023-09-19 20:11:25.911 +08:00 [INF]               - Volo.Abp.Json.AbpJsonAbstractionsModule
+2023-09-19 20:11:25.911 +08:00 [INF]               - Volo.Abp.Timing.AbpTimingModule
+2023-09-19 20:11:25.911 +08:00 [INF]                 - Volo.Abp.Localization.AbpLocalizationModule
+2023-09-19 20:11:25.911 +08:00 [INF]                   - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2023-09-19 20:11:25.911 +08:00 [INF]                   - Volo.Abp.Settings.AbpSettingsModule
+2023-09-19 20:11:25.911 +08:00 [INF]                     - Volo.Abp.Security.AbpSecurityModule
+2023-09-19 20:11:25.911 +08:00 [INF]                   - Volo.Abp.Threading.AbpThreadingModule
+2023-09-19 20:11:25.911 +08:00 [INF]           - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2023-09-19 20:11:25.911 +08:00 [INF]             - Volo.Abp.MultiTenancy.AbpMultiTenancyAbstractionsModule
+2023-09-19 20:11:25.911 +08:00 [INF]           - Volo.Abp.Auditing.AbpAuditingContractsModule
+2023-09-19 20:11:25.911 +08:00 [INF]         - Volo.Abp.EventBus.AbpEventBusModule
+2023-09-19 20:11:25.911 +08:00 [INF]           - Volo.Abp.Guids.AbpGuidsModule
+2023-09-19 20:11:25.911 +08:00 [INF]           - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2023-09-19 20:11:25.911 +08:00 [INF]           - Volo.Abp.DistributedLocking.AbpDistributedLockingAbstractionsModule
+2023-09-19 20:11:25.911 +08:00 [INF]         - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2023-09-19 20:11:25.911 +08:00 [INF]         - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2023-09-19 20:11:25.911 +08:00 [INF]         - Volo.Abp.Specifications.AbpSpecificationsModule
+2023-09-19 20:11:25.911 +08:00 [INF]         - Volo.Abp.Caching.AbpCachingModule
+2023-09-19 20:11:25.911 +08:00 [INF]           - Volo.Abp.Serialization.AbpSerializationModule
+2023-09-19 20:11:25.911 +08:00 [INF]         - Volo.Abp.Domain.AbpDddDomainSharedModule
+2023-09-19 20:11:25.911 +08:00 [INF]       - LKN.Order.OrderDomainSharedModule
+2023-09-19 20:11:25.911 +08:00 [INF]         - Volo.Abp.Validation.AbpValidationModule
+2023-09-19 20:11:25.911 +08:00 [INF]     - LKN.Order.OrderApplicationContractsModule
+2023-09-19 20:11:25.911 +08:00 [INF]       - Volo.Abp.Application.AbpDddApplicationContractsModule
+2023-09-19 20:11:25.911 +08:00 [INF]       - Volo.Abp.Authorization.AbpAuthorizationModule
+2023-09-19 20:11:25.911 +08:00 [INF]         - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2023-09-19 20:11:25.911 +08:00 [INF]     - Volo.Abp.Application.AbpDddApplicationModule
+2023-09-19 20:11:25.911 +08:00 [INF]       - Volo.Abp.Http.AbpHttpAbstractionsModule
+2023-09-19 20:11:25.911 +08:00 [INF]       - Volo.Abp.Features.AbpFeaturesModule
+2023-09-19 20:11:25.911 +08:00 [INF]       - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2023-09-19 20:11:25.911 +08:00 [INF]     - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2023-09-19 20:11:25.911 +08:00 [INF]   - LKN.Order.EntityFrameworkCore.OrderEntityFrameworkCoreModule
+2023-09-19 20:11:25.911 +08:00 [INF]     - Volo.Abp.EntityFrameworkCore.MySQL.AbpEntityFrameworkCoreMySQLModule
+2023-09-19 20:11:25.911 +08:00 [INF]       - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2023-09-19 20:11:25.911 +08:00 [INF]   - LKN.Order.OrderHttpApiModule
+2023-09-19 20:11:25.911 +08:00 [INF]     - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2023-09-19 20:11:25.911 +08:00 [INF]       - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2023-09-19 20:11:25.911 +08:00 [INF]         - Volo.Abp.Http.AbpHttpModule
+2023-09-19 20:11:25.911 +08:00 [INF]           - Volo.Abp.Minify.AbpMinifyModule
+2023-09-19 20:11:25.911 +08:00 [INF]       - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2023-09-19 20:11:25.911 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2023-09-19 20:11:25.911 +08:00 [INF]       - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2023-09-19 20:11:25.911 +08:00 [INF]         - Volo.Abp.UI.AbpUiModule
+2023-09-19 20:11:25.911 +08:00 [INF]   - Volo.Abp.AspNetCore.Mvc.UI.MultiTenancy.AbpAspNetCoreMvcUiMultiTenancyModule
+2023-09-19 20:11:25.911 +08:00 [INF]     - Volo.Abp.AspNetCore.Mvc.UI.Theme.Shared.AbpAspNetCoreMvcUiThemeSharedModule
+2023-09-19 20:11:25.911 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Bootstrap.AbpAspNetCoreMvcUiBootstrapModule
+2023-09-19 20:11:25.911 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.AbpAspNetCoreMvcUiModule
+2023-09-19 20:11:25.911 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Packages.AbpAspNetCoreMvcUiPackagesModule
+2023-09-19 20:11:25.911 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingAbstractionsModule
+2023-09-19 20:11:25.911 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Widgets.AbpAspNetCoreMvcUiWidgetsModule
+2023-09-19 20:11:25.911 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingModule
+2023-09-19 20:11:25.911 +08:00 [INF]     - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2023-09-19 20:11:25.911 +08:00 [INF]   - Volo.Abp.Autofac.AbpAutofacModule
+2023-09-19 20:11:25.911 +08:00 [INF]     - Volo.Abp.Castle.AbpCastleCoreModule
+2023-09-19 20:11:25.911 +08:00 [INF]   - Volo.Abp.Caching.StackExchangeRedis.AbpCachingStackExchangeRedisModule
+2023-09-19 20:11:25.911 +08:00 [INF]   - Volo.Abp.TenantManagement.EntityFrameworkCore.AbpTenantManagementEntityFrameworkCoreModule
+2023-09-19 20:11:25.911 +08:00 [INF]     - Volo.Abp.TenantManagement.AbpTenantManagementDomainModule
+2023-09-19 20:11:25.911 +08:00 [INF]       - Volo.Abp.TenantManagement.AbpTenantManagementDomainSharedModule
+2023-09-19 20:11:25.911 +08:00 [INF]   - Volo.Abp.AspNetCore.Serilog.AbpAspNetCoreSerilogModule
+2023-09-19 20:11:25.911 +08:00 [INF]   - Volo.Abp.Swashbuckle.AbpSwashbuckleModule
+2023-09-19 20:11:26.316 +08:00 [INF] User profile is available. Using 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-09-19 20:11:26.420 +08:00 [INF] Initialized all ABP modules.
+2023-09-19 20:11:26.563 +08:00 [INF] Now listening on: http://localhost:44392
+2023-09-19 20:11:26.563 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-19 20:11:26.563 +08:00 [INF] Hosting environment: Development
+2023-09-19 20:11:26.563 +08:00 [INF] Content root path: D:\test\ABP\abpmicroservice\LKN.Microservices\microservices\LKN.Order.HttpApi.Host
+2023-09-19 20:11:27.292 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:44392/ - -
+2023-09-19 20:11:27.329 +08:00 [WRN] Failed to determine the https port for redirect.
+2023-09-19 20:11:27.500 +08:00 [INF] Executing endpoint 'LKN.Order.Controllers.HomeController.Index (LKN.Order.HttpApi.Host)'
+2023-09-19 20:11:27.524 +08:00 [INF] Route matched with {action = "Index", controller = "Home", area = "", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Index() on controller LKN.Order.Controllers.HomeController (LKN.Order.HttpApi.Host).
+2023-09-19 20:11:27.682 +08:00 [INF] Executing action method LKN.Order.Controllers.HomeController.Index (LKN.Order.HttpApi.Host) - Validation state: "Valid"
+2023-09-19 20:11:27.687 +08:00 [INF] Executed action method LKN.Order.Controllers.HomeController.Index (LKN.Order.HttpApi.Host), returned result Microsoft.AspNetCore.Mvc.RedirectResult in 0.2959ms.
+2023-09-19 20:11:27.697 +08:00 [INF] Executing RedirectResult, redirecting to /swagger.
+2023-09-19 20:11:27.701 +08:00 [INF] Executed action LKN.Order.Controllers.HomeController.Index (LKN.Order.HttpApi.Host) in 174.101ms
+2023-09-19 20:11:27.701 +08:00 [INF] Executed endpoint 'LKN.Order.Controllers.HomeController.Index (LKN.Order.HttpApi.Host)'
+2023-09-19 20:11:27.713 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:44392/ - - - 302 0 - 421.5346ms
+2023-09-19 20:11:27.717 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:44392/swagger - -
+2023-09-19 20:11:27.723 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:44392/swagger - - - 301 0 - 5.6804ms
+2023-09-19 20:11:27.728 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:44392/swagger/index.html - -
+2023-09-19 20:11:27.928 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:44392/swagger/ui/abp.js - -
+2023-09-19 20:11:27.928 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:44392/swagger/swagger-ui.css - -
+2023-09-19 20:11:27.930 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:44392/swagger/ui/abp.swagger.js - -
+2023-09-19 20:11:27.931 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:44392/swagger/swagger-ui-bundle.js - -
+2023-09-19 20:11:27.944 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:44392/swagger/index.html - - - 200 - text/html;charset=utf-8 216.2028ms
+2023-09-19 20:11:27.946 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:44392/swagger/swagger-ui-standalone-preset.js - -
+2023-09-19 20:11:27.948 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:44392/_framework/aspnetcore-browser-refresh.js - -
+2023-09-19 20:11:27.960 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:44392/_framework/aspnetcore-browser-refresh.js - - - 200 12014 application/javascript;+charset=utf-8 12.8627ms
+2023-09-19 20:11:27.964 +08:00 [INF] Sending file. Request path: '/swagger/ui/abp.js'. Physical path: 'N/A'
+2023-09-19 20:11:27.964 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:44392/swagger/ui/abp.js - - - 200 3122 application/javascript 36.1191ms
+2023-09-19 20:11:27.965 +08:00 [INF] Sending file. Request path: '/swagger/ui/abp.swagger.js'. Physical path: 'N/A'
+2023-09-19 20:11:27.965 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:44392/swagger/ui/abp.swagger.js - - - 200 1363 application/javascript 35.4097ms
+2023-09-19 20:11:27.984 +08:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2023-09-19 20:11:27.984 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:44392/swagger/swagger-ui.css - - - 200 143943 text/css 56.2582ms
+2023-09-19 20:11:27.986 +08:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2023-09-19 20:11:27.991 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:44392/swagger/swagger-ui-standalone-preset.js - - - 200 339486 text/javascript 44.6789ms
+2023-09-19 20:11:28.002 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:44392/_vs/browserLink - -
+2023-09-19 20:11:28.016 +08:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2023-09-19 20:11:28.017 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:44392/swagger/swagger-ui-bundle.js - - - 200 1095087 text/javascript 84.9729ms
+2023-09-19 20:11:28.061 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:44392/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 59.4319ms
+2023-09-19 20:11:28.255 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:44392/swagger/v1/swagger.json - -
+2023-09-19 20:11:28.311 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:44392/swagger/favicon-32x32.png - -
+2023-09-19 20:11:28.312 +08:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2023-09-19 20:11:28.312 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:44392/swagger/favicon-32x32.png - - - 200 628 image/png 1.5734ms
+2023-09-19 20:11:28.575 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:44392/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 320.7918ms
+2023-09-19 20:11:52.360 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:44392/abp/Swashbuckle/SetCsrfCookie application/json -
+2023-09-19 20:11:52.384 +08:00 [INF] Executing endpoint 'Volo.Abp.Swashbuckle.AbpSwashbuckleController.SetCsrfCookie (Volo.Abp.Swashbuckle)'
+2023-09-19 20:11:52.385 +08:00 [INF] Route matched with {area = "Abp", action = "SetCsrfCookie", controller = "AbpSwashbuckle", page = ""}. Executing controller action with signature Void SetCsrfCookie() on controller Volo.Abp.Swashbuckle.AbpSwashbuckleController (Volo.Abp.Swashbuckle).
+2023-09-19 20:11:52.429 +08:00 [INF] Executing action method Volo.Abp.Swashbuckle.AbpSwashbuckleController.SetCsrfCookie (Volo.Abp.Swashbuckle) - Validation state: "Valid"
+2023-09-19 20:11:52.434 +08:00 [WRN] The cookie 'XSRF-TOKEN' has set 'SameSite=None' and must also set 'Secure'.
+2023-09-19 20:11:52.435 +08:00 [INF] Executed action method Volo.Abp.Swashbuckle.AbpSwashbuckleController.SetCsrfCookie (Volo.Abp.Swashbuckle), returned result Microsoft.AspNetCore.Mvc.EmptyResult in 5.7053ms.
+2023-09-19 20:11:52.435 +08:00 [INF] Executed action Volo.Abp.Swashbuckle.AbpSwashbuckleController.SetCsrfCookie (Volo.Abp.Swashbuckle) in 50.0024ms
+2023-09-19 20:11:52.435 +08:00 [INF] Executed endpoint 'Volo.Abp.Swashbuckle.AbpSwashbuckleController.SetCsrfCookie (Volo.Abp.Swashbuckle)'
+2023-09-19 20:11:52.436 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:44392/abp/Swashbuckle/SetCsrfCookie application/json - - 204 - - 75.4516ms
+2023-09-19 20:11:52.463 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:44392/api/OrderService/ordder application/json 226
+2023-09-19 20:11:52.476 +08:00 [INF] CORS policy execution failed.
+2023-09-19 20:11:52.477 +08:00 [INF] Request origin http://localhost:44392 does not have permission to access the resource.
+2023-09-19 20:11:52.478 +08:00 [INF] Executing endpoint 'LKN.Order.Orders.OrdderAppService.CreateAsync (LKN.Order.Application)'
+2023-09-19 20:11:52.487 +08:00 [INF] Route matched with {action = "Create", controller = "Ordder", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[LKN.Order.Orders.OrderDto] CreateAsync(LKN.Order.Orders.CreateOrderDto) on controller LKN.Order.Orders.OrdderAppService (LKN.Order.Application).
+2023-09-19 20:11:52.698 +08:00 [INF] Executing action method LKN.Order.Orders.OrdderAppService.CreateAsync (LKN.Order.Application) - Validation state: "Valid"
+2023-09-19 20:11:54.231 +08:00 [DBG] Added 0 entity changes to the current audit log
+2023-09-19 20:11:54.243 +08:00 [INF] Executed action method LKN.Order.Orders.OrdderAppService.CreateAsync (LKN.Order.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 1544.9492ms.
+2023-09-19 20:11:54.245 +08:00 [DBG] Added 0 entity changes to the current audit log
+2023-09-19 20:11:54.255 +08:00 [DBG] Added 0 entity changes to the current audit log
+2023-09-19 20:11:54.286 +08:00 [INF] Executing ObjectResult, writing value of type 'LKN.Order.Orders.OrderDto'.
+2023-09-19 20:11:54.302 +08:00 [INF] Executed action LKN.Order.Orders.OrdderAppService.CreateAsync (LKN.Order.Application) in 1814.6699ms
+2023-09-19 20:11:54.303 +08:00 [INF] Executed endpoint 'LKN.Order.Orders.OrdderAppService.CreateAsync (LKN.Order.Application)'
+2023-09-19 20:11:54.308 +08:00 [INF] AUDIT LOG: [200: POST   ] /api/OrderService/ordder
+- UserName - UserId                 :  - 
+- ClientIpAddress        : ::1
+- ExecutionDuration      : 1827
+- Actions:
+  - LKN.Order.Orders.OrdderAppService.CreateAsync (1613 ms.)
+    {"input":{"orderTotalPrice":220,"productCount":220,"orderItems":[{"id":"3fa85f64-5717-6562-b3fc-2c963f66afa6","productId":"3fa85f64-5747-4562-b3fc-2c963f66afa6","productName":"string"}]}
+
+2023-09-19 20:11:54.308 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:44392/api/OrderService/ordder application/json 226 - 200 - application/json;+charset=utf-8 1845.2595ms
+2023-09-19 20:13:59.863 +08:00 [INF] Starting web host.
+2023-09-19 20:14:00.669 +08:00 [INF] Loaded ABP modules:
+2023-09-19 20:14:00.670 +08:00 [INF] - LKN.Order.OrderHttpApiHostModule
+2023-09-19 20:14:00.670 +08:00 [INF]   - LKN.Order.OrderApplicationModule
+2023-09-19 20:14:00.670 +08:00 [INF]     - LKN.Order.OrderDomainModule
+2023-09-19 20:14:00.670 +08:00 [INF]       - Volo.Abp.Domain.AbpDddDomainModule
+2023-09-19 20:14:00.670 +08:00 [INF]         - Volo.Abp.Auditing.AbpAuditingModule
+2023-09-19 20:14:00.670 +08:00 [INF]           - Volo.Abp.Data.AbpDataModule
+2023-09-19 20:14:00.670 +08:00 [INF]             - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2023-09-19 20:14:00.670 +08:00 [INF]               - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2023-09-19 20:14:00.670 +08:00 [INF]               - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2023-09-19 20:14:00.670 +08:00 [INF]             - Volo.Abp.Uow.AbpUnitOfWorkModule
+2023-09-19 20:14:00.670 +08:00 [INF]             - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2023-09-19 20:14:00.670 +08:00 [INF]           - Volo.Abp.Json.AbpJsonModule
+2023-09-19 20:14:00.670 +08:00 [INF]             - Volo.Abp.Json.SystemTextJson.AbpJsonSystemTextJsonModule
+2023-09-19 20:14:00.670 +08:00 [INF]               - Volo.Abp.Json.AbpJsonAbstractionsModule
+2023-09-19 20:14:00.670 +08:00 [INF]               - Volo.Abp.Timing.AbpTimingModule
+2023-09-19 20:14:00.670 +08:00 [INF]                 - Volo.Abp.Localization.AbpLocalizationModule
+2023-09-19 20:14:00.670 +08:00 [INF]                   - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2023-09-19 20:14:00.670 +08:00 [INF]                   - Volo.Abp.Settings.AbpSettingsModule
+2023-09-19 20:14:00.670 +08:00 [INF]                     - Volo.Abp.Security.AbpSecurityModule
+2023-09-19 20:14:00.670 +08:00 [INF]                   - Volo.Abp.Threading.AbpThreadingModule
+2023-09-19 20:14:00.670 +08:00 [INF]           - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2023-09-19 20:14:00.670 +08:00 [INF]             - Volo.Abp.MultiTenancy.AbpMultiTenancyAbstractionsModule
+2023-09-19 20:14:00.670 +08:00 [INF]           - Volo.Abp.Auditing.AbpAuditingContractsModule
+2023-09-19 20:14:00.670 +08:00 [INF]         - Volo.Abp.EventBus.AbpEventBusModule
+2023-09-19 20:14:00.670 +08:00 [INF]           - Volo.Abp.Guids.AbpGuidsModule
+2023-09-19 20:14:00.670 +08:00 [INF]           - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2023-09-19 20:14:00.670 +08:00 [INF]           - Volo.Abp.DistributedLocking.AbpDistributedLockingAbstractionsModule
+2023-09-19 20:14:00.670 +08:00 [INF]         - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2023-09-19 20:14:00.670 +08:00 [INF]         - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2023-09-19 20:14:00.670 +08:00 [INF]         - Volo.Abp.Specifications.AbpSpecificationsModule
+2023-09-19 20:14:00.670 +08:00 [INF]         - Volo.Abp.Caching.AbpCachingModule
+2023-09-19 20:14:00.670 +08:00 [INF]           - Volo.Abp.Serialization.AbpSerializationModule
+2023-09-19 20:14:00.670 +08:00 [INF]         - Volo.Abp.Domain.AbpDddDomainSharedModule
+2023-09-19 20:14:00.670 +08:00 [INF]       - LKN.Order.OrderDomainSharedModule
+2023-09-19 20:14:00.670 +08:00 [INF]         - Volo.Abp.Validation.AbpValidationModule
+2023-09-19 20:14:00.670 +08:00 [INF]     - LKN.Order.OrderApplicationContractsModule
+2023-09-19 20:14:00.670 +08:00 [INF]       - Volo.Abp.Application.AbpDddApplicationContractsModule
+2023-09-19 20:14:00.670 +08:00 [INF]       - Volo.Abp.Authorization.AbpAuthorizationModule
+2023-09-19 20:14:00.670 +08:00 [INF]         - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2023-09-19 20:14:00.670 +08:00 [INF]     - Volo.Abp.Application.AbpDddApplicationModule
+2023-09-19 20:14:00.670 +08:00 [INF]       - Volo.Abp.Http.AbpHttpAbstractionsModule
+2023-09-19 20:14:00.670 +08:00 [INF]       - Volo.Abp.Features.AbpFeaturesModule
+2023-09-19 20:14:00.670 +08:00 [INF]       - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2023-09-19 20:14:00.670 +08:00 [INF]     - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2023-09-19 20:14:00.670 +08:00 [INF]   - LKN.Order.EntityFrameworkCore.OrderEntityFrameworkCoreModule
+2023-09-19 20:14:00.670 +08:00 [INF]     - Volo.Abp.EntityFrameworkCore.MySQL.AbpEntityFrameworkCoreMySQLModule
+2023-09-19 20:14:00.670 +08:00 [INF]       - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2023-09-19 20:14:00.670 +08:00 [INF]   - LKN.Order.OrderHttpApiModule
+2023-09-19 20:14:00.670 +08:00 [INF]     - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2023-09-19 20:14:00.670 +08:00 [INF]       - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2023-09-19 20:14:00.670 +08:00 [INF]         - Volo.Abp.Http.AbpHttpModule
+2023-09-19 20:14:00.670 +08:00 [INF]           - Volo.Abp.Minify.AbpMinifyModule
+2023-09-19 20:14:00.670 +08:00 [INF]       - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2023-09-19 20:14:00.670 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2023-09-19 20:14:00.670 +08:00 [INF]       - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2023-09-19 20:14:00.670 +08:00 [INF]         - Volo.Abp.UI.AbpUiModule
+2023-09-19 20:14:00.670 +08:00 [INF]   - Volo.Abp.AspNetCore.Mvc.UI.MultiTenancy.AbpAspNetCoreMvcUiMultiTenancyModule
+2023-09-19 20:14:00.670 +08:00 [INF]     - Volo.Abp.AspNetCore.Mvc.UI.Theme.Shared.AbpAspNetCoreMvcUiThemeSharedModule
+2023-09-19 20:14:00.670 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Bootstrap.AbpAspNetCoreMvcUiBootstrapModule
+2023-09-19 20:14:00.670 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.AbpAspNetCoreMvcUiModule
+2023-09-19 20:14:00.670 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Packages.AbpAspNetCoreMvcUiPackagesModule
+2023-09-19 20:14:00.670 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingAbstractionsModule
+2023-09-19 20:14:00.670 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Widgets.AbpAspNetCoreMvcUiWidgetsModule
+2023-09-19 20:14:00.670 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingModule
+2023-09-19 20:14:00.670 +08:00 [INF]     - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2023-09-19 20:14:00.670 +08:00 [INF]   - Volo.Abp.Autofac.AbpAutofacModule
+2023-09-19 20:14:00.670 +08:00 [INF]     - Volo.Abp.Castle.AbpCastleCoreModule
+2023-09-19 20:14:00.670 +08:00 [INF]   - Volo.Abp.Caching.StackExchangeRedis.AbpCachingStackExchangeRedisModule
+2023-09-19 20:14:00.670 +08:00 [INF]   - Volo.Abp.TenantManagement.EntityFrameworkCore.AbpTenantManagementEntityFrameworkCoreModule
+2023-09-19 20:14:00.670 +08:00 [INF]     - Volo.Abp.TenantManagement.AbpTenantManagementDomainModule
+2023-09-19 20:14:00.670 +08:00 [INF]       - Volo.Abp.TenantManagement.AbpTenantManagementDomainSharedModule
+2023-09-19 20:14:00.670 +08:00 [INF]   - Volo.Abp.AspNetCore.Serilog.AbpAspNetCoreSerilogModule
+2023-09-19 20:14:00.670 +08:00 [INF]   - Volo.Abp.Swashbuckle.AbpSwashbuckleModule
+2023-09-19 20:14:00.929 +08:00 [INF] User profile is available. Using 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-09-19 20:14:01.037 +08:00 [INF] Initialized all ABP modules.
+2023-09-19 20:14:01.100 +08:00 [INF] Now listening on: http://localhost:44392
+2023-09-19 20:14:01.100 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-19 20:14:01.100 +08:00 [INF] Hosting environment: Development
+2023-09-19 20:14:01.100 +08:00 [INF] Content root path: D:\test\ABP\abpmicroservice\LKN.Microservices\microservices\LKN.Order.HttpApi.Host
+2023-09-19 20:14:13.149 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:44392/ - -
+2023-09-19 20:14:13.155 +08:00 [WRN] Failed to determine the https port for redirect.
+2023-09-19 20:14:13.259 +08:00 [INF] Executing endpoint 'LKN.Order.Controllers.HomeController.Index (LKN.Order.HttpApi.Host)'
+2023-09-19 20:14:13.271 +08:00 [INF] Route matched with {action = "Index", controller = "Home", area = "", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Index() on controller LKN.Order.Controllers.HomeController (LKN.Order.HttpApi.Host).
+2023-09-19 20:14:13.301 +08:00 [INF] Executing RedirectResult, redirecting to /swagger.
+2023-09-19 20:14:13.304 +08:00 [INF] Executed action LKN.Order.Controllers.HomeController.Index (LKN.Order.HttpApi.Host) in 30.3008ms
+2023-09-19 20:14:13.304 +08:00 [INF] Executed endpoint 'LKN.Order.Controllers.HomeController.Index (LKN.Order.HttpApi.Host)'
+2023-09-19 20:14:13.313 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:44392/ - - - 302 0 - 164.3474ms
+2023-09-19 20:14:13.317 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:44392/swagger/index.html - -
+2023-09-19 20:14:13.385 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:44392/swagger/index.html - - - 200 - text/html;charset=utf-8 68.3448ms
+2023-09-19 20:14:13.636 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:44392/swagger/v1/swagger.json - -
+2023-09-19 20:14:13.906 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:44392/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 270.5684ms
+2023-09-19 20:14:35.707 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:44392/abp/Swashbuckle/SetCsrfCookie application/json -
+2023-09-19 20:14:35.709 +08:00 [INF] Executing endpoint 'Volo.Abp.Swashbuckle.AbpSwashbuckleController.SetCsrfCookie (Volo.Abp.Swashbuckle)'
+2023-09-19 20:14:35.712 +08:00 [INF] Route matched with {area = "Abp", action = "SetCsrfCookie", controller = "AbpSwashbuckle", page = ""}. Executing controller action with signature Void SetCsrfCookie() on controller Volo.Abp.Swashbuckle.AbpSwashbuckleController (Volo.Abp.Swashbuckle).
+2023-09-19 20:14:35.718 +08:00 [WRN] The cookie 'XSRF-TOKEN' has set 'SameSite=None' and must also set 'Secure'.
+2023-09-19 20:14:35.719 +08:00 [INF] Executed action Volo.Abp.Swashbuckle.AbpSwashbuckleController.SetCsrfCookie (Volo.Abp.Swashbuckle) in 7.2794ms
+2023-09-19 20:14:35.719 +08:00 [INF] Executed endpoint 'Volo.Abp.Swashbuckle.AbpSwashbuckleController.SetCsrfCookie (Volo.Abp.Swashbuckle)'
+2023-09-19 20:14:35.720 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:44392/abp/Swashbuckle/SetCsrfCookie application/json - - 204 - - 12.4635ms
+2023-09-19 20:14:35.771 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:44392/api/OrderService/ordder application/json 225
+2023-09-19 20:14:35.772 +08:00 [INF] CORS policy execution failed.
+2023-09-19 20:14:35.773 +08:00 [INF] Request origin http://localhost:44392 does not have permission to access the resource.
+2023-09-19 20:14:35.774 +08:00 [INF] Executing endpoint 'LKN.Order.Orders.OrdderAppService.CreateAsync (LKN.Order.Application)'
+2023-09-19 20:14:35.785 +08:00 [INF] Route matched with {action = "Create", controller = "Ordder", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[LKN.Order.Orders.OrderDto] CreateAsync(LKN.Order.Orders.CreateOrderDto) on controller LKN.Order.Orders.OrdderAppService (LKN.Order.Application).
+2023-09-19 20:14:37.236 +08:00 [DBG] Added 0 entity changes to the current audit log
+2023-09-19 20:14:37.248 +08:00 [DBG] Added 0 entity changes to the current audit log
+2023-09-19 20:14:37.256 +08:00 [DBG] Added 0 entity changes to the current audit log
+2023-09-19 20:14:37.285 +08:00 [INF] Executing ObjectResult, writing value of type 'LKN.Order.Orders.OrderDto'.
+2023-09-19 20:14:37.299 +08:00 [INF] Executed action LKN.Order.Orders.OrdderAppService.CreateAsync (LKN.Order.Application) in 1513.7003ms
+2023-09-19 20:14:37.299 +08:00 [INF] Executed endpoint 'LKN.Order.Orders.OrdderAppService.CreateAsync (LKN.Order.Application)'
+2023-09-19 20:14:37.304 +08:00 [INF] AUDIT LOG: [200: POST   ] /api/OrderService/ordder
+- UserName - UserId                 :  - 
+- ClientIpAddress        : ::1
+- ExecutionDuration      : 1527
+- Actions:
+  - LKN.Order.Orders.OrdderAppService.CreateAsync (1406 ms.)
+    {"input":{"orderTotalPrice":10,"productCount":10,"orderItems":[{"id":"2fa85f64-5717-4562-b3fc-2c963f66afa6","productId":"2fa85f64-5717-4562-b3fc-2c963f66afa6","productName":"string"}]}
+
+2023-09-19 20:14:37.306 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:44392/api/OrderService/ordder application/json 225 - 200 - application/json;+charset=utf-8 1534.8470ms
+2023-09-19 20:15:34.349 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:44392/swagger/index.html - -
+2023-09-19 20:15:34.352 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:44392/swagger/index.html - - - 200 - text/html;charset=utf-8 2.1091ms
+2023-09-19 20:15:34.502 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:44392/swagger/v1/swagger.json - -
+2023-09-19 20:15:34.520 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:44392/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 18.0236ms
+2023-09-19 20:21:26.101 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:44392/api/abp/api-definition - -
+2023-09-19 20:21:26.106 +08:00 [INF] Executing endpoint 'Volo.Abp.AspNetCore.Mvc.ApiExploring.AbpApiDefinitionController.Get (Volo.Abp.AspNetCore.Mvc)'
+2023-09-19 20:21:26.108 +08:00 [INF] Route matched with {area = "abp", action = "Get", controller = "AbpApiDefinition", page = ""}. Executing controller action with signature Volo.Abp.Http.Modeling.ApplicationApiDescriptionModel Get(Volo.Abp.Http.Modeling.ApplicationApiDescriptionModelRequestDto) on controller Volo.Abp.AspNetCore.Mvc.ApiExploring.AbpApiDefinitionController (Volo.Abp.AspNetCore.Mvc).
+2023-09-19 20:21:26.124 +08:00 [DBG] ActionApiDescriptionModel.Create: Sample.GetAsync
+2023-09-19 20:21:26.126 +08:00 [DBG] ActionApiDescriptionModel.Create: Sample.GetAuthorizedAsync
+2023-09-19 20:21:26.126 +08:00 [DBG] ActionApiDescriptionModel.Create: Sample.GetAsync
+2023-09-19 20:21:26.127 +08:00 [DBG] ActionApiDescriptionModel.Create: Sample.GetAuthorizedAsync
+2023-09-19 20:21:26.127 +08:00 [DBG] ActionApiDescriptionModel.Create: AbpTenant.FindTenantByNameAsyncByName
+2023-09-19 20:21:26.129 +08:00 [DBG] ActionApiDescriptionModel.Create: AbpTenant.FindTenantByIdAsyncById
+2023-09-19 20:21:26.129 +08:00 [DBG] ActionApiDescriptionModel.Create: AbpApplicationConfiguration.GetAsyncByOptions
+2023-09-19 20:21:26.129 +08:00 [DBG] ActionApiDescriptionModel.Create: AbpApplicationLocalization.GetAsyncByInput
+2023-09-19 20:21:26.129 +08:00 [DBG] ActionApiDescriptionModel.Create: AbpApiDefinition.GetByModel
+2023-09-19 20:21:26.130 +08:00 [DBG] ActionApiDescriptionModel.Create: Ordder.CreateAsyncByInput
+2023-09-19 20:21:26.130 +08:00 [DBG] ActionApiDescriptionModel.Create: Ordder.UpdateAsyncByIdAndInput
+2023-09-19 20:21:26.130 +08:00 [DBG] ActionApiDescriptionModel.Create: Ordder.DeleteAsyncById
+2023-09-19 20:21:26.130 +08:00 [DBG] ActionApiDescriptionModel.Create: Ordder.GetAsyncById
+2023-09-19 20:21:26.130 +08:00 [DBG] ActionApiDescriptionModel.Create: Ordder.GetListAsyncByInput
+2023-09-19 20:21:26.133 +08:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.Http.Modeling.ApplicationApiDescriptionModel'.
+2023-09-19 20:21:26.150 +08:00 [INF] Executed action Volo.Abp.AspNetCore.Mvc.ApiExploring.AbpApiDefinitionController.Get (Volo.Abp.AspNetCore.Mvc) in 41.9528ms
+2023-09-19 20:21:26.150 +08:00 [INF] Executed endpoint 'Volo.Abp.AspNetCore.Mvc.ApiExploring.AbpApiDefinitionController.Get (Volo.Abp.AspNetCore.Mvc)'
+2023-09-19 20:21:26.150 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:44392/api/abp/api-definition - - - 200 - application/json;+charset=utf-8 48.9933ms
+2023-09-19 20:21:26.356 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:44392/api/OrderService/ordder/3a0dbf83-57d7-8168-e91a-0b94fbd83c1a?api-version=1.0 - -
+2023-09-19 20:21:26.359 +08:00 [INF] Executing endpoint 'LKN.Order.Orders.OrdderAppService.GetAsync (LKN.Order.Application)'
+2023-09-19 20:21:26.362 +08:00 [INF] Route matched with {action = "Get", controller = "Ordder", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[LKN.Order.Orders.OrderDto] GetAsync(System.Guid) on controller LKN.Order.Orders.OrdderAppService (LKN.Order.Application).
+2023-09-19 20:21:26.746 +08:00 [DBG] Added 0 entity changes to the current audit log
+2023-09-19 20:21:26.747 +08:00 [INF] Executing ObjectResult, writing value of type 'LKN.Order.Orders.OrderDto'.
+2023-09-19 20:21:26.748 +08:00 [INF] Executed action LKN.Order.Orders.OrdderAppService.GetAsync (LKN.Order.Application) in 386.0735ms
+2023-09-19 20:21:26.748 +08:00 [INF] Executed endpoint 'LKN.Order.Orders.OrdderAppService.GetAsync (LKN.Order.Application)'
+2023-09-19 20:21:26.748 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:44392/api/OrderService/ordder/3a0dbf83-57d7-8168-e91a-0b94fbd83c1a?api-version=1.0 - - - 200 - application/json;+charset=utf-8 391.7393ms
