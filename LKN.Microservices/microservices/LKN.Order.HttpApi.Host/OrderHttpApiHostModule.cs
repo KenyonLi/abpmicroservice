@@ -61,6 +61,7 @@ public class OrderHttpApiHostModule : AbpModule
         {
             options.UseMySQL();
         });
+
         //自动生成api 
         ConfigureConventionalControllers();
 
