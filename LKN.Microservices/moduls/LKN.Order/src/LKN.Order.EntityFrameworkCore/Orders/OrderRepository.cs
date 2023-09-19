@@ -16,7 +16,7 @@ namespace LKN.Order.Orders
     /// <summary>
     /// 商品仓储实现
     /// </summary>
-    [Dependency(ServiceLifetime.Transient)]
+    [Dependency(ServiceLifetime.Singleton)]
     public class OrderRepository : EfCoreRepository<OrderDbContext, Order, Guid>, IOrderRepository
     {
         public OrderRepository(

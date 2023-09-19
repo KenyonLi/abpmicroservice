@@ -18,7 +18,7 @@ public class OrderApplicationModule : AbpModule
         context.Services.AddAutoMapperObjectMapper<OrderApplicationModule>();
         Configure<AbpAutoMapperOptions>(options =>
         {
-            options.AddMaps<OrderApplicationModule>(validate: true);
+            options.AddMaps<OrderApplicationModule>(validate: false);
         });
     }
 }

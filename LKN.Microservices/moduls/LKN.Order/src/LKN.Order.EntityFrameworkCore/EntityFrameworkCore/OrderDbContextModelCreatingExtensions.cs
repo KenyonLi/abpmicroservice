@@ -1,5 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using System.Reflection.Emit;
 using Volo.Abp;
+using Volo.Abp.EntityFrameworkCore.Modeling;
 
 namespace LKN.Order.EntityFrameworkCore;
 
@@ -29,5 +31,18 @@ public static class OrderDbContextModelCreatingExtensions
             b.HasIndex(q => q.CreationTime);
         });
         */
+        // 表名的前缀配置
+        var options = new OrderModelBuilderConfigurationOptions(
+            OrderDbProperties.DbTablePrefix,
+            OrderDbProperties.DbSchema
+        );
+
+
+        builder.Entity<LKN.Order.Orders.Order>(b =>
+        {
+            b.ConfigureByConvention();
+            b.HasMany(u => u.OrderItems).WithOne().HasForeignKey(ur => ur.OrderId).IsRequired();
+        });
+
     }
 }

@@ -29,18 +29,24 @@ using Volo.Abp.Security.Claims;
 using Volo.Abp.Swashbuckle;
 using Volo.Abp.TenantManagement.EntityFrameworkCore;
 using Volo.Abp.VirtualFileSystem;
+using Microsoft.EntityFrameworkCore;
+using Volo.Abp.EntityFrameworkCore.MySQL;
+using Volo.Abp.AspNetCore.Mvc;
 
 namespace LKN.Order;
 
 [DependsOn(
+
     typeof(OrderApplicationModule),
     typeof(OrderEntityFrameworkCoreModule),
     typeof(OrderHttpApiModule),
+
     typeof(AbpAspNetCoreMvcUiMultiTenancyModule),
     typeof(AbpAutofacModule),
     typeof(AbpCachingStackExchangeRedisModule),
-    typeof(AbpEntityFrameworkCoreSqlServerModule),
+    // typeof(AbpEntityFrameworkCoreSqlServerModule),
     typeof(AbpTenantManagementEntityFrameworkCoreModule),
+    typeof(AbpEntityFrameworkCoreMySQLModule),
     typeof(AbpAspNetCoreSerilogModule),
     typeof(AbpSwashbuckleModule)
     )]
@@ -51,17 +57,18 @@ public class OrderHttpApiHostModule : AbpModule
     {
         var hostingEnvironment = context.Services.GetHostingEnvironment();
         var configuration = context.Services.GetConfiguration();
-
         Configure<AbpDbContextOptions>(options =>
         {
             options.UseMySQL();
         });
+        //自动生成api 
+        ConfigureConventionalControllers();
 
         if (hostingEnvironment.IsDevelopment())
         {
             Configure<AbpVirtualFileSystemOptions>(options =>
             {
-                options.FileSets.ReplaceEmbeddedByPhysical<OrderDomainSharedModule>(Path.Combine(hostingEnvironment.ContentRootPath, string.Format("..{0}..{0}src{0}LKN.Order.Domain.Shared", Path.DirectorySeparatorChar)));
+                //  options.FileSets.ReplaceEmbeddedByPhysical<OrderDomainSharedModule>(Path.Combine(hostingEnvironment.ContentRootPath, string.Format("..{0}..{0}src{0}LKN.Order.Domain.Shared", Path.DirectorySeparatorChar)));
                 options.FileSets.ReplaceEmbeddedByPhysical<OrderDomainModule>(Path.Combine(hostingEnvironment.ContentRootPath, string.Format("..{0}..{0}src{0}LKN.Order.Domain", Path.DirectorySeparatorChar)));
                 options.FileSets.ReplaceEmbeddedByPhysical<OrderApplicationContractsModule>(Path.Combine(hostingEnvironment.ContentRootPath, string.Format("..{0}..{0}src{0}LKN.Order.Application.Contracts", Path.DirectorySeparatorChar)));
                 options.FileSets.ReplaceEmbeddedByPhysical<OrderApplicationModule>(Path.Combine(hostingEnvironment.ContentRootPath, string.Format("..{0}..{0}src{0}LKN.Order.Application", Path.DirectorySeparatorChar)));
@@ -76,7 +83,7 @@ public class OrderHttpApiHostModule : AbpModule
             },
             options =>
             {
-                options.SwaggerDoc("v1", new OpenApiInfo {Title = "Order API", Version = "v1"});
+                options.SwaggerDoc("v1", new OpenApiInfo { Title = "Order API", Version = "v1" });
                 options.DocInclusionPredicate((docName, description) => true);
                 options.CustomSchemaIds(type => type.FullName);
             });
@@ -144,6 +151,17 @@ public class OrderHttpApiHostModule : AbpModule
             });
         });
     }
+    //自动生成 api
+    private void ConfigureConventionalControllers()
+    {
+        Configure<AbpAspNetCoreMvcOptions>(options =>
+        {
+            options.ConventionalControllers.Create(typeof(OrderApplicationModule).Assembly, options =>
+            {
+                options.RootPath = "OrderService";
+            });
+        });
+    }
 
     public override void OnApplicationInitialization(ApplicationInitializationContext context)
     {
@@ -165,7 +183,7 @@ public class OrderHttpApiHostModule : AbpModule
         app.UseRouting();
         app.UseCors();
         app.UseAuthentication();
-      
+
         app.UseAbpRequestLocalization();
         app.UseAuthorization();
         app.UseSwagger();
