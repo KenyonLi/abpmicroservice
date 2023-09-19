@@ -2,6 +2,7 @@
 using Volo.Abp.AutoMapper;
 using Volo.Abp.Modularity;
 using Volo.Abp.Application;
+using Volo.Abp.Autofac;
 
 namespace LKN.Product;
 
@@ -9,7 +10,8 @@ namespace LKN.Product;
     typeof(ProductDomainModule),
     typeof(ProductApplicationContractsModule),
     typeof(AbpDddApplicationModule),
-    typeof(AbpAutoMapperModule)
+    typeof(AbpAutoMapperModule),
+    typeof(AbpAutofacModule)
     )]
 public class ProductApplicationModule : AbpModule
 {
@@ -18,7 +20,7 @@ public class ProductApplicationModule : AbpModule
         context.Services.AddAutoMapperObjectMapper<ProductApplicationModule>();
         Configure<AbpAutoMapperOptions>(options =>
         {
-            options.AddMaps<ProductApplicationModule>(validate: true);
+            options.AddMaps<ProductApplicationModule>(validate: false);
         });
     }
 }

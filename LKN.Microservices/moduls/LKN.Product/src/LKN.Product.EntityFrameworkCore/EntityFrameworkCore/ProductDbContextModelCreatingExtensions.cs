@@ -1,12 +1,14 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using System;
 using Volo.Abp;
+using Volo.Abp.EntityFrameworkCore.Modeling;
 
 namespace LKN.Product.EntityFrameworkCore;
 
 public static class ProductDbContextModelCreatingExtensions
 {
     public static void ConfigureProduct(
-        this ModelBuilder builder)
+        this ModelBuilder builder, Action<ProductModelBuilderConfigurationOptions> optionsAction = null)
     {
         Check.NotNull(builder, nameof(builder));
 
@@ -29,5 +31,14 @@ public static class ProductDbContextModelCreatingExtensions
             b.HasIndex(q => q.CreationTime);
         });
         */
+        var options = new ProductModelBuilderConfigurationOptions(ProductDbProperties.DbTablePrefix, ProductDbProperties.DbSchema);
+       
+        optionsAction?.Invoke(options);
+
+        builder.Entity<LKN.Product.Products.Product>(b =>
+        {
+            b.ConfigureByConvention();
+            b.HasMany(u => u.ProductImages).WithOne().HasForeignKey(ur => ur.ProductId).IsRequired();
+        });
     }
 }

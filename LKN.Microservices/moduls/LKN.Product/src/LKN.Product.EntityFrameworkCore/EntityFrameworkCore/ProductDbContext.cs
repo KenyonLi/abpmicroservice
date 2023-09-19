@@ -10,6 +10,8 @@ public class ProductDbContext : AbpDbContext<ProductDbContext>, IProductDbContex
     /* Add DbSet for each Aggregate Root here. Example:
      * public DbSet<Question> Questions { get; set; }
      */
+    
+    public DbSet<LKN.Product.Products.Product> Product { get; set; }
 
     public ProductDbContext(DbContextOptions<ProductDbContext> options)
         : base(options)

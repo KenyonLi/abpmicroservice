@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Reflection.Emit;
 using Volo.Abp;
 using Volo.Abp.EntityFrameworkCore.Modeling;
@@ -8,7 +9,8 @@ namespace LKN.Order.EntityFrameworkCore;
 public static class OrderDbContextModelCreatingExtensions
 {
     public static void ConfigureOrder(
-        this ModelBuilder builder)
+        this ModelBuilder builder,
+        Action<OrderModelBuilderConfigurationOptions> optionsAction = null)
     {
         Check.NotNull(builder, nameof(builder));
 
@@ -36,7 +38,7 @@ public static class OrderDbContextModelCreatingExtensions
             OrderDbProperties.DbTablePrefix,
             OrderDbProperties.DbSchema
         );
-
+        optionsAction?.Invoke(options);
 
         builder.Entity<LKN.Order.Orders.Order>(b =>
         {

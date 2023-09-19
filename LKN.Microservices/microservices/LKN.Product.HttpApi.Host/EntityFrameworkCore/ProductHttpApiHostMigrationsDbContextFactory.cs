@@ -12,7 +12,7 @@ public class ProductHttpApiHostMigrationsDbContextFactory : IDesignTimeDbContext
         var configuration = BuildConfiguration();
 
         var builder = new DbContextOptionsBuilder<ProductHttpApiHostMigrationsDbContext>()
-            .UseSqlServer(configuration.GetConnectionString("Product"));
+            .UseMySql(configuration.GetConnectionString("Product"),MySqlServerVersion.LatestSupportedServerVersion);
 
         return new ProductHttpApiHostMigrationsDbContext(builder.Options);
     }
