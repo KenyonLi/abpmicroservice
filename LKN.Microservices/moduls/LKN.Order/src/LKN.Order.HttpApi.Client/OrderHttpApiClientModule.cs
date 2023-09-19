@@ -10,11 +10,13 @@ namespace LKN.Order;
     typeof(AbpHttpClientModule))]
 public class OrderHttpApiClientModule : AbpModule
 {
+    public const string RemoteServiceName = "Order";
+
     public override void ConfigureServices(ServiceConfigurationContext context)
     {
         context.Services.AddHttpClientProxies(
             typeof(OrderApplicationContractsModule).Assembly,
-            OrderRemoteServiceConsts.RemoteServiceName
+             RemoteServiceName
         );
 
         Configure<AbpVirtualFileSystemOptions>(options =>

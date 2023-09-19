@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.7" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+    <PackageReference Include="Volo.Abp.AspNetCore.Mvc" Version="7.3.0" />
+    <PackageReference Include="Volo.Abp.Autofac" Version="7.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\moduls\LKN.Order\src\LKN.Order.HttpApi.Client\LKN.Order.HttpApi.Client.csproj" />
+    <ProjectReference Include="..\..\moduls\LKN.Product\src\LKN.Product.HttpApi.Client\LKN.Product.HttpApi.Client.csproj" />
+  </ItemGroup>
+
+</Project>
