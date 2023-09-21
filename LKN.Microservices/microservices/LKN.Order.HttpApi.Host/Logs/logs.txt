@@ -12314,3 +12314,119 @@ ActivatorChain = LKN.Order.Orders.OrdersController
 2023-09-22 00:47:05.304 +08:00 [INF] Executed action LKN.Order.Orders.OrdersController.GetAsync (LKN.Order.HttpApi) in 7385.9402ms
 2023-09-22 00:47:05.305 +08:00 [INF] Executed endpoint 'LKN.Order.Orders.OrdersController.GetAsync (LKN.Order.HttpApi)'
 2023-09-22 00:47:05.307 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44397/api/OrderService/ord/3a0dbf83-57d7-8168-e91a-0b94fbd83c1a - - - 200 - application/json;+charset=utf-8 7443.6974ms
+2023-09-22 00:50:25.148 +08:00 [INF] Starting web host.
+2023-09-22 00:50:31.575 +08:00 [INF] Loaded ABP modules:
+2023-09-22 00:50:31.576 +08:00 [INF] - LKN.Order.OrderHttpApiHostModule
+2023-09-22 00:50:31.576 +08:00 [INF]   - LKN.Order.OrderApplicationModule
+2023-09-22 00:50:31.576 +08:00 [INF]     - LKN.Order.OrderDomainModule
+2023-09-22 00:50:31.576 +08:00 [INF]       - Volo.Abp.Domain.AbpDddDomainModule
+2023-09-22 00:50:31.576 +08:00 [INF]         - Volo.Abp.Auditing.AbpAuditingModule
+2023-09-22 00:50:31.576 +08:00 [INF]           - Volo.Abp.Data.AbpDataModule
+2023-09-22 00:50:31.576 +08:00 [INF]             - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2023-09-22 00:50:31.576 +08:00 [INF]               - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2023-09-22 00:50:31.576 +08:00 [INF]               - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2023-09-22 00:50:31.576 +08:00 [INF]             - Volo.Abp.Uow.AbpUnitOfWorkModule
+2023-09-22 00:50:31.576 +08:00 [INF]             - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2023-09-22 00:50:31.576 +08:00 [INF]           - Volo.Abp.Json.AbpJsonModule
+2023-09-22 00:50:31.576 +08:00 [INF]             - Volo.Abp.Json.SystemTextJson.AbpJsonSystemTextJsonModule
+2023-09-22 00:50:31.576 +08:00 [INF]               - Volo.Abp.Json.AbpJsonAbstractionsModule
+2023-09-22 00:50:31.576 +08:00 [INF]               - Volo.Abp.Timing.AbpTimingModule
+2023-09-22 00:50:31.576 +08:00 [INF]                 - Volo.Abp.Localization.AbpLocalizationModule
+2023-09-22 00:50:31.576 +08:00 [INF]                   - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2023-09-22 00:50:31.576 +08:00 [INF]                   - Volo.Abp.Settings.AbpSettingsModule
+2023-09-22 00:50:31.576 +08:00 [INF]                     - Volo.Abp.Security.AbpSecurityModule
+2023-09-22 00:50:31.576 +08:00 [INF]                   - Volo.Abp.Threading.AbpThreadingModule
+2023-09-22 00:50:31.576 +08:00 [INF]           - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2023-09-22 00:50:31.576 +08:00 [INF]             - Volo.Abp.MultiTenancy.AbpMultiTenancyAbstractionsModule
+2023-09-22 00:50:31.576 +08:00 [INF]           - Volo.Abp.Auditing.AbpAuditingContractsModule
+2023-09-22 00:50:31.576 +08:00 [INF]         - Volo.Abp.EventBus.AbpEventBusModule
+2023-09-22 00:50:31.576 +08:00 [INF]           - Volo.Abp.Guids.AbpGuidsModule
+2023-09-22 00:50:31.576 +08:00 [INF]           - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2023-09-22 00:50:31.576 +08:00 [INF]           - Volo.Abp.DistributedLocking.AbpDistributedLockingAbstractionsModule
+2023-09-22 00:50:31.576 +08:00 [INF]         - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2023-09-22 00:50:31.576 +08:00 [INF]         - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2023-09-22 00:50:31.576 +08:00 [INF]         - Volo.Abp.Specifications.AbpSpecificationsModule
+2023-09-22 00:50:31.576 +08:00 [INF]         - Volo.Abp.Caching.AbpCachingModule
+2023-09-22 00:50:31.576 +08:00 [INF]           - Volo.Abp.Serialization.AbpSerializationModule
+2023-09-22 00:50:31.576 +08:00 [INF]         - Volo.Abp.Domain.AbpDddDomainSharedModule
+2023-09-22 00:50:31.576 +08:00 [INF]       - LKN.Order.OrderDomainSharedModule
+2023-09-22 00:50:31.576 +08:00 [INF]         - Volo.Abp.Validation.AbpValidationModule
+2023-09-22 00:50:31.576 +08:00 [INF]     - LKN.Order.OrderApplicationContractsModule
+2023-09-22 00:50:31.576 +08:00 [INF]       - Volo.Abp.Application.AbpDddApplicationContractsModule
+2023-09-22 00:50:31.576 +08:00 [INF]       - Volo.Abp.Authorization.AbpAuthorizationModule
+2023-09-22 00:50:31.576 +08:00 [INF]         - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2023-09-22 00:50:31.576 +08:00 [INF]     - Volo.Abp.Application.AbpDddApplicationModule
+2023-09-22 00:50:31.576 +08:00 [INF]       - Volo.Abp.Http.AbpHttpAbstractionsModule
+2023-09-22 00:50:31.576 +08:00 [INF]       - Volo.Abp.Features.AbpFeaturesModule
+2023-09-22 00:50:31.576 +08:00 [INF]       - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2023-09-22 00:50:31.576 +08:00 [INF]     - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2023-09-22 00:50:31.576 +08:00 [INF]   - LKN.Order.EntityFrameworkCore.OrderEntityFrameworkCoreModule
+2023-09-22 00:50:31.576 +08:00 [INF]     - Volo.Abp.EntityFrameworkCore.MySQL.AbpEntityFrameworkCoreMySQLModule
+2023-09-22 00:50:31.576 +08:00 [INF]       - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2023-09-22 00:50:31.577 +08:00 [INF]   - LKN.Order.OrderHttpApiModule
+2023-09-22 00:50:31.577 +08:00 [INF]     - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2023-09-22 00:50:31.577 +08:00 [INF]       - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2023-09-22 00:50:31.577 +08:00 [INF]         - Volo.Abp.Http.AbpHttpModule
+2023-09-22 00:50:31.577 +08:00 [INF]           - Volo.Abp.Minify.AbpMinifyModule
+2023-09-22 00:50:31.577 +08:00 [INF]       - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2023-09-22 00:50:31.577 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2023-09-22 00:50:31.577 +08:00 [INF]       - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2023-09-22 00:50:31.577 +08:00 [INF]         - Volo.Abp.UI.AbpUiModule
+2023-09-22 00:50:31.577 +08:00 [INF]   - Volo.Abp.AspNetCore.Mvc.UI.MultiTenancy.AbpAspNetCoreMvcUiMultiTenancyModule
+2023-09-22 00:50:31.577 +08:00 [INF]     - Volo.Abp.AspNetCore.Mvc.UI.Theme.Shared.AbpAspNetCoreMvcUiThemeSharedModule
+2023-09-22 00:50:31.577 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Bootstrap.AbpAspNetCoreMvcUiBootstrapModule
+2023-09-22 00:50:31.577 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.AbpAspNetCoreMvcUiModule
+2023-09-22 00:50:31.577 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Packages.AbpAspNetCoreMvcUiPackagesModule
+2023-09-22 00:50:31.577 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingAbstractionsModule
+2023-09-22 00:50:31.577 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Widgets.AbpAspNetCoreMvcUiWidgetsModule
+2023-09-22 00:50:31.577 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingModule
+2023-09-22 00:50:31.577 +08:00 [INF]     - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2023-09-22 00:50:31.577 +08:00 [INF]   - Volo.Abp.Autofac.AbpAutofacModule
+2023-09-22 00:50:31.577 +08:00 [INF]     - Volo.Abp.Castle.AbpCastleCoreModule
+2023-09-22 00:50:31.577 +08:00 [INF]   - Volo.Abp.Caching.StackExchangeRedis.AbpCachingStackExchangeRedisModule
+2023-09-22 00:50:31.577 +08:00 [INF]   - Volo.Abp.TenantManagement.EntityFrameworkCore.AbpTenantManagementEntityFrameworkCoreModule
+2023-09-22 00:50:31.577 +08:00 [INF]     - Volo.Abp.TenantManagement.AbpTenantManagementDomainModule
+2023-09-22 00:50:31.577 +08:00 [INF]       - Volo.Abp.TenantManagement.AbpTenantManagementDomainSharedModule
+2023-09-22 00:50:31.577 +08:00 [INF]   - Volo.Abp.AspNetCore.Serilog.AbpAspNetCoreSerilogModule
+2023-09-22 00:50:31.577 +08:00 [INF]   - Volo.Abp.Swashbuckle.AbpSwashbuckleModule
+2023-09-22 00:50:32.390 +08:00 [INF] User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-09-22 00:50:32.601 +08:00 [INF] Initialized all ABP modules.
+2023-09-22 00:50:32.945 +08:00 [INF] Now listening on: https://localhost:44397
+2023-09-22 00:50:32.945 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-22 00:50:32.945 +08:00 [INF] Hosting environment: Development
+2023-09-22 00:50:32.945 +08:00 [INF] Content root path: D:\GitRepos\abpmicroservice\LKN.Microservices\microservices\LKN.Order.HttpApi.Host
+2023-09-22 00:50:34.515 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44397/ - -
+2023-09-22 00:50:35.081 +08:00 [INF] Executing endpoint 'LKN.Order.Controllers.HomeController.Index (LKN.Order.HttpApi.Host)'
+2023-09-22 00:50:35.160 +08:00 [INF] Route matched with {action = "Index", controller = "Home", area = "", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Index() on controller LKN.Order.Controllers.HomeController (LKN.Order.HttpApi.Host).
+2023-09-22 00:50:35.692 +08:00 [INF] Executing action method LKN.Order.Controllers.HomeController.Index (LKN.Order.HttpApi.Host) - Validation state: "Valid"
+2023-09-22 00:50:35.700 +08:00 [INF] Executed action method LKN.Order.Controllers.HomeController.Index (LKN.Order.HttpApi.Host), returned result Microsoft.AspNetCore.Mvc.RedirectResult in 0.4668ms.
+2023-09-22 00:50:35.719 +08:00 [INF] Executing RedirectResult, redirecting to /swagger.
+2023-09-22 00:50:35.725 +08:00 [INF] Executed action LKN.Order.Controllers.HomeController.Index (LKN.Order.HttpApi.Host) in 559.0191ms
+2023-09-22 00:50:35.725 +08:00 [INF] Executed endpoint 'LKN.Order.Controllers.HomeController.Index (LKN.Order.HttpApi.Host)'
+2023-09-22 00:50:35.754 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44397/ - - - 302 0 - 1241.9168ms
+2023-09-22 00:50:35.765 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44397/swagger/index.html - -
+2023-09-22 00:50:36.166 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44397/swagger/index.html - - - 200 - text/html;charset=utf-8 400.6825ms
+2023-09-22 00:50:36.228 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44397/_framework/aspnetcore-browser-refresh.js - -
+2023-09-22 00:50:36.290 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44397/_framework/aspnetcore-browser-refresh.js - - - 200 12375 application/javascript;+charset=utf-8 62.5587ms
+2023-09-22 00:50:36.306 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44397/_vs/browserLink - -
+2023-09-22 00:50:36.615 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44397/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 309.1011ms
+2023-09-22 00:50:41.320 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44397/swagger/v1/swagger.json - -
+2023-09-22 00:50:41.768 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44397/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 447.9353ms
+2023-09-22 00:50:59.519 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44397/abp/Swashbuckle/SetCsrfCookie - -
+2023-09-22 00:50:59.526 +08:00 [INF] Executing endpoint 'Volo.Abp.Swashbuckle.AbpSwashbuckleController.SetCsrfCookie (Volo.Abp.Swashbuckle)'
+2023-09-22 00:50:59.529 +08:00 [INF] Route matched with {area = "Abp", action = "SetCsrfCookie", controller = "AbpSwashbuckle", page = ""}. Executing controller action with signature Void SetCsrfCookie() on controller Volo.Abp.Swashbuckle.AbpSwashbuckleController (Volo.Abp.Swashbuckle).
+2023-09-22 00:50:59.601 +08:00 [INF] Executing action method Volo.Abp.Swashbuckle.AbpSwashbuckleController.SetCsrfCookie (Volo.Abp.Swashbuckle) - Validation state: "Valid"
+2023-09-22 00:50:59.609 +08:00 [INF] Executed action method Volo.Abp.Swashbuckle.AbpSwashbuckleController.SetCsrfCookie (Volo.Abp.Swashbuckle), returned result Microsoft.AspNetCore.Mvc.EmptyResult in 7.5896ms.
+2023-09-22 00:50:59.611 +08:00 [INF] Executed action Volo.Abp.Swashbuckle.AbpSwashbuckleController.SetCsrfCookie (Volo.Abp.Swashbuckle) in 81.5236ms
+2023-09-22 00:50:59.611 +08:00 [INF] Executed endpoint 'Volo.Abp.Swashbuckle.AbpSwashbuckleController.SetCsrfCookie (Volo.Abp.Swashbuckle)'
+2023-09-22 00:50:59.612 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44397/abp/Swashbuckle/SetCsrfCookie - - - 204 - - 92.4744ms
+2023-09-22 00:50:59.724 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44397/api/OrderService/ord/3a0dbf86-23f4-1be4-f834-6c6a95555860 - -
+2023-09-22 00:50:59.727 +08:00 [INF] Executing endpoint 'LKN.Order.Orders.OrdersController.GetAsync (LKN.Order.HttpApi)'
+2023-09-22 00:50:59.774 +08:00 [INF] Route matched with {action = "Get", controller = "Orders", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[LKN.Order.Orders.OrderDto] GetAsync(System.Guid) on controller LKN.Order.Orders.OrdersController (LKN.Order.HttpApi).
+2023-09-22 00:51:00.584 +08:00 [INF] Executing action method LKN.Order.Orders.OrdersController.GetAsync (LKN.Order.HttpApi) - Validation state: "Valid"
+2023-09-22 00:51:06.612 +08:00 [INF] Executed action method LKN.Order.Orders.OrdersController.GetAsync (LKN.Order.HttpApi), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 6027.857ms.
+2023-09-22 00:51:06.808 +08:00 [DBG] Added 0 entity changes to the current audit log
+2023-09-22 00:51:06.846 +08:00 [INF] Executing ObjectResult, writing value of type 'LKN.Order.Orders.OrderDto'.
+2023-09-22 00:51:06.932 +08:00 [INF] Executed action LKN.Order.Orders.OrdersController.GetAsync (LKN.Order.HttpApi) in 7158.3348ms
+2023-09-22 00:51:06.934 +08:00 [INF] Executed endpoint 'LKN.Order.Orders.OrdersController.GetAsync (LKN.Order.HttpApi)'
+2023-09-22 00:51:06.940 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44397/api/OrderService/ord/3a0dbf86-23f4-1be4-f834-6c6a95555860 - - - 200 - application/json;+charset=utf-8 7216.0882ms
