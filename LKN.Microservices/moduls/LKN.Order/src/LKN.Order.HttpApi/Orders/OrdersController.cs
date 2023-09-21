@@ -9,10 +9,9 @@ using Volo.Abp;
 using Volo.Abp.AspNetCore.Mvc;
 
 namespace LKN.Order.Orders;
-[Area(OrderRemoteServiceConsts.ModuleName)]
-[RemoteService(Name = OrderRemoteServiceConsts.RemoteServiceName)]
+
+[RemoteService]
 [Route("api/OrderService/ord")]
-[ApiController]
 public class OrdersController : OrderController, IOrderAppService
 {
     private readonly IOrderAppService _OrderAppService;
