@@ -7,6 +7,7 @@ using System.Linq;
 using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
+using Volo.Abp;
 using Volo.Abp.Application.Dtos;
 using Volo.Abp.Application.Services;
 using Volo.Abp.DependencyInjection;
@@ -17,6 +18,7 @@ namespace LKN.Order.Orders
     /// <summary>
     /// 订单服务实现
     /// </summary>
+    [RemoteService(IsEnabled = false)]
     [Dependency(ServiceLifetime.Singleton)]
     public class OrdderAppService : CrudAppService<
         Order,

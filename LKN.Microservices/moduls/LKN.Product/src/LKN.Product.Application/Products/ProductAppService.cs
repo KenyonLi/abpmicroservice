@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,6 +8,7 @@ using System.Threading.Tasks;
 using Volo.Abp;
 using Volo.Abp.Application.Dtos;
 using Volo.Abp.Application.Services;
+using Volo.Abp.DependencyInjection;
 using Volo.Abp.Domain.Repositories;
 
 namespace LKN.Product.Products
@@ -16,6 +18,7 @@ namespace LKN.Product.Products
     /// </summary>
     //[RemoteService(IsEnabled = false)]
     ///[Authorize]
+    [Dependency(ServiceLifetime.Singleton)]
     public class ProductAppService : CrudAppService<
         Product,
         ProductDto, 
