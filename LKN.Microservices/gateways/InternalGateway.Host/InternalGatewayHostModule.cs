@@ -5,6 +5,7 @@ using Ocelot.DependencyInjection;
 using Ocelot.Middleware;
 using Volo.Abp;
 using Volo.Abp.AspNetCore.Mvc;
+using Volo.Abp.AspNetCore.Serilog;
 using Volo.Abp.Autofac;
 using Volo.Abp.Modularity;
 
@@ -13,6 +14,7 @@ namespace InternalGateway.Host
     [DependsOn(typeof(AbpAutofacModule),
         typeof(OrderHttpApiModule),
         typeof(ProductHttpApiModule),
+        typeof(AbpAspNetCoreSerilogModule),
         typeof(AbpAspNetCoreMvcModule)
       )]
     public class InternalGatewayHostModule: AbpModule
@@ -66,6 +68,7 @@ namespace InternalGateway.Host
             //app.UseOcelotSwagger();
             // 2、使用ocelot
             app.UseOcelot().Wait();
+            
         }
     }
 }

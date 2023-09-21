@@ -18,7 +18,7 @@
     "LKN.Order.DemoApp": {
       "commandName": "Project",
       "launchBrowser": true,
-      "applicationUrl": "https://localhost:44397",
+      "applicationUrl": "https://localhost:44392",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
