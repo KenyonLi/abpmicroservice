@@ -20,7 +20,7 @@ namespace LKN.Order.Orders
     /// </summary>
     [RemoteService(IsEnabled = false)]
     [Dependency(ServiceLifetime.Singleton)]
-    public class OrdderAppService : CrudAppService<
+    public class OrderAppService : CrudAppService<
         Order,
         OrderDto,
         Guid,
@@ -31,7 +31,7 @@ namespace LKN.Order.Orders
     {
         public IOrderRepository _orderRepository;
 
-        public OrdderAppService(IOrderRepository repository) : base(repository)
+        public OrderAppService(IOrderRepository repository) : base(repository)
         {
             _orderRepository = repository;
         }
