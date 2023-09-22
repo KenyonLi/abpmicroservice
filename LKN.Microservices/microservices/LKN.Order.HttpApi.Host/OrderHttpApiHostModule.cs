@@ -32,6 +32,7 @@ using Volo.Abp.VirtualFileSystem;
 using Microsoft.EntityFrameworkCore;
 using Volo.Abp.EntityFrameworkCore.MySQL;
 using Volo.Abp.AspNetCore.Mvc;
+using LKN.Microservices.Infrastructure;
 
 namespace LKN.Order;
 
@@ -48,6 +49,7 @@ namespace LKN.Order;
     typeof(AbpTenantManagementEntityFrameworkCoreModule),
     typeof(AbpEntityFrameworkCoreMySQLModule),
     typeof(AbpAspNetCoreSerilogModule),
+    typeof(InfrastructureModule),
     typeof(AbpSwashbuckleModule)
     )]
 public class OrderHttpApiHostModule : AbpModule
@@ -151,6 +153,21 @@ public class OrderHttpApiHostModule : AbpModule
                     .AllowCredentials();
             });
         });
+
+
+        //1.注册中心
+        //context.Services.AddServiceRegistry(options =>
+        //{
+        //    options.ServiceId = Guid.NewGuid().ToString();
+        //    options.ServiceName = configuration["ConsulRegistry:ServiceName"];
+        //    options.ServiceAddress = Environment.GetEnvironmentVariable("ASPNETCORE_URLS") != null ? Environment.GetEnvironmentVariable("ASPNETCORE_URLS") : configuration["ConsulRegistry:ServiceAddress"];//"https://localhost:5002";
+        //    options.HealthCheckAddress = configuration["ConsulRegistry:HealthCheckAddress"];
+        //    options.RegistryAddress = configuration["ConsulRegistry:RegistryAddress"];//"http://localhost:8500";
+        //});
+
+
+        //2. 增加心跳检测
+        context.Services.AddHealthChecks();
     }
     //自动生成 api
     private void ConfigureConventionalControllers()
@@ -199,5 +216,8 @@ public class OrderHttpApiHostModule : AbpModule
         app.UseAuditing();
         app.UseAbpSerilogEnrichers();
         app.UseConfiguredEndpoints();
+
+        //2、开始健康检测
+        app.UseHealthChecks("/HealthCheck");
     }
 }

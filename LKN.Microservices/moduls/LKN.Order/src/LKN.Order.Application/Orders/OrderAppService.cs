@@ -16,15 +16,10 @@ using Volo.Abp.Domain.Repositories;
 namespace LKN.Order.Orders
 {
 
-    /*
-     
-
-     
-     */
     /// <summary>
     /// 订单服务实现
     /// </summary>
-    //[RemoteService(IsEnabled = false)]
+    [RemoteService(IsEnabled = false)]
     [Dependency(ServiceLifetime.Singleton)]
     public class OrderAppService : CrudAppService<
         Order,

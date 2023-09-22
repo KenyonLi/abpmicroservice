@@ -1,8 +1,13 @@
-﻿using LKN.Order;
+﻿using InternalGateway.Host.LoadBalancers;
+using LKN.Order;
 using LKN.Product;
 using Microsoft.OpenApi.Models;
+using Ocelot.Configuration;
 using Ocelot.DependencyInjection;
 using Ocelot.Middleware;
+using Ocelot.Provider.Consul;
+using Ocelot.Provider.Polly;
+using Ocelot.ServiceDiscovery.Providers;
 using Volo.Abp;
 using Volo.Abp.AspNetCore.Mvc;
 using Volo.Abp.AspNetCore.Serilog;
@@ -34,9 +39,15 @@ namespace InternalGateway.Host
                 options.DocInclusionPredicate((docName, description) => true);
                 options.CustomSchemaIds(type => type.FullName);
             });
+            //扩展自定义 随机负载均衡
+            Func<IServiceProvider, DownstreamRoute, IServiceDiscoveryProvider, RandomLoadBalancer> loadBalancerFactoryFunc = (serviceProvider, Route, serviceDiscoveryProvider)
+              => new RandomLoadBalancer(serviceDiscoveryProvider.Get);
 
             // 1、添加ocelot
-            context.Services.AddOcelot(context.Services.GetConfiguration());
+            context.Services.AddOcelot(configuration)
+               //.AddCustomLoadBalancer<RandomLoadBalancer>(loadBalancerFactoryFunc)
+                .AddPolly()
+                .AddConsul();
         }
 
         public override void OnApplicationInitialization(ApplicationInitializationContext context)

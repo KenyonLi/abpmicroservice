@@ -34,6 +34,7 @@ using Volo.Abp.TenantManagement.EntityFrameworkCore;
 using Volo.Abp.VirtualFileSystem;
 using Volo.Abp.EntityFrameworkCore.MySQL;
 using Volo.Abp.AspNetCore.Mvc;
+using LKN.Microservices.Infrastructure;
 
 namespace LKN.Product;
 
@@ -53,7 +54,9 @@ namespace LKN.Product;
     */
     typeof(AbpEntityFrameworkCoreMySQLModule),
     typeof(AbpAspNetCoreSerilogModule),
-    typeof(AbpSwashbuckleModule)
+    typeof(AbpSwashbuckleModule),
+    typeof(InfrastructureModule)
+
     )]
 public class ProductHttpApiHostModule : AbpModule
 {
@@ -159,6 +162,8 @@ public class ProductHttpApiHostModule : AbpModule
                     .AllowCredentials();
             });
         });
+        //2. 增加心跳检测
+        context.Services.AddHealthChecks();
     }
 
     //自动生成 api
@@ -210,5 +215,6 @@ public class ProductHttpApiHostModule : AbpModule
         app.UseAuditing();
         app.UseAbpSerilogEnrichers();
         app.UseConfiguredEndpoints();
+        app.UseHealthChecks("/HealthCheck");
     }
 }

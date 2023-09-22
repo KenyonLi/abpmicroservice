@@ -85,11 +85,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LKN.User.HttpApi.Host", "mi
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "aggregateservices", "aggregateservices", "{4280C928-78E0-4647-BEBD-6CBF666B5460}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LKN.OrderDetailsServices", "aggregateservices\LKN.OrderDetailsServices\LKN.OrderDetailsServices.csproj", "{BB5FDBA2-C1D0-41C2-B7FF-9AD61AE35F23}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LKN.OrderDetailsServices", "aggregateservices\LKN.OrderDetailsServices\LKN.OrderDetailsServices.csproj", "{BB5FDBA2-C1D0-41C2-B7FF-9AD61AE35F23}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "gateways", "gateways", "{DE352266-E1F9-4FA7-93A5-18471350CCAD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InternalGateway.Host", "gateways\InternalGateway.Host\InternalGateway.Host.csproj", "{26F231D4-3C87-4E1E-9371-FCBC512C8C40}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InternalGateway.Host", "gateways\InternalGateway.Host\InternalGateway.Host.csproj", "{26F231D4-3C87-4E1E-9371-FCBC512C8C40}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "frameworks", "frameworks", "{B88FD9E6-1502-445A-B8F8-9676A1C716EA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LKN.Microservices.Infrastructure", "frameworks\src\LKN.Microservices.Infrastructure\LKN.Microservices.Infrastructure.csproj", "{D95A97A1-35BA-4A36-BF6B-ABDFA93D994F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -237,6 +241,10 @@ Global
 		{26F231D4-3C87-4E1E-9371-FCBC512C8C40}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{26F231D4-3C87-4E1E-9371-FCBC512C8C40}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{26F231D4-3C87-4E1E-9371-FCBC512C8C40}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D95A97A1-35BA-4A36-BF6B-ABDFA93D994F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D95A97A1-35BA-4A36-BF6B-ABDFA93D994F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D95A97A1-35BA-4A36-BF6B-ABDFA93D994F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D95A97A1-35BA-4A36-BF6B-ABDFA93D994F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -281,6 +289,7 @@ Global
 		{DAAAD38D-D2FE-4BEE-8CFF-4ACE7D6EF4B2} = {F3E30637-280A-42CA-9B20-A844E8A68DCA}
 		{BB5FDBA2-C1D0-41C2-B7FF-9AD61AE35F23} = {4280C928-78E0-4647-BEBD-6CBF666B5460}
 		{26F231D4-3C87-4E1E-9371-FCBC512C8C40} = {DE352266-E1F9-4FA7-93A5-18471350CCAD}
+		{D95A97A1-35BA-4A36-BF6B-ABDFA93D994F} = {B88FD9E6-1502-445A-B8F8-9676A1C716EA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3322A1F8-4B34-4BD8-89E5-5D14FB922247}

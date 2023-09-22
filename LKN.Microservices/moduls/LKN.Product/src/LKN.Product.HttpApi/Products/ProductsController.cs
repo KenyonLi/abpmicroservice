@@ -10,7 +10,7 @@ using Volo.Abp;
 namespace LKN.Product.Products
 {
     [RemoteService]
-    [Route("api/ProductService/product")]
+    [Route("api/ProductService/Product")]
     public class ProductsController : ProductController, IProductAppService
     {
         private readonly IProductAppService _ProductAppService;

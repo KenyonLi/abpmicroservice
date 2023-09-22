@@ -34,6 +34,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\frameworks\src\LKN.Microservices.Infrastructure\LKN.Microservices.Infrastructure.csproj" />
     <ProjectReference Include="..\..\moduls\LKN.Product\src\LKN.Product.Application\LKN.Product.Application.csproj" />
     <ProjectReference Include="..\..\moduls\LKN.Product\src\LKN.Product.EntityFrameworkCore\LKN.Product.EntityFrameworkCore.csproj" />
     <ProjectReference Include="..\..\moduls\LKN.Product\src\LKN.Product.HttpApi\LKN.Product.HttpApi.csproj" />

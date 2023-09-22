@@ -16,7 +16,7 @@ namespace LKN.Product.Products
     /// <summary>
     /// 禁止 ABP 默认的生成的API接口，创建、添加、查询
     /// </summary>
-    //[RemoteService(IsEnabled = false)]
+    [RemoteService(IsEnabled = false)]
     ///[Authorize]
     [Dependency(ServiceLifetime.Singleton)]
     public class ProductAppService : CrudAppService<
