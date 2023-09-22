@@ -2577,3 +2577,89 @@ Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving 
     {"input":{"productUrl":"string","productTitle":"string","productDescription":"string","productVirtualprice":10,"productPrice":10,"productImages":[{"id":"3fa85f64-5717-4562-b3ac-2c963f66afa6","imageUrl":"string","imageStatus":"str22ing"}]}
 
 2023-09-21 23:52:45.557 +08:00 [INF] Request finished HTTP/2 POST https://localhost:44371/api/ProductService/product application/json 289 - 200 - application/json;+charset=utf-8 296.7611ms
+2023-09-22 00:56:05.004 +08:00 [INF] Starting web host.
+2023-09-22 00:56:07.455 +08:00 [INF] Loaded ABP modules:
+2023-09-22 00:56:07.459 +08:00 [INF] - LKN.Product.ProductHttpApiHostModule
+2023-09-22 00:56:07.459 +08:00 [INF]   - LKN.Product.ProductApplicationModule
+2023-09-22 00:56:07.459 +08:00 [INF]     - LKN.Product.ProductDomainModule
+2023-09-22 00:56:07.459 +08:00 [INF]       - Volo.Abp.Domain.AbpDddDomainModule
+2023-09-22 00:56:07.459 +08:00 [INF]         - Volo.Abp.Auditing.AbpAuditingModule
+2023-09-22 00:56:07.459 +08:00 [INF]           - Volo.Abp.Data.AbpDataModule
+2023-09-22 00:56:07.459 +08:00 [INF]             - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2023-09-22 00:56:07.459 +08:00 [INF]               - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2023-09-22 00:56:07.459 +08:00 [INF]               - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2023-09-22 00:56:07.459 +08:00 [INF]             - Volo.Abp.Uow.AbpUnitOfWorkModule
+2023-09-22 00:56:07.459 +08:00 [INF]             - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2023-09-22 00:56:07.459 +08:00 [INF]           - Volo.Abp.Json.AbpJsonModule
+2023-09-22 00:56:07.459 +08:00 [INF]             - Volo.Abp.Json.SystemTextJson.AbpJsonSystemTextJsonModule
+2023-09-22 00:56:07.459 +08:00 [INF]               - Volo.Abp.Json.AbpJsonAbstractionsModule
+2023-09-22 00:56:07.459 +08:00 [INF]               - Volo.Abp.Timing.AbpTimingModule
+2023-09-22 00:56:07.459 +08:00 [INF]                 - Volo.Abp.Localization.AbpLocalizationModule
+2023-09-22 00:56:07.459 +08:00 [INF]                   - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2023-09-22 00:56:07.459 +08:00 [INF]                   - Volo.Abp.Settings.AbpSettingsModule
+2023-09-22 00:56:07.459 +08:00 [INF]                     - Volo.Abp.Security.AbpSecurityModule
+2023-09-22 00:56:07.459 +08:00 [INF]                   - Volo.Abp.Threading.AbpThreadingModule
+2023-09-22 00:56:07.459 +08:00 [INF]           - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2023-09-22 00:56:07.459 +08:00 [INF]             - Volo.Abp.MultiTenancy.AbpMultiTenancyAbstractionsModule
+2023-09-22 00:56:07.459 +08:00 [INF]           - Volo.Abp.Auditing.AbpAuditingContractsModule
+2023-09-22 00:56:07.459 +08:00 [INF]         - Volo.Abp.EventBus.AbpEventBusModule
+2023-09-22 00:56:07.459 +08:00 [INF]           - Volo.Abp.Guids.AbpGuidsModule
+2023-09-22 00:56:07.459 +08:00 [INF]           - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2023-09-22 00:56:07.459 +08:00 [INF]           - Volo.Abp.DistributedLocking.AbpDistributedLockingAbstractionsModule
+2023-09-22 00:56:07.459 +08:00 [INF]         - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2023-09-22 00:56:07.459 +08:00 [INF]         - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2023-09-22 00:56:07.459 +08:00 [INF]         - Volo.Abp.Specifications.AbpSpecificationsModule
+2023-09-22 00:56:07.459 +08:00 [INF]         - Volo.Abp.Caching.AbpCachingModule
+2023-09-22 00:56:07.459 +08:00 [INF]           - Volo.Abp.Serialization.AbpSerializationModule
+2023-09-22 00:56:07.459 +08:00 [INF]         - Volo.Abp.Domain.AbpDddDomainSharedModule
+2023-09-22 00:56:07.459 +08:00 [INF]       - LKN.Product.ProductDomainSharedModule
+2023-09-22 00:56:07.459 +08:00 [INF]         - Volo.Abp.Validation.AbpValidationModule
+2023-09-22 00:56:07.459 +08:00 [INF]     - LKN.Product.ProductApplicationContractsModule
+2023-09-22 00:56:07.459 +08:00 [INF]       - Volo.Abp.Application.AbpDddApplicationContractsModule
+2023-09-22 00:56:07.459 +08:00 [INF]       - Volo.Abp.Authorization.AbpAuthorizationModule
+2023-09-22 00:56:07.459 +08:00 [INF]         - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2023-09-22 00:56:07.459 +08:00 [INF]     - Volo.Abp.Application.AbpDddApplicationModule
+2023-09-22 00:56:07.459 +08:00 [INF]       - Volo.Abp.Http.AbpHttpAbstractionsModule
+2023-09-22 00:56:07.459 +08:00 [INF]       - Volo.Abp.Features.AbpFeaturesModule
+2023-09-22 00:56:07.459 +08:00 [INF]       - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2023-09-22 00:56:07.459 +08:00 [INF]     - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2023-09-22 00:56:07.459 +08:00 [INF]     - Volo.Abp.Autofac.AbpAutofacModule
+2023-09-22 00:56:07.459 +08:00 [INF]       - Volo.Abp.Castle.AbpCastleCoreModule
+2023-09-22 00:56:07.459 +08:00 [INF]   - LKN.Product.EntityFrameworkCore.ProductEntityFrameworkCoreModule
+2023-09-22 00:56:07.459 +08:00 [INF]     - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2023-09-22 00:56:07.459 +08:00 [INF]   - LKN.Product.ProductHttpApiModule
+2023-09-22 00:56:07.459 +08:00 [INF]     - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2023-09-22 00:56:07.459 +08:00 [INF]       - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2023-09-22 00:56:07.459 +08:00 [INF]         - Volo.Abp.Http.AbpHttpModule
+2023-09-22 00:56:07.459 +08:00 [INF]           - Volo.Abp.Minify.AbpMinifyModule
+2023-09-22 00:56:07.459 +08:00 [INF]       - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2023-09-22 00:56:07.459 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2023-09-22 00:56:07.459 +08:00 [INF]       - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2023-09-22 00:56:07.459 +08:00 [INF]         - Volo.Abp.UI.AbpUiModule
+2023-09-22 00:56:07.459 +08:00 [INF]   - Volo.Abp.AspNetCore.Mvc.UI.MultiTenancy.AbpAspNetCoreMvcUiMultiTenancyModule
+2023-09-22 00:56:07.459 +08:00 [INF]     - Volo.Abp.AspNetCore.Mvc.UI.Theme.Shared.AbpAspNetCoreMvcUiThemeSharedModule
+2023-09-22 00:56:07.459 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Bootstrap.AbpAspNetCoreMvcUiBootstrapModule
+2023-09-22 00:56:07.459 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.AbpAspNetCoreMvcUiModule
+2023-09-22 00:56:07.459 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Packages.AbpAspNetCoreMvcUiPackagesModule
+2023-09-22 00:56:07.459 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingAbstractionsModule
+2023-09-22 00:56:07.459 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Widgets.AbpAspNetCoreMvcUiWidgetsModule
+2023-09-22 00:56:07.459 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingModule
+2023-09-22 00:56:07.459 +08:00 [INF]     - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2023-09-22 00:56:07.459 +08:00 [INF]   - Volo.Abp.Caching.StackExchangeRedis.AbpCachingStackExchangeRedisModule
+2023-09-22 00:56:07.459 +08:00 [INF]   - Volo.Abp.EntityFrameworkCore.MySQL.AbpEntityFrameworkCoreMySQLModule
+2023-09-22 00:56:07.459 +08:00 [INF]   - Volo.Abp.AspNetCore.Serilog.AbpAspNetCoreSerilogModule
+2023-09-22 00:56:07.459 +08:00 [INF]   - Volo.Abp.Swashbuckle.AbpSwashbuckleModule
+2023-09-22 00:56:08.463 +08:00 [INF] User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-09-22 00:56:08.692 +08:00 [INF] Initialized all ABP modules.
+2023-09-22 00:56:08.897 +08:00 [INF] Now listening on: https://localhost:44371
+2023-09-22 00:56:08.897 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-22 00:56:08.897 +08:00 [INF] Hosting environment: Development
+2023-09-22 00:56:08.897 +08:00 [INF] Content root path: D:\GitRepos\abpmicroservice\LKN.Microservices\microservices\LKN.Product.HttpApi.Host
+2023-09-22 01:37:42.137 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:44371/api/ProductService/product?Sorting=1&SkipCount=22&MaxResultCount=2 - 0
+2023-09-22 01:37:42.887 +08:00 [INF] Executing endpoint 'LKN.Product.Products.ProductsController.GetListAsync (LKN.Product.HttpApi)'
+2023-09-22 01:37:42.950 +08:00 [INF] Route matched with {action = "GetList", controller = "Products", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.Application.Dtos.PagedResultDto`1[LKN.Product.Products.ProductDto]] GetListAsync(Volo.Abp.Application.Dtos.PagedAndSortedResultRequestDto) on controller LKN.Product.Products.ProductsController (LKN.Product.HttpApi).
+2023-09-22 01:37:49.842 +08:00 [DBG] Added 0 entity changes to the current audit log
+2023-09-22 01:37:49.860 +08:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.Application.Dtos.PagedResultDto`1[[LKN.Product.Products.ProductDto, LKN.Product.Application.Contracts, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-09-22 01:37:49.902 +08:00 [INF] Executed action LKN.Product.Products.ProductsController.GetListAsync (LKN.Product.HttpApi) in 6946.9759ms
+2023-09-22 01:37:49.903 +08:00 [INF] Executed endpoint 'LKN.Product.Products.ProductsController.GetListAsync (LKN.Product.HttpApi)'
+2023-09-22 01:37:49.916 +08:00 [INF] Request finished HTTP/1.1 GET https://localhost:44371/api/ProductService/product?Sorting=1&SkipCount=22&MaxResultCount=2 - 0 - 200 - application/json;+charset=utf-8 7783.5339ms
