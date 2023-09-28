@@ -2,6 +2,7 @@
 using LKN.Order;
 using LKN.Product;
 using Microsoft.OpenApi.Models;
+using Ocelot.Cache.CacheManager;
 using Ocelot.Configuration;
 using Ocelot.DependencyInjection;
 using Ocelot.Middleware;
@@ -45,7 +46,7 @@ namespace InternalGateway.Host
 
             // 1、添加ocelot
             context.Services.AddOcelot(configuration)
-               //.AddCustomLoadBalancer<RandomLoadBalancer>(loadBalancerFactoryFunc)
+                .AddCustomLoadBalancer<RandomLoadBalancer>(loadBalancerFactoryFunc)
                 .AddPolly()
                 .AddConsul();
         }

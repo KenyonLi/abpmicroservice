@@ -33,6 +33,7 @@ using Microsoft.EntityFrameworkCore;
 using Volo.Abp.EntityFrameworkCore.MySQL;
 using Volo.Abp.AspNetCore.Mvc;
 using LKN.Microservices.Infrastructure;
+using Nacos.V2.DependencyInjection;
 
 namespace LKN.Order;
 
@@ -63,7 +64,6 @@ public class OrderHttpApiHostModule : AbpModule
         {
             options.UseMySQL();
         });
-
         //自动生成api 
         ConfigureConventionalControllers();
 

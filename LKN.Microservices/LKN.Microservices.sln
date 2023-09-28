@@ -95,6 +95,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "frameworks", "frameworks", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LKN.Microservices.Infrastructure", "frameworks\src\LKN.Microservices.Infrastructure\LKN.Microservices.Infrastructure.csproj", "{D95A97A1-35BA-4A36-BF6B-ABDFA93D994F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PublicWebSiteGateway.Host", "gateways\PublicWebSiteGateway.Host\PublicWebSiteGateway.Host.csproj", "{4D77A717-C6F3-4F7A-9FB0-B9A7A74A0F3F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -245,6 +247,10 @@ Global
 		{D95A97A1-35BA-4A36-BF6B-ABDFA93D994F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D95A97A1-35BA-4A36-BF6B-ABDFA93D994F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D95A97A1-35BA-4A36-BF6B-ABDFA93D994F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D77A717-C6F3-4F7A-9FB0-B9A7A74A0F3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D77A717-C6F3-4F7A-9FB0-B9A7A74A0F3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D77A717-C6F3-4F7A-9FB0-B9A7A74A0F3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D77A717-C6F3-4F7A-9FB0-B9A7A74A0F3F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -290,6 +296,7 @@ Global
 		{BB5FDBA2-C1D0-41C2-B7FF-9AD61AE35F23} = {4280C928-78E0-4647-BEBD-6CBF666B5460}
 		{26F231D4-3C87-4E1E-9371-FCBC512C8C40} = {DE352266-E1F9-4FA7-93A5-18471350CCAD}
 		{D95A97A1-35BA-4A36-BF6B-ABDFA93D994F} = {B88FD9E6-1502-445A-B8F8-9676A1C716EA}
+		{4D77A717-C6F3-4F7A-9FB0-B9A7A74A0F3F} = {DE352266-E1F9-4FA7-93A5-18471350CCAD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3322A1F8-4B34-4BD8-89E5-5D14FB922247}

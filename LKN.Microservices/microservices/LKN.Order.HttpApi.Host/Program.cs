@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Serilog;
@@ -30,6 +31,14 @@ public class Program
             Log.Information("Starting web host.");
             var builder = WebApplication.CreateBuilder(args);
             builder.Host.AddAppSettingsSecretsJson()
+                
+                .ConfigureAppConfiguration((context , build) =>
+                     {
+                         build.AddJsonFile("appsettings.secrets.json", optional: true);
+                         var configuration = build.Build();
+                         var s = configuration.GetSection("Nacos");
+                         build.AddNacosV2Configuration(s);
+                 })
                 .UseAutofac()
                 .UseSerilog();
             await builder.AddApplicationAsync<OrderHttpApiHostModule>();
