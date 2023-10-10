@@ -32,6 +32,8 @@ using Volo.Abp.SettingManagement.EntityFrameworkCore;
 using Volo.Abp.Swashbuckle;
 using Volo.Abp.TenantManagement.EntityFrameworkCore;
 using Volo.Abp.VirtualFileSystem;
+using Volo.Abp.EntityFrameworkCore.MySQL;
+using Volo.Abp.AspNetCore.Mvc;
 
 namespace LKN.Payment;
 
@@ -39,15 +41,17 @@ namespace LKN.Payment;
     typeof(PaymentApplicationModule),
     typeof(PaymentEntityFrameworkCoreModule),
     typeof(PaymentHttpApiModule),
-    typeof(AbpAspNetCoreMvcUiMultiTenancyModule),
+
+   // typeof(AbpAspNetCoreMvcUiMultiTenancyModule),
     typeof(AbpAutofacModule),
-    typeof(AbpCachingStackExchangeRedisModule),
-    typeof(AbpEntityFrameworkCoreSqlServerModule),
-    typeof(AbpAuditLoggingEntityFrameworkCoreModule),
-    typeof(AbpPermissionManagementEntityFrameworkCoreModule),
-    typeof(AbpSettingManagementEntityFrameworkCoreModule),
-    typeof(AbpTenantManagementEntityFrameworkCoreModule),
+    //typeof(AbpCachingStackExchangeRedisModule),
+    //typeof(AbpEntityFrameworkCoreSqlServerModule),
+    //typeof(AbpAuditLoggingEntityFrameworkCoreModule),
+   // typeof(AbpPermissionManagementEntityFrameworkCoreModule),
+    //typeof(AbpSettingManagementEntityFrameworkCoreModule),
+   // typeof(AbpTenantManagementEntityFrameworkCoreModule),
     typeof(AbpAspNetCoreSerilogModule),
+    typeof(AbpEntityFrameworkCoreMySQLModule),
     typeof(AbpSwashbuckleModule)
     )]
 public class PaymentHttpApiHostModule : AbpModule
@@ -60,24 +64,26 @@ public class PaymentHttpApiHostModule : AbpModule
 
         Configure<AbpDbContextOptions>(options =>
         {
-            options.UseSqlServer();
+            // options.UseSqlServer();
+            options.UseMySQL();
         });
 
         //Configure<AbpMultiTenancyOptions>(options =>
         //{
         //    options.IsEnabled = MultiTenancyConsts.IsEnabled;
         //});
+        
 
-        if (hostingEnvironment.IsDevelopment())
-        {
-            Configure<AbpVirtualFileSystemOptions>(options =>
-            {
-                options.FileSets.ReplaceEmbeddedByPhysical<PaymentDomainSharedModule>(Path.Combine(hostingEnvironment.ContentRootPath, string.Format("..{0}..{0}src{0}LKN.Payment.Domain.Shared", Path.DirectorySeparatorChar)));
-                options.FileSets.ReplaceEmbeddedByPhysical<PaymentDomainModule>(Path.Combine(hostingEnvironment.ContentRootPath, string.Format("..{0}..{0}src{0}LKN.Payment.Domain", Path.DirectorySeparatorChar)));
-                options.FileSets.ReplaceEmbeddedByPhysical<PaymentApplicationContractsModule>(Path.Combine(hostingEnvironment.ContentRootPath, string.Format("..{0}..{0}src{0}LKN.Payment.Application.Contracts", Path.DirectorySeparatorChar)));
-                options.FileSets.ReplaceEmbeddedByPhysical<PaymentApplicationModule>(Path.Combine(hostingEnvironment.ContentRootPath, string.Format("..{0}..{0}src{0}LKN.Payment.Application", Path.DirectorySeparatorChar)));
-            });
-        }
+        //if (hostingEnvironment.IsDevelopment())
+        //{
+        //    Configure<AbpVirtualFileSystemOptions>(options =>
+        //    {
+        //       // options.FileSets.ReplaceEmbeddedByPhysical<PaymentDomainSharedModule>(Path.Combine(hostingEnvironment.ContentRootPath, string.Format("..{0}..{0}src{0}LKN.Payment.Domain.Shared", Path.DirectorySeparatorChar)));
+        //        options.FileSets.ReplaceEmbeddedByPhysical<PaymentDomainModule>(Path.Combine(hostingEnvironment.ContentRootPath, string.Format("..{0}..{0}src{0}LKN.Payment.Domain", Path.DirectorySeparatorChar)));
+        //        options.FileSets.ReplaceEmbeddedByPhysical<PaymentApplicationContractsModule>(Path.Combine(hostingEnvironment.ContentRootPath, string.Format("..{0}..{0}src{0}LKN.Payment.Application.Contracts", Path.DirectorySeparatorChar)));
+        //        options.FileSets.ReplaceEmbeddedByPhysical<PaymentApplicationModule>(Path.Combine(hostingEnvironment.ContentRootPath, string.Format("..{0}..{0}src{0}LKN.Payment.Application", Path.DirectorySeparatorChar)));
+        //    });
+        //}
 
         context.Services.AddAbpSwaggerGenWithOAuth(
             configuration["AuthServer:Authority"],
@@ -152,6 +158,20 @@ public class PaymentHttpApiHostModule : AbpModule
                     .AllowAnyHeader()
                     .AllowAnyMethod()
                     .AllowCredentials();
+            });
+        });
+
+        ConfigureConventionalControllers();
+
+    }
+
+    // 根据AppService自动创建API控制器
+    private void ConfigureConventionalControllers()
+    {
+        Configure<AbpAspNetCoreMvcOptions>(options =>
+        {
+            options.ConventionalControllers.Create(typeof(PaymentApplicationModule).Assembly, options => {
+                options.RootPath = "PaymentService";
             });
         });
     }

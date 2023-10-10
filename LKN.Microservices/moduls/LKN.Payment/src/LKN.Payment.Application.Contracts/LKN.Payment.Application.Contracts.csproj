@@ -14,4 +14,8 @@
     <ProjectReference Include="..\LKN.Payment.Domain.Shared\LKN.Payment.Domain.Shared.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Pays\" />
+  </ItemGroup>
+
 </Project>

@@ -12,8 +12,8 @@ public class PaymentHttpApiHostMigrationsDbContextFactory : IDesignTimeDbContext
         var configuration = BuildConfiguration();
 
         var builder = new DbContextOptionsBuilder<PaymentHttpApiHostMigrationsDbContext>()
-            .UseSqlServer(configuration.GetConnectionString("Payment"));
-
+            //.UseSqlServer(configuration.GetConnectionString("Payment"));
+            .UseMySql(configuration.GetConnectionString("Payment"), MySqlServerVersion.LatestSupportedServerVersion);
         return new PaymentHttpApiHostMigrationsDbContext(builder.Options);
     }
 

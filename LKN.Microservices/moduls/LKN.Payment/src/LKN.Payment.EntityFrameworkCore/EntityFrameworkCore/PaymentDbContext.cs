@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using LKN.Payment.Pays;
+using Microsoft.EntityFrameworkCore;
 using Volo.Abp.Data;
 using Volo.Abp.EntityFrameworkCore;
 
@@ -10,6 +11,7 @@ public class PaymentDbContext : AbpDbContext<PaymentDbContext>, IPaymentDbContex
     /* Add DbSet for each Aggregate Root here. Example:
      * public DbSet<Question> Questions { get; set; }
      */
+    public DbSet<Payments> Payments { get; set; }
 
     public PaymentDbContext(DbContextOptions<PaymentDbContext> options)
         : base(options)
