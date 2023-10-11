@@ -14,6 +14,12 @@ namespace LKN.Microservices.CAP;
 )]
 public class CAPModule : AbpModule
 {
+    public override void ConfigureServices(ServiceConfigurationContext context)
+    {
+        //1.使用cap
+        context.Services.AddCap(Options => { });
+    }
+
     public override Task OnApplicationInitializationAsync(ApplicationInitializationContext context)
     {
         var logger = context.ServiceProvider.GetRequiredService<ILogger<CAPModule>>();

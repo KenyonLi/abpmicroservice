@@ -32,7 +32,7 @@ namespace PublicWebSiteGateway.Host
             });
 
             // 1、加载ocelot配置
-            context.Services.AddOcelot(context.Services.GetConfiguration());
+           context.Services.AddOcelot(context.Services.GetConfiguration());
         }
 
         public override void OnApplicationInitialization(ApplicationInitializationContext context)

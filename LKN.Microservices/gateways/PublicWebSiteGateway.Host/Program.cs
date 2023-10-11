@@ -25,8 +25,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Host.AddAppSettingsSecretsJson()
                .ConfigureAppConfiguration(build => {
                    // 1°¢º”‘ÿnacos≈‰÷√
-                   var configuration = build.Build();
-                   build.AddNacosV2Configuration(configuration.GetSection("Nacos"));
+                  var configuration = build.Build();
+                  build.AddNacosV2Configuration(configuration.GetSection("Nacos"));
                })
                .UseAutofac();
 

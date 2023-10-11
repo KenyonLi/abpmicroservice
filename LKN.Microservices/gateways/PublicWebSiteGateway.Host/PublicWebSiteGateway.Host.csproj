@@ -23,7 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\frameworks\src\LKN.Microservices.Infrastructure\LKN.Microservices.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\frameworks\LKN.Microservices.Infrastructure\src\LKN.Microservices.Infrastructure\LKN.Microservices.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>
