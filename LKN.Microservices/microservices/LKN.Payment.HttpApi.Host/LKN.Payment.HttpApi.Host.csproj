@@ -38,6 +38,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\frameworks\LKN.Microservices.CAP\src\LKN.Microservices.CAP\LKN.Microservices.CAP.csproj" />
     <ProjectReference Include="..\..\moduls\LKN.Payment\src\LKN.Payment.Application\LKN.Payment.Application.csproj" />
     <ProjectReference Include="..\..\moduls\LKN.Payment\src\LKN.Payment.EntityFrameworkCore\LKN.Payment.EntityFrameworkCore.csproj" />
     <ProjectReference Include="..\..\moduls\LKN.Payment\src\LKN.Payment.HttpApi\LKN.Payment.HttpApi.csproj" />

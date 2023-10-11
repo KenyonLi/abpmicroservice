@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Authorization;
+﻿using DotNetCore.CAP;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
@@ -25,7 +26,8 @@ namespace LKN.Product.Products
         Guid,
         PagedAndSortedResultRequestDto,
         CreateProductDto, 
-        UpdateProductDto>, IProductAppService
+        UpdateProductDto>, IProductAppService,
+        ICapSubscribe
     {
         public IProductAbpRepository _productAbpRepository;
 
@@ -33,7 +35,22 @@ namespace LKN.Product.Products
         {
             _productAbpRepository = repository;
         }
-       // [RemoteService(IsEnabled = false)]
+
+
+        /// <summary>
+        /// 接受创建订单的事件
+        /// </summary>
+        /// <param name="createOrderDto"></param>
+        //[CapSubscribe("OrderService.CreateOrder")]
+        public void CreateOrderEvent(string dddd)
+        {
+            Console.WriteLine($"创建订单：{dddd}");
+            // throw new Exception("创建订单失败");
+            //var orderDto = this.CreateAsync(createOrderDto).Result;
+            Console.WriteLine($"创建成功：{dddd}");
+        }
+
+        // [RemoteService(IsEnabled = false)]
         public IEnumerable<ProductDto> GetProductAndImage()
         {
             // 1、查询所有和图片

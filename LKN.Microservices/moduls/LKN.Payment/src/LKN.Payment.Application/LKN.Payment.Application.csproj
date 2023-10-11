@@ -11,6 +11,7 @@
   <ItemGroup>
     <PackageReference Include="Volo.Abp.AutoMapper" Version="7.3.0" />
     <PackageReference Include="Volo.Abp.Ddd.Application" Version="7.3.0" />
+    <ProjectReference Include="..\..\..\..\frameworks\LKN.Microservices.CAP\src\LKN.Microservices.CAP\LKN.Microservices.CAP.csproj" />
     <ProjectReference Include="..\LKN.Payment.Application.Contracts\LKN.Payment.Application.Contracts.csproj" />
     <ProjectReference Include="..\LKN.Payment.Domain\LKN.Payment.Domain.csproj" />
   </ItemGroup>

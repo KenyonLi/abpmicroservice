@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using DotNetCore.CAP;
+using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,7 +22,7 @@ namespace LKN.Payment.Pays
                                             Guid,
                                             PagedAndSortedResultRequestDto,
                                             CreatePaymentDto,
-                                            UpdatePaymentDto>, IPaymentAppService
+                                            UpdatePaymentDto>, IPaymentAppService,ICapSubscribe
     {
         public IPaymentRepository _paymentRepository;
 
@@ -35,7 +36,7 @@ namespace LKN.Payment.Pays
         /// 接受创建订单的事件
         /// </summary>
         /// <param name="createOrderDto"></param>
-        //[CapSubscribe("OrderService.#")]
+        [CapSubscribe("OrderService.#")]
        // [CapSubscribe("OrderService.CreateOrder")]
         public void CreateOrderEvent(string orderDto)
         {

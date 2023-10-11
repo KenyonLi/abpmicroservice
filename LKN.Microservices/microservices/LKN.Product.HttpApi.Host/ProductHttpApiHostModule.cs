@@ -164,6 +164,28 @@ public class ProductHttpApiHostModule : AbpModule
         });
         //2. 增加心跳检测
         context.Services.AddHealthChecks();
+        // 3、使用Cap
+        context.Services.AddCap(x => {
+            // 6.1 使用RabbitMQ存储事件
+            x.UseRabbitMQ(rb => {
+                rb.HostName = configuration.GetSection("Cap").GetValue<string>("HostName");
+                rb.UserName = configuration.GetSection("Cap").GetValue<string>("UserName");
+                rb.Password = configuration.GetSection("Cap").GetValue<string>("Password");
+                rb.Port = configuration.GetSection("Cap").GetValue<int>("Port");
+                rb.VirtualHost = configuration.GetSection("Cap").GetValue<string>("VirtualHost");
+            });
+
+            // 6.2 存储消息
+            x.UseEntityFramework<ProductDbContext>();
+            x.UseMySql(configuration.GetConnectionString("Payment"));
+
+            // 6.3、消息重试
+            x.FailedRetryInterval = configuration.GetSection("Cap").GetValue<int>("FailedRetryInterval");
+            x.FailedRetryCount = configuration.GetSection("Cap").GetValue<int>("FailedRetryCount");
+
+            // 6.4、仪表盘
+            x.UseDashboard();
+        });
     }
 
     //自动生成 api
