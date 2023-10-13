@@ -17,6 +17,7 @@
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="7.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.DataProtection.StackExchangeRedis" Version="7.0.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.1" />
+    <PackageReference Include="SkyAPM.Agent.AspNetCore" Version="2.1.0" />
     <PackageReference Include="Volo.Abp.Autofac" Version="7.3.0" />
     <PackageReference Include="Volo.Abp.Caching.StackExchangeRedis" Version="7.3.0" />
     <PackageReference Include="Volo.Abp.AspNetCore.Mvc.UI.MultiTenancy" Version="7.3.0" />
@@ -39,6 +40,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\frameworks\LKN.Microservices.CAP\src\LKN.Microservices.CAP\LKN.Microservices.CAP.csproj" />
+    <ProjectReference Include="..\..\frameworks\LKN.Microservices.Infrastructure\src\LKN.Microservices.Infrastructure\LKN.Microservices.Infrastructure.csproj" />
     <ProjectReference Include="..\..\moduls\LKN.Payment\src\LKN.Payment.Application\LKN.Payment.Application.csproj" />
     <ProjectReference Include="..\..\moduls\LKN.Payment\src\LKN.Payment.EntityFrameworkCore\LKN.Payment.EntityFrameworkCore.csproj" />
     <ProjectReference Include="..\..\moduls\LKN.Payment\src\LKN.Payment.HttpApi\LKN.Payment.HttpApi.csproj" />

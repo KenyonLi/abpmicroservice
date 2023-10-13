@@ -3508,3 +3508,637 @@ Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving 
     {"input":{"paymentPrice":"22","paymentStatus":"2"}}
 
 2023-10-10 13:28:26.891 +08:00 [INF] Request finished HTTP/2 POST https://localhost:44357/api/PaymentService/payment application/json 50 - 200 - application/json;+charset=utf-8 1526.7423ms
+2023-10-12 15:12:27.800 +08:00 [INF] Starting web host.
+2023-10-12 15:12:31.231 +08:00 [INF] Loaded ABP modules:
+2023-10-12 15:12:31.232 +08:00 [INF] - LKN.Payment.PaymentHttpApiHostModule
+2023-10-12 15:12:31.232 +08:00 [INF]   - LKN.Payment.PaymentApplicationModule
+2023-10-12 15:12:31.232 +08:00 [INF]     - LKN.Payment.PaymentDomainModule
+2023-10-12 15:12:31.232 +08:00 [INF]       - Volo.Abp.Domain.AbpDddDomainModule
+2023-10-12 15:12:31.232 +08:00 [INF]         - Volo.Abp.Auditing.AbpAuditingModule
+2023-10-12 15:12:31.232 +08:00 [INF]           - Volo.Abp.Data.AbpDataModule
+2023-10-12 15:12:31.232 +08:00 [INF]             - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2023-10-12 15:12:31.232 +08:00 [INF]               - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2023-10-12 15:12:31.232 +08:00 [INF]               - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2023-10-12 15:12:31.232 +08:00 [INF]             - Volo.Abp.Uow.AbpUnitOfWorkModule
+2023-10-12 15:12:31.232 +08:00 [INF]             - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2023-10-12 15:12:31.232 +08:00 [INF]           - Volo.Abp.Json.AbpJsonModule
+2023-10-12 15:12:31.232 +08:00 [INF]             - Volo.Abp.Json.SystemTextJson.AbpJsonSystemTextJsonModule
+2023-10-12 15:12:31.232 +08:00 [INF]               - Volo.Abp.Json.AbpJsonAbstractionsModule
+2023-10-12 15:12:31.232 +08:00 [INF]               - Volo.Abp.Timing.AbpTimingModule
+2023-10-12 15:12:31.232 +08:00 [INF]                 - Volo.Abp.Localization.AbpLocalizationModule
+2023-10-12 15:12:31.232 +08:00 [INF]                   - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2023-10-12 15:12:31.232 +08:00 [INF]                   - Volo.Abp.Settings.AbpSettingsModule
+2023-10-12 15:12:31.232 +08:00 [INF]                     - Volo.Abp.Security.AbpSecurityModule
+2023-10-12 15:12:31.232 +08:00 [INF]                   - Volo.Abp.Threading.AbpThreadingModule
+2023-10-12 15:12:31.232 +08:00 [INF]           - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2023-10-12 15:12:31.232 +08:00 [INF]             - Volo.Abp.MultiTenancy.AbpMultiTenancyAbstractionsModule
+2023-10-12 15:12:31.232 +08:00 [INF]           - Volo.Abp.Auditing.AbpAuditingContractsModule
+2023-10-12 15:12:31.232 +08:00 [INF]         - Volo.Abp.EventBus.AbpEventBusModule
+2023-10-12 15:12:31.232 +08:00 [INF]           - Volo.Abp.Guids.AbpGuidsModule
+2023-10-12 15:12:31.232 +08:00 [INF]           - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2023-10-12 15:12:31.232 +08:00 [INF]           - Volo.Abp.DistributedLocking.AbpDistributedLockingAbstractionsModule
+2023-10-12 15:12:31.232 +08:00 [INF]         - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2023-10-12 15:12:31.232 +08:00 [INF]         - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2023-10-12 15:12:31.232 +08:00 [INF]         - Volo.Abp.Specifications.AbpSpecificationsModule
+2023-10-12 15:12:31.232 +08:00 [INF]         - Volo.Abp.Caching.AbpCachingModule
+2023-10-12 15:12:31.232 +08:00 [INF]           - Volo.Abp.Serialization.AbpSerializationModule
+2023-10-12 15:12:31.232 +08:00 [INF]         - Volo.Abp.Domain.AbpDddDomainSharedModule
+2023-10-12 15:12:31.232 +08:00 [INF]       - LKN.Payment.PaymentDomainSharedModule
+2023-10-12 15:12:31.232 +08:00 [INF]         - Volo.Abp.Validation.AbpValidationModule
+2023-10-12 15:12:31.232 +08:00 [INF]     - LKN.Payment.PaymentApplicationContractsModule
+2023-10-12 15:12:31.232 +08:00 [INF]       - Volo.Abp.Application.AbpDddApplicationContractsModule
+2023-10-12 15:12:31.232 +08:00 [INF]       - Volo.Abp.Authorization.AbpAuthorizationModule
+2023-10-12 15:12:31.232 +08:00 [INF]         - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2023-10-12 15:12:31.232 +08:00 [INF]     - Volo.Abp.Application.AbpDddApplicationModule
+2023-10-12 15:12:31.232 +08:00 [INF]       - Volo.Abp.Http.AbpHttpAbstractionsModule
+2023-10-12 15:12:31.232 +08:00 [INF]       - Volo.Abp.Features.AbpFeaturesModule
+2023-10-12 15:12:31.232 +08:00 [INF]       - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2023-10-12 15:12:31.232 +08:00 [INF]     - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2023-10-12 15:12:31.232 +08:00 [INF]   - LKN.Payment.EntityFrameworkCore.PaymentEntityFrameworkCoreModule
+2023-10-12 15:12:31.232 +08:00 [INF]     - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2023-10-12 15:12:31.232 +08:00 [INF]   - LKN.Payment.PaymentHttpApiModule
+2023-10-12 15:12:31.232 +08:00 [INF]     - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2023-10-12 15:12:31.232 +08:00 [INF]       - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2023-10-12 15:12:31.232 +08:00 [INF]         - Volo.Abp.Http.AbpHttpModule
+2023-10-12 15:12:31.232 +08:00 [INF]           - Volo.Abp.Minify.AbpMinifyModule
+2023-10-12 15:12:31.232 +08:00 [INF]       - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2023-10-12 15:12:31.232 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2023-10-12 15:12:31.232 +08:00 [INF]       - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2023-10-12 15:12:31.232 +08:00 [INF]         - Volo.Abp.UI.AbpUiModule
+2023-10-12 15:12:31.232 +08:00 [INF]   - Volo.Abp.Autofac.AbpAutofacModule
+2023-10-12 15:12:31.232 +08:00 [INF]     - Volo.Abp.Castle.AbpCastleCoreModule
+2023-10-12 15:12:31.232 +08:00 [INF]   - Volo.Abp.AspNetCore.Serilog.AbpAspNetCoreSerilogModule
+2023-10-12 15:12:31.232 +08:00 [INF]   - Volo.Abp.EntityFrameworkCore.MySQL.AbpEntityFrameworkCoreMySQLModule
+2023-10-12 15:12:31.232 +08:00 [INF]   - Volo.Abp.Swashbuckle.AbpSwashbuckleModule
+2023-10-12 15:12:31.689 +08:00 [INF] User profile is available. Using 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-12 15:12:31.792 +08:00 [INF] Initialized all ABP modules.
+2023-10-12 15:12:32.037 +08:00 [DBG] ### CAP background task is starting.
+2023-10-12 15:12:33.272 +08:00 [DBG] RabbitMQ configuration:'HostName:localhost, Port:5672, UserName:guest, Password:guest, ExchangeName:cap.default.router'
+2023-10-12 15:12:33.413 +08:00 [INF] Now listening on: https://localhost:44357
+2023-10-12 15:12:33.414 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-12 15:12:33.414 +08:00 [INF] Hosting environment: Development
+2023-10-12 15:12:33.414 +08:00 [INF] Content root path: D:\test\ABP\abpmicroservice\LKN.Microservices\microservices\LKN.Payment.HttpApi.Host
+2023-10-12 15:12:33.501 +08:00 [DBG] Ensuring all create database tables script are applied.
+2023-10-12 15:12:33.515 +08:00 [INF] Starting default Dispatcher
+2023-10-12 15:12:33.625 +08:00 [INF] Starting the processing server.
+2023-10-12 15:12:33.641 +08:00 [INF] RabbitMQ consumer registered. --> amq.ctag-4MWDQQgNYPQfNf5nKZXubA
+2023-10-12 15:12:33.689 +08:00 [DBG] Transport connection checking...
+2023-10-12 15:12:33.689 +08:00 [DBG] Transport connection healthy!
+2023-10-12 15:12:33.702 +08:00 [DBG] Collecting expired data from table: cap.published
+2023-10-12 15:12:33.717 +08:00 [INF] ### CAP started!
+2023-10-12 15:12:33.772 +08:00 [DBG] Collecting expired data from table: cap.received
+2023-10-12 15:12:34.153 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/ - -
+2023-10-12 15:12:34.328 +08:00 [INF] Executing endpoint 'LKN.Payment.Controllers.HomeController.Index (LKN.Payment.HttpApi.Host)'
+2023-10-12 15:12:34.353 +08:00 [INF] Route matched with {action = "Index", controller = "Home", area = "", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Index() on controller LKN.Payment.Controllers.HomeController (LKN.Payment.HttpApi.Host).
+2023-10-12 15:12:34.495 +08:00 [INF] Executing action method LKN.Payment.Controllers.HomeController.Index (LKN.Payment.HttpApi.Host) - Validation state: "Valid"
+2023-10-12 15:12:34.498 +08:00 [INF] Executed action method LKN.Payment.Controllers.HomeController.Index (LKN.Payment.HttpApi.Host), returned result Microsoft.AspNetCore.Mvc.RedirectResult in 0.2946ms.
+2023-10-12 15:12:34.508 +08:00 [INF] Executing RedirectResult, redirecting to /swagger.
+2023-10-12 15:12:34.512 +08:00 [INF] Executed action LKN.Payment.Controllers.HomeController.Index (LKN.Payment.HttpApi.Host) in 156.295ms
+2023-10-12 15:12:34.512 +08:00 [INF] Executed endpoint 'LKN.Payment.Controllers.HomeController.Index (LKN.Payment.HttpApi.Host)'
+2023-10-12 15:12:34.520 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/ - - - 302 0 - 367.6735ms
+2023-10-12 15:12:34.524 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/swagger - -
+2023-10-12 15:12:34.529 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/swagger - - - 301 0 - 5.0443ms
+2023-10-12 15:12:34.533 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/swagger/index.html - -
+2023-10-12 15:12:34.659 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/swagger/ui/abp.swagger.js - -
+2023-10-12 15:12:34.659 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/swagger/ui/abp.js - -
+2023-10-12 15:12:34.659 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/swagger/swagger-ui.css - -
+2023-10-12 15:12:34.659 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/swagger/swagger-ui-standalone-preset.js - -
+2023-10-12 15:12:34.660 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/swagger/swagger-ui-bundle.js - -
+2023-10-12 15:12:34.667 +08:00 [INF] Sending file. Request path: '/swagger/ui/abp.swagger.js'. Physical path: 'N/A'
+2023-10-12 15:12:34.667 +08:00 [INF] Sending file. Request path: '/swagger/ui/abp.js'. Physical path: 'N/A'
+2023-10-12 15:12:34.667 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/swagger/ui/abp.js - - - 200 3122 application/javascript 8.3090ms
+2023-10-12 15:12:34.667 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/swagger/ui/abp.swagger.js - - - 200 1363 application/javascript 8.3273ms
+2023-10-12 15:12:34.675 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/_framework/aspnetcore-browser-refresh.js - -
+2023-10-12 15:12:34.682 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/swagger/index.html - - - 200 - text/html;charset=utf-8 149.1647ms
+2023-10-12 15:12:34.682 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/_framework/aspnetcore-browser-refresh.js - - - 200 12018 application/javascript;+charset=utf-8 6.9273ms
+2023-10-12 15:12:34.687 +08:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2023-10-12 15:12:34.688 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/swagger/swagger-ui.css - - - 200 143943 text/css 28.6561ms
+2023-10-12 15:12:34.690 +08:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2023-10-12 15:12:34.691 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/swagger/swagger-ui-standalone-preset.js - - - 200 339486 text/javascript 31.1306ms
+2023-10-12 15:12:34.695 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/_vs/browserLink - -
+2023-10-12 15:12:34.710 +08:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2023-10-12 15:12:34.710 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/swagger/swagger-ui-bundle.js - - - 200 1095087 text/javascript 50.2768ms
+2023-10-12 15:12:34.735 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 39.8230ms
+2023-10-12 15:12:34.910 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/swagger/v1/swagger.json - -
+2023-10-12 15:12:35.085 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 175.5890ms
+2023-10-12 15:13:03.707 +08:00 [DBG] Transport connection checking...
+2023-10-12 15:13:03.708 +08:00 [DBG] Transport connection healthy!
+2023-10-12 15:13:33.722 +08:00 [DBG] Transport connection checking...
+2023-10-12 15:13:33.722 +08:00 [DBG] Transport connection healthy!
+2023-10-12 15:14:03.734 +08:00 [DBG] Transport connection checking...
+2023-10-12 15:14:03.734 +08:00 [DBG] Transport connection healthy!
+2023-10-12 15:14:33.744 +08:00 [DBG] Transport connection checking...
+2023-10-12 15:14:33.744 +08:00 [DBG] Transport connection healthy!
+2023-10-12 15:15:03.756 +08:00 [DBG] Transport connection checking...
+2023-10-12 15:15:03.756 +08:00 [DBG] Transport connection healthy!
+2023-10-12 15:15:33.762 +08:00 [DBG] Transport connection checking...
+2023-10-12 15:15:33.762 +08:00 [DBG] Transport connection healthy!
+2023-10-12 15:16:03.772 +08:00 [DBG] Transport connection checking...
+2023-10-12 15:16:03.773 +08:00 [DBG] Transport connection healthy!
+2023-10-12 15:16:33.780 +08:00 [DBG] Transport connection checking...
+2023-10-12 15:16:33.780 +08:00 [DBG] Transport connection healthy!
+2023-10-12 15:17:03.792 +08:00 [DBG] Transport connection checking...
+2023-10-12 15:17:03.792 +08:00 [DBG] Transport connection healthy!
+2023-10-12 15:17:33.796 +08:00 [DBG] Transport connection checking...
+2023-10-12 15:17:33.796 +08:00 [DBG] Transport connection healthy!
+2023-10-12 15:17:33.796 +08:00 [DBG] Collecting expired data from table: cap.published
+2023-10-12 15:17:33.814 +08:00 [DBG] Collecting expired data from table: cap.received
+2023-10-12 15:18:03.798 +08:00 [DBG] Transport connection checking...
+2023-10-12 15:18:03.798 +08:00 [DBG] Transport connection healthy!
+2023-10-12 15:18:33.808 +08:00 [DBG] Transport connection checking...
+2023-10-12 15:18:33.808 +08:00 [DBG] Transport connection healthy!
+2023-10-12 15:19:03.811 +08:00 [DBG] Transport connection checking...
+2023-10-12 15:19:03.811 +08:00 [DBG] Transport connection healthy!
+2023-10-12 15:19:33.821 +08:00 [DBG] Transport connection checking...
+2023-10-12 15:19:33.821 +08:00 [DBG] Transport connection healthy!
+2023-10-12 15:20:03.836 +08:00 [DBG] Transport connection checking...
+2023-10-12 15:20:03.836 +08:00 [DBG] Transport connection healthy!
+2023-10-12 15:20:33.838 +08:00 [DBG] Transport connection checking...
+2023-10-12 15:20:33.838 +08:00 [DBG] Transport connection healthy!
+2023-10-12 15:21:03.843 +08:00 [DBG] Transport connection checking...
+2023-10-12 15:21:03.843 +08:00 [DBG] Transport connection healthy!
+2023-10-12 15:21:33.851 +08:00 [DBG] Transport connection checking...
+2023-10-12 15:21:33.851 +08:00 [DBG] Transport connection healthy!
+2023-10-12 15:22:03.856 +08:00 [DBG] Transport connection checking...
+2023-10-12 15:22:03.856 +08:00 [DBG] Transport connection healthy!
+2023-10-12 15:22:33.840 +08:00 [DBG] Collecting expired data from table: cap.published
+2023-10-12 15:22:33.857 +08:00 [DBG] Collecting expired data from table: cap.received
+2023-10-12 15:22:33.857 +08:00 [DBG] Transport connection checking...
+2023-10-12 15:22:33.859 +08:00 [DBG] Transport connection healthy!
+2023-10-12 15:23:03.863 +08:00 [DBG] Transport connection checking...
+2023-10-12 15:23:03.863 +08:00 [DBG] Transport connection healthy!
+2023-10-12 15:23:33.869 +08:00 [DBG] Transport connection checking...
+2023-10-12 15:23:33.869 +08:00 [DBG] Transport connection healthy!
+2023-10-12 15:24:03.880 +08:00 [DBG] Transport connection checking...
+2023-10-12 15:24:03.880 +08:00 [DBG] Transport connection healthy!
+2023-10-12 15:24:33.884 +08:00 [DBG] Transport connection checking...
+2023-10-12 15:24:33.884 +08:00 [DBG] Transport connection healthy!
+2023-10-12 15:25:03.889 +08:00 [DBG] Transport connection checking...
+2023-10-12 15:25:03.889 +08:00 [DBG] Transport connection healthy!
+2023-10-12 15:25:33.903 +08:00 [DBG] Transport connection checking...
+2023-10-12 15:25:33.903 +08:00 [DBG] Transport connection healthy!
+2023-10-12 15:26:03.908 +08:00 [DBG] Transport connection checking...
+2023-10-12 15:26:03.908 +08:00 [DBG] Transport connection healthy!
+2023-10-12 16:40:08.326 +08:00 [INF] Starting web host.
+2023-10-12 16:40:11.844 +08:00 [INF] Loaded ABP modules:
+2023-10-12 16:40:11.845 +08:00 [INF] - LKN.Payment.PaymentHttpApiHostModule
+2023-10-12 16:40:11.845 +08:00 [INF]   - LKN.Payment.PaymentApplicationModule
+2023-10-12 16:40:11.845 +08:00 [INF]     - LKN.Payment.PaymentDomainModule
+2023-10-12 16:40:11.845 +08:00 [INF]       - Volo.Abp.Domain.AbpDddDomainModule
+2023-10-12 16:40:11.845 +08:00 [INF]         - Volo.Abp.Auditing.AbpAuditingModule
+2023-10-12 16:40:11.845 +08:00 [INF]           - Volo.Abp.Data.AbpDataModule
+2023-10-12 16:40:11.845 +08:00 [INF]             - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2023-10-12 16:40:11.845 +08:00 [INF]               - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2023-10-12 16:40:11.845 +08:00 [INF]               - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2023-10-12 16:40:11.845 +08:00 [INF]             - Volo.Abp.Uow.AbpUnitOfWorkModule
+2023-10-12 16:40:11.845 +08:00 [INF]             - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2023-10-12 16:40:11.845 +08:00 [INF]           - Volo.Abp.Json.AbpJsonModule
+2023-10-12 16:40:11.845 +08:00 [INF]             - Volo.Abp.Json.SystemTextJson.AbpJsonSystemTextJsonModule
+2023-10-12 16:40:11.845 +08:00 [INF]               - Volo.Abp.Json.AbpJsonAbstractionsModule
+2023-10-12 16:40:11.845 +08:00 [INF]               - Volo.Abp.Timing.AbpTimingModule
+2023-10-12 16:40:11.845 +08:00 [INF]                 - Volo.Abp.Localization.AbpLocalizationModule
+2023-10-12 16:40:11.845 +08:00 [INF]                   - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2023-10-12 16:40:11.845 +08:00 [INF]                   - Volo.Abp.Settings.AbpSettingsModule
+2023-10-12 16:40:11.845 +08:00 [INF]                     - Volo.Abp.Security.AbpSecurityModule
+2023-10-12 16:40:11.845 +08:00 [INF]                   - Volo.Abp.Threading.AbpThreadingModule
+2023-10-12 16:40:11.845 +08:00 [INF]           - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2023-10-12 16:40:11.845 +08:00 [INF]             - Volo.Abp.MultiTenancy.AbpMultiTenancyAbstractionsModule
+2023-10-12 16:40:11.845 +08:00 [INF]           - Volo.Abp.Auditing.AbpAuditingContractsModule
+2023-10-12 16:40:11.845 +08:00 [INF]         - Volo.Abp.EventBus.AbpEventBusModule
+2023-10-12 16:40:11.845 +08:00 [INF]           - Volo.Abp.Guids.AbpGuidsModule
+2023-10-12 16:40:11.845 +08:00 [INF]           - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2023-10-12 16:40:11.845 +08:00 [INF]           - Volo.Abp.DistributedLocking.AbpDistributedLockingAbstractionsModule
+2023-10-12 16:40:11.845 +08:00 [INF]         - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2023-10-12 16:40:11.845 +08:00 [INF]         - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2023-10-12 16:40:11.845 +08:00 [INF]         - Volo.Abp.Specifications.AbpSpecificationsModule
+2023-10-12 16:40:11.845 +08:00 [INF]         - Volo.Abp.Caching.AbpCachingModule
+2023-10-12 16:40:11.845 +08:00 [INF]           - Volo.Abp.Serialization.AbpSerializationModule
+2023-10-12 16:40:11.845 +08:00 [INF]         - Volo.Abp.Domain.AbpDddDomainSharedModule
+2023-10-12 16:40:11.845 +08:00 [INF]       - LKN.Payment.PaymentDomainSharedModule
+2023-10-12 16:40:11.845 +08:00 [INF]         - Volo.Abp.Validation.AbpValidationModule
+2023-10-12 16:40:11.845 +08:00 [INF]     - LKN.Payment.PaymentApplicationContractsModule
+2023-10-12 16:40:11.845 +08:00 [INF]       - Volo.Abp.Application.AbpDddApplicationContractsModule
+2023-10-12 16:40:11.845 +08:00 [INF]       - Volo.Abp.Authorization.AbpAuthorizationModule
+2023-10-12 16:40:11.845 +08:00 [INF]         - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2023-10-12 16:40:11.845 +08:00 [INF]     - Volo.Abp.Application.AbpDddApplicationModule
+2023-10-12 16:40:11.845 +08:00 [INF]       - Volo.Abp.Http.AbpHttpAbstractionsModule
+2023-10-12 16:40:11.845 +08:00 [INF]       - Volo.Abp.Features.AbpFeaturesModule
+2023-10-12 16:40:11.845 +08:00 [INF]       - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2023-10-12 16:40:11.845 +08:00 [INF]     - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2023-10-12 16:40:11.845 +08:00 [INF]   - LKN.Payment.EntityFrameworkCore.PaymentEntityFrameworkCoreModule
+2023-10-12 16:40:11.845 +08:00 [INF]     - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2023-10-12 16:40:11.845 +08:00 [INF]   - LKN.Payment.PaymentHttpApiModule
+2023-10-12 16:40:11.845 +08:00 [INF]     - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2023-10-12 16:40:11.845 +08:00 [INF]       - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2023-10-12 16:40:11.845 +08:00 [INF]         - Volo.Abp.Http.AbpHttpModule
+2023-10-12 16:40:11.845 +08:00 [INF]           - Volo.Abp.Minify.AbpMinifyModule
+2023-10-12 16:40:11.845 +08:00 [INF]       - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2023-10-12 16:40:11.845 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2023-10-12 16:40:11.845 +08:00 [INF]       - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2023-10-12 16:40:11.845 +08:00 [INF]         - Volo.Abp.UI.AbpUiModule
+2023-10-12 16:40:11.845 +08:00 [INF]   - Volo.Abp.Autofac.AbpAutofacModule
+2023-10-12 16:40:11.845 +08:00 [INF]     - Volo.Abp.Castle.AbpCastleCoreModule
+2023-10-12 16:40:11.845 +08:00 [INF]   - Volo.Abp.AspNetCore.Serilog.AbpAspNetCoreSerilogModule
+2023-10-12 16:40:11.845 +08:00 [INF]   - Volo.Abp.EntityFrameworkCore.MySQL.AbpEntityFrameworkCoreMySQLModule
+2023-10-12 16:40:11.845 +08:00 [INF]   - LKN.Microservices.Infrastructure.InfrastructureModule
+2023-10-12 16:40:11.845 +08:00 [INF]   - Volo.Abp.Swashbuckle.AbpSwashbuckleModule
+2023-10-12 16:40:11.966 +08:00 [INF] MySettingName => 
+2023-10-12 16:40:11.966 +08:00 [INF] EnvironmentName => Development
+2023-10-12 16:40:12.384 +08:00 [INF] User profile is available. Using 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-12 16:40:12.495 +08:00 [INF] Initialized all ABP modules.
+2023-10-12 16:40:15.105 +08:00 [DBG] ### CAP background task is starting.
+2023-10-12 16:40:16.192 +08:00 [DBG] RabbitMQ configuration:'HostName:localhost, Port:5672, UserName:guest, Password:guest, ExchangeName:cap.default.router'
+2023-10-12 16:40:16.307 +08:00 [DBG] Ensuring all create database tables script are applied.
+2023-10-12 16:40:16.313 +08:00 [INF] Starting default Dispatcher
+2023-10-12 16:40:16.349 +08:00 [INF] Now listening on: https://localhost:44357
+2023-10-12 16:40:16.360 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-12 16:40:16.360 +08:00 [INF] Hosting environment: Development
+2023-10-12 16:40:16.360 +08:00 [INF] Content root path: D:\test\ABP\abpmicroservice\LKN.Microservices\microservices\LKN.Payment.HttpApi.Host
+2023-10-12 16:40:16.407 +08:00 [INF] Starting the processing server.
+2023-10-12 16:40:16.421 +08:00 [INF] RabbitMQ consumer registered. --> amq.ctag-5ZJuqYuYpkCfh7Wa1IPVnw
+2023-10-12 16:40:16.425 +08:00 [DBG] Received message. id:307916662054359045, name: OrderService.CreateOrder
+2023-10-12 16:40:16.472 +08:00 [DBG] Transport connection checking...
+2023-10-12 16:40:16.472 +08:00 [DBG] Transport connection healthy!
+2023-10-12 16:40:16.487 +08:00 [DBG] Collecting expired data from table: cap.published
+2023-10-12 16:40:16.491 +08:00 [INF] ### CAP started!
+2023-10-12 16:40:16.499 +08:00 [WRN] The Subscriber of the message(307916662054359045) still fails after 10th executions and we will stop retrying.
+2023-10-12 16:40:16.547 +08:00 [DBG] Collecting expired data from table: cap.received
+2023-10-12 16:40:16.567 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 16:40:16.744 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 177.0119ms
+2023-10-12 16:40:17.447 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/ - -
+2023-10-12 16:40:17.466 +08:00 [INF] Executing endpoint 'LKN.Payment.Controllers.HomeController.Index (LKN.Payment.HttpApi.Host)'
+2023-10-12 16:40:17.489 +08:00 [INF] Route matched with {action = "Index", controller = "Home", area = "", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Index() on controller LKN.Payment.Controllers.HomeController (LKN.Payment.HttpApi.Host).
+2023-10-12 16:40:17.644 +08:00 [INF] Executing action method LKN.Payment.Controllers.HomeController.Index (LKN.Payment.HttpApi.Host) - Validation state: "Valid"
+2023-10-12 16:40:17.647 +08:00 [INF] Executed action method LKN.Payment.Controllers.HomeController.Index (LKN.Payment.HttpApi.Host), returned result Microsoft.AspNetCore.Mvc.RedirectResult in 0.3882ms.
+2023-10-12 16:40:17.656 +08:00 [INF] Executing RedirectResult, redirecting to /swagger.
+2023-10-12 16:40:17.661 +08:00 [INF] Executed action LKN.Payment.Controllers.HomeController.Index (LKN.Payment.HttpApi.Host) in 168.5901ms
+2023-10-12 16:40:17.661 +08:00 [INF] Executed endpoint 'LKN.Payment.Controllers.HomeController.Index (LKN.Payment.HttpApi.Host)'
+2023-10-12 16:40:17.666 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/ - - - 302 0 - 219.0309ms
+2023-10-12 16:40:17.672 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/swagger/index.html - -
+2023-10-12 16:40:17.811 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/swagger/index.html - - - 200 - text/html;charset=utf-8 138.0681ms
+2023-10-12 16:40:17.818 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/_framework/aspnetcore-browser-refresh.js - -
+2023-10-12 16:40:17.832 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/_vs/browserLink - -
+2023-10-12 16:40:17.835 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/_framework/aspnetcore-browser-refresh.js - - - 200 12018 application/javascript;+charset=utf-8 16.5533ms
+2023-10-12 16:40:17.874 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 42.2044ms
+2023-10-12 16:40:18.106 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/swagger/v1/swagger.json - -
+2023-10-12 16:40:18.250 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 144.0279ms
+2023-10-12 16:40:26.768 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 16:40:26.770 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 1.3438ms
+2023-10-12 16:40:36.788 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 16:40:36.789 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 0.6586ms
+2023-10-12 16:40:46.483 +08:00 [DBG] Transport connection checking...
+2023-10-12 16:40:46.484 +08:00 [DBG] Transport connection healthy!
+2023-10-12 16:40:46.808 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 16:40:46.808 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 0.5457ms
+2023-10-12 16:40:56.826 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 16:40:56.827 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 0.9082ms
+2023-10-12 16:41:06.871 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 16:41:06.872 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 0.8264ms
+2023-10-12 16:41:16.491 +08:00 [DBG] Transport connection checking...
+2023-10-12 16:41:16.491 +08:00 [DBG] Transport connection healthy!
+2023-10-12 16:41:16.887 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 16:41:16.887 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 0.6079ms
+2023-10-12 16:41:26.915 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 16:41:26.915 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 0.7196ms
+2023-10-12 16:41:36.923 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 16:41:36.924 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 0.6263ms
+2023-10-12 16:41:46.494 +08:00 [DBG] Transport connection checking...
+2023-10-12 16:41:46.494 +08:00 [DBG] Transport connection healthy!
+2023-10-12 16:41:46.949 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 16:41:46.950 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 0.9553ms
+2023-10-12 16:41:56.970 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 16:41:56.977 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 8.3278ms
+2023-10-12 16:42:07.000 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 16:42:07.001 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 0.7475ms
+2023-10-12 16:42:16.500 +08:00 [DBG] Transport connection checking...
+2023-10-12 16:42:16.500 +08:00 [DBG] Transport connection healthy!
+2023-10-12 16:42:17.038 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 16:42:17.039 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 1.1836ms
+2023-10-12 16:42:27.064 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 16:42:27.065 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 0.6308ms
+2023-10-12 16:42:37.090 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 16:42:37.091 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 0.6146ms
+2023-10-12 16:42:46.512 +08:00 [DBG] Transport connection checking...
+2023-10-12 16:42:46.512 +08:00 [DBG] Transport connection healthy!
+2023-10-12 16:42:47.106 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 16:42:47.107 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 0.7463ms
+2023-10-12 16:42:57.123 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 16:42:57.124 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 0.9003ms
+2023-10-12 16:43:09.397 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 16:43:09.398 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 1.1872ms
+2023-10-12 16:43:16.527 +08:00 [DBG] Transport connection checking...
+2023-10-12 16:43:16.527 +08:00 [DBG] Transport connection healthy!
+2023-10-12 16:43:19.436 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 16:43:19.436 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 0.5779ms
+2023-10-12 16:43:29.453 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 16:43:29.454 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 0.6880ms
+2023-10-12 16:43:39.474 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 16:43:39.474 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 0.6910ms
+2023-10-12 16:43:46.532 +08:00 [DBG] Transport connection checking...
+2023-10-12 16:43:46.533 +08:00 [DBG] Transport connection healthy!
+2023-10-12 16:43:49.498 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 16:43:49.499 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 0.6793ms
+2023-10-12 16:43:59.531 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 16:43:59.532 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 0.5326ms
+2023-10-12 16:44:09.550 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 16:44:09.551 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 0.8062ms
+2023-10-12 16:44:16.537 +08:00 [DBG] Transport connection checking...
+2023-10-12 16:44:16.537 +08:00 [DBG] Transport connection healthy!
+2023-10-12 16:44:19.581 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 16:44:19.582 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 1.0004ms
+2023-10-12 16:44:29.596 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 16:44:29.597 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 0.5275ms
+2023-10-12 16:44:39.608 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 16:44:39.609 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 1.1582ms
+2023-10-12 16:44:46.548 +08:00 [DBG] Transport connection checking...
+2023-10-12 16:44:46.548 +08:00 [DBG] Transport connection healthy!
+2023-10-12 16:44:49.637 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 16:44:49.638 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 1.0613ms
+2023-10-12 16:44:59.660 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 16:44:59.661 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 0.8595ms
+2023-10-12 16:45:09.681 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 16:45:09.682 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 0.8053ms
+2023-10-12 16:45:16.560 +08:00 [DBG] Transport connection checking...
+2023-10-12 16:45:16.560 +08:00 [DBG] Transport connection healthy!
+2023-10-12 16:45:16.576 +08:00 [DBG] Collecting expired data from table: cap.published
+2023-10-12 16:45:16.595 +08:00 [DBG] Collecting expired data from table: cap.received
+2023-10-12 16:45:19.704 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 16:45:19.704 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 0.4547ms
+2023-10-12 16:45:29.744 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 16:45:29.746 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 2.3902ms
+2023-10-12 16:45:39.759 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 16:45:39.759 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 0.6260ms
+2023-10-12 16:45:46.576 +08:00 [DBG] Transport connection checking...
+2023-10-12 16:45:46.576 +08:00 [DBG] Transport connection healthy!
+2023-10-12 16:45:49.783 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 16:45:49.784 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 0.5783ms
+2023-10-12 16:45:59.812 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 16:45:59.814 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 2.2506ms
+2023-10-12 16:46:09.825 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 16:46:09.825 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 0.3851ms
+2023-10-12 16:46:16.582 +08:00 [DBG] Transport connection checking...
+2023-10-12 16:46:16.582 +08:00 [DBG] Transport connection healthy!
+2023-10-12 16:46:19.847 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 16:46:19.848 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 0.5597ms
+2023-10-12 16:46:29.865 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 16:46:29.865 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 0.3929ms
+2023-10-12 16:46:39.874 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 16:46:39.874 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 0.5342ms
+2023-10-12 16:46:46.593 +08:00 [DBG] Transport connection checking...
+2023-10-12 16:46:46.593 +08:00 [DBG] Transport connection healthy!
+2023-10-12 16:46:49.889 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 16:46:49.889 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 0.3955ms
+2023-10-12 16:46:59.906 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 16:46:59.906 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 0.3747ms
+2023-10-12 16:47:09.914 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 16:47:09.914 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 0.3526ms
+2023-10-12 16:47:16.607 +08:00 [DBG] Transport connection checking...
+2023-10-12 16:47:16.607 +08:00 [DBG] Transport connection healthy!
+2023-10-12 16:47:19.923 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 16:47:19.924 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 0.9177ms
+2023-10-12 16:47:29.943 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 16:47:29.944 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 0.6781ms
+2023-10-12 16:47:39.956 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 16:47:39.957 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 0.8333ms
+2023-10-12 16:47:46.622 +08:00 [DBG] Transport connection checking...
+2023-10-12 16:47:46.622 +08:00 [DBG] Transport connection healthy!
+2023-10-12 16:47:49.977 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 16:47:49.978 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 0.3818ms
+2023-10-12 16:48:00.001 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 16:48:00.002 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 0.3971ms
+2023-10-12 16:48:10.017 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 16:48:10.018 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 0.7444ms
+2023-10-12 16:48:16.623 +08:00 [DBG] Transport connection checking...
+2023-10-12 16:48:16.623 +08:00 [DBG] Transport connection healthy!
+2023-10-12 16:48:20.030 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 16:48:20.030 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 0.7776ms
+2023-10-12 16:48:30.055 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 16:48:30.056 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 0.9427ms
+2023-10-12 16:48:40.087 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 16:48:40.088 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 0.7148ms
+2023-10-12 16:48:46.625 +08:00 [DBG] Transport connection checking...
+2023-10-12 16:48:46.625 +08:00 [DBG] Transport connection healthy!
+2023-10-12 16:48:50.110 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 16:48:50.111 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 0.5308ms
+2023-10-12 16:49:00.133 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 16:49:00.134 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 0.9265ms
+2023-10-12 16:49:10.159 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 16:49:10.160 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 0.4217ms
+2023-10-12 16:49:16.635 +08:00 [DBG] Transport connection checking...
+2023-10-12 16:49:16.635 +08:00 [DBG] Transport connection healthy!
+2023-10-12 16:49:20.175 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 16:49:20.176 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 0.5328ms
+2023-10-12 16:49:30.188 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 16:49:30.188 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 0.6458ms
+2023-10-12 16:49:40.210 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 16:49:40.211 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 0.4218ms
+2023-10-12 16:49:46.636 +08:00 [DBG] Transport connection checking...
+2023-10-12 16:49:46.636 +08:00 [DBG] Transport connection healthy!
+2023-10-12 16:49:50.220 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 16:49:50.220 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 0.5411ms
+2023-10-12 16:50:00.231 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 16:50:00.231 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 0.4209ms
+2023-10-12 16:50:10.257 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 16:50:10.257 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 0.8070ms
+2023-10-12 16:50:16.622 +08:00 [DBG] Collecting expired data from table: cap.published
+2023-10-12 16:50:16.636 +08:00 [DBG] Transport connection checking...
+2023-10-12 16:50:16.636 +08:00 [DBG] Transport connection healthy!
+2023-10-12 16:50:16.638 +08:00 [DBG] Collecting expired data from table: cap.received
+2023-10-12 16:50:20.279 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 16:50:20.280 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 0.3477ms
+2023-10-12 16:50:30.298 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 16:50:30.299 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 0.5987ms
+2023-10-12 16:50:40.319 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 16:50:40.320 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 0.5054ms
+2023-10-12 16:50:46.647 +08:00 [DBG] Transport connection checking...
+2023-10-12 16:50:46.647 +08:00 [DBG] Transport connection healthy!
+2023-10-12 16:50:50.341 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 16:50:50.342 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 0.3801ms
+2023-10-12 16:51:00.358 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 16:51:00.358 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 0.3736ms
+2023-10-12 16:51:10.378 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 16:51:10.379 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 0.6149ms
+2023-10-12 16:51:16.663 +08:00 [DBG] Transport connection checking...
+2023-10-12 16:51:16.663 +08:00 [DBG] Transport connection healthy!
+2023-10-12 16:51:20.397 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 16:51:20.398 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 0.5135ms
+2023-10-12 16:51:30.412 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 16:51:30.413 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 0.6969ms
+2023-10-12 16:51:40.432 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 16:51:40.432 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 0.4944ms
+2023-10-12 16:51:46.670 +08:00 [DBG] Transport connection checking...
+2023-10-12 16:51:46.670 +08:00 [DBG] Transport connection healthy!
+2023-10-12 16:51:50.443 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 16:51:50.444 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 0.3427ms
+2023-10-12 16:52:00.459 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 16:52:00.460 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 0.3816ms
+2023-10-12 16:52:10.467 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 16:52:10.468 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 0.4941ms
+2023-10-12 16:52:16.684 +08:00 [DBG] Transport connection checking...
+2023-10-12 16:52:16.684 +08:00 [DBG] Transport connection healthy!
+2023-10-12 16:52:20.499 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 16:52:20.500 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 2.2922ms
+2023-10-12 16:52:30.511 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 16:52:30.511 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 0.4484ms
+2023-10-12 16:52:40.530 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 16:52:40.531 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 0.3740ms
+2023-10-12 16:52:46.698 +08:00 [DBG] Transport connection checking...
+2023-10-12 16:52:46.698 +08:00 [DBG] Transport connection healthy!
+2023-10-12 16:52:50.540 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 16:52:50.540 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 0.6400ms
+2023-10-12 16:53:00.573 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 16:53:00.575 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 2.1549ms
+2023-10-12 16:53:10.596 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 16:53:10.597 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 0.6830ms
+2023-10-12 16:53:16.703 +08:00 [DBG] Transport connection checking...
+2023-10-12 16:53:16.703 +08:00 [DBG] Transport connection healthy!
+2023-10-12 16:53:20.626 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 16:53:20.626 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 0.6712ms
+2023-10-12 16:53:30.656 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 16:53:30.656 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 0.3739ms
+2023-10-12 16:53:40.680 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 16:53:40.681 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 0.3610ms
+2023-10-12 16:53:46.710 +08:00 [DBG] Transport connection checking...
+2023-10-12 16:53:46.710 +08:00 [DBG] Transport connection healthy!
+2023-10-12 16:53:50.711 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 16:53:50.711 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 0.6819ms
+2023-10-12 16:54:00.729 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 16:54:00.730 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 0.7866ms
+2023-10-12 16:54:10.742 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 16:54:10.742 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 0.8161ms
+2023-10-12 16:54:16.722 +08:00 [DBG] Transport connection checking...
+2023-10-12 16:54:16.722 +08:00 [DBG] Transport connection healthy!
+2023-10-12 16:54:20.750 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 16:54:20.751 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 0.6994ms
+2023-10-12 16:54:30.765 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 16:54:30.766 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 0.6429ms
+2023-10-12 16:54:40.775 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 16:54:40.776 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 0.5076ms
+2023-10-12 16:54:46.726 +08:00 [DBG] Transport connection checking...
+2023-10-12 16:54:46.726 +08:00 [DBG] Transport connection healthy!
+2023-10-12 16:54:50.792 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 16:54:50.793 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 0.5689ms
+2023-10-12 16:55:00.799 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 16:55:00.800 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 0.6058ms
+2023-10-12 16:55:10.819 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 16:55:10.819 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 0.3887ms
+2023-10-12 16:55:16.666 +08:00 [DBG] Collecting expired data from table: cap.published
+2023-10-12 16:55:16.684 +08:00 [DBG] Collecting expired data from table: cap.received
+2023-10-12 16:55:16.727 +08:00 [DBG] Transport connection checking...
+2023-10-12 16:55:16.727 +08:00 [DBG] Transport connection healthy!
+2023-10-12 16:55:20.842 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 16:55:20.843 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 0.6033ms
+2023-10-12 16:55:30.853 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 16:55:30.854 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 0.8686ms
+2023-10-12 16:55:40.870 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 16:55:40.871 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 0.6941ms
+2023-10-12 16:55:46.732 +08:00 [DBG] Transport connection checking...
+2023-10-12 16:55:46.732 +08:00 [DBG] Transport connection healthy!
+2023-10-12 16:55:50.880 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 16:55:50.880 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 0.5974ms
+2023-10-12 16:56:00.890 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 16:56:00.891 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 0.7267ms
+2023-10-12 16:56:10.902 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 16:56:10.903 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 0.4193ms
+2023-10-12 16:56:16.733 +08:00 [DBG] Transport connection checking...
+2023-10-12 16:56:16.733 +08:00 [DBG] Transport connection healthy!
+2023-10-12 16:56:20.923 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 16:56:20.924 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 0.3679ms
+2023-10-12 16:56:30.932 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 16:56:30.932 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 0.5920ms
+2023-10-12 16:56:40.953 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 16:56:40.953 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 0.6373ms
+2023-10-12 16:56:46.738 +08:00 [DBG] Transport connection checking...
+2023-10-12 16:56:46.738 +08:00 [DBG] Transport connection healthy!
+2023-10-12 16:56:50.975 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 16:56:50.975 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 0.6802ms
+2023-10-12 16:57:00.987 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 16:57:00.987 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 0.7286ms
+2023-10-12 16:57:11.005 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 16:57:11.005 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 0.6105ms
+2023-10-12 16:57:16.743 +08:00 [DBG] Transport connection checking...
+2023-10-12 16:57:16.743 +08:00 [DBG] Transport connection healthy!
+2023-10-12 16:57:21.033 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 16:57:21.034 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 0.7494ms
+2023-10-12 16:57:31.049 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 16:57:31.050 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 0.6615ms
+2023-10-12 16:57:41.069 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 16:57:41.070 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 0.5779ms
+2023-10-12 16:57:46.757 +08:00 [DBG] Transport connection checking...
+2023-10-12 16:57:46.757 +08:00 [DBG] Transport connection healthy!
+2023-10-12 16:57:51.079 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 16:57:51.080 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 0.6348ms
+2023-10-12 16:58:01.091 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 16:58:01.092 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 0.5950ms
+2023-10-12 16:58:11.110 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 16:58:11.111 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 0.4255ms
+2023-10-12 16:58:16.773 +08:00 [DBG] Transport connection checking...
+2023-10-12 16:58:16.773 +08:00 [DBG] Transport connection healthy!
+2023-10-12 16:58:21.131 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 16:58:21.132 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 0.6457ms
+2023-10-12 16:58:31.143 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 16:58:31.144 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 0.6479ms
+2023-10-12 16:58:41.157 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 16:58:41.157 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 0.7614ms
+2023-10-12 16:58:46.774 +08:00 [DBG] Transport connection checking...
+2023-10-12 16:58:46.774 +08:00 [DBG] Transport connection healthy!
+2023-10-12 16:58:51.166 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 16:58:51.166 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 0.3966ms
+2023-10-12 16:59:01.191 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 16:59:01.191 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 0.5395ms
+2023-10-12 16:59:11.205 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 16:59:11.206 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 0.5773ms
+2023-10-12 16:59:16.784 +08:00 [DBG] Transport connection checking...
+2023-10-12 16:59:16.784 +08:00 [DBG] Transport connection healthy!
+2023-10-12 16:59:21.236 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 16:59:21.236 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 0.5342ms
+2023-10-12 16:59:31.262 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 16:59:31.263 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 1.0216ms
+2023-10-12 16:59:41.288 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 16:59:41.288 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 0.7351ms
+2023-10-12 16:59:46.789 +08:00 [DBG] Transport connection checking...
+2023-10-12 16:59:46.789 +08:00 [DBG] Transport connection healthy!
+2023-10-12 16:59:51.307 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 16:59:51.307 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 0.4754ms
+2023-10-12 17:00:01.327 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 17:00:01.328 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 0.5163ms
+2023-10-12 17:00:11.350 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 17:00:11.351 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 0.8248ms
+2023-10-12 17:00:16.707 +08:00 [DBG] Collecting expired data from table: cap.published
+2023-10-12 17:00:16.724 +08:00 [DBG] Collecting expired data from table: cap.received
+2023-10-12 17:00:16.801 +08:00 [DBG] Transport connection checking...
+2023-10-12 17:00:16.801 +08:00 [DBG] Transport connection healthy!
+2023-10-12 17:00:21.361 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 17:00:21.361 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 0.5089ms
+2023-10-12 17:00:31.385 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 17:00:31.386 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 0.7811ms
+2023-10-12 17:00:41.404 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 17:00:41.404 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 0.3749ms
+2023-10-12 17:00:46.802 +08:00 [DBG] Transport connection checking...
+2023-10-12 17:00:46.802 +08:00 [DBG] Transport connection healthy!
+2023-10-12 17:00:51.428 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 17:00:51.429 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 0.6238ms
+2023-10-12 17:01:01.451 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 17:01:01.452 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 1.8075ms
+2023-10-12 17:01:11.483 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 17:01:11.485 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 1.6739ms
+2023-10-12 17:01:16.811 +08:00 [DBG] Transport connection checking...
+2023-10-12 17:01:16.811 +08:00 [DBG] Transport connection healthy!
+2023-10-12 17:01:21.515 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 17:01:21.516 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 1.5681ms
+2023-10-12 17:01:31.529 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 17:01:31.530 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 0.6155ms
+2023-10-12 17:01:41.542 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 17:01:41.543 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 0.7845ms
+2023-10-12 17:01:46.818 +08:00 [DBG] Transport connection checking...
+2023-10-12 17:01:46.818 +08:00 [DBG] Transport connection healthy!
+2023-10-12 17:01:51.566 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 17:01:51.566 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 0.4009ms
+2023-10-12 17:02:01.596 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 17:02:01.599 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 2.9743ms
+2023-10-12 17:02:11.618 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 17:02:11.618 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 0.5005ms
+2023-10-12 17:02:16.822 +08:00 [DBG] Transport connection checking...
+2023-10-12 17:02:16.823 +08:00 [DBG] Transport connection healthy!
+2023-10-12 17:02:21.650 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44357/HealthCheck - -
+2023-10-12 17:02:21.650 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44357/HealthCheck - - - 200 - text/plain 0.8806ms

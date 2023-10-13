@@ -34,6 +34,7 @@ using Volo.Abp.TenantManagement.EntityFrameworkCore;
 using Volo.Abp.VirtualFileSystem;
 using Volo.Abp.EntityFrameworkCore.MySQL;
 using Volo.Abp.AspNetCore.Mvc;
+using LKN.Microservices.Infrastructure;
 
 namespace LKN.Payment;
 
@@ -52,6 +53,7 @@ namespace LKN.Payment;
    // typeof(AbpTenantManagementEntityFrameworkCoreModule),
     typeof(AbpAspNetCoreSerilogModule),
     typeof(AbpEntityFrameworkCoreMySQLModule),
+    typeof(InfrastructureModule),
     typeof(AbpSwashbuckleModule)
     )]
 public class PaymentHttpApiHostModule : AbpModule
@@ -184,6 +186,9 @@ public class PaymentHttpApiHostModule : AbpModule
             // 6.4、仪表盘
             x.UseDashboard();
         });
+        //4.心跳  
+
+        context.Services.AddHealthChecks();
     }
 
     // 根据AppService自动创建API控制器
@@ -216,13 +221,13 @@ public class PaymentHttpApiHostModule : AbpModule
         app.UseStaticFiles();
         app.UseRouting();
         app.UseCors();
-        app.UseAuthentication();
+       // app.UseAuthentication();
         //if (MultiTenancyConsts.IsEnabled)
         //{
         //    app.UseMultiTenancy();
         //}
         app.UseAbpRequestLocalization();
-        app.UseAuthorization();
+        //app.UseAuthorization();
         app.UseSwagger();
         app.UseAbpSwaggerUI(options =>
         {
@@ -235,5 +240,8 @@ public class PaymentHttpApiHostModule : AbpModule
         app.UseAuditing();
         app.UseAbpSerilogEnrichers();
         app.UseConfiguredEndpoints();
+
+        app.UseHealthChecks("/HealthCheck");
+
     }
 }

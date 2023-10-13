@@ -1,0 +1,66 @@
+{
+  "SkyWalking": {
+    "ServiceName": "InternalGateway",
+    "Namespace": "",
+    "HeaderVersions": [
+      "sw8"
+    ],
+    "Sampling": {
+      "SamplePer3Secs": -1,
+      "Percentage": -1.0
+    },
+    "Logging": {
+      "Level": "Information",
+      "FilePath": "logs\\skyapm-{Date}.log"
+    },
+    "Transport": {
+      "Interval": 3000,
+      "ProtocolVersion": "v8",
+      "QueueSize": 30000,
+      "BatchSize": 3000,
+      "gRPC": {
+        "Servers": "localhost:11800",
+        "Timeout": 10000,
+        "ConnectTimeout": 10000,
+        "ReportTimeout": 600000,
+        "Authentication": ""
+      }
+    }
+  }
+}
+/*
+  java -javaagent:skywalking-agent.jar 
+  -Dskywalking.agent.service_name=a-service 
+  -Dskywalking.collector.backend_service=127.0.0.1:11800 
+  -Dskywalking.logging.file_name=a-service-api.log 
+  -jar a-service.jar
+
+
+#指明 skywalking jar 包地址
+java -javaagent:skywalking-agent.jar
+#当前接入应用的名字
+-Dskywalking.agent.service_name=a-service
+#向哪个服务器的哪个端口上报数据，端口号默认：11800
+-Dskywalking.collector.backend_service=192.168.31.10:11800
+#skywalking 运行日志
+-Dskywalking.logging.file_name=a-service-api.log
+-jar a-service.jar
+#指明 skywalking jar 包地址
+java -javaagent:skywalking-agent.jar
+#当前接入应用的名字
+-Dskywalking.agent.service_name=a-service
+#向哪个服务器的哪个端口上报数据，端口号默认：11800
+-Dskywalking.collector.backend_service=192.168.31.10:11800
+#skywalking 运行日志
+-Dskywalking.logging.file_name=a-service-api.log
+-jar a-service.jar
+#指明 skywalking jar 包地址
+java -javaagent:skywalking-agent.jar
+#当前接入应用的名字
+-Dskywalking.agent.service_name=a-service
+#向哪个服务器的哪个端口上报数据，端口号默认：11800
+-Dskywalking.collector.backend_service=192.168.31.10:11800
+#skywalking 运行日志
+-Dskywalking.logging.file_name=a-service-api.log
+-jar a-service.jar
+*/
