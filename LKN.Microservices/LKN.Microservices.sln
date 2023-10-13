@@ -99,6 +99,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LKN.Microservices.Infrastru
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LKN.Microservices.CAP", "frameworks\LKN.Microservices.CAP\src\LKN.Microservices.CAP\LKN.Microservices.CAP.csproj", "{EDADED63-B982-4757-95C4-5A966CF6F2A3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LKN.Microservices.ELK", "frameworks\LKN.Microservices.ELK\LKN.Microservices.ELK\LKN.Microservices.ELK.csproj", "{7E8DA78B-104D-43D6-8E0C-2E1ECECB1F7A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -257,6 +259,10 @@ Global
 		{EDADED63-B982-4757-95C4-5A966CF6F2A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EDADED63-B982-4757-95C4-5A966CF6F2A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EDADED63-B982-4757-95C4-5A966CF6F2A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E8DA78B-104D-43D6-8E0C-2E1ECECB1F7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E8DA78B-104D-43D6-8E0C-2E1ECECB1F7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E8DA78B-104D-43D6-8E0C-2E1ECECB1F7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E8DA78B-104D-43D6-8E0C-2E1ECECB1F7A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -304,6 +310,7 @@ Global
 		{4D77A717-C6F3-4F7A-9FB0-B9A7A74A0F3F} = {DE352266-E1F9-4FA7-93A5-18471350CCAD}
 		{189AEDB3-0FA2-4925-B3B1-17359AB9879F} = {B88FD9E6-1502-445A-B8F8-9676A1C716EA}
 		{EDADED63-B982-4757-95C4-5A966CF6F2A3} = {B88FD9E6-1502-445A-B8F8-9676A1C716EA}
+		{7E8DA78B-104D-43D6-8E0C-2E1ECECB1F7A} = {B88FD9E6-1502-445A-B8F8-9676A1C716EA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3322A1F8-4B34-4BD8-89E5-5D14FB922247}

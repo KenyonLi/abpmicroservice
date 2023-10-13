@@ -19,6 +19,7 @@
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="7.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.DataProtection.StackExchangeRedis" Version="7.0.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.1" />
+    <PackageReference Include="Serilog.Sinks.RabbitMQ" Version="6.0.0" />
     <PackageReference Include="SkyAPM.Agent.AspNetCore" Version="2.1.0" />
     <PackageReference Include="Volo.Abp.Autofac" Version="7.3.0" />
     <PackageReference Include="Volo.Abp.Caching.StackExchangeRedis" Version="7.3.0" />
@@ -39,6 +40,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\frameworks\LKN.Microservices.CAP\src\LKN.Microservices.CAP\LKN.Microservices.CAP.csproj" />
+    <ProjectReference Include="..\..\frameworks\LKN.Microservices.ELK\LKN.Microservices.ELK\LKN.Microservices.ELK.csproj" />
     <ProjectReference Include="..\..\frameworks\LKN.Microservices.Infrastructure\src\LKN.Microservices.Infrastructure\LKN.Microservices.Infrastructure.csproj" />
     <ProjectReference Include="..\..\moduls\LKN.Order\src\LKN.Order.Application\LKN.Order.Application.csproj" />
     <ProjectReference Include="..\..\moduls\LKN.Order\src\LKN.Order.EntityFrameworkCore\LKN.Order.EntityFrameworkCore.csproj" />

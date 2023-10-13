@@ -34,6 +34,7 @@ using Volo.Abp.EntityFrameworkCore.MySQL;
 using Volo.Abp.AspNetCore.Mvc;
 using LKN.Microservices.Infrastructure;
 using Nacos.V2.DependencyInjection;
+using LKN.Microservices.ELK;
 
 namespace LKN.Order;
 
@@ -51,6 +52,7 @@ namespace LKN.Order;
     typeof(AbpEntityFrameworkCoreMySQLModule),
     typeof(AbpAspNetCoreSerilogModule),
     typeof(InfrastructureModule),
+    typeof(ElaticsearchLogstashKibanaModule),
     typeof(AbpSwashbuckleModule)
     )]
 public class OrderHttpApiHostModule : AbpModule
@@ -129,11 +131,11 @@ public class OrderHttpApiHostModule : AbpModule
         });
 
         var dataProtectionBuilder = context.Services.AddDataProtection().SetApplicationName("Order");
-        if (!hostingEnvironment.IsDevelopment())
-        {
-            var redis = ConnectionMultiplexer.Connect(configuration["Redis:Configuration"]);
-            dataProtectionBuilder.PersistKeysToStackExchangeRedis(redis, "Order-Protection-Keys");
-        }
+        //if (!hostingEnvironment.IsDevelopment())
+        //{
+        //    var redis = ConnectionMultiplexer.Connect(configuration["Redis:Configuration"]);
+        //    dataProtectionBuilder.PersistKeysToStackExchangeRedis(redis, "Order-Protection-Keys");
+        //}
 
         context.Services.AddCors(options =>
         {

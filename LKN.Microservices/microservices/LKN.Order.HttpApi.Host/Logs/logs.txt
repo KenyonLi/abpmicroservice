@@ -38730,3 +38730,112 @@ DotNetCore.CAP.BrokerConnectionException: Broker Unreachable
 2023-10-12 17:35:45.091 +08:00 [DBG] Transport connection healthy!
 2023-10-12 17:35:49.110 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44397/HealthCheck - -
 2023-10-12 17:35:49.110 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44397/HealthCheck - - - 200 - text/plain 0.7370ms
+2023-10-13 14:09:52.173 +08:00 [INF] Starting web host.
+2023-10-13 14:11:30.271 +08:00 [INF] Starting web host.
+2023-10-13 14:17:20.379 +08:00 [INF] Starting web host.
+2023-10-13 14:19:05.853 +08:00 [INF] Starting web host.
+2023-10-13 14:25:06.061 +08:00 [INF] Starting web host.
+2023-10-13 16:25:03.582 +08:00 [INF] Starting web host.
+2023-10-13 16:42:07.263 +08:00 [INF] Starting web host.
+2023-10-13 17:02:34.742 +08:00 [INF] Starting web host.
+2023-10-13 17:05:02.425 +08:00 [INF] Starting web host.
+2023-10-13 17:05:25.080 +08:00 [INF] Starting web host.
+2023-10-13 18:05:06.718 +08:00 [INF] Starting web host.
+2023-10-13 18:07:31.043 +08:00 [INF] Starting web host.
+2023-10-13 18:13:37.871 +08:00 [INF] Starting web host.
+2023-10-13 18:15:45.398 +08:00 [INF] Starting web host.
+2023-10-13 18:31:16.248 +08:00 [INF] Starting web host.
+2023-10-13 18:31:16.825 +08:00 [FTL] Host terminated unexpectedly!
+System.NotSupportedException: ConfigureWebHost() is not supported by WebApplicationBuilder.Host. Use the WebApplication returned by WebApplicationBuilder.Build() instead.
+   at Microsoft.AspNetCore.Builder.ConfigureHostBuilder.Microsoft.AspNetCore.Hosting.Infrastructure.ISupportsConfigureWebHost.ConfigureWebHost(Action`1 configure, Action`1 configureOptions)
+   at LKN.Order.Program.Main(String[] args) in D:\test\ABP\abpmicroservice\LKN.Microservices\microservices\LKN.Order.HttpApi.Host\Program.cs:line 38
+2023-10-13 18:31:25.822 +08:00 [INF] Starting web host.
+2023-10-13 18:31:26.397 +08:00 [FTL] Host terminated unexpectedly!
+System.NotSupportedException: ConfigureWebHost() is not supported by WebApplicationBuilder.Host. Use the WebApplication returned by WebApplicationBuilder.Build() instead.
+   at Microsoft.AspNetCore.Builder.ConfigureHostBuilder.Microsoft.AspNetCore.Hosting.Infrastructure.ISupportsConfigureWebHost.ConfigureWebHost(Action`1 configure, Action`1 configureOptions)
+   at LKN.Order.Program.Main(String[] args) in D:\test\ABP\abpmicroservice\LKN.Microservices\microservices\LKN.Order.HttpApi.Host\Program.cs:line 38
+2023-10-13 18:32:04.458 +08:00 [INF] Starting web host.
+2023-10-13 18:32:05.033 +08:00 [FTL] Host terminated unexpectedly!
+System.NotSupportedException: ConfigureWebHost() is not supported by WebApplicationBuilder.Host. Use the WebApplication returned by WebApplicationBuilder.Build() instead.
+   at Microsoft.AspNetCore.Builder.ConfigureHostBuilder.Microsoft.AspNetCore.Hosting.Infrastructure.ISupportsConfigureWebHost.ConfigureWebHost(Action`1 configure, Action`1 configureOptions)
+   at LKN.Order.Program.Main(String[] args) in D:\test\ABP\abpmicroservice\LKN.Microservices\microservices\LKN.Order.HttpApi.Host\Program.cs:line 38
+2023-10-13 18:32:41.014 +08:00 [INF] Starting web host.
+2023-10-13 18:32:41.574 +08:00 [FTL] Host terminated unexpectedly!
+System.NotSupportedException: ConfigureWebHost() is not supported by WebApplicationBuilder.Host. Use the WebApplication returned by WebApplicationBuilder.Build() instead.
+   at Microsoft.AspNetCore.Builder.ConfigureHostBuilder.Microsoft.AspNetCore.Hosting.Infrastructure.ISupportsConfigureWebHost.ConfigureWebHost(Action`1 configure, Action`1 configureOptions)
+   at LKN.Order.Program.Main(String[] args) in D:\test\ABP\abpmicroservice\LKN.Microservices\microservices\LKN.Order.HttpApi.Host\Program.cs:line 38
+2023-10-13 18:32:49.690 +08:00 [INF] Starting web host.
+2023-10-13 18:32:50.205 +08:00 [FTL] Host terminated unexpectedly!
+System.NotSupportedException: ConfigureWebHost() is not supported by WebApplicationBuilder.Host. Use the WebApplication returned by WebApplicationBuilder.Build() instead.
+   at Microsoft.AspNetCore.Builder.ConfigureHostBuilder.Microsoft.AspNetCore.Hosting.Infrastructure.ISupportsConfigureWebHost.ConfigureWebHost(Action`1 configure, Action`1 configureOptions)
+   at LKN.Order.Program.Main(String[] args) in D:\test\ABP\abpmicroservice\LKN.Microservices\microservices\LKN.Order.HttpApi.Host\Program.cs:line 38
+2023-10-13 18:40:46.407 +08:00 [INF] Starting web host.
+2023-10-13 18:40:46.963 +08:00 [FTL] Host terminated unexpectedly!
+System.NotSupportedException: ConfigureWebHost() is not supported by WebApplicationBuilder.Host. Use the WebApplication returned by WebApplicationBuilder.Build() instead.
+   at Microsoft.AspNetCore.Builder.ConfigureHostBuilder.Microsoft.AspNetCore.Hosting.Infrastructure.ISupportsConfigureWebHost.ConfigureWebHost(Action`1 configure, Action`1 configureOptions)
+   at LKN.Order.Program.Main(String[] args) in D:\test\ABP\abpmicroservice\LKN.Microservices\microservices\LKN.Order.HttpApi.Host\Program.cs:line 38
+2023-10-13 18:43:33.919 +08:00 [INF] Starting web host.
+2023-10-13 18:43:34.444 +08:00 [FTL] Host terminated unexpectedly!
+System.NotSupportedException: ConfigureWebHost() is not supported by WebApplicationBuilder.Host. Use the WebApplication returned by WebApplicationBuilder.Build() instead.
+   at Microsoft.AspNetCore.Builder.ConfigureHostBuilder.Microsoft.AspNetCore.Hosting.Infrastructure.ISupportsConfigureWebHost.ConfigureWebHost(Action`1 configure, Action`1 configureOptions)
+   at LKN.Order.Program.Main(String[] args) in D:\test\ABP\abpmicroservice\LKN.Microservices\microservices\LKN.Order.HttpApi.Host\Program.cs:line 36
+2023-10-13 18:44:18.617 +08:00 [INF] Starting web host.
+2023-10-13 18:45:00.169 +08:00 [INF] Starting web host.
+2023-10-13 18:45:00.728 +08:00 [FTL] Host terminated unexpectedly!
+System.NotSupportedException: ConfigureWebHost() is not supported by WebApplicationBuilder.Host. Use the WebApplication returned by WebApplicationBuilder.Build() instead.
+   at Microsoft.AspNetCore.Builder.ConfigureHostBuilder.Microsoft.AspNetCore.Hosting.Infrastructure.ISupportsConfigureWebHost.ConfigureWebHost(Action`1 configure, Action`1 configureOptions)
+   at LKN.Order.Program.Main(String[] args) in D:\test\ABP\abpmicroservice\LKN.Microservices\microservices\LKN.Order.HttpApi.Host\Program.cs:line 36
+2023-10-13 18:49:16.899 +08:00 [INF] Starting web host.
+2023-10-13 18:51:11.908 +08:00 [INF] Starting web host.
+2023-10-13 18:55:37.094 +08:00 [INF] Starting web host.
+2023-10-13 19:14:48.308 +08:00 [INF] Starting web host.
+2023-10-13 19:14:49.036 +08:00 [FTL] Host terminated unexpectedly!
+System.NotSupportedException: ConfigureWebHost() is not supported by WebApplicationBuilder.Host. Use the WebApplication returned by WebApplicationBuilder.Build() instead.
+   at Microsoft.AspNetCore.Builder.ConfigureHostBuilder.Microsoft.AspNetCore.Hosting.Infrastructure.ISupportsConfigureWebHost.ConfigureWebHost(Action`1 configure, Action`1 configureOptions)
+   at LKN.Order.Program.Main(String[] args) in D:\test\ABP\abpmicroservice\LKN.Microservices\microservices\LKN.Order.HttpApi.Host\Program.cs:line 36
+2023-10-13 19:21:05.709 +08:00 [INF] Starting web host.
+2023-10-13 19:21:18.152 +08:00 [INF] Starting web host.
+2023-10-13 19:30:31.456 +08:00 [INF] Starting web host.
+2023-10-13 19:31:22.971 +08:00 [INF] Starting web host.
+2023-10-13 19:32:53.279 +08:00 [INF] Starting web host.
+2023-10-13 19:48:22.020 +08:00 [INF] Starting web host.
+2023-10-13 19:49:40.517 +08:00 [INF] Starting web host.
+2023-10-13 19:58:15.966 +08:00 [INF] Starting web host.
+2023-10-13 20:02:33.701 +08:00 [INF] Starting web host.
+2023-10-13 20:03:59.786 +08:00 [INF] Starting web host.
+2023-10-13 20:05:27.827 +08:00 [INF] Starting web host.
+2023-10-13 20:07:08.243 +08:00 [INF] Starting web host.
+2023-10-13 20:07:46.803 +08:00 [INF] Starting web host.
+2023-10-13 20:10:22.477 +08:00 [INF] Starting web host.
+2023-10-13 20:12:17.449 +08:00 [INF] Starting web host.
+2023-10-13 20:13:28.472 +08:00 [INF] Starting web host.
+2023-10-13 20:13:41.975 +08:00 [FTL] Host terminated unexpectedly!
+Volo.Abp.AbpInitializationException: An error occurred during ConfigureServicesAsync phase of the module LKN.Order.OrderHttpApiHostModule, LKN.Order.HttpApi.Host, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null. See the inner exception for details.
+ ---> System.ArgumentNullException: Value cannot be null. (Parameter 'configuration')
+   at StackExchange.Redis.ConfigurationOptions.DoParse(String configuration, Boolean ignoreUnknown) in /_/src/StackExchange.Redis/ConfigurationOptions.cs:line 820
+   at StackExchange.Redis.ConfigurationOptions.Parse(String configuration, Boolean ignoreUnknown) in /_/src/StackExchange.Redis/ConfigurationOptions.cs:line 638
+   at StackExchange.Redis.ConfigurationOptions.Parse(String configuration) in /_/src/StackExchange.Redis/ConfigurationOptions.cs:line 628
+   at StackExchange.Redis.ConnectionMultiplexer.Connect(String configuration, TextWriter log) in /_/src/StackExchange.Redis/ConnectionMultiplexer.cs:line 651
+   at LKN.Order.OrderHttpApiHostModule.ConfigureServices(ServiceConfigurationContext context) in D:\test\ABP\abpmicroservice\LKN.Microservices\microservices\LKN.Order.HttpApi.Host\OrderHttpApiHostModule.cs:line 136
+   at Volo.Abp.Modularity.AbpModule.ConfigureServicesAsync(ServiceConfigurationContext context)
+   at Volo.Abp.AbpApplicationBase.ConfigureServicesAsync()
+   --- End of inner exception stack trace ---
+   at Volo.Abp.AbpApplicationBase.ConfigureServicesAsync()
+   at Volo.Abp.AbpApplicationFactory.CreateAsync[TStartupModule](IServiceCollection services, Action`1 optionsAction)
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionApplicationExtensions.AddApplicationAsync[TStartupModule](IServiceCollection services, Action`1 optionsAction)
+   at Microsoft.Extensions.DependencyInjection.WebApplicationBuilderExtensions.AddApplicationAsync[TStartupModule](WebApplicationBuilder builder, Action`1 optionsAction)
+   at LKN.Order.Program.Main(String[] args) in D:\test\ABP\abpmicroservice\LKN.Microservices\microservices\LKN.Order.HttpApi.Host\Program.cs:line 82
+2023-10-13 20:14:07.131 +08:00 [INF] Starting web host.
+2023-10-13 20:16:32.700 +08:00 [INF] Starting web host.
+2023-10-13 20:20:03.450 +08:00 [INF] Starting web host.
+2023-10-13 20:20:57.588 +08:00 [INF] Starting web host.
+2023-10-13 20:21:32.155 +08:00 [INF] Starting web host.
+2023-10-13 20:26:27.253 +08:00 [INF] Starting web host.
+2023-10-13 20:29:28.258 +08:00 [INF] Starting web host.
+2023-10-13 20:31:32.079 +08:00 [INF] Starting web host.
+2023-10-13 20:33:44.410 +08:00 [INF] Starting web host.
+2023-10-13 20:34:39.858 +08:00 [INF] Starting web host.
+2023-10-13 20:37:24.042 +08:00 [INF] Starting web host.
+2023-10-13 20:37:38.602 +08:00 [INF] Starting web host.
+2023-10-13 20:43:13.419 +08:00 [INF] Starting web host.
+2023-10-13 20:44:45.410 +08:00 [INF] Starting web host.
