@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 using Volo.Abp.Application.Dtos;
 using Volo.Abp.Application.Services;
 
@@ -16,5 +17,9 @@ namespace LKN.Product.Products
         public IEnumerable<ProductDto> GetProductByAttr(ProductAttrQueryDto createProductDto);
 
         public ProductTotaLDto GetProductTotals();
+
+
+        public  Task<ProductDto> Update2Async(UpdateProductDto input);
+
     }
 }

@@ -1,6 +1,8 @@
-﻿using LKN.Order;
+﻿using Google.Protobuf.WellKnownTypes;
+using LKN.Order;
 using LKN.OrderDetailsServices.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
+using Servicecomb.Saga.Omega.AspNetCore.Extensions;
 using Volo.Abp;
 using Volo.Abp.AspNetCore.Mvc;
 using Volo.Abp.AspNetCore.Mvc.ModelBinding.Metadata;
@@ -56,6 +58,13 @@ namespace LKN.OrderDetailsServices
             Configure<AbpDbContextOptions>(options =>
             {
                 options.UseMySQL();
+            });
+
+            // 7、注册saga分布式事务
+            context.Services.AddOmegaCore(option => {
+                option.GrpcServerAddress = "localhost:8081"; // 1、协调中心地址  查看 配置文件 application.yaml
+                option.InstanceId = "AggregateService-1";// 2、服务实例Id
+                option.ServiceName = "AggregateService";// 3、服务名称
             });
         }
 

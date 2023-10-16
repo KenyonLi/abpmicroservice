@@ -5408,3 +5408,936 @@ Volo.Abp.Domain.Entities.EntityNotFoundException: There is no such an entity. En
 2023-10-12 17:02:18.715 +08:00 [DBG] Collecting expired data from table: cap.received
 2023-10-12 17:02:25.740 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/HealthCheck - -
 2023-10-12 17:02:25.740 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/HealthCheck - - - 200 - text/plain 0.7209ms
+2023-10-16 20:16:33.446 +08:00 [INF] Starting web host.
+2023-10-16 20:16:37.300 +08:00 [INF] Loaded ABP modules:
+2023-10-16 20:16:37.302 +08:00 [INF] - LKN.Product.ProductHttpApiHostModule
+2023-10-16 20:16:37.302 +08:00 [INF]   - LKN.Product.ProductApplicationModule
+2023-10-16 20:16:37.302 +08:00 [INF]     - LKN.Product.ProductDomainModule
+2023-10-16 20:16:37.302 +08:00 [INF]       - Volo.Abp.Domain.AbpDddDomainModule
+2023-10-16 20:16:37.302 +08:00 [INF]         - Volo.Abp.Auditing.AbpAuditingModule
+2023-10-16 20:16:37.302 +08:00 [INF]           - Volo.Abp.Data.AbpDataModule
+2023-10-16 20:16:37.302 +08:00 [INF]             - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2023-10-16 20:16:37.302 +08:00 [INF]               - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2023-10-16 20:16:37.302 +08:00 [INF]               - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2023-10-16 20:16:37.302 +08:00 [INF]             - Volo.Abp.Uow.AbpUnitOfWorkModule
+2023-10-16 20:16:37.302 +08:00 [INF]             - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2023-10-16 20:16:37.302 +08:00 [INF]           - Volo.Abp.Json.AbpJsonModule
+2023-10-16 20:16:37.302 +08:00 [INF]             - Volo.Abp.Json.SystemTextJson.AbpJsonSystemTextJsonModule
+2023-10-16 20:16:37.302 +08:00 [INF]               - Volo.Abp.Json.AbpJsonAbstractionsModule
+2023-10-16 20:16:37.302 +08:00 [INF]               - Volo.Abp.Timing.AbpTimingModule
+2023-10-16 20:16:37.302 +08:00 [INF]                 - Volo.Abp.Localization.AbpLocalizationModule
+2023-10-16 20:16:37.302 +08:00 [INF]                   - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2023-10-16 20:16:37.302 +08:00 [INF]                   - Volo.Abp.Settings.AbpSettingsModule
+2023-10-16 20:16:37.302 +08:00 [INF]                     - Volo.Abp.Security.AbpSecurityModule
+2023-10-16 20:16:37.302 +08:00 [INF]                   - Volo.Abp.Threading.AbpThreadingModule
+2023-10-16 20:16:37.302 +08:00 [INF]           - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2023-10-16 20:16:37.302 +08:00 [INF]             - Volo.Abp.MultiTenancy.AbpMultiTenancyAbstractionsModule
+2023-10-16 20:16:37.302 +08:00 [INF]           - Volo.Abp.Auditing.AbpAuditingContractsModule
+2023-10-16 20:16:37.302 +08:00 [INF]         - Volo.Abp.EventBus.AbpEventBusModule
+2023-10-16 20:16:37.302 +08:00 [INF]           - Volo.Abp.Guids.AbpGuidsModule
+2023-10-16 20:16:37.302 +08:00 [INF]           - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2023-10-16 20:16:37.302 +08:00 [INF]           - Volo.Abp.DistributedLocking.AbpDistributedLockingAbstractionsModule
+2023-10-16 20:16:37.302 +08:00 [INF]         - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2023-10-16 20:16:37.302 +08:00 [INF]         - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2023-10-16 20:16:37.302 +08:00 [INF]         - Volo.Abp.Specifications.AbpSpecificationsModule
+2023-10-16 20:16:37.302 +08:00 [INF]         - Volo.Abp.Caching.AbpCachingModule
+2023-10-16 20:16:37.302 +08:00 [INF]           - Volo.Abp.Serialization.AbpSerializationModule
+2023-10-16 20:16:37.302 +08:00 [INF]         - Volo.Abp.Domain.AbpDddDomainSharedModule
+2023-10-16 20:16:37.302 +08:00 [INF]       - LKN.Product.ProductDomainSharedModule
+2023-10-16 20:16:37.302 +08:00 [INF]         - Volo.Abp.Validation.AbpValidationModule
+2023-10-16 20:16:37.302 +08:00 [INF]     - LKN.Product.ProductApplicationContractsModule
+2023-10-16 20:16:37.302 +08:00 [INF]       - Volo.Abp.Application.AbpDddApplicationContractsModule
+2023-10-16 20:16:37.302 +08:00 [INF]       - Volo.Abp.Authorization.AbpAuthorizationModule
+2023-10-16 20:16:37.302 +08:00 [INF]         - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2023-10-16 20:16:37.302 +08:00 [INF]     - Volo.Abp.Application.AbpDddApplicationModule
+2023-10-16 20:16:37.302 +08:00 [INF]       - Volo.Abp.Http.AbpHttpAbstractionsModule
+2023-10-16 20:16:37.302 +08:00 [INF]       - Volo.Abp.Features.AbpFeaturesModule
+2023-10-16 20:16:37.302 +08:00 [INF]       - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2023-10-16 20:16:37.302 +08:00 [INF]     - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2023-10-16 20:16:37.302 +08:00 [INF]     - Volo.Abp.Autofac.AbpAutofacModule
+2023-10-16 20:16:37.302 +08:00 [INF]       - Volo.Abp.Castle.AbpCastleCoreModule
+2023-10-16 20:16:37.302 +08:00 [INF]   - LKN.Product.EntityFrameworkCore.ProductEntityFrameworkCoreModule
+2023-10-16 20:16:37.302 +08:00 [INF]     - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2023-10-16 20:16:37.302 +08:00 [INF]   - LKN.Product.ProductHttpApiModule
+2023-10-16 20:16:37.302 +08:00 [INF]     - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2023-10-16 20:16:37.302 +08:00 [INF]       - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2023-10-16 20:16:37.302 +08:00 [INF]         - Volo.Abp.Http.AbpHttpModule
+2023-10-16 20:16:37.302 +08:00 [INF]           - Volo.Abp.Minify.AbpMinifyModule
+2023-10-16 20:16:37.302 +08:00 [INF]       - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2023-10-16 20:16:37.302 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2023-10-16 20:16:37.302 +08:00 [INF]       - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2023-10-16 20:16:37.302 +08:00 [INF]         - Volo.Abp.UI.AbpUiModule
+2023-10-16 20:16:37.302 +08:00 [INF]   - Volo.Abp.AspNetCore.Mvc.UI.MultiTenancy.AbpAspNetCoreMvcUiMultiTenancyModule
+2023-10-16 20:16:37.302 +08:00 [INF]     - Volo.Abp.AspNetCore.Mvc.UI.Theme.Shared.AbpAspNetCoreMvcUiThemeSharedModule
+2023-10-16 20:16:37.302 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Bootstrap.AbpAspNetCoreMvcUiBootstrapModule
+2023-10-16 20:16:37.302 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.AbpAspNetCoreMvcUiModule
+2023-10-16 20:16:37.302 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Packages.AbpAspNetCoreMvcUiPackagesModule
+2023-10-16 20:16:37.302 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingAbstractionsModule
+2023-10-16 20:16:37.302 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Widgets.AbpAspNetCoreMvcUiWidgetsModule
+2023-10-16 20:16:37.302 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingModule
+2023-10-16 20:16:37.302 +08:00 [INF]     - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2023-10-16 20:16:37.302 +08:00 [INF]   - Volo.Abp.Caching.StackExchangeRedis.AbpCachingStackExchangeRedisModule
+2023-10-16 20:16:37.302 +08:00 [INF]   - Volo.Abp.EntityFrameworkCore.MySQL.AbpEntityFrameworkCoreMySQLModule
+2023-10-16 20:16:37.302 +08:00 [INF]   - Volo.Abp.AspNetCore.Serilog.AbpAspNetCoreSerilogModule
+2023-10-16 20:16:37.302 +08:00 [INF]   - Volo.Abp.Swashbuckle.AbpSwashbuckleModule
+2023-10-16 20:16:37.302 +08:00 [INF]   - LKN.Microservices.Infrastructure.InfrastructureModule
+2023-10-16 20:16:37.387 +08:00 [INF] MySettingName => 
+2023-10-16 20:16:37.387 +08:00 [INF] EnvironmentName => Development
+2023-10-16 20:16:37.712 +08:00 [INF] User profile is available. Using 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-16 20:16:37.801 +08:00 [INF] Initialized all ABP modules.
+2023-10-16 20:16:40.427 +08:00 [DBG] ### CAP background task is starting.
+2023-10-16 20:16:41.584 +08:00 [DBG] RabbitMQ configuration:'HostName:localhost, Port:5672, UserName:guest, Password:guest, ExchangeName:cap.default.router'
+2023-10-16 20:16:41.710 +08:00 [DBG] Ensuring all create database tables script are applied.
+2023-10-16 20:16:41.717 +08:00 [INF] Starting default Dispatcher
+2023-10-16 20:16:41.724 +08:00 [INF] Starting the processing server.
+2023-10-16 20:16:41.730 +08:00 [INF] Now listening on: https://localhost:44370
+2023-10-16 20:16:41.731 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-16 20:16:41.731 +08:00 [INF] Hosting environment: Development
+2023-10-16 20:16:41.731 +08:00 [INF] Content root path: D:\test\ABP\abpmicroservice\LKN.Microservices\microservices\LKN.Product.HttpApi.Host
+2023-10-16 20:16:41.783 +08:00 [DBG] Transport connection checking...
+2023-10-16 20:16:41.783 +08:00 [DBG] Transport connection healthy!
+2023-10-16 20:16:41.796 +08:00 [DBG] Collecting expired data from table: cap.published
+2023-10-16 20:16:41.799 +08:00 [INF] ### CAP started!
+2023-10-16 20:16:41.878 +08:00 [DBG] Collecting expired data from table: cap.received
+2023-10-16 20:16:42.372 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/ - -
+2023-10-16 20:16:42.549 +08:00 [INF] Executing endpoint 'LKN.Product.Controllers.HomeController.Index (LKN.Product.HttpApi.Host)'
+2023-10-16 20:16:42.573 +08:00 [INF] Route matched with {action = "Index", controller = "Home", area = "", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Index() on controller LKN.Product.Controllers.HomeController (LKN.Product.HttpApi.Host).
+2023-10-16 20:16:42.720 +08:00 [INF] Executing action method LKN.Product.Controllers.HomeController.Index (LKN.Product.HttpApi.Host) - Validation state: "Valid"
+2023-10-16 20:16:42.724 +08:00 [INF] Executed action method LKN.Product.Controllers.HomeController.Index (LKN.Product.HttpApi.Host), returned result Microsoft.AspNetCore.Mvc.RedirectResult in 0.3992ms.
+2023-10-16 20:16:42.734 +08:00 [INF] Executing RedirectResult, redirecting to /swagger.
+2023-10-16 20:16:42.738 +08:00 [INF] Executed action LKN.Product.Controllers.HomeController.Index (LKN.Product.HttpApi.Host) in 162.1597ms
+2023-10-16 20:16:42.738 +08:00 [INF] Executed endpoint 'LKN.Product.Controllers.HomeController.Index (LKN.Product.HttpApi.Host)'
+2023-10-16 20:16:42.748 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/ - - - 302 0 - 377.8259ms
+2023-10-16 20:16:42.751 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/swagger - -
+2023-10-16 20:16:42.756 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/swagger - - - 301 0 - 5.4287ms
+2023-10-16 20:16:42.760 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/swagger/index.html - -
+2023-10-16 20:16:42.906 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/swagger/ui/abp.js - -
+2023-10-16 20:16:42.906 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/swagger/swagger-ui.css - -
+2023-10-16 20:16:42.906 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/swagger/ui/abp.swagger.js - -
+2023-10-16 20:16:42.907 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/swagger/index.html - - - 200 - text/html;charset=utf-8 146.4317ms
+2023-10-16 20:16:42.910 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/swagger/swagger-ui-bundle.js - -
+2023-10-16 20:16:42.912 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/swagger/swagger-ui-standalone-preset.js - -
+2023-10-16 20:16:42.924 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/_framework/aspnetcore-browser-refresh.js - -
+2023-10-16 20:16:42.926 +08:00 [INF] Sending file. Request path: '/swagger/ui/abp.js'. Physical path: 'N/A'
+2023-10-16 20:16:42.926 +08:00 [INF] Sending file. Request path: '/swagger/ui/abp.swagger.js'. Physical path: 'N/A'
+2023-10-16 20:16:42.926 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/swagger/ui/abp.swagger.js - - - 200 1363 application/javascript 20.2260ms
+2023-10-16 20:16:42.926 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/swagger/ui/abp.js - - - 200 3122 application/javascript 20.8337ms
+2023-10-16 20:16:42.944 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/_framework/aspnetcore-browser-refresh.js - - - 200 12018 application/javascript;+charset=utf-8 19.2485ms
+2023-10-16 20:16:42.951 +08:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2023-10-16 20:16:42.951 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/swagger/swagger-ui.css - - - 200 143943 text/css 45.6183ms
+2023-10-16 20:16:42.962 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/_vs/browserLink - -
+2023-10-16 20:16:42.962 +08:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2023-10-16 20:16:42.962 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/swagger/swagger-ui-standalone-preset.js - - - 200 339486 text/javascript 49.5342ms
+2023-10-16 20:16:43.001 +08:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2023-10-16 20:16:43.002 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/swagger/swagger-ui-bundle.js - - - 200 1095087 text/javascript 92.0425ms
+2023-10-16 20:16:43.035 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 73.0414ms
+2023-10-16 20:16:43.211 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/swagger/v1/swagger.json - -
+2023-10-16 20:16:43.353 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 141.5215ms
+2023-10-16 20:16:48.533 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/HealthCheck - -
+2023-10-16 20:16:48.539 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/HealthCheck - - - 200 - text/plain 6.6586ms
+2023-10-16 20:16:58.571 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/HealthCheck - -
+2023-10-16 20:16:58.574 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/HealthCheck - - - 200 - text/plain 3.2418ms
+2023-10-16 20:17:08.599 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/HealthCheck - -
+2023-10-16 20:17:08.599 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/HealthCheck - - - 200 - text/plain 0.8422ms
+2023-10-16 20:17:11.790 +08:00 [DBG] Transport connection checking...
+2023-10-16 20:17:11.790 +08:00 [DBG] Transport connection healthy!
+2023-10-16 20:17:18.630 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/HealthCheck - -
+2023-10-16 20:17:18.631 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/HealthCheck - - - 200 - text/plain 0.9956ms
+2023-10-16 20:17:28.649 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/HealthCheck - -
+2023-10-16 20:17:28.650 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/HealthCheck - - - 200 - text/plain 1.3712ms
+2023-10-16 20:17:38.666 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/HealthCheck - -
+2023-10-16 20:17:38.666 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/HealthCheck - - - 200 - text/plain 0.7229ms
+2023-10-16 20:17:41.790 +08:00 [DBG] Transport connection checking...
+2023-10-16 20:17:41.790 +08:00 [DBG] Transport connection healthy!
+2023-10-16 20:17:48.696 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/HealthCheck - -
+2023-10-16 20:17:48.698 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/HealthCheck - - - 200 - text/plain 1.4783ms
+2023-10-16 20:17:58.712 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/HealthCheck - -
+2023-10-16 20:17:58.713 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/HealthCheck - - - 200 - text/plain 0.8301ms
+2023-10-16 20:18:08.745 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/HealthCheck - -
+2023-10-16 20:18:08.747 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/HealthCheck - - - 200 - text/plain 2.7509ms
+2023-10-16 20:18:11.799 +08:00 [DBG] Transport connection checking...
+2023-10-16 20:18:11.799 +08:00 [DBG] Transport connection healthy!
+2023-10-16 20:18:18.780 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/HealthCheck - -
+2023-10-16 20:18:18.780 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/HealthCheck - - - 200 - text/plain 0.8693ms
+2023-10-16 20:18:28.798 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/HealthCheck - -
+2023-10-16 20:18:28.798 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/HealthCheck - - - 200 - text/plain 0.6294ms
+2023-10-16 20:26:10.354 +08:00 [INF] Starting web host.
+2023-10-16 20:26:13.669 +08:00 [INF] Loaded ABP modules:
+2023-10-16 20:26:13.670 +08:00 [INF] - LKN.Product.ProductHttpApiHostModule
+2023-10-16 20:26:13.670 +08:00 [INF]   - LKN.Product.ProductApplicationModule
+2023-10-16 20:26:13.670 +08:00 [INF]     - LKN.Product.ProductDomainModule
+2023-10-16 20:26:13.670 +08:00 [INF]       - Volo.Abp.Domain.AbpDddDomainModule
+2023-10-16 20:26:13.670 +08:00 [INF]         - Volo.Abp.Auditing.AbpAuditingModule
+2023-10-16 20:26:13.670 +08:00 [INF]           - Volo.Abp.Data.AbpDataModule
+2023-10-16 20:26:13.670 +08:00 [INF]             - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2023-10-16 20:26:13.670 +08:00 [INF]               - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2023-10-16 20:26:13.670 +08:00 [INF]               - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2023-10-16 20:26:13.670 +08:00 [INF]             - Volo.Abp.Uow.AbpUnitOfWorkModule
+2023-10-16 20:26:13.670 +08:00 [INF]             - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2023-10-16 20:26:13.670 +08:00 [INF]           - Volo.Abp.Json.AbpJsonModule
+2023-10-16 20:26:13.670 +08:00 [INF]             - Volo.Abp.Json.SystemTextJson.AbpJsonSystemTextJsonModule
+2023-10-16 20:26:13.670 +08:00 [INF]               - Volo.Abp.Json.AbpJsonAbstractionsModule
+2023-10-16 20:26:13.670 +08:00 [INF]               - Volo.Abp.Timing.AbpTimingModule
+2023-10-16 20:26:13.670 +08:00 [INF]                 - Volo.Abp.Localization.AbpLocalizationModule
+2023-10-16 20:26:13.670 +08:00 [INF]                   - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2023-10-16 20:26:13.670 +08:00 [INF]                   - Volo.Abp.Settings.AbpSettingsModule
+2023-10-16 20:26:13.670 +08:00 [INF]                     - Volo.Abp.Security.AbpSecurityModule
+2023-10-16 20:26:13.670 +08:00 [INF]                   - Volo.Abp.Threading.AbpThreadingModule
+2023-10-16 20:26:13.670 +08:00 [INF]           - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2023-10-16 20:26:13.670 +08:00 [INF]             - Volo.Abp.MultiTenancy.AbpMultiTenancyAbstractionsModule
+2023-10-16 20:26:13.670 +08:00 [INF]           - Volo.Abp.Auditing.AbpAuditingContractsModule
+2023-10-16 20:26:13.670 +08:00 [INF]         - Volo.Abp.EventBus.AbpEventBusModule
+2023-10-16 20:26:13.670 +08:00 [INF]           - Volo.Abp.Guids.AbpGuidsModule
+2023-10-16 20:26:13.670 +08:00 [INF]           - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2023-10-16 20:26:13.670 +08:00 [INF]           - Volo.Abp.DistributedLocking.AbpDistributedLockingAbstractionsModule
+2023-10-16 20:26:13.670 +08:00 [INF]         - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2023-10-16 20:26:13.670 +08:00 [INF]         - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2023-10-16 20:26:13.670 +08:00 [INF]         - Volo.Abp.Specifications.AbpSpecificationsModule
+2023-10-16 20:26:13.670 +08:00 [INF]         - Volo.Abp.Caching.AbpCachingModule
+2023-10-16 20:26:13.670 +08:00 [INF]           - Volo.Abp.Serialization.AbpSerializationModule
+2023-10-16 20:26:13.670 +08:00 [INF]         - Volo.Abp.Domain.AbpDddDomainSharedModule
+2023-10-16 20:26:13.670 +08:00 [INF]       - LKN.Product.ProductDomainSharedModule
+2023-10-16 20:26:13.670 +08:00 [INF]         - Volo.Abp.Validation.AbpValidationModule
+2023-10-16 20:26:13.670 +08:00 [INF]     - LKN.Product.ProductApplicationContractsModule
+2023-10-16 20:26:13.670 +08:00 [INF]       - Volo.Abp.Application.AbpDddApplicationContractsModule
+2023-10-16 20:26:13.670 +08:00 [INF]       - Volo.Abp.Authorization.AbpAuthorizationModule
+2023-10-16 20:26:13.670 +08:00 [INF]         - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2023-10-16 20:26:13.670 +08:00 [INF]     - Volo.Abp.Application.AbpDddApplicationModule
+2023-10-16 20:26:13.670 +08:00 [INF]       - Volo.Abp.Http.AbpHttpAbstractionsModule
+2023-10-16 20:26:13.670 +08:00 [INF]       - Volo.Abp.Features.AbpFeaturesModule
+2023-10-16 20:26:13.670 +08:00 [INF]       - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2023-10-16 20:26:13.670 +08:00 [INF]     - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2023-10-16 20:26:13.670 +08:00 [INF]     - Volo.Abp.Autofac.AbpAutofacModule
+2023-10-16 20:26:13.670 +08:00 [INF]       - Volo.Abp.Castle.AbpCastleCoreModule
+2023-10-16 20:26:13.670 +08:00 [INF]   - LKN.Product.EntityFrameworkCore.ProductEntityFrameworkCoreModule
+2023-10-16 20:26:13.670 +08:00 [INF]     - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2023-10-16 20:26:13.670 +08:00 [INF]   - LKN.Product.ProductHttpApiModule
+2023-10-16 20:26:13.670 +08:00 [INF]     - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2023-10-16 20:26:13.670 +08:00 [INF]       - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2023-10-16 20:26:13.670 +08:00 [INF]         - Volo.Abp.Http.AbpHttpModule
+2023-10-16 20:26:13.670 +08:00 [INF]           - Volo.Abp.Minify.AbpMinifyModule
+2023-10-16 20:26:13.670 +08:00 [INF]       - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2023-10-16 20:26:13.670 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2023-10-16 20:26:13.670 +08:00 [INF]       - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2023-10-16 20:26:13.670 +08:00 [INF]         - Volo.Abp.UI.AbpUiModule
+2023-10-16 20:26:13.670 +08:00 [INF]   - Volo.Abp.AspNetCore.Mvc.UI.MultiTenancy.AbpAspNetCoreMvcUiMultiTenancyModule
+2023-10-16 20:26:13.670 +08:00 [INF]     - Volo.Abp.AspNetCore.Mvc.UI.Theme.Shared.AbpAspNetCoreMvcUiThemeSharedModule
+2023-10-16 20:26:13.670 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Bootstrap.AbpAspNetCoreMvcUiBootstrapModule
+2023-10-16 20:26:13.670 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.AbpAspNetCoreMvcUiModule
+2023-10-16 20:26:13.670 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Packages.AbpAspNetCoreMvcUiPackagesModule
+2023-10-16 20:26:13.670 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingAbstractionsModule
+2023-10-16 20:26:13.670 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Widgets.AbpAspNetCoreMvcUiWidgetsModule
+2023-10-16 20:26:13.670 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingModule
+2023-10-16 20:26:13.670 +08:00 [INF]     - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2023-10-16 20:26:13.670 +08:00 [INF]   - Volo.Abp.Caching.StackExchangeRedis.AbpCachingStackExchangeRedisModule
+2023-10-16 20:26:13.670 +08:00 [INF]   - Volo.Abp.EntityFrameworkCore.MySQL.AbpEntityFrameworkCoreMySQLModule
+2023-10-16 20:26:13.670 +08:00 [INF]   - Volo.Abp.AspNetCore.Serilog.AbpAspNetCoreSerilogModule
+2023-10-16 20:26:13.670 +08:00 [INF]   - Volo.Abp.Swashbuckle.AbpSwashbuckleModule
+2023-10-16 20:26:13.670 +08:00 [INF]   - LKN.Microservices.Infrastructure.InfrastructureModule
+2023-10-16 20:26:13.761 +08:00 [INF] MySettingName => 
+2023-10-16 20:26:13.761 +08:00 [INF] EnvironmentName => Development
+2023-10-16 20:26:14.169 +08:00 [INF] User profile is available. Using 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-16 20:26:14.280 +08:00 [INF] Initialized all ABP modules.
+2023-10-16 20:26:16.880 +08:00 [DBG] ### CAP background task is starting.
+2023-10-16 20:26:17.946 +08:00 [DBG] RabbitMQ configuration:'HostName:localhost, Port:5672, UserName:guest, Password:guest, ExchangeName:cap.default.router'
+2023-10-16 20:26:18.068 +08:00 [DBG] Ensuring all create database tables script are applied.
+2023-10-16 20:26:18.074 +08:00 [INF] Starting default Dispatcher
+2023-10-16 20:26:18.081 +08:00 [INF] Starting the processing server.
+2023-10-16 20:26:18.087 +08:00 [INF] Now listening on: https://localhost:44370
+2023-10-16 20:26:18.087 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-16 20:26:18.087 +08:00 [INF] Hosting environment: Development
+2023-10-16 20:26:18.087 +08:00 [INF] Content root path: D:\test\ABP\abpmicroservice\LKN.Microservices\microservices\LKN.Product.HttpApi.Host
+2023-10-16 20:26:18.144 +08:00 [DBG] Transport connection checking...
+2023-10-16 20:26:18.144 +08:00 [DBG] Transport connection healthy!
+2023-10-16 20:26:18.157 +08:00 [DBG] Collecting expired data from table: cap.published
+2023-10-16 20:26:18.160 +08:00 [INF] ### CAP started!
+2023-10-16 20:26:18.245 +08:00 [DBG] Collecting expired data from table: cap.received
+2023-10-16 20:26:18.638 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/ - -
+2023-10-16 20:26:18.802 +08:00 [INF] Executing endpoint 'LKN.Product.Controllers.HomeController.Index (LKN.Product.HttpApi.Host)'
+2023-10-16 20:26:18.825 +08:00 [INF] Route matched with {action = "Index", controller = "Home", area = "", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Index() on controller LKN.Product.Controllers.HomeController (LKN.Product.HttpApi.Host).
+2023-10-16 20:26:18.963 +08:00 [INF] Executing action method LKN.Product.Controllers.HomeController.Index (LKN.Product.HttpApi.Host) - Validation state: "Valid"
+2023-10-16 20:26:18.968 +08:00 [INF] Executed action method LKN.Product.Controllers.HomeController.Index (LKN.Product.HttpApi.Host), returned result Microsoft.AspNetCore.Mvc.RedirectResult in 0.7625ms.
+2023-10-16 20:26:18.977 +08:00 [INF] Executing RedirectResult, redirecting to /swagger.
+2023-10-16 20:26:18.981 +08:00 [INF] Executed action LKN.Product.Controllers.HomeController.Index (LKN.Product.HttpApi.Host) in 152.5794ms
+2023-10-16 20:26:18.981 +08:00 [INF] Executed endpoint 'LKN.Product.Controllers.HomeController.Index (LKN.Product.HttpApi.Host)'
+2023-10-16 20:26:18.992 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/ - - - 302 0 - 354.9250ms
+2023-10-16 20:26:18.998 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/swagger/index.html - -
+2023-10-16 20:26:19.130 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/swagger/index.html - - - 200 - text/html;charset=utf-8 131.7936ms
+2023-10-16 20:26:19.135 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/_framework/aspnetcore-browser-refresh.js - -
+2023-10-16 20:26:19.145 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/_vs/browserLink - -
+2023-10-16 20:26:19.145 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/_framework/aspnetcore-browser-refresh.js - - - 200 12018 application/javascript;+charset=utf-8 10.1011ms
+2023-10-16 20:26:19.179 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 34.6312ms
+2023-10-16 20:26:19.398 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/swagger/v1/swagger.json - -
+2023-10-16 20:26:19.535 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 136.8281ms
+2023-10-16 20:26:22.036 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/HealthCheck - -
+2023-10-16 20:26:22.043 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/HealthCheck - - - 200 - text/plain 6.3790ms
+2023-10-16 20:26:32.089 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/HealthCheck - -
+2023-10-16 20:26:32.093 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/HealthCheck - - - 200 - text/plain 4.7708ms
+2023-10-16 20:26:42.103 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/HealthCheck - -
+2023-10-16 20:26:42.104 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/HealthCheck - - - 200 - text/plain 0.6398ms
+2023-10-16 20:34:44.612 +08:00 [INF] Starting web host.
+2023-10-16 20:34:47.954 +08:00 [INF] Loaded ABP modules:
+2023-10-16 20:34:47.955 +08:00 [INF] - LKN.Product.ProductHttpApiHostModule
+2023-10-16 20:34:47.955 +08:00 [INF]   - LKN.Product.ProductApplicationModule
+2023-10-16 20:34:47.955 +08:00 [INF]     - LKN.Product.ProductDomainModule
+2023-10-16 20:34:47.955 +08:00 [INF]       - Volo.Abp.Domain.AbpDddDomainModule
+2023-10-16 20:34:47.955 +08:00 [INF]         - Volo.Abp.Auditing.AbpAuditingModule
+2023-10-16 20:34:47.955 +08:00 [INF]           - Volo.Abp.Data.AbpDataModule
+2023-10-16 20:34:47.955 +08:00 [INF]             - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2023-10-16 20:34:47.955 +08:00 [INF]               - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2023-10-16 20:34:47.955 +08:00 [INF]               - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2023-10-16 20:34:47.955 +08:00 [INF]             - Volo.Abp.Uow.AbpUnitOfWorkModule
+2023-10-16 20:34:47.955 +08:00 [INF]             - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2023-10-16 20:34:47.955 +08:00 [INF]           - Volo.Abp.Json.AbpJsonModule
+2023-10-16 20:34:47.955 +08:00 [INF]             - Volo.Abp.Json.SystemTextJson.AbpJsonSystemTextJsonModule
+2023-10-16 20:34:47.955 +08:00 [INF]               - Volo.Abp.Json.AbpJsonAbstractionsModule
+2023-10-16 20:34:47.955 +08:00 [INF]               - Volo.Abp.Timing.AbpTimingModule
+2023-10-16 20:34:47.955 +08:00 [INF]                 - Volo.Abp.Localization.AbpLocalizationModule
+2023-10-16 20:34:47.956 +08:00 [INF]                   - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2023-10-16 20:34:47.956 +08:00 [INF]                   - Volo.Abp.Settings.AbpSettingsModule
+2023-10-16 20:34:47.956 +08:00 [INF]                     - Volo.Abp.Security.AbpSecurityModule
+2023-10-16 20:34:47.956 +08:00 [INF]                   - Volo.Abp.Threading.AbpThreadingModule
+2023-10-16 20:34:47.956 +08:00 [INF]           - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2023-10-16 20:34:47.956 +08:00 [INF]             - Volo.Abp.MultiTenancy.AbpMultiTenancyAbstractionsModule
+2023-10-16 20:34:47.956 +08:00 [INF]           - Volo.Abp.Auditing.AbpAuditingContractsModule
+2023-10-16 20:34:47.956 +08:00 [INF]         - Volo.Abp.EventBus.AbpEventBusModule
+2023-10-16 20:34:47.956 +08:00 [INF]           - Volo.Abp.Guids.AbpGuidsModule
+2023-10-16 20:34:47.956 +08:00 [INF]           - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2023-10-16 20:34:47.956 +08:00 [INF]           - Volo.Abp.DistributedLocking.AbpDistributedLockingAbstractionsModule
+2023-10-16 20:34:47.956 +08:00 [INF]         - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2023-10-16 20:34:47.956 +08:00 [INF]         - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2023-10-16 20:34:47.956 +08:00 [INF]         - Volo.Abp.Specifications.AbpSpecificationsModule
+2023-10-16 20:34:47.956 +08:00 [INF]         - Volo.Abp.Caching.AbpCachingModule
+2023-10-16 20:34:47.956 +08:00 [INF]           - Volo.Abp.Serialization.AbpSerializationModule
+2023-10-16 20:34:47.956 +08:00 [INF]         - Volo.Abp.Domain.AbpDddDomainSharedModule
+2023-10-16 20:34:47.956 +08:00 [INF]       - LKN.Product.ProductDomainSharedModule
+2023-10-16 20:34:47.956 +08:00 [INF]         - Volo.Abp.Validation.AbpValidationModule
+2023-10-16 20:34:47.956 +08:00 [INF]     - LKN.Product.ProductApplicationContractsModule
+2023-10-16 20:34:47.956 +08:00 [INF]       - Volo.Abp.Application.AbpDddApplicationContractsModule
+2023-10-16 20:34:47.956 +08:00 [INF]       - Volo.Abp.Authorization.AbpAuthorizationModule
+2023-10-16 20:34:47.956 +08:00 [INF]         - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2023-10-16 20:34:47.956 +08:00 [INF]     - Volo.Abp.Application.AbpDddApplicationModule
+2023-10-16 20:34:47.956 +08:00 [INF]       - Volo.Abp.Http.AbpHttpAbstractionsModule
+2023-10-16 20:34:47.956 +08:00 [INF]       - Volo.Abp.Features.AbpFeaturesModule
+2023-10-16 20:34:47.956 +08:00 [INF]       - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2023-10-16 20:34:47.956 +08:00 [INF]     - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2023-10-16 20:34:47.956 +08:00 [INF]     - Volo.Abp.Autofac.AbpAutofacModule
+2023-10-16 20:34:47.956 +08:00 [INF]       - Volo.Abp.Castle.AbpCastleCoreModule
+2023-10-16 20:34:47.956 +08:00 [INF]   - LKN.Product.EntityFrameworkCore.ProductEntityFrameworkCoreModule
+2023-10-16 20:34:47.956 +08:00 [INF]     - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2023-10-16 20:34:47.956 +08:00 [INF]   - LKN.Product.ProductHttpApiModule
+2023-10-16 20:34:47.956 +08:00 [INF]     - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2023-10-16 20:34:47.956 +08:00 [INF]       - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2023-10-16 20:34:47.956 +08:00 [INF]         - Volo.Abp.Http.AbpHttpModule
+2023-10-16 20:34:47.956 +08:00 [INF]           - Volo.Abp.Minify.AbpMinifyModule
+2023-10-16 20:34:47.956 +08:00 [INF]       - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2023-10-16 20:34:47.956 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2023-10-16 20:34:47.956 +08:00 [INF]       - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2023-10-16 20:34:47.956 +08:00 [INF]         - Volo.Abp.UI.AbpUiModule
+2023-10-16 20:34:47.956 +08:00 [INF]   - Volo.Abp.AspNetCore.Mvc.UI.MultiTenancy.AbpAspNetCoreMvcUiMultiTenancyModule
+2023-10-16 20:34:47.956 +08:00 [INF]     - Volo.Abp.AspNetCore.Mvc.UI.Theme.Shared.AbpAspNetCoreMvcUiThemeSharedModule
+2023-10-16 20:34:47.956 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Bootstrap.AbpAspNetCoreMvcUiBootstrapModule
+2023-10-16 20:34:47.956 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.AbpAspNetCoreMvcUiModule
+2023-10-16 20:34:47.956 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Packages.AbpAspNetCoreMvcUiPackagesModule
+2023-10-16 20:34:47.956 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingAbstractionsModule
+2023-10-16 20:34:47.956 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Widgets.AbpAspNetCoreMvcUiWidgetsModule
+2023-10-16 20:34:47.956 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingModule
+2023-10-16 20:34:47.956 +08:00 [INF]     - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2023-10-16 20:34:47.956 +08:00 [INF]   - Volo.Abp.Caching.StackExchangeRedis.AbpCachingStackExchangeRedisModule
+2023-10-16 20:34:47.956 +08:00 [INF]   - Volo.Abp.EntityFrameworkCore.MySQL.AbpEntityFrameworkCoreMySQLModule
+2023-10-16 20:34:47.956 +08:00 [INF]   - Volo.Abp.AspNetCore.Serilog.AbpAspNetCoreSerilogModule
+2023-10-16 20:34:47.956 +08:00 [INF]   - Volo.Abp.Swashbuckle.AbpSwashbuckleModule
+2023-10-16 20:34:47.956 +08:00 [INF]   - LKN.Microservices.Infrastructure.InfrastructureModule
+2023-10-16 20:34:48.054 +08:00 [INF] MySettingName => 
+2023-10-16 20:34:48.054 +08:00 [INF] EnvironmentName => Development
+2023-10-16 20:34:48.412 +08:00 [INF] User profile is available. Using 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-16 20:34:48.517 +08:00 [INF] Initialized all ABP modules.
+2023-10-16 20:34:51.203 +08:00 [DBG] ### CAP background task is starting.
+2023-10-16 20:34:52.311 +08:00 [DBG] RabbitMQ configuration:'HostName:localhost, Port:5672, UserName:guest, Password:guest, ExchangeName:cap.default.router'
+2023-10-16 20:34:52.426 +08:00 [DBG] Ensuring all create database tables script are applied.
+2023-10-16 20:34:52.432 +08:00 [INF] Starting default Dispatcher
+2023-10-16 20:34:52.440 +08:00 [INF] Starting the processing server.
+2023-10-16 20:34:52.456 +08:00 [INF] Now listening on: https://localhost:44370
+2023-10-16 20:34:52.457 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-16 20:34:52.457 +08:00 [INF] Hosting environment: Development
+2023-10-16 20:34:52.457 +08:00 [INF] Content root path: D:\test\ABP\abpmicroservice\LKN.Microservices\microservices\LKN.Product.HttpApi.Host
+2023-10-16 20:34:52.506 +08:00 [DBG] Transport connection checking...
+2023-10-16 20:34:52.506 +08:00 [DBG] Transport connection healthy!
+2023-10-16 20:34:52.519 +08:00 [DBG] Collecting expired data from table: cap.published
+2023-10-16 20:34:52.522 +08:00 [INF] ### CAP started!
+2023-10-16 20:34:52.579 +08:00 [DBG] Collecting expired data from table: cap.received
+2023-10-16 20:34:53.591 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/ - -
+2023-10-16 20:34:53.762 +08:00 [INF] Executing endpoint 'LKN.Product.Controllers.HomeController.Index (LKN.Product.HttpApi.Host)'
+2023-10-16 20:34:53.787 +08:00 [INF] Route matched with {action = "Index", controller = "Home", area = "", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Index() on controller LKN.Product.Controllers.HomeController (LKN.Product.HttpApi.Host).
+2023-10-16 20:34:53.933 +08:00 [INF] Executing action method LKN.Product.Controllers.HomeController.Index (LKN.Product.HttpApi.Host) - Validation state: "Valid"
+2023-10-16 20:34:53.937 +08:00 [INF] Executed action method LKN.Product.Controllers.HomeController.Index (LKN.Product.HttpApi.Host), returned result Microsoft.AspNetCore.Mvc.RedirectResult in 0.5246ms.
+2023-10-16 20:34:53.948 +08:00 [INF] Executing RedirectResult, redirecting to /swagger.
+2023-10-16 20:34:53.952 +08:00 [INF] Executed action LKN.Product.Controllers.HomeController.Index (LKN.Product.HttpApi.Host) in 162.631ms
+2023-10-16 20:34:53.952 +08:00 [INF] Executed endpoint 'LKN.Product.Controllers.HomeController.Index (LKN.Product.HttpApi.Host)'
+2023-10-16 20:34:53.962 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/ - - - 302 0 - 372.8942ms
+2023-10-16 20:34:53.970 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/swagger/index.html - -
+2023-10-16 20:34:54.119 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/swagger/index.html - - - 200 - text/html;charset=utf-8 150.0237ms
+2023-10-16 20:34:54.127 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/_framework/aspnetcore-browser-refresh.js - -
+2023-10-16 20:34:54.134 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/_framework/aspnetcore-browser-refresh.js - - - 200 12018 application/javascript;+charset=utf-8 6.7928ms
+2023-10-16 20:34:54.137 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/_vs/browserLink - -
+2023-10-16 20:34:54.176 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 38.9614ms
+2023-10-16 20:34:54.282 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/swagger/v1/swagger.json - -
+2023-10-16 20:34:54.428 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 145.6976ms
+2023-10-16 20:34:57.515 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/HealthCheck - -
+2023-10-16 20:34:57.522 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/HealthCheck - - - 200 - text/plain 6.6492ms
+2023-10-16 20:35:07.532 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/HealthCheck - -
+2023-10-16 20:35:07.533 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/HealthCheck - - - 200 - text/plain 0.9709ms
+2023-10-16 20:35:17.552 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/HealthCheck - -
+2023-10-16 20:35:17.553 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/HealthCheck - - - 200 - text/plain 0.8083ms
+2023-10-16 20:35:22.508 +08:00 [DBG] Transport connection checking...
+2023-10-16 20:35:22.508 +08:00 [DBG] Transport connection healthy!
+2023-10-16 20:35:27.569 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/HealthCheck - -
+2023-10-16 20:35:27.570 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/HealthCheck - - - 200 - text/plain 0.7792ms
+2023-10-16 20:36:14.981 +08:00 [DBG] Transport connection checking...
+2023-10-16 20:36:14.982 +08:00 [DBG] Transport connection healthy!
+2023-10-16 20:36:17.606 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/HealthCheck - -
+2023-10-16 20:36:17.608 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/HealthCheck - - - 200 - text/plain 1.3519ms
+2023-10-16 20:36:44.991 +08:00 [DBG] Transport connection checking...
+2023-10-16 20:36:44.991 +08:00 [DBG] Transport connection healthy!
+2023-10-16 20:36:47.644 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/HealthCheck - -
+2023-10-16 20:36:47.644 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/HealthCheck - - - 200 - text/plain 0.6279ms
+2023-10-16 20:36:57.652 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/HealthCheck - -
+2023-10-16 20:36:57.653 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/HealthCheck - - - 200 - text/plain 0.5470ms
+2023-10-16 20:37:07.672 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/HealthCheck - -
+2023-10-16 20:37:07.672 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/HealthCheck - - - 200 - text/plain 0.5915ms
+2023-10-16 20:37:14.996 +08:00 [DBG] Transport connection checking...
+2023-10-16 20:37:14.996 +08:00 [DBG] Transport connection healthy!
+2023-10-16 20:37:17.694 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/HealthCheck - -
+2023-10-16 20:37:17.703 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/HealthCheck - - - 200 - text/plain 9.2492ms
+2023-10-16 20:37:27.718 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/HealthCheck - -
+2023-10-16 20:37:27.719 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/HealthCheck - - - 200 - text/plain 0.7302ms
+2023-10-16 20:37:37.735 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/HealthCheck - -
+2023-10-16 20:37:37.736 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/HealthCheck - - - 200 - text/plain 0.8723ms
+2023-10-16 20:37:45.003 +08:00 [DBG] Transport connection checking...
+2023-10-16 20:37:45.003 +08:00 [DBG] Transport connection healthy!
+2023-10-16 20:37:47.771 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/HealthCheck - -
+2023-10-16 20:37:47.772 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/HealthCheck - - - 200 - text/plain 0.7610ms
+2023-10-16 20:37:57.782 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/HealthCheck - -
+2023-10-16 20:37:57.782 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/HealthCheck - - - 200 - text/plain 0.7322ms
+2023-10-16 20:38:07.796 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/HealthCheck - -
+2023-10-16 20:38:07.797 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/HealthCheck - - - 200 - text/plain 0.6239ms
+2023-10-16 20:38:15.006 +08:00 [DBG] Transport connection checking...
+2023-10-16 20:38:15.006 +08:00 [DBG] Transport connection healthy!
+2023-10-16 20:38:17.807 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/HealthCheck - -
+2023-10-16 20:38:17.807 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/HealthCheck - - - 200 - text/plain 0.5859ms
+2023-10-16 20:40:14.439 +08:00 [INF] Starting web host.
+2023-10-16 20:40:17.720 +08:00 [INF] Loaded ABP modules:
+2023-10-16 20:40:17.722 +08:00 [INF] - LKN.Product.ProductHttpApiHostModule
+2023-10-16 20:40:17.722 +08:00 [INF]   - LKN.Product.ProductApplicationModule
+2023-10-16 20:40:17.722 +08:00 [INF]     - LKN.Product.ProductDomainModule
+2023-10-16 20:40:17.722 +08:00 [INF]       - Volo.Abp.Domain.AbpDddDomainModule
+2023-10-16 20:40:17.722 +08:00 [INF]         - Volo.Abp.Auditing.AbpAuditingModule
+2023-10-16 20:40:17.722 +08:00 [INF]           - Volo.Abp.Data.AbpDataModule
+2023-10-16 20:40:17.722 +08:00 [INF]             - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2023-10-16 20:40:17.722 +08:00 [INF]               - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2023-10-16 20:40:17.722 +08:00 [INF]               - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2023-10-16 20:40:17.722 +08:00 [INF]             - Volo.Abp.Uow.AbpUnitOfWorkModule
+2023-10-16 20:40:17.722 +08:00 [INF]             - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2023-10-16 20:40:17.722 +08:00 [INF]           - Volo.Abp.Json.AbpJsonModule
+2023-10-16 20:40:17.722 +08:00 [INF]             - Volo.Abp.Json.SystemTextJson.AbpJsonSystemTextJsonModule
+2023-10-16 20:40:17.722 +08:00 [INF]               - Volo.Abp.Json.AbpJsonAbstractionsModule
+2023-10-16 20:40:17.722 +08:00 [INF]               - Volo.Abp.Timing.AbpTimingModule
+2023-10-16 20:40:17.722 +08:00 [INF]                 - Volo.Abp.Localization.AbpLocalizationModule
+2023-10-16 20:40:17.722 +08:00 [INF]                   - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2023-10-16 20:40:17.722 +08:00 [INF]                   - Volo.Abp.Settings.AbpSettingsModule
+2023-10-16 20:40:17.722 +08:00 [INF]                     - Volo.Abp.Security.AbpSecurityModule
+2023-10-16 20:40:17.722 +08:00 [INF]                   - Volo.Abp.Threading.AbpThreadingModule
+2023-10-16 20:40:17.722 +08:00 [INF]           - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2023-10-16 20:40:17.722 +08:00 [INF]             - Volo.Abp.MultiTenancy.AbpMultiTenancyAbstractionsModule
+2023-10-16 20:40:17.722 +08:00 [INF]           - Volo.Abp.Auditing.AbpAuditingContractsModule
+2023-10-16 20:40:17.722 +08:00 [INF]         - Volo.Abp.EventBus.AbpEventBusModule
+2023-10-16 20:40:17.722 +08:00 [INF]           - Volo.Abp.Guids.AbpGuidsModule
+2023-10-16 20:40:17.722 +08:00 [INF]           - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2023-10-16 20:40:17.722 +08:00 [INF]           - Volo.Abp.DistributedLocking.AbpDistributedLockingAbstractionsModule
+2023-10-16 20:40:17.722 +08:00 [INF]         - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2023-10-16 20:40:17.722 +08:00 [INF]         - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2023-10-16 20:40:17.722 +08:00 [INF]         - Volo.Abp.Specifications.AbpSpecificationsModule
+2023-10-16 20:40:17.722 +08:00 [INF]         - Volo.Abp.Caching.AbpCachingModule
+2023-10-16 20:40:17.722 +08:00 [INF]           - Volo.Abp.Serialization.AbpSerializationModule
+2023-10-16 20:40:17.722 +08:00 [INF]         - Volo.Abp.Domain.AbpDddDomainSharedModule
+2023-10-16 20:40:17.722 +08:00 [INF]       - LKN.Product.ProductDomainSharedModule
+2023-10-16 20:40:17.722 +08:00 [INF]         - Volo.Abp.Validation.AbpValidationModule
+2023-10-16 20:40:17.722 +08:00 [INF]     - LKN.Product.ProductApplicationContractsModule
+2023-10-16 20:40:17.722 +08:00 [INF]       - Volo.Abp.Application.AbpDddApplicationContractsModule
+2023-10-16 20:40:17.722 +08:00 [INF]       - Volo.Abp.Authorization.AbpAuthorizationModule
+2023-10-16 20:40:17.722 +08:00 [INF]         - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2023-10-16 20:40:17.722 +08:00 [INF]     - Volo.Abp.Application.AbpDddApplicationModule
+2023-10-16 20:40:17.722 +08:00 [INF]       - Volo.Abp.Http.AbpHttpAbstractionsModule
+2023-10-16 20:40:17.722 +08:00 [INF]       - Volo.Abp.Features.AbpFeaturesModule
+2023-10-16 20:40:17.722 +08:00 [INF]       - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2023-10-16 20:40:17.722 +08:00 [INF]     - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2023-10-16 20:40:17.722 +08:00 [INF]     - Volo.Abp.Autofac.AbpAutofacModule
+2023-10-16 20:40:17.722 +08:00 [INF]       - Volo.Abp.Castle.AbpCastleCoreModule
+2023-10-16 20:40:17.722 +08:00 [INF]   - LKN.Product.EntityFrameworkCore.ProductEntityFrameworkCoreModule
+2023-10-16 20:40:17.722 +08:00 [INF]     - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2023-10-16 20:40:17.722 +08:00 [INF]   - LKN.Product.ProductHttpApiModule
+2023-10-16 20:40:17.722 +08:00 [INF]     - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2023-10-16 20:40:17.722 +08:00 [INF]       - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2023-10-16 20:40:17.722 +08:00 [INF]         - Volo.Abp.Http.AbpHttpModule
+2023-10-16 20:40:17.722 +08:00 [INF]           - Volo.Abp.Minify.AbpMinifyModule
+2023-10-16 20:40:17.722 +08:00 [INF]       - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2023-10-16 20:40:17.722 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2023-10-16 20:40:17.722 +08:00 [INF]       - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2023-10-16 20:40:17.722 +08:00 [INF]         - Volo.Abp.UI.AbpUiModule
+2023-10-16 20:40:17.722 +08:00 [INF]   - Volo.Abp.AspNetCore.Mvc.UI.MultiTenancy.AbpAspNetCoreMvcUiMultiTenancyModule
+2023-10-16 20:40:17.722 +08:00 [INF]     - Volo.Abp.AspNetCore.Mvc.UI.Theme.Shared.AbpAspNetCoreMvcUiThemeSharedModule
+2023-10-16 20:40:17.722 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Bootstrap.AbpAspNetCoreMvcUiBootstrapModule
+2023-10-16 20:40:17.722 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.AbpAspNetCoreMvcUiModule
+2023-10-16 20:40:17.722 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Packages.AbpAspNetCoreMvcUiPackagesModule
+2023-10-16 20:40:17.722 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingAbstractionsModule
+2023-10-16 20:40:17.722 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Widgets.AbpAspNetCoreMvcUiWidgetsModule
+2023-10-16 20:40:17.722 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingModule
+2023-10-16 20:40:17.722 +08:00 [INF]     - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2023-10-16 20:40:17.722 +08:00 [INF]   - Volo.Abp.Caching.StackExchangeRedis.AbpCachingStackExchangeRedisModule
+2023-10-16 20:40:17.722 +08:00 [INF]   - Volo.Abp.EntityFrameworkCore.MySQL.AbpEntityFrameworkCoreMySQLModule
+2023-10-16 20:40:17.722 +08:00 [INF]   - Volo.Abp.AspNetCore.Serilog.AbpAspNetCoreSerilogModule
+2023-10-16 20:40:17.722 +08:00 [INF]   - Volo.Abp.Swashbuckle.AbpSwashbuckleModule
+2023-10-16 20:40:17.722 +08:00 [INF]   - LKN.Microservices.Infrastructure.InfrastructureModule
+2023-10-16 20:40:17.833 +08:00 [INF] MySettingName => 
+2023-10-16 20:40:17.833 +08:00 [INF] EnvironmentName => Development
+2023-10-16 20:40:18.187 +08:00 [INF] User profile is available. Using 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-16 20:40:18.318 +08:00 [INF] Initialized all ABP modules.
+2023-10-16 20:40:20.899 +08:00 [DBG] ### CAP background task is starting.
+2023-10-16 20:40:21.962 +08:00 [DBG] RabbitMQ configuration:'HostName:localhost, Port:5672, UserName:guest, Password:guest, ExchangeName:cap.default.router'
+2023-10-16 20:40:22.080 +08:00 [DBG] Ensuring all create database tables script are applied.
+2023-10-16 20:40:22.087 +08:00 [INF] Starting default Dispatcher
+2023-10-16 20:40:22.094 +08:00 [INF] Starting the processing server.
+2023-10-16 20:40:22.110 +08:00 [INF] Now listening on: https://localhost:44370
+2023-10-16 20:40:22.110 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-16 20:40:22.110 +08:00 [INF] Hosting environment: Development
+2023-10-16 20:40:22.110 +08:00 [INF] Content root path: D:\test\ABP\abpmicroservice\LKN.Microservices\microservices\LKN.Product.HttpApi.Host
+2023-10-16 20:40:22.156 +08:00 [DBG] Transport connection checking...
+2023-10-16 20:40:22.156 +08:00 [DBG] Transport connection healthy!
+2023-10-16 20:40:22.168 +08:00 [DBG] Collecting expired data from table: cap.published
+2023-10-16 20:40:22.171 +08:00 [INF] ### CAP started!
+2023-10-16 20:40:22.225 +08:00 [DBG] Collecting expired data from table: cap.received
+2023-10-16 20:40:22.384 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/HealthCheck - -
+2023-10-16 20:40:22.570 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/HealthCheck - - - 200 - text/plain 187.2404ms
+2023-10-16 20:40:23.133 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/ - -
+2023-10-16 20:40:23.158 +08:00 [INF] Executing endpoint 'LKN.Product.Controllers.HomeController.Index (LKN.Product.HttpApi.Host)'
+2023-10-16 20:40:23.213 +08:00 [INF] Route matched with {action = "Index", controller = "Home", area = "", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Index() on controller LKN.Product.Controllers.HomeController (LKN.Product.HttpApi.Host).
+2023-10-16 20:40:23.369 +08:00 [INF] Executing action method LKN.Product.Controllers.HomeController.Index (LKN.Product.HttpApi.Host) - Validation state: "Valid"
+2023-10-16 20:40:23.372 +08:00 [INF] Executed action method LKN.Product.Controllers.HomeController.Index (LKN.Product.HttpApi.Host), returned result Microsoft.AspNetCore.Mvc.RedirectResult in 0.5289ms.
+2023-10-16 20:40:23.384 +08:00 [INF] Executing RedirectResult, redirecting to /swagger.
+2023-10-16 20:40:23.387 +08:00 [INF] Executed action LKN.Product.Controllers.HomeController.Index (LKN.Product.HttpApi.Host) in 171.6021ms
+2023-10-16 20:40:23.387 +08:00 [INF] Executed endpoint 'LKN.Product.Controllers.HomeController.Index (LKN.Product.HttpApi.Host)'
+2023-10-16 20:40:23.390 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/ - - - 302 0 - 257.1285ms
+2023-10-16 20:40:23.397 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/swagger/index.html - -
+2023-10-16 20:40:23.529 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/swagger/index.html - - - 200 - text/html;charset=utf-8 131.9858ms
+2023-10-16 20:40:23.540 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/_framework/aspnetcore-browser-refresh.js - -
+2023-10-16 20:40:23.546 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/_vs/browserLink - -
+2023-10-16 20:40:23.554 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/_framework/aspnetcore-browser-refresh.js - - - 200 12018 application/javascript;+charset=utf-8 13.8483ms
+2023-10-16 20:40:23.586 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 39.7360ms
+2023-10-16 20:40:23.695 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/swagger/v1/swagger.json - -
+2023-10-16 20:40:23.857 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 161.8532ms
+2023-10-16 20:40:32.587 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/HealthCheck - -
+2023-10-16 20:40:32.590 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/HealthCheck - - - 200 - text/plain 3.1860ms
+2023-10-16 20:40:42.617 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/HealthCheck - -
+2023-10-16 20:40:42.618 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/HealthCheck - - - 200 - text/plain 0.8585ms
+2023-10-16 20:40:52.168 +08:00 [DBG] Transport connection checking...
+2023-10-16 20:40:52.168 +08:00 [DBG] Transport connection healthy!
+2023-10-16 20:40:52.637 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/HealthCheck - -
+2023-10-16 20:40:52.638 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/HealthCheck - - - 200 - text/plain 0.5284ms
+2023-10-16 20:41:02.647 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/HealthCheck - -
+2023-10-16 20:41:02.656 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/HealthCheck - - - 200 - text/plain 8.4943ms
+2023-10-16 20:41:53.699 +08:00 [DBG] Transport connection checking...
+2023-10-16 20:41:53.699 +08:00 [DBG] Transport connection healthy!
+2023-10-16 20:41:53.974 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/HealthCheck - -
+2023-10-16 20:41:53.977 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/HealthCheck - - - 200 - text/plain 3.0715ms
+2023-10-16 20:42:04.006 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/HealthCheck - -
+2023-10-16 20:42:04.006 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/HealthCheck - - - 200 - text/plain 0.8984ms
+2023-10-16 20:42:14.024 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/HealthCheck - -
+2023-10-16 20:42:14.024 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/HealthCheck - - - 200 - text/plain 0.6545ms
+2023-10-16 20:47:08.824 +08:00 [INF] Starting web host.
+2023-10-16 20:47:12.061 +08:00 [INF] Loaded ABP modules:
+2023-10-16 20:47:12.062 +08:00 [INF] - LKN.Product.ProductHttpApiHostModule
+2023-10-16 20:47:12.062 +08:00 [INF]   - LKN.Product.ProductApplicationModule
+2023-10-16 20:47:12.062 +08:00 [INF]     - LKN.Product.ProductDomainModule
+2023-10-16 20:47:12.062 +08:00 [INF]       - Volo.Abp.Domain.AbpDddDomainModule
+2023-10-16 20:47:12.062 +08:00 [INF]         - Volo.Abp.Auditing.AbpAuditingModule
+2023-10-16 20:47:12.062 +08:00 [INF]           - Volo.Abp.Data.AbpDataModule
+2023-10-16 20:47:12.062 +08:00 [INF]             - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2023-10-16 20:47:12.062 +08:00 [INF]               - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2023-10-16 20:47:12.062 +08:00 [INF]               - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2023-10-16 20:47:12.062 +08:00 [INF]             - Volo.Abp.Uow.AbpUnitOfWorkModule
+2023-10-16 20:47:12.062 +08:00 [INF]             - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2023-10-16 20:47:12.062 +08:00 [INF]           - Volo.Abp.Json.AbpJsonModule
+2023-10-16 20:47:12.062 +08:00 [INF]             - Volo.Abp.Json.SystemTextJson.AbpJsonSystemTextJsonModule
+2023-10-16 20:47:12.062 +08:00 [INF]               - Volo.Abp.Json.AbpJsonAbstractionsModule
+2023-10-16 20:47:12.062 +08:00 [INF]               - Volo.Abp.Timing.AbpTimingModule
+2023-10-16 20:47:12.062 +08:00 [INF]                 - Volo.Abp.Localization.AbpLocalizationModule
+2023-10-16 20:47:12.062 +08:00 [INF]                   - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2023-10-16 20:47:12.062 +08:00 [INF]                   - Volo.Abp.Settings.AbpSettingsModule
+2023-10-16 20:47:12.062 +08:00 [INF]                     - Volo.Abp.Security.AbpSecurityModule
+2023-10-16 20:47:12.062 +08:00 [INF]                   - Volo.Abp.Threading.AbpThreadingModule
+2023-10-16 20:47:12.062 +08:00 [INF]           - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2023-10-16 20:47:12.062 +08:00 [INF]             - Volo.Abp.MultiTenancy.AbpMultiTenancyAbstractionsModule
+2023-10-16 20:47:12.062 +08:00 [INF]           - Volo.Abp.Auditing.AbpAuditingContractsModule
+2023-10-16 20:47:12.062 +08:00 [INF]         - Volo.Abp.EventBus.AbpEventBusModule
+2023-10-16 20:47:12.062 +08:00 [INF]           - Volo.Abp.Guids.AbpGuidsModule
+2023-10-16 20:47:12.062 +08:00 [INF]           - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2023-10-16 20:47:12.062 +08:00 [INF]           - Volo.Abp.DistributedLocking.AbpDistributedLockingAbstractionsModule
+2023-10-16 20:47:12.062 +08:00 [INF]         - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2023-10-16 20:47:12.062 +08:00 [INF]         - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2023-10-16 20:47:12.062 +08:00 [INF]         - Volo.Abp.Specifications.AbpSpecificationsModule
+2023-10-16 20:47:12.062 +08:00 [INF]         - Volo.Abp.Caching.AbpCachingModule
+2023-10-16 20:47:12.063 +08:00 [INF]           - Volo.Abp.Serialization.AbpSerializationModule
+2023-10-16 20:47:12.063 +08:00 [INF]         - Volo.Abp.Domain.AbpDddDomainSharedModule
+2023-10-16 20:47:12.063 +08:00 [INF]       - LKN.Product.ProductDomainSharedModule
+2023-10-16 20:47:12.063 +08:00 [INF]         - Volo.Abp.Validation.AbpValidationModule
+2023-10-16 20:47:12.063 +08:00 [INF]     - LKN.Product.ProductApplicationContractsModule
+2023-10-16 20:47:12.063 +08:00 [INF]       - Volo.Abp.Application.AbpDddApplicationContractsModule
+2023-10-16 20:47:12.063 +08:00 [INF]       - Volo.Abp.Authorization.AbpAuthorizationModule
+2023-10-16 20:47:12.063 +08:00 [INF]         - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2023-10-16 20:47:12.063 +08:00 [INF]     - Volo.Abp.Application.AbpDddApplicationModule
+2023-10-16 20:47:12.063 +08:00 [INF]       - Volo.Abp.Http.AbpHttpAbstractionsModule
+2023-10-16 20:47:12.063 +08:00 [INF]       - Volo.Abp.Features.AbpFeaturesModule
+2023-10-16 20:47:12.063 +08:00 [INF]       - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2023-10-16 20:47:12.063 +08:00 [INF]     - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2023-10-16 20:47:12.063 +08:00 [INF]     - Volo.Abp.Autofac.AbpAutofacModule
+2023-10-16 20:47:12.063 +08:00 [INF]       - Volo.Abp.Castle.AbpCastleCoreModule
+2023-10-16 20:47:12.063 +08:00 [INF]   - LKN.Product.EntityFrameworkCore.ProductEntityFrameworkCoreModule
+2023-10-16 20:47:12.063 +08:00 [INF]     - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2023-10-16 20:47:12.063 +08:00 [INF]   - LKN.Product.ProductHttpApiModule
+2023-10-16 20:47:12.063 +08:00 [INF]     - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2023-10-16 20:47:12.063 +08:00 [INF]       - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2023-10-16 20:47:12.063 +08:00 [INF]         - Volo.Abp.Http.AbpHttpModule
+2023-10-16 20:47:12.063 +08:00 [INF]           - Volo.Abp.Minify.AbpMinifyModule
+2023-10-16 20:47:12.063 +08:00 [INF]       - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2023-10-16 20:47:12.063 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2023-10-16 20:47:12.063 +08:00 [INF]       - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2023-10-16 20:47:12.063 +08:00 [INF]         - Volo.Abp.UI.AbpUiModule
+2023-10-16 20:47:12.063 +08:00 [INF]   - Volo.Abp.AspNetCore.Mvc.UI.MultiTenancy.AbpAspNetCoreMvcUiMultiTenancyModule
+2023-10-16 20:47:12.063 +08:00 [INF]     - Volo.Abp.AspNetCore.Mvc.UI.Theme.Shared.AbpAspNetCoreMvcUiThemeSharedModule
+2023-10-16 20:47:12.063 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Bootstrap.AbpAspNetCoreMvcUiBootstrapModule
+2023-10-16 20:47:12.063 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.AbpAspNetCoreMvcUiModule
+2023-10-16 20:47:12.063 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Packages.AbpAspNetCoreMvcUiPackagesModule
+2023-10-16 20:47:12.063 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingAbstractionsModule
+2023-10-16 20:47:12.063 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Widgets.AbpAspNetCoreMvcUiWidgetsModule
+2023-10-16 20:47:12.063 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingModule
+2023-10-16 20:47:12.063 +08:00 [INF]     - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2023-10-16 20:47:12.063 +08:00 [INF]   - Volo.Abp.Caching.StackExchangeRedis.AbpCachingStackExchangeRedisModule
+2023-10-16 20:47:12.063 +08:00 [INF]   - Volo.Abp.EntityFrameworkCore.MySQL.AbpEntityFrameworkCoreMySQLModule
+2023-10-16 20:47:12.063 +08:00 [INF]   - Volo.Abp.AspNetCore.Serilog.AbpAspNetCoreSerilogModule
+2023-10-16 20:47:12.063 +08:00 [INF]   - Volo.Abp.Swashbuckle.AbpSwashbuckleModule
+2023-10-16 20:47:12.063 +08:00 [INF]   - LKN.Microservices.Infrastructure.InfrastructureModule
+2023-10-16 20:47:12.174 +08:00 [INF] MySettingName => 
+2023-10-16 20:47:12.174 +08:00 [INF] EnvironmentName => Development
+2023-10-16 20:47:12.488 +08:00 [INF] User profile is available. Using 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-16 20:47:12.577 +08:00 [INF] Initialized all ABP modules.
+2023-10-16 20:47:15.150 +08:00 [DBG] ### CAP background task is starting.
+2023-10-16 20:47:16.253 +08:00 [DBG] RabbitMQ configuration:'HostName:localhost, Port:5672, UserName:guest, Password:guest, ExchangeName:cap.default.router'
+2023-10-16 20:47:16.370 +08:00 [DBG] Ensuring all create database tables script are applied.
+2023-10-16 20:47:16.375 +08:00 [INF] Starting default Dispatcher
+2023-10-16 20:47:16.382 +08:00 [INF] Starting the processing server.
+2023-10-16 20:47:16.395 +08:00 [INF] Now listening on: https://localhost:44370
+2023-10-16 20:47:16.395 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-16 20:47:16.395 +08:00 [INF] Hosting environment: Development
+2023-10-16 20:47:16.395 +08:00 [INF] Content root path: D:\test\ABP\abpmicroservice\LKN.Microservices\microservices\LKN.Product.HttpApi.Host
+2023-10-16 20:47:16.446 +08:00 [DBG] Transport connection checking...
+2023-10-16 20:47:16.446 +08:00 [DBG] Transport connection healthy!
+2023-10-16 20:47:16.459 +08:00 [DBG] Collecting expired data from table: cap.published
+2023-10-16 20:47:16.462 +08:00 [INF] ### CAP started!
+2023-10-16 20:47:16.519 +08:00 [DBG] Collecting expired data from table: cap.received
+2023-10-16 20:47:17.010 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/ - -
+2023-10-16 20:47:17.175 +08:00 [INF] Executing endpoint 'LKN.Product.Controllers.HomeController.Index (LKN.Product.HttpApi.Host)'
+2023-10-16 20:47:17.197 +08:00 [INF] Route matched with {action = "Index", controller = "Home", area = "", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Index() on controller LKN.Product.Controllers.HomeController (LKN.Product.HttpApi.Host).
+2023-10-16 20:47:17.339 +08:00 [INF] Executing action method LKN.Product.Controllers.HomeController.Index (LKN.Product.HttpApi.Host) - Validation state: "Valid"
+2023-10-16 20:47:17.342 +08:00 [INF] Executed action method LKN.Product.Controllers.HomeController.Index (LKN.Product.HttpApi.Host), returned result Microsoft.AspNetCore.Mvc.RedirectResult in 0.5023ms.
+2023-10-16 20:47:17.352 +08:00 [INF] Executing RedirectResult, redirecting to /swagger.
+2023-10-16 20:47:17.355 +08:00 [INF] Executed action LKN.Product.Controllers.HomeController.Index (LKN.Product.HttpApi.Host) in 155.5157ms
+2023-10-16 20:47:17.355 +08:00 [INF] Executed endpoint 'LKN.Product.Controllers.HomeController.Index (LKN.Product.HttpApi.Host)'
+2023-10-16 20:47:17.366 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/ - - - 302 0 - 358.3526ms
+2023-10-16 20:47:17.373 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/swagger/index.html - -
+2023-10-16 20:47:17.507 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/swagger/index.html - - - 200 - text/html;charset=utf-8 134.9482ms
+2023-10-16 20:47:17.513 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/_framework/aspnetcore-browser-refresh.js - -
+2023-10-16 20:47:17.519 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/_framework/aspnetcore-browser-refresh.js - - - 200 12018 application/javascript;+charset=utf-8 6.0958ms
+2023-10-16 20:47:17.522 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/_vs/browserLink - -
+2023-10-16 20:47:17.563 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 40.5519ms
+2023-10-16 20:47:17.667 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/swagger/v1/swagger.json - -
+2023-10-16 20:47:17.798 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 131.0772ms
+2023-10-16 20:47:21.505 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/HealthCheck - -
+2023-10-16 20:47:21.511 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/HealthCheck - - - 200 - text/plain 6.1624ms
+2023-10-16 20:47:31.529 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/HealthCheck - -
+2023-10-16 20:47:31.530 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/HealthCheck - - - 200 - text/plain 1.0061ms
+2023-10-16 20:47:43.715 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/HealthCheck - -
+2023-10-16 20:47:43.733 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/HealthCheck - - - 200 - text/plain 17.5481ms
+2023-10-16 20:47:46.778 +08:00 [DBG] Transport connection checking...
+2023-10-16 20:47:46.778 +08:00 [DBG] Transport connection healthy!
+2023-10-16 20:47:57.228 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/HealthCheck - -
+2023-10-16 20:47:57.228 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/HealthCheck - - - 200 - text/plain 0.6385ms
+2023-10-16 20:48:10.335 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/HealthCheck - -
+2023-10-16 20:48:10.344 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/HealthCheck - - - 200 - text/plain 8.3131ms
+2023-10-16 20:48:45.635 +08:00 [DBG] Transport connection checking...
+2023-10-16 20:48:45.636 +08:00 [DBG] Transport connection healthy!
+2023-10-16 20:48:46.908 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/HealthCheck - -
+2023-10-16 20:48:46.908 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/HealthCheck - - - 200 - text/plain 8.7293ms
+2023-10-16 20:48:56.936 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/HealthCheck - -
+2023-10-16 20:48:56.936 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/HealthCheck - - - 200 - text/plain 0.5614ms
+2023-10-16 20:49:06.947 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/HealthCheck - -
+2023-10-16 20:49:06.949 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/HealthCheck - - - 200 - text/plain 1.4549ms
+2023-10-16 20:49:15.647 +08:00 [DBG] Transport connection checking...
+2023-10-16 20:49:15.647 +08:00 [DBG] Transport connection healthy!
+2023-10-16 20:49:16.971 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/HealthCheck - -
+2023-10-16 20:49:16.979 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/HealthCheck - - - 200 - text/plain 7.7652ms
+2023-10-16 20:49:26.994 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/HealthCheck - -
+2023-10-16 20:49:26.995 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/HealthCheck - - - 200 - text/plain 0.8617ms
+2023-10-16 20:49:37.026 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/HealthCheck - -
+2023-10-16 20:49:37.027 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/HealthCheck - - - 200 - text/plain 1.0191ms
+2023-10-16 20:49:45.662 +08:00 [DBG] Transport connection checking...
+2023-10-16 20:49:45.662 +08:00 [DBG] Transport connection healthy!
+2023-10-16 20:49:47.039 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/HealthCheck - -
+2023-10-16 20:49:47.039 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/HealthCheck - - - 200 - text/plain 0.5098ms
+2023-10-16 20:49:57.053 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/HealthCheck - -
+2023-10-16 20:49:57.054 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/HealthCheck - - - 200 - text/plain 0.6404ms
+2023-10-16 20:50:07.097 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/HealthCheck - -
+2023-10-16 20:50:07.097 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/HealthCheck - - - 200 - text/plain 1.1262ms
+2023-10-16 20:50:15.664 +08:00 [DBG] Transport connection checking...
+2023-10-16 20:50:15.664 +08:00 [DBG] Transport connection healthy!
+2023-10-16 20:50:17.120 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/HealthCheck - -
+2023-10-16 20:50:17.120 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/HealthCheck - - - 200 - text/plain 0.5594ms
+2023-10-16 20:50:27.134 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/HealthCheck - -
+2023-10-16 20:50:27.134 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/HealthCheck - - - 200 - text/plain 0.5583ms
+2023-10-16 20:50:37.147 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/HealthCheck - -
+2023-10-16 20:50:37.148 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/HealthCheck - - - 200 - text/plain 0.5904ms
+2023-10-16 20:50:45.665 +08:00 [DBG] Transport connection checking...
+2023-10-16 20:50:45.665 +08:00 [DBG] Transport connection healthy!
+2023-10-16 20:50:47.171 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/HealthCheck - -
+2023-10-16 20:50:47.171 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/HealthCheck - - - 200 - text/plain 0.5569ms
+2023-10-16 20:50:57.279 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/HealthCheck - -
+2023-10-16 20:50:57.280 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/HealthCheck - - - 200 - text/plain 1.1649ms
+2023-10-16 20:55:50.337 +08:00 [DBG] Transport connection checking...
+2023-10-16 20:55:50.337 +08:00 [DBG] Transport connection healthy!
+2023-10-16 20:55:50.429 +08:00 [DBG] Collecting expired data from table: cap.published
+2023-10-16 20:55:53.110 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/abp/Swashbuckle/SetCsrfCookie application/json -
+2023-10-16 20:55:53.113 +08:00 [INF] Executing endpoint 'Volo.Abp.Swashbuckle.AbpSwashbuckleController.SetCsrfCookie (Volo.Abp.Swashbuckle)'
+2023-10-16 20:55:53.174 +08:00 [INF] Route matched with {area = "Abp", action = "SetCsrfCookie", controller = "AbpSwashbuckle", page = ""}. Executing controller action with signature Void SetCsrfCookie() on controller Volo.Abp.Swashbuckle.AbpSwashbuckleController (Volo.Abp.Swashbuckle).
+2023-10-16 20:55:53.208 +08:00 [DBG] Collecting expired data from table: cap.received
+2023-10-16 20:55:53.286 +08:00 [INF] Executing action method Volo.Abp.Swashbuckle.AbpSwashbuckleController.SetCsrfCookie (Volo.Abp.Swashbuckle) - Validation state: "Valid"
+2023-10-16 20:55:53.302 +08:00 [INF] Executed action method Volo.Abp.Swashbuckle.AbpSwashbuckleController.SetCsrfCookie (Volo.Abp.Swashbuckle), returned result Microsoft.AspNetCore.Mvc.EmptyResult in 7.9052ms.
+2023-10-16 20:55:53.303 +08:00 [INF] Executed action Volo.Abp.Swashbuckle.AbpSwashbuckleController.SetCsrfCookie (Volo.Abp.Swashbuckle) in 128.5047ms
+2023-10-16 20:55:53.303 +08:00 [INF] Executed endpoint 'Volo.Abp.Swashbuckle.AbpSwashbuckleController.SetCsrfCookie (Volo.Abp.Swashbuckle)'
+2023-10-16 20:55:53.303 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/abp/Swashbuckle/SetCsrfCookie application/json - - 0 - - 193.0819ms
+2023-10-16 20:56:01.249 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/abp/Swashbuckle/SetCsrfCookie application/json -
+2023-10-16 20:56:01.251 +08:00 [INF] Executing endpoint 'Volo.Abp.Swashbuckle.AbpSwashbuckleController.SetCsrfCookie (Volo.Abp.Swashbuckle)'
+2023-10-16 20:56:01.252 +08:00 [INF] Route matched with {area = "Abp", action = "SetCsrfCookie", controller = "AbpSwashbuckle", page = ""}. Executing controller action with signature Void SetCsrfCookie() on controller Volo.Abp.Swashbuckle.AbpSwashbuckleController (Volo.Abp.Swashbuckle).
+2023-10-16 20:56:01.282 +08:00 [INF] Executing action method Volo.Abp.Swashbuckle.AbpSwashbuckleController.SetCsrfCookie (Volo.Abp.Swashbuckle) - Validation state: "Valid"
+2023-10-16 20:56:01.283 +08:00 [INF] Executed action method Volo.Abp.Swashbuckle.AbpSwashbuckleController.SetCsrfCookie (Volo.Abp.Swashbuckle), returned result Microsoft.AspNetCore.Mvc.EmptyResult in 1.0558ms.
+2023-10-16 20:56:01.283 +08:00 [INF] Executed action Volo.Abp.Swashbuckle.AbpSwashbuckleController.SetCsrfCookie (Volo.Abp.Swashbuckle) in 31.1733ms
+2023-10-16 20:56:01.283 +08:00 [INF] Executed endpoint 'Volo.Abp.Swashbuckle.AbpSwashbuckleController.SetCsrfCookie (Volo.Abp.Swashbuckle)'
+2023-10-16 20:56:01.283 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/abp/Swashbuckle/SetCsrfCookie application/json - - 204 - - 33.8334ms
+2023-10-16 20:56:01.309 +08:00 [INF] Request starting HTTP/2 PUT https://localhost:44370/api/ProductService/Product/Update2Async application/json 209
+2023-10-16 20:56:01.312 +08:00 [INF] CORS policy execution failed.
+2023-10-16 20:56:01.312 +08:00 [INF] Request origin https://localhost:44370 does not have permission to access the resource.
+2023-10-16 20:56:01.313 +08:00 [INF] Executing endpoint 'LKN.Product.Products.ProductsController.Update2Async (LKN.Product.HttpApi)'
+2023-10-16 20:56:01.324 +08:00 [INF] Route matched with {action = "Update2", controller = "Products", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[LKN.Product.Products.ProductDto] Update2Async(LKN.Product.Products.UpdateProductDto) on controller LKN.Product.Products.ProductsController (LKN.Product.HttpApi).
+2023-10-16 20:56:01.598 +08:00 [INF] Executing action method LKN.Product.Products.ProductsController.Update2Async (LKN.Product.HttpApi) - Validation state: "Valid"
+2023-10-16 20:56:07.196 +08:00 [DBG] Added 0 entity changes to the current audit log
+2023-10-16 20:56:10.457 +08:00 [INF] Executed action method LKN.Product.Products.ProductsController.Update2Async (LKN.Product.HttpApi), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 8859.0822ms.
+2023-10-16 20:56:10.477 +08:00 [DBG] Added 0 entity changes to the current audit log
+2023-10-16 20:56:10.486 +08:00 [DBG] Added 0 entity changes to the current audit log
+2023-10-16 20:56:10.517 +08:00 [INF] Executing ObjectResult, writing value of type 'LKN.Product.Products.ProductDto'.
+2023-10-16 20:56:10.525 +08:00 [INF] Executed action LKN.Product.Products.ProductsController.Update2Async (LKN.Product.HttpApi) in 9201.1426ms
+2023-10-16 20:56:10.526 +08:00 [INF] Executed endpoint 'LKN.Product.Products.ProductsController.Update2Async (LKN.Product.HttpApi)'
+2023-10-16 20:56:10.531 +08:00 [INF] AUDIT LOG: [200: PUT    ] /api/ProductService/Product/Update2Async
+- UserName - UserId                 :  - 
+- ClientIpAddress        : ::1
+- ExecutionDuration      : 9215
+- Actions:
+  - Castle.Proxies.ProductAppServiceProxy.UpdateAsync (913 ms.)
+    {"id":"3a0dbecd-d8bc-b847-4c93-82f82bc0d608","input":{"id":"3a0dbecd-d8bc-b847-4c93-82f82bc0d608","productUrl":"string","productTitle":"string","productDescription":"string","productVirtualprice":0,"productPrice":0,"productStock":10}}
+  - LKN.Product.Products.ProductsController.Update2Async (8944 ms.)
+    {"input":{"id":"3a0dbecd-d8bc-b847-4c93-82f82bc0d608","productUrl":"string","productTitle":"string","productDescription":"string","productVirtualprice":0,"productPrice":0,"productStock":10}}
+
+2023-10-16 20:56:10.532 +08:00 [INF] Request finished HTTP/2 PUT https://localhost:44370/api/ProductService/Product/Update2Async application/json 209 - 200 - application/json;+charset=utf-8 9222.5054ms
+2023-10-16 20:56:20.341 +08:00 [DBG] Transport connection checking...
+2023-10-16 20:56:20.341 +08:00 [DBG] Transport connection healthy!
+2023-10-16 20:56:50.368 +08:00 [DBG] Transport connection checking...
+2023-10-16 20:56:50.368 +08:00 [DBG] Transport connection healthy!
+2023-10-16 20:57:20.372 +08:00 [DBG] Transport connection checking...
+2023-10-16 20:57:20.372 +08:00 [DBG] Transport connection healthy!
+2023-10-16 20:57:50.387 +08:00 [DBG] Transport connection checking...
+2023-10-16 20:57:50.387 +08:00 [DBG] Transport connection healthy!
+2023-10-16 20:58:20.400 +08:00 [DBG] Transport connection checking...
+2023-10-16 20:58:20.400 +08:00 [DBG] Transport connection healthy!
+2023-10-16 21:05:56.750 +08:00 [INF] Starting web host.
+2023-10-16 21:06:00.789 +08:00 [INF] Loaded ABP modules:
+2023-10-16 21:06:00.791 +08:00 [INF] - LKN.Product.ProductHttpApiHostModule
+2023-10-16 21:06:00.791 +08:00 [INF]   - LKN.Product.ProductApplicationModule
+2023-10-16 21:06:00.791 +08:00 [INF]     - LKN.Product.ProductDomainModule
+2023-10-16 21:06:00.791 +08:00 [INF]       - Volo.Abp.Domain.AbpDddDomainModule
+2023-10-16 21:06:00.791 +08:00 [INF]         - Volo.Abp.Auditing.AbpAuditingModule
+2023-10-16 21:06:00.791 +08:00 [INF]           - Volo.Abp.Data.AbpDataModule
+2023-10-16 21:06:00.791 +08:00 [INF]             - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2023-10-16 21:06:00.791 +08:00 [INF]               - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2023-10-16 21:06:00.791 +08:00 [INF]               - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2023-10-16 21:06:00.791 +08:00 [INF]             - Volo.Abp.Uow.AbpUnitOfWorkModule
+2023-10-16 21:06:00.791 +08:00 [INF]             - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2023-10-16 21:06:00.791 +08:00 [INF]           - Volo.Abp.Json.AbpJsonModule
+2023-10-16 21:06:00.791 +08:00 [INF]             - Volo.Abp.Json.SystemTextJson.AbpJsonSystemTextJsonModule
+2023-10-16 21:06:00.791 +08:00 [INF]               - Volo.Abp.Json.AbpJsonAbstractionsModule
+2023-10-16 21:06:00.791 +08:00 [INF]               - Volo.Abp.Timing.AbpTimingModule
+2023-10-16 21:06:00.791 +08:00 [INF]                 - Volo.Abp.Localization.AbpLocalizationModule
+2023-10-16 21:06:00.791 +08:00 [INF]                   - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2023-10-16 21:06:00.791 +08:00 [INF]                   - Volo.Abp.Settings.AbpSettingsModule
+2023-10-16 21:06:00.791 +08:00 [INF]                     - Volo.Abp.Security.AbpSecurityModule
+2023-10-16 21:06:00.791 +08:00 [INF]                   - Volo.Abp.Threading.AbpThreadingModule
+2023-10-16 21:06:00.791 +08:00 [INF]           - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2023-10-16 21:06:00.791 +08:00 [INF]             - Volo.Abp.MultiTenancy.AbpMultiTenancyAbstractionsModule
+2023-10-16 21:06:00.791 +08:00 [INF]           - Volo.Abp.Auditing.AbpAuditingContractsModule
+2023-10-16 21:06:00.791 +08:00 [INF]         - Volo.Abp.EventBus.AbpEventBusModule
+2023-10-16 21:06:00.791 +08:00 [INF]           - Volo.Abp.Guids.AbpGuidsModule
+2023-10-16 21:06:00.791 +08:00 [INF]           - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2023-10-16 21:06:00.791 +08:00 [INF]           - Volo.Abp.DistributedLocking.AbpDistributedLockingAbstractionsModule
+2023-10-16 21:06:00.791 +08:00 [INF]         - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2023-10-16 21:06:00.791 +08:00 [INF]         - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2023-10-16 21:06:00.791 +08:00 [INF]         - Volo.Abp.Specifications.AbpSpecificationsModule
+2023-10-16 21:06:00.791 +08:00 [INF]         - Volo.Abp.Caching.AbpCachingModule
+2023-10-16 21:06:00.791 +08:00 [INF]           - Volo.Abp.Serialization.AbpSerializationModule
+2023-10-16 21:06:00.791 +08:00 [INF]         - Volo.Abp.Domain.AbpDddDomainSharedModule
+2023-10-16 21:06:00.791 +08:00 [INF]       - LKN.Product.ProductDomainSharedModule
+2023-10-16 21:06:00.791 +08:00 [INF]         - Volo.Abp.Validation.AbpValidationModule
+2023-10-16 21:06:00.791 +08:00 [INF]     - LKN.Product.ProductApplicationContractsModule
+2023-10-16 21:06:00.791 +08:00 [INF]       - Volo.Abp.Application.AbpDddApplicationContractsModule
+2023-10-16 21:06:00.791 +08:00 [INF]       - Volo.Abp.Authorization.AbpAuthorizationModule
+2023-10-16 21:06:00.791 +08:00 [INF]         - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2023-10-16 21:06:00.791 +08:00 [INF]     - Volo.Abp.Application.AbpDddApplicationModule
+2023-10-16 21:06:00.791 +08:00 [INF]       - Volo.Abp.Http.AbpHttpAbstractionsModule
+2023-10-16 21:06:00.791 +08:00 [INF]       - Volo.Abp.Features.AbpFeaturesModule
+2023-10-16 21:06:00.791 +08:00 [INF]       - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2023-10-16 21:06:00.791 +08:00 [INF]     - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2023-10-16 21:06:00.791 +08:00 [INF]     - Volo.Abp.Autofac.AbpAutofacModule
+2023-10-16 21:06:00.791 +08:00 [INF]       - Volo.Abp.Castle.AbpCastleCoreModule
+2023-10-16 21:06:00.791 +08:00 [INF]   - LKN.Product.EntityFrameworkCore.ProductEntityFrameworkCoreModule
+2023-10-16 21:06:00.791 +08:00 [INF]     - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2023-10-16 21:06:00.791 +08:00 [INF]   - LKN.Product.ProductHttpApiModule
+2023-10-16 21:06:00.791 +08:00 [INF]     - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2023-10-16 21:06:00.791 +08:00 [INF]       - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2023-10-16 21:06:00.791 +08:00 [INF]         - Volo.Abp.Http.AbpHttpModule
+2023-10-16 21:06:00.791 +08:00 [INF]           - Volo.Abp.Minify.AbpMinifyModule
+2023-10-16 21:06:00.791 +08:00 [INF]       - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2023-10-16 21:06:00.791 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2023-10-16 21:06:00.791 +08:00 [INF]       - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2023-10-16 21:06:00.791 +08:00 [INF]         - Volo.Abp.UI.AbpUiModule
+2023-10-16 21:06:00.791 +08:00 [INF]   - Volo.Abp.AspNetCore.Mvc.UI.MultiTenancy.AbpAspNetCoreMvcUiMultiTenancyModule
+2023-10-16 21:06:00.791 +08:00 [INF]     - Volo.Abp.AspNetCore.Mvc.UI.Theme.Shared.AbpAspNetCoreMvcUiThemeSharedModule
+2023-10-16 21:06:00.791 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Bootstrap.AbpAspNetCoreMvcUiBootstrapModule
+2023-10-16 21:06:00.791 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.AbpAspNetCoreMvcUiModule
+2023-10-16 21:06:00.791 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Packages.AbpAspNetCoreMvcUiPackagesModule
+2023-10-16 21:06:00.791 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingAbstractionsModule
+2023-10-16 21:06:00.791 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Widgets.AbpAspNetCoreMvcUiWidgetsModule
+2023-10-16 21:06:00.791 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingModule
+2023-10-16 21:06:00.791 +08:00 [INF]     - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2023-10-16 21:06:00.791 +08:00 [INF]   - Volo.Abp.Caching.StackExchangeRedis.AbpCachingStackExchangeRedisModule
+2023-10-16 21:06:00.791 +08:00 [INF]   - Volo.Abp.EntityFrameworkCore.MySQL.AbpEntityFrameworkCoreMySQLModule
+2023-10-16 21:06:00.791 +08:00 [INF]   - Volo.Abp.AspNetCore.Serilog.AbpAspNetCoreSerilogModule
+2023-10-16 21:06:00.791 +08:00 [INF]   - Volo.Abp.Swashbuckle.AbpSwashbuckleModule
+2023-10-16 21:06:00.791 +08:00 [INF]   - LKN.Microservices.Infrastructure.InfrastructureModule
+2023-10-16 21:06:00.889 +08:00 [INF] MySettingName => 
+2023-10-16 21:06:00.889 +08:00 [INF] EnvironmentName => Development
+2023-10-16 21:06:01.278 +08:00 [INF] User profile is available. Using 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-16 21:06:01.382 +08:00 [INF] Initialized all ABP modules.
+2023-10-16 21:06:04.020 +08:00 [DBG] ### CAP background task is starting.
+2023-10-16 21:06:05.163 +08:00 [DBG] RabbitMQ configuration:'HostName:localhost, Port:5672, UserName:guest, Password:guest, ExchangeName:cap.default.router'
+2023-10-16 21:06:05.286 +08:00 [DBG] Ensuring all create database tables script are applied.
+2023-10-16 21:06:05.292 +08:00 [INF] Starting default Dispatcher
+2023-10-16 21:06:05.300 +08:00 [INF] Starting the processing server.
+2023-10-16 21:06:05.303 +08:00 [INF] Now listening on: https://localhost:44370
+2023-10-16 21:06:05.303 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-16 21:06:05.303 +08:00 [INF] Hosting environment: Development
+2023-10-16 21:06:05.303 +08:00 [INF] Content root path: D:\test\ABP\abpmicroservice\LKN.Microservices\microservices\LKN.Product.HttpApi.Host
+2023-10-16 21:06:05.361 +08:00 [DBG] Transport connection checking...
+2023-10-16 21:06:05.361 +08:00 [DBG] Transport connection healthy!
+2023-10-16 21:06:05.389 +08:00 [DBG] Collecting expired data from table: cap.published
+2023-10-16 21:06:05.394 +08:00 [INF] ### CAP started!
+2023-10-16 21:06:05.458 +08:00 [DBG] Collecting expired data from table: cap.received
+2023-10-16 21:06:05.865 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/ - -
+2023-10-16 21:06:06.060 +08:00 [INF] Executing endpoint 'LKN.Product.Controllers.HomeController.Index (LKN.Product.HttpApi.Host)'
+2023-10-16 21:06:06.084 +08:00 [INF] Route matched with {action = "Index", controller = "Home", area = "", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Index() on controller LKN.Product.Controllers.HomeController (LKN.Product.HttpApi.Host).
+2023-10-16 21:06:06.225 +08:00 [INF] Executing action method LKN.Product.Controllers.HomeController.Index (LKN.Product.HttpApi.Host) - Validation state: "Valid"
+2023-10-16 21:06:06.229 +08:00 [INF] Executed action method LKN.Product.Controllers.HomeController.Index (LKN.Product.HttpApi.Host), returned result Microsoft.AspNetCore.Mvc.RedirectResult in 0.4432ms.
+2023-10-16 21:06:06.238 +08:00 [INF] Executing RedirectResult, redirecting to /swagger.
+2023-10-16 21:06:06.242 +08:00 [INF] Executed action LKN.Product.Controllers.HomeController.Index (LKN.Product.HttpApi.Host) in 155.4073ms
+2023-10-16 21:06:06.242 +08:00 [INF] Executed endpoint 'LKN.Product.Controllers.HomeController.Index (LKN.Product.HttpApi.Host)'
+2023-10-16 21:06:06.253 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/ - - - 302 0 - 389.7706ms
+2023-10-16 21:06:06.259 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/swagger/index.html - -
+2023-10-16 21:06:06.395 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/swagger/index.html - - - 200 - text/html;charset=utf-8 136.6536ms
+2023-10-16 21:06:06.397 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/_framework/aspnetcore-browser-refresh.js - -
+2023-10-16 21:06:06.406 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/_vs/browserLink - -
+2023-10-16 21:06:06.408 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/_framework/aspnetcore-browser-refresh.js - - - 200 12018 application/javascript;+charset=utf-8 11.0201ms
+2023-10-16 21:06:06.440 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 34.4307ms
+2023-10-16 21:06:06.552 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/swagger/v1/swagger.json - -
+2023-10-16 21:06:06.690 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 138.8548ms
+2023-10-16 21:06:12.104 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/HealthCheck - -
+2023-10-16 21:06:12.110 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/HealthCheck - - - 200 - text/plain 6.1249ms
+2023-10-16 21:06:22.140 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/HealthCheck - -
+2023-10-16 21:06:22.141 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/HealthCheck - - - 200 - text/plain 1.3994ms
+2023-10-16 21:06:32.162 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/HealthCheck - -
+2023-10-16 21:06:32.163 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/HealthCheck - - - 200 - text/plain 0.6544ms
+2023-10-16 21:06:35.373 +08:00 [DBG] Transport connection checking...
+2023-10-16 21:06:35.373 +08:00 [DBG] Transport connection healthy!
+2023-10-16 21:06:42.186 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/HealthCheck - -
+2023-10-16 21:06:42.187 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/HealthCheck - - - 200 - text/plain 0.9358ms
+2023-10-16 21:06:52.201 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/HealthCheck - -
+2023-10-16 21:06:52.202 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/HealthCheck - - - 200 - text/plain 0.7764ms
+2023-10-16 21:07:02.224 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/HealthCheck - -
+2023-10-16 21:07:02.224 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/HealthCheck - - - 200 - text/plain 0.6359ms
+2023-10-16 21:07:05.374 +08:00 [DBG] Transport connection checking...
+2023-10-16 21:07:05.374 +08:00 [DBG] Transport connection healthy!
+2023-10-16 21:07:12.243 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/HealthCheck - -
+2023-10-16 21:07:12.244 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/HealthCheck - - - 200 - text/plain 0.9455ms
+2023-10-16 21:07:22.255 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/HealthCheck - -
+2023-10-16 21:07:22.256 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/HealthCheck - - - 200 - text/plain 0.6425ms
+2023-10-16 21:07:32.271 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/HealthCheck - -
+2023-10-16 21:07:32.272 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/HealthCheck - - - 200 - text/plain 1.2808ms
+2023-10-16 21:07:35.381 +08:00 [DBG] Transport connection checking...
+2023-10-16 21:07:35.381 +08:00 [DBG] Transport connection healthy!
+2023-10-16 21:07:44.703 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/HealthCheck - -
+2023-10-16 21:07:44.710 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/HealthCheck - - - 200 - text/plain 14.5129ms
+2023-10-16 21:10:49.846 +08:00 [DBG] Transport connection checking...
+2023-10-16 21:10:49.846 +08:00 [DBG] Transport connection healthy!
+2023-10-16 21:10:50.077 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/abp/Swashbuckle/SetCsrfCookie application/json -
+2023-10-16 21:10:50.193 +08:00 [INF] Executing endpoint 'Volo.Abp.Swashbuckle.AbpSwashbuckleController.SetCsrfCookie (Volo.Abp.Swashbuckle)'
+2023-10-16 21:10:50.254 +08:00 [INF] Route matched with {area = "Abp", action = "SetCsrfCookie", controller = "AbpSwashbuckle", page = ""}. Executing controller action with signature Void SetCsrfCookie() on controller Volo.Abp.Swashbuckle.AbpSwashbuckleController (Volo.Abp.Swashbuckle).
+2023-10-16 21:10:50.470 +08:00 [INF] Executing action method Volo.Abp.Swashbuckle.AbpSwashbuckleController.SetCsrfCookie (Volo.Abp.Swashbuckle) - Validation state: "Valid"
+2023-10-16 21:10:52.396 +08:00 [INF] Executed action method Volo.Abp.Swashbuckle.AbpSwashbuckleController.SetCsrfCookie (Volo.Abp.Swashbuckle), returned result Microsoft.AspNetCore.Mvc.EmptyResult in 1925.7406ms.
+2023-10-16 21:10:52.397 +08:00 [INF] Executed action Volo.Abp.Swashbuckle.AbpSwashbuckleController.SetCsrfCookie (Volo.Abp.Swashbuckle) in 2142.8287ms
+2023-10-16 21:10:52.397 +08:00 [INF] Executed endpoint 'Volo.Abp.Swashbuckle.AbpSwashbuckleController.SetCsrfCookie (Volo.Abp.Swashbuckle)'
+2023-10-16 21:10:52.397 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/abp/Swashbuckle/SetCsrfCookie application/json - - 204 - - 2321.5816ms
+2023-10-16 21:10:54.105 +08:00 [INF] Request starting HTTP/2 PUT https://localhost:44370/api/ProductService/Product/Update2Async application/json 208
+2023-10-16 21:10:54.139 +08:00 [INF] CORS policy execution failed.
+2023-10-16 21:10:54.139 +08:00 [INF] Request origin https://localhost:44370 does not have permission to access the resource.
+2023-10-16 21:10:54.141 +08:00 [INF] Executing endpoint 'LKN.Product.Products.ProductsController.Update2Async (LKN.Product.HttpApi)'
+2023-10-16 21:10:54.154 +08:00 [INF] Route matched with {action = "Update2", controller = "Products", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[LKN.Product.Products.ProductDto] Update2Async(LKN.Product.Products.UpdateProductDto) on controller LKN.Product.Products.ProductsController (LKN.Product.HttpApi).
+2023-10-16 21:10:54.374 +08:00 [INF] Executing action method LKN.Product.Products.ProductsController.Update2Async (LKN.Product.HttpApi) - Validation state: "Valid"
+2023-10-16 21:11:06.264 +08:00 [DBG] Collecting expired data from table: cap.published
+2023-10-16 21:11:06.377 +08:00 [DBG] Collecting expired data from table: cap.received
+2023-10-16 21:11:07.218 +08:00 [DBG] Added 0 entity changes to the current audit log
+2023-10-16 21:11:07.229 +08:00 [INF] Executed action method LKN.Product.Products.ProductsController.Update2Async (LKN.Product.HttpApi), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 12854.6989ms.
+2023-10-16 21:11:07.237 +08:00 [DBG] Added 0 entity changes to the current audit log
+2023-10-16 21:11:07.257 +08:00 [DBG] Added 0 entity changes to the current audit log
+2023-10-16 21:11:07.309 +08:00 [INF] Executing ObjectResult, writing value of type 'LKN.Product.Products.ProductDto'.
+2023-10-16 21:11:07.317 +08:00 [INF] Executed action LKN.Product.Products.ProductsController.Update2Async (LKN.Product.HttpApi) in 13162.8361ms
+2023-10-16 21:11:07.317 +08:00 [INF] Executed endpoint 'LKN.Product.Products.ProductsController.Update2Async (LKN.Product.HttpApi)'
+2023-10-16 21:11:07.323 +08:00 [INF] AUDIT LOG: [200: PUT    ] /api/ProductService/Product/Update2Async
+- UserName - UserId                 :  - 
+- ClientIpAddress        : ::1
+- ExecutionDuration      : 13178
+- Actions:
+  - Castle.Proxies.ProductAppServiceProxy.UpdateAsync (905 ms.)
+    {"id":"3a0dbecd-d8bc-b847-4c93-82f82bc0d608","input":{"id":"3a0dbecd-d8bc-b847-4c93-82f82bc0d608","productUrl":"string","productTitle":"string","productDescription":"string","productVirtualprice":0,"productPrice":0,"productStock":2}}
+  - LKN.Product.Products.ProductsController.Update2Async (12954 ms.)
+    {"input":{"id":"3a0dbecd-d8bc-b847-4c93-82f82bc0d608","productUrl":"string","productTitle":"string","productDescription":"string","productVirtualprice":0,"productPrice":0,"productStock":2}}
+
+2023-10-16 21:11:07.323 +08:00 [INF] Request finished HTTP/2 PUT https://localhost:44370/api/ProductService/Product/Update2Async application/json 208 - 200 - application/json;+charset=utf-8 13218.9733ms
+2023-10-16 21:11:19.847 +08:00 [DBG] Transport connection checking...
+2023-10-16 21:11:19.847 +08:00 [DBG] Transport connection healthy!
+2023-10-16 21:11:49.863 +08:00 [DBG] Transport connection checking...
+2023-10-16 21:11:49.867 +08:00 [DBG] Transport connection healthy!
+2023-10-16 21:12:19.880 +08:00 [DBG] Transport connection checking...
+2023-10-16 21:12:19.880 +08:00 [DBG] Transport connection healthy!

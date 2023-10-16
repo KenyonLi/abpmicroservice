@@ -10,11 +10,12 @@ namespace LKN.Product;
     typeof(AbpHttpClientModule))]
 public class ProductHttpApiClientModule : AbpModule
 {
+    public const string RemoteServiceName = "Product";
     public override void ConfigureServices(ServiceConfigurationContext context)
     {
         context.Services.AddHttpClientProxies(
             typeof(ProductApplicationContractsModule).Assembly,
-            ProductRemoteServiceConsts.RemoteServiceName
+            RemoteServiceName
         );
 
         Configure<AbpVirtualFileSystemOptions>(options =>

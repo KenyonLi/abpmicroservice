@@ -9,7 +9,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="MethodDecorator.Fody" Version="1.1.1" />
     <PackageReference Include="Volo.Abp.AspNetCore.Mvc" Version="7.3.0" />
+    <ProjectReference Include="..\..\..\..\frameworks\Servicecomb.Saga\Servicecomb.Saga.Omega.AspNetCore\Servicecomb.Saga.Omega.AspNetCore.csproj" />
+    <ProjectReference Include="..\..\..\..\frameworks\Servicecomb.Saga\Servicecomb.Saga.Omega.Core\Servicecomb.Saga.Omega.Core.csproj" />
     <ProjectReference Include="..\LKN.Order.Application.Contracts\LKN.Order.Application.Contracts.csproj" />
   </ItemGroup>
 

@@ -9,7 +9,7 @@ namespace LKN.Order.Orders
     /// </summary>
     public class CreateOrderDto
     {
-
+        public Guid Id { get; set; }
         public decimal OrderTotalPrice { set; get; } // 订单价格
 
         public int ProductCount { set; get; }// 商品数量
@@ -19,11 +19,11 @@ namespace LKN.Order.Orders
 
     public class CreateOrderItemDto
     {
-        public CreateOrderItemDto()
-        {
-            Id = Guid.NewGuid();
-        }
-        public Guid Id { set; get; } // Guid
+        //public CreateOrderItemDto()
+        //{
+        //    Id = Guid.NewGuid();
+        //}
+        //public Guid Id { set; get; } // Guid
         public Guid ProductId { set; get; } // 商品编号
         public string ProductName { set; get; } // 商品名称
 

@@ -36,6 +36,10 @@ namespace LKN.Product.Products
             _productAbpRepository = repository;
         }
 
+        public async Task<ProductDto> Update2Async(UpdateProductDto input)
+        {
+            return await this.UpdateAsync(input.id,input);
+        }
 
         /// <summary>
         /// 接受创建订单的事件
@@ -73,5 +77,7 @@ namespace LKN.Product.Products
         {
             throw new NotImplementedException();
         }
+
+       
     }
 }

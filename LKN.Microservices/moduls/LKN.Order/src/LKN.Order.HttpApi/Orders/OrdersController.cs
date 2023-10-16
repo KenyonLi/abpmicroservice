@@ -9,6 +9,7 @@ using Volo.Abp;
 using Volo.Abp.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Configuration;
+using Servicecomb.Saga.Omega.Abstractions.Transaction;
 
 namespace LKN.Order.Orders;
 
@@ -34,11 +35,26 @@ public class OrdersController : OrderController, IOrderAppService
         return await _OrderAppService.GetAsync(id);
     }
 
-    [HttpPost]
+    [HttpPost, Compensable(nameof(DeleteOrder))]
     public async Task<OrderDto> CreateAsync(CreateOrderDto input)
     {
         _logger.LogInformation("创建订单");
         return await _OrderAppService.CreateAsync(input);
+    }
+
+    /// <summary>
+    /// 1、删除订单方法
+    /// 抛出了，会进行重复的执行，直到成功，使用的是幂等机制
+    /// </summary>
+    /// <param name="input"></param>
+    void DeleteOrder(CreateOrderDto input)
+    {
+        _logger.LogInformation("删除订单");
+        //throw new Exception("21221");
+        //使用数据库本地事务
+        // UnitofWork
+        // cap是异步请求，同步
+        _OrderAppService.DeleteAsync(input.Id).Wait();
     }
 
     /// <summary>

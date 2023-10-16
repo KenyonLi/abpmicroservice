@@ -15,7 +15,7 @@ namespace LKN.Product.Products
     /// <summary>
     /// 商品仓储实现
     /// </summary>
-    [Dependency(ServiceLifetime.Transient)]
+    [Dependency(ServiceLifetime.Singleton)]
     public class ProductAbpRepository : EfCoreRepository<ProductDbContext, Product, Guid>, IProductAbpRepository
     {
         public ProductAbpRepository(IDbContextProvider<ProductDbContext> dbContextProvider) : base(dbContextProvider)

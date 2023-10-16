@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Volo.Abp.Application.Dtos;
 using Volo.Abp;
+using Servicecomb.Saga.Omega.Abstractions.Transaction;
 
 namespace LKN.Product.Products
 {
@@ -24,6 +25,30 @@ namespace LKN.Product.Products
         public async Task<ProductDto> GetAsync(Guid id)
         {
             return await _ProductAppService.GetAsync(id);
+        }
+
+
+        /// <summary>
+        /// 更新方法接受
+        /// </summary>
+        /// <param name="input"></param>
+        /// <returns></returns>
+        [HttpPut("Update2Async"), Compensable(nameof(RecoverStock))]
+        public async Task<ProductDto> Update2Async(UpdateProductDto input)
+        {
+            return await _ProductAppService.Update2Async(input);
+        }
+
+        /// <summary>
+        /// 恢复库存
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="input"></param>
+        void RecoverStock(UpdateProductDto input)
+        {
+            Console.WriteLine("恢复商品库存");
+            input.ProductStock = 10;
+            _ProductAppService.UpdateAsync(input.id, input).Wait();
         }
 
         [HttpPost]
@@ -72,5 +97,6 @@ namespace LKN.Product.Products
         {
             throw new NotImplementedException();
         }
+ 
     }
 }
