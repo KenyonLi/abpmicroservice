@@ -1,4 +1,5 @@
 using InternalGateway.Host;
+using NLog.Web;
 using Serilog;
 using Serilog.Events;
 /*
@@ -39,7 +40,16 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Host.AddAppSettingsSecretsJson()
-               .UseAutofac();
+            .ConfigureAppConfiguration((context, build) =>
+            {
+                //build.AddJsonFile("appsettings.secrets.json", optional: true);
+                //var configuration = build.Build();
+                //var s = configuration.GetSection("Nacos");
+                //build.AddNacosV2Configuration(s);
+
+            })
+               .UseAutofac()
+               .UseNLog();
 
 //builder.Configuration.SetBasePath(Directory.GetCurrentDirectory())
 //        .AddJsonFile("appsettings.json")

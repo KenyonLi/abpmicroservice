@@ -33,9 +33,13 @@
 
   <ItemGroup>
     <Compile Remove="Logs\**" />
+    <Compile Remove="log\**" />
     <Content Remove="Logs\**" />
+    <Content Remove="log\**" />
     <EmbeddedResource Remove="Logs\**" />
+    <EmbeddedResource Remove="log\**" />
     <None Remove="Logs\**" />
+    <None Remove="log\**" />
   </ItemGroup>
 
   <ItemGroup>
@@ -45,6 +49,12 @@
     <ProjectReference Include="..\..\moduls\LKN.Order\src\LKN.Order.Application\LKN.Order.Application.csproj" />
     <ProjectReference Include="..\..\moduls\LKN.Order\src\LKN.Order.EntityFrameworkCore\LKN.Order.EntityFrameworkCore.csproj" />
     <ProjectReference Include="..\..\moduls\LKN.Order\src\LKN.Order.HttpApi\LKN.Order.HttpApi.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="nlog.Development.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
 </Project>

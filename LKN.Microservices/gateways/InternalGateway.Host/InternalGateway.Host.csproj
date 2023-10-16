@@ -25,8 +25,15 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\frameworks\LKN.Microservices.ELK\LKN.Microservices.ELK\LKN.Microservices.ELK.csproj" />
     <ProjectReference Include="..\..\moduls\LKN.Order\src\LKN.Order.HttpApi\LKN.Order.HttpApi.csproj" />
     <ProjectReference Include="..\..\moduls\LKN.Product\src\LKN.Product.HttpApi\LKN.Product.HttpApi.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="nlog.Development.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
 </Project>

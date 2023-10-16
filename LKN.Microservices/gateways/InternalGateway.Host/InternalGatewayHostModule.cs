@@ -1,4 +1,5 @@
 ﻿using InternalGateway.Host.LoadBalancers;
+using LKN.Microservices.ELK;
 using LKN.Order;
 using LKN.Product;
 using Microsoft.OpenApi.Models;
@@ -20,6 +21,7 @@ namespace InternalGateway.Host
     [DependsOn(typeof(AbpAutofacModule),
         typeof(OrderHttpApiModule),
         typeof(ProductHttpApiModule),
+        typeof(ElaticsearchLogstashKibanaModule),
         typeof(AbpAspNetCoreSerilogModule),
         typeof(AbpAspNetCoreMvcModule)
       )]

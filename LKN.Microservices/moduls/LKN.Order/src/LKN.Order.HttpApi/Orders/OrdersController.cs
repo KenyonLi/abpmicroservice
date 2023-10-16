@@ -7,6 +7,8 @@ using System.Threading.Tasks;
 using Volo.Abp.Application.Dtos;
 using Volo.Abp;
 using Volo.Abp.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Configuration;
 
 namespace LKN.Order.Orders;
 
@@ -15,10 +17,15 @@ namespace LKN.Order.Orders;
 public class OrdersController : OrderController, IOrderAppService
 {
     private readonly IOrderAppService _OrderAppService;
+    private readonly IConfiguration _configuration;
+    private readonly ILogger<OrdersController> _logger;
 
-    public OrdersController(IOrderAppService OrderAppService)
+    public OrdersController(IOrderAppService OrderAppService, IConfiguration configuration, ILogger<OrdersController> logger)
     {
         _OrderAppService = OrderAppService;
+        _configuration = configuration;
+        _logger = logger;
+
     }
 
     [HttpGet("{id}")]
@@ -30,6 +37,19 @@ public class OrdersController : OrderController, IOrderAppService
     [HttpPost]
     public async Task<OrderDto> CreateAsync(CreateOrderDto input)
     {
+        _logger.LogInformation("创建订单");
+        return await _OrderAppService.CreateAsync(input);
+    }
+
+    /// <summary>
+    /// 异步创建订单
+    /// </summary>
+    /// <param name="input"></param>
+    /// <returns></returns>
+    [NonAction]
+    public async Task<OrderDto> CreateOrder(CreateOrderDto input)
+    {
+        Console.WriteLine("异步创建订单");
         return await _OrderAppService.CreateAsync(input);
     }
 

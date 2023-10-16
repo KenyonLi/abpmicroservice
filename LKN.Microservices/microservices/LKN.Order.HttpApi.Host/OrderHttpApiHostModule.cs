@@ -169,7 +169,7 @@ public class OrderHttpApiHostModule : AbpModule
 
 
         //2. 增加心跳检测
-        context.Services.AddHealthChecks();
+       context.Services.AddHealthChecks();
 
         // 3、使用Cap
         context.Services.AddCap(x => {
