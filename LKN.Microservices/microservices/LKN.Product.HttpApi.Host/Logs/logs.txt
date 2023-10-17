@@ -6341,3 +6341,1299 @@ Volo.Abp.Domain.Entities.EntityNotFoundException: There is no such an entity. En
 2023-10-16 21:11:49.867 +08:00 [DBG] Transport connection healthy!
 2023-10-16 21:12:19.880 +08:00 [DBG] Transport connection checking...
 2023-10-16 21:12:19.880 +08:00 [DBG] Transport connection healthy!
+2023-10-17 12:39:25.965 +08:00 [INF] Starting web host.
+2023-10-17 12:39:29.687 +08:00 [INF] Loaded ABP modules:
+2023-10-17 12:39:29.688 +08:00 [INF] - LKN.Product.ProductHttpApiHostModule
+2023-10-17 12:39:29.688 +08:00 [INF]   - LKN.Product.ProductApplicationModule
+2023-10-17 12:39:29.688 +08:00 [INF]     - LKN.Product.ProductDomainModule
+2023-10-17 12:39:29.688 +08:00 [INF]       - Volo.Abp.Domain.AbpDddDomainModule
+2023-10-17 12:39:29.688 +08:00 [INF]         - Volo.Abp.Auditing.AbpAuditingModule
+2023-10-17 12:39:29.688 +08:00 [INF]           - Volo.Abp.Data.AbpDataModule
+2023-10-17 12:39:29.688 +08:00 [INF]             - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2023-10-17 12:39:29.688 +08:00 [INF]               - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2023-10-17 12:39:29.688 +08:00 [INF]               - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2023-10-17 12:39:29.688 +08:00 [INF]             - Volo.Abp.Uow.AbpUnitOfWorkModule
+2023-10-17 12:39:29.688 +08:00 [INF]             - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2023-10-17 12:39:29.688 +08:00 [INF]           - Volo.Abp.Json.AbpJsonModule
+2023-10-17 12:39:29.688 +08:00 [INF]             - Volo.Abp.Json.SystemTextJson.AbpJsonSystemTextJsonModule
+2023-10-17 12:39:29.688 +08:00 [INF]               - Volo.Abp.Json.AbpJsonAbstractionsModule
+2023-10-17 12:39:29.689 +08:00 [INF]               - Volo.Abp.Timing.AbpTimingModule
+2023-10-17 12:39:29.689 +08:00 [INF]                 - Volo.Abp.Localization.AbpLocalizationModule
+2023-10-17 12:39:29.689 +08:00 [INF]                   - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2023-10-17 12:39:29.689 +08:00 [INF]                   - Volo.Abp.Settings.AbpSettingsModule
+2023-10-17 12:39:29.689 +08:00 [INF]                     - Volo.Abp.Security.AbpSecurityModule
+2023-10-17 12:39:29.689 +08:00 [INF]                   - Volo.Abp.Threading.AbpThreadingModule
+2023-10-17 12:39:29.689 +08:00 [INF]           - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2023-10-17 12:39:29.689 +08:00 [INF]             - Volo.Abp.MultiTenancy.AbpMultiTenancyAbstractionsModule
+2023-10-17 12:39:29.689 +08:00 [INF]           - Volo.Abp.Auditing.AbpAuditingContractsModule
+2023-10-17 12:39:29.689 +08:00 [INF]         - Volo.Abp.EventBus.AbpEventBusModule
+2023-10-17 12:39:29.689 +08:00 [INF]           - Volo.Abp.Guids.AbpGuidsModule
+2023-10-17 12:39:29.689 +08:00 [INF]           - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2023-10-17 12:39:29.689 +08:00 [INF]           - Volo.Abp.DistributedLocking.AbpDistributedLockingAbstractionsModule
+2023-10-17 12:39:29.689 +08:00 [INF]         - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2023-10-17 12:39:29.689 +08:00 [INF]         - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2023-10-17 12:39:29.689 +08:00 [INF]         - Volo.Abp.Specifications.AbpSpecificationsModule
+2023-10-17 12:39:29.689 +08:00 [INF]         - Volo.Abp.Caching.AbpCachingModule
+2023-10-17 12:39:29.689 +08:00 [INF]           - Volo.Abp.Serialization.AbpSerializationModule
+2023-10-17 12:39:29.689 +08:00 [INF]         - Volo.Abp.Domain.AbpDddDomainSharedModule
+2023-10-17 12:39:29.689 +08:00 [INF]       - LKN.Product.ProductDomainSharedModule
+2023-10-17 12:39:29.689 +08:00 [INF]         - Volo.Abp.Validation.AbpValidationModule
+2023-10-17 12:39:29.689 +08:00 [INF]     - LKN.Product.ProductApplicationContractsModule
+2023-10-17 12:39:29.689 +08:00 [INF]       - Volo.Abp.Application.AbpDddApplicationContractsModule
+2023-10-17 12:39:29.689 +08:00 [INF]       - Volo.Abp.Authorization.AbpAuthorizationModule
+2023-10-17 12:39:29.689 +08:00 [INF]         - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2023-10-17 12:39:29.689 +08:00 [INF]     - Volo.Abp.Application.AbpDddApplicationModule
+2023-10-17 12:39:29.689 +08:00 [INF]       - Volo.Abp.Http.AbpHttpAbstractionsModule
+2023-10-17 12:39:29.689 +08:00 [INF]       - Volo.Abp.Features.AbpFeaturesModule
+2023-10-17 12:39:29.689 +08:00 [INF]       - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2023-10-17 12:39:29.689 +08:00 [INF]     - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2023-10-17 12:39:29.689 +08:00 [INF]     - Volo.Abp.Autofac.AbpAutofacModule
+2023-10-17 12:39:29.689 +08:00 [INF]       - Volo.Abp.Castle.AbpCastleCoreModule
+2023-10-17 12:39:29.689 +08:00 [INF]   - LKN.Product.EntityFrameworkCore.ProductEntityFrameworkCoreModule
+2023-10-17 12:39:29.689 +08:00 [INF]     - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2023-10-17 12:39:29.689 +08:00 [INF]   - LKN.Product.ProductHttpApiModule
+2023-10-17 12:39:29.689 +08:00 [INF]     - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2023-10-17 12:39:29.689 +08:00 [INF]       - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2023-10-17 12:39:29.689 +08:00 [INF]         - Volo.Abp.Http.AbpHttpModule
+2023-10-17 12:39:29.689 +08:00 [INF]           - Volo.Abp.Minify.AbpMinifyModule
+2023-10-17 12:39:29.689 +08:00 [INF]       - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2023-10-17 12:39:29.689 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2023-10-17 12:39:29.689 +08:00 [INF]       - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2023-10-17 12:39:29.689 +08:00 [INF]         - Volo.Abp.UI.AbpUiModule
+2023-10-17 12:39:29.689 +08:00 [INF]   - Volo.Abp.AspNetCore.Mvc.UI.MultiTenancy.AbpAspNetCoreMvcUiMultiTenancyModule
+2023-10-17 12:39:29.689 +08:00 [INF]     - Volo.Abp.AspNetCore.Mvc.UI.Theme.Shared.AbpAspNetCoreMvcUiThemeSharedModule
+2023-10-17 12:39:29.689 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Bootstrap.AbpAspNetCoreMvcUiBootstrapModule
+2023-10-17 12:39:29.689 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.AbpAspNetCoreMvcUiModule
+2023-10-17 12:39:29.689 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Packages.AbpAspNetCoreMvcUiPackagesModule
+2023-10-17 12:39:29.689 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingAbstractionsModule
+2023-10-17 12:39:29.689 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Widgets.AbpAspNetCoreMvcUiWidgetsModule
+2023-10-17 12:39:29.689 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingModule
+2023-10-17 12:39:29.689 +08:00 [INF]     - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2023-10-17 12:39:29.689 +08:00 [INF]   - Volo.Abp.Caching.StackExchangeRedis.AbpCachingStackExchangeRedisModule
+2023-10-17 12:39:29.689 +08:00 [INF]   - Volo.Abp.EntityFrameworkCore.MySQL.AbpEntityFrameworkCoreMySQLModule
+2023-10-17 12:39:29.689 +08:00 [INF]   - Volo.Abp.AspNetCore.Serilog.AbpAspNetCoreSerilogModule
+2023-10-17 12:39:29.689 +08:00 [INF]   - Volo.Abp.Swashbuckle.AbpSwashbuckleModule
+2023-10-17 12:39:29.689 +08:00 [INF]   - LKN.Microservices.Infrastructure.InfrastructureModule
+2023-10-17 12:39:29.834 +08:00 [INF] MySettingName => 
+2023-10-17 12:39:29.835 +08:00 [INF] EnvironmentName => Development
+2023-10-17 12:39:30.248 +08:00 [INF] User profile is available. Using 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-17 12:39:30.358 +08:00 [INF] Initialized all ABP modules.
+2023-10-17 12:39:33.042 +08:00 [DBG] ### CAP background task is starting.
+2023-10-17 12:39:34.227 +08:00 [DBG] RabbitMQ configuration:'HostName:localhost, Port:5672, UserName:guest, Password:guest, ExchangeName:cap.default.router'
+2023-10-17 12:39:34.352 +08:00 [DBG] Ensuring all create database tables script are applied.
+2023-10-17 12:39:34.358 +08:00 [INF] Starting default Dispatcher
+2023-10-17 12:39:34.365 +08:00 [INF] Starting the processing server.
+2023-10-17 12:39:34.386 +08:00 [INF] Now listening on: https://localhost:44370
+2023-10-17 12:39:34.387 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-17 12:39:34.387 +08:00 [INF] Hosting environment: Development
+2023-10-17 12:39:34.387 +08:00 [INF] Content root path: D:\test\ABP\abpmicroservice\LKN.Microservices\microservices\LKN.Product.HttpApi.Host
+2023-10-17 12:39:34.427 +08:00 [DBG] Transport connection checking...
+2023-10-17 12:39:34.427 +08:00 [DBG] Transport connection healthy!
+2023-10-17 12:39:34.440 +08:00 [DBG] Collecting expired data from table: cap.published
+2023-10-17 12:39:34.443 +08:00 [INF] ### CAP started!
+2023-10-17 12:39:34.498 +08:00 [DBG] Collecting expired data from table: cap.received
+2023-10-17 12:39:35.197 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/ - -
+2023-10-17 12:39:37.580 +08:00 [INF] Executing endpoint 'LKN.Product.Controllers.HomeController.Index (LKN.Product.HttpApi.Host)'
+2023-10-17 12:39:37.605 +08:00 [INF] Route matched with {action = "Index", controller = "Home", area = "", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Index() on controller LKN.Product.Controllers.HomeController (LKN.Product.HttpApi.Host).
+2023-10-17 12:39:37.785 +08:00 [INF] Executing action method LKN.Product.Controllers.HomeController.Index (LKN.Product.HttpApi.Host) - Validation state: "Valid"
+2023-10-17 12:39:37.790 +08:00 [INF] Executed action method LKN.Product.Controllers.HomeController.Index (LKN.Product.HttpApi.Host), returned result Microsoft.AspNetCore.Mvc.RedirectResult in 0.4878ms.
+2023-10-17 12:39:37.802 +08:00 [INF] Executing RedirectResult, redirecting to /swagger.
+2023-10-17 12:39:37.807 +08:00 [INF] Executed action LKN.Product.Controllers.HomeController.Index (LKN.Product.HttpApi.Host) in 198.4186ms
+2023-10-17 12:39:37.807 +08:00 [INF] Executed endpoint 'LKN.Product.Controllers.HomeController.Index (LKN.Product.HttpApi.Host)'
+2023-10-17 12:39:37.820 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/ - - - 302 0 - 2625.3664ms
+2023-10-17 12:39:37.828 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/swagger/index.html - -
+2023-10-17 12:39:37.996 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/swagger/index.html - - - 200 - text/html;charset=utf-8 168.2146ms
+2023-10-17 12:39:38.036 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/_framework/aspnetcore-browser-refresh.js - -
+2023-10-17 12:39:38.044 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/_framework/aspnetcore-browser-refresh.js - - - 200 12018 application/javascript;+charset=utf-8 7.3684ms
+2023-10-17 12:39:38.074 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/_vs/browserLink - -
+2023-10-17 12:39:38.197 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 122.6157ms
+2023-10-17 12:39:38.317 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/swagger/v1/swagger.json - -
+2023-10-17 12:39:38.469 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 151.5772ms
+2023-10-17 12:39:43.646 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/HealthCheck - -
+2023-10-17 12:39:43.653 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/HealthCheck - - - 200 - text/plain 6.7510ms
+2023-10-17 12:39:49.757 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:44370/api/abp/api-definition - -
+2023-10-17 12:39:49.758 +08:00 [INF] Executing endpoint 'Volo.Abp.AspNetCore.Mvc.ApiExploring.AbpApiDefinitionController.Get (Volo.Abp.AspNetCore.Mvc)'
+2023-10-17 12:39:49.766 +08:00 [INF] Route matched with {area = "abp", action = "Get", controller = "AbpApiDefinition", page = ""}. Executing controller action with signature Volo.Abp.Http.Modeling.ApplicationApiDescriptionModel Get(Volo.Abp.Http.Modeling.ApplicationApiDescriptionModelRequestDto) on controller Volo.Abp.AspNetCore.Mvc.ApiExploring.AbpApiDefinitionController (Volo.Abp.AspNetCore.Mvc).
+2023-10-17 12:39:49.874 +08:00 [INF] Executing action method Volo.Abp.AspNetCore.Mvc.ApiExploring.AbpApiDefinitionController.Get (Volo.Abp.AspNetCore.Mvc) - Validation state: "Valid"
+2023-10-17 12:39:49.884 +08:00 [DBG] ActionApiDescriptionModel.Create: Sample.GetAsync
+2023-10-17 12:39:49.889 +08:00 [DBG] ActionApiDescriptionModel.Create: Sample.GetAuthorizedAsync
+2023-10-17 12:39:49.889 +08:00 [DBG] ActionApiDescriptionModel.Create: Sample.GetAsync
+2023-10-17 12:39:49.889 +08:00 [DBG] ActionApiDescriptionModel.Create: Sample.GetAuthorizedAsync
+2023-10-17 12:39:49.890 +08:00 [DBG] ActionApiDescriptionModel.Create: Products.GetAsyncById
+2023-10-17 12:39:49.894 +08:00 [DBG] ActionApiDescriptionModel.Create: Products.Update2AsyncByInput
+2023-10-17 12:39:49.894 +08:00 [DBG] ActionApiDescriptionModel.Create: Products.CreateAsyncByInput
+2023-10-17 12:39:49.894 +08:00 [DBG] ActionApiDescriptionModel.Create: Products.GetListAsyncByInput
+2023-10-17 12:39:49.894 +08:00 [DBG] ActionApiDescriptionModel.Create: Products.UpdateAsyncByIdAndInput
+2023-10-17 12:39:49.895 +08:00 [DBG] ActionApiDescriptionModel.Create: Products.DeleteAsyncById
+2023-10-17 12:39:49.895 +08:00 [DBG] ActionApiDescriptionModel.Create: Products.GetProductAndImages
+2023-10-17 12:39:49.895 +08:00 [DBG] ActionApiDescriptionModel.Create: Products.GetProductByAttrByCreateProductDto
+2023-10-17 12:39:49.895 +08:00 [DBG] ActionApiDescriptionModel.Create: Products.GetProductTotals
+2023-10-17 12:39:49.895 +08:00 [DBG] ActionApiDescriptionModel.Create: Products.GetProductAndImage
+2023-10-17 12:39:49.895 +08:00 [DBG] ActionApiDescriptionModel.Create: AbpTenant.FindTenantByNameAsyncByName
+2023-10-17 12:39:49.895 +08:00 [DBG] ActionApiDescriptionModel.Create: AbpTenant.FindTenantByIdAsyncById
+2023-10-17 12:39:49.895 +08:00 [DBG] ActionApiDescriptionModel.Create: AbpApplicationConfiguration.GetAsyncByOptions
+2023-10-17 12:39:49.895 +08:00 [DBG] ActionApiDescriptionModel.Create: AbpApplicationLocalization.GetAsyncByInput
+2023-10-17 12:39:49.896 +08:00 [DBG] ActionApiDescriptionModel.Create: AbpApiDefinition.GetByModel
+2023-10-17 12:39:49.899 +08:00 [INF] Executed action method Volo.Abp.AspNetCore.Mvc.ApiExploring.AbpApiDefinitionController.Get (Volo.Abp.AspNetCore.Mvc), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 24.6238ms.
+2023-10-17 12:39:49.903 +08:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.Http.Modeling.ApplicationApiDescriptionModel'.
+2023-10-17 12:39:49.929 +08:00 [INF] Executed action Volo.Abp.AspNetCore.Mvc.ApiExploring.AbpApiDefinitionController.Get (Volo.Abp.AspNetCore.Mvc) in 162.9719ms
+2023-10-17 12:39:49.929 +08:00 [INF] Executed endpoint 'Volo.Abp.AspNetCore.Mvc.ApiExploring.AbpApiDefinitionController.Get (Volo.Abp.AspNetCore.Mvc)'
+2023-10-17 12:39:49.929 +08:00 [INF] Request finished HTTP/1.1 GET https://localhost:44370/api/abp/api-definition - - - 200 - application/json;+charset=utf-8 172.8859ms
+2023-10-17 12:39:49.987 +08:00 [INF] Request starting HTTP/1.1 PUT https://localhost:44370/api/ProductService/Product/Update2Async?api-version=1.0 application/json;+charset=utf-8 167
+2023-10-17 12:39:49.992 +08:00 [INF] Executing endpoint 'LKN.Product.Products.ProductsController.Update2Async (LKN.Product.HttpApi)'
+2023-10-17 12:39:49.998 +08:00 [INF] Route matched with {action = "Update2", controller = "Products", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[LKN.Product.Products.ProductDto] Update2Async(LKN.Product.Products.UpdateProductDto) on controller LKN.Product.Products.ProductsController (LKN.Product.HttpApi).
+2023-10-17 12:39:50.212 +08:00 [WRN] ---------- RemoteServiceErrorInfo ----------
+{
+  "code": null,
+  "message": "Your request is not valid!",
+  "details": "The following errors were detected during validation.\r\n - The ProductUrl field is required.\r\n - The ProductTitle field is required.\r\n - The ProductDescription field is required.\r\n",
+  "data": {},
+  "validationErrors": [
+    {
+      "message": "The ProductUrl field is required.",
+      "members": [
+        "productUrl"
+      ]
+    },
+    {
+      "message": "The ProductTitle field is required.",
+      "members": [
+        "productTitle"
+      ]
+    },
+    {
+      "message": "The ProductDescription field is required.",
+      "members": [
+        "productDescription"
+      ]
+    }
+  ]
+}
+
+2023-10-17 12:39:50.212 +08:00 [WRN] ModelState is not valid! See ValidationErrors for details.
+Volo.Abp.Validation.AbpValidationException: ModelState is not valid! See ValidationErrors for details.
+   at Volo.Abp.AspNetCore.Mvc.Validation.ModelStateValidator.Validate(ModelStateDictionary modelState)
+   at Volo.Abp.AspNetCore.Mvc.Validation.AbpValidationActionFilter.OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+2023-10-17 12:39:50.214 +08:00 [WRN] There are 3 validation errors:
+The ProductUrl field is required. (ProductUrl)
+The ProductTitle field is required. (ProductTitle)
+The ProductDescription field is required. (ProductDescription)
+
+2023-10-17 12:39:50.237 +08:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.Http.RemoteServiceErrorResponse'.
+2023-10-17 12:39:50.240 +08:00 [INF] Executed action LKN.Product.Products.ProductsController.Update2Async (LKN.Product.HttpApi) in 242.3345ms
+2023-10-17 12:39:50.240 +08:00 [INF] Executed endpoint 'LKN.Product.Products.ProductsController.Update2Async (LKN.Product.HttpApi)'
+2023-10-17 12:39:50.247 +08:00 [INF] AUDIT LOG: [400: PUT    ] /api/ProductService/Product/Update2Async
+- UserName - UserId                 :  - 
+- ClientIpAddress        : ::1
+- ExecutionDuration      : 250
+- Actions:
+  - LKN.Product.Products.ProductsController.Update2Async (2 ms.)
+    {"input":{"id":"3a0dbecd-d8bc-b847-4c93-82f82bc0d608","productUrl":null,"productTitle":null,"productDescription":null,"productVirtualprice":0,"productPrice":0,"productStock":2}}
+- Exceptions:
+  - ModelState is not valid! See ValidationErrors for details.
+    Volo.Abp.Validation.AbpValidationException: ModelState is not valid! See ValidationErrors for details.
+   at Volo.Abp.AspNetCore.Mvc.Validation.ModelStateValidator.Validate(ModelStateDictionary modelState)
+   at Volo.Abp.AspNetCore.Mvc.Validation.AbpValidationActionFilter.OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+
+2023-10-17 12:39:50.247 +08:00 [INF] Request finished HTTP/1.1 PUT https://localhost:44370/api/ProductService/Product/Update2Async?api-version=1.0 application/json;+charset=utf-8 167 - 400 - application/json;+charset=utf-8 260.2031ms
+2023-10-17 12:40:05.181 +08:00 [DBG] Transport connection checking...
+2023-10-17 12:40:05.181 +08:00 [DBG] Transport connection healthy!
+2023-10-17 12:40:13.685 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/HealthCheck - -
+2023-10-17 12:40:13.686 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/HealthCheck - - - 200 - text/plain 1.2646ms
+2023-10-17 12:40:23.715 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/HealthCheck - -
+2023-10-17 12:40:23.716 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/HealthCheck - - - 200 - text/plain 0.5377ms
+2023-10-17 12:40:33.731 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/HealthCheck - -
+2023-10-17 12:40:33.732 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/HealthCheck - - - 200 - text/plain 0.9353ms
+2023-10-17 12:40:35.194 +08:00 [DBG] Transport connection checking...
+2023-10-17 12:40:35.194 +08:00 [DBG] Transport connection healthy!
+2023-10-17 12:40:43.745 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/HealthCheck - -
+2023-10-17 12:40:43.746 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/HealthCheck - - - 200 - text/plain 0.5566ms
+2023-10-17 12:40:53.759 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/HealthCheck - -
+2023-10-17 12:40:53.760 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/HealthCheck - - - 200 - text/plain 0.7449ms
+2023-10-17 12:41:02.514 +08:00 [INF] Request starting HTTP/1.1 PUT https://localhost:44370/api/ProductService/Product/Update2Async?api-version=1.0 application/json;+charset=utf-8 167
+2023-10-17 12:41:02.516 +08:00 [INF] Executing endpoint 'LKN.Product.Products.ProductsController.Update2Async (LKN.Product.HttpApi)'
+2023-10-17 12:41:02.517 +08:00 [INF] Route matched with {action = "Update2", controller = "Products", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[LKN.Product.Products.ProductDto] Update2Async(LKN.Product.Products.UpdateProductDto) on controller LKN.Product.Products.ProductsController (LKN.Product.HttpApi).
+2023-10-17 12:41:02.519 +08:00 [WRN] ---------- RemoteServiceErrorInfo ----------
+{
+  "code": null,
+  "message": "Your request is not valid!",
+  "details": "The following errors were detected during validation.\r\n - The ProductUrl field is required.\r\n - The ProductTitle field is required.\r\n - The ProductDescription field is required.\r\n",
+  "data": {},
+  "validationErrors": [
+    {
+      "message": "The ProductUrl field is required.",
+      "members": [
+        "productUrl"
+      ]
+    },
+    {
+      "message": "The ProductTitle field is required.",
+      "members": [
+        "productTitle"
+      ]
+    },
+    {
+      "message": "The ProductDescription field is required.",
+      "members": [
+        "productDescription"
+      ]
+    }
+  ]
+}
+
+2023-10-17 12:41:02.519 +08:00 [WRN] ModelState is not valid! See ValidationErrors for details.
+Volo.Abp.Validation.AbpValidationException: ModelState is not valid! See ValidationErrors for details.
+   at Volo.Abp.AspNetCore.Mvc.Validation.ModelStateValidator.Validate(ModelStateDictionary modelState)
+   at Volo.Abp.AspNetCore.Mvc.Validation.AbpValidationActionFilter.OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+2023-10-17 12:41:02.520 +08:00 [WRN] There are 3 validation errors:
+The ProductUrl field is required. (ProductUrl)
+The ProductTitle field is required. (ProductTitle)
+The ProductDescription field is required. (ProductDescription)
+
+2023-10-17 12:41:02.520 +08:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.Http.RemoteServiceErrorResponse'.
+2023-10-17 12:41:02.520 +08:00 [INF] Executed action LKN.Product.Products.ProductsController.Update2Async (LKN.Product.HttpApi) in 3.3388ms
+2023-10-17 12:41:02.520 +08:00 [INF] Executed endpoint 'LKN.Product.Products.ProductsController.Update2Async (LKN.Product.HttpApi)'
+2023-10-17 12:41:02.521 +08:00 [INF] AUDIT LOG: [400: PUT    ] /api/ProductService/Product/Update2Async
+- UserName - UserId                 :  - 
+- ClientIpAddress        : ::1
+- ExecutionDuration      : 4
+- Actions:
+  - LKN.Product.Products.ProductsController.Update2Async (0 ms.)
+    {"input":{"id":"3a0dbecd-d8bc-b847-4c93-82f82bc0d608","productUrl":null,"productTitle":null,"productDescription":null,"productVirtualprice":0,"productPrice":0,"productStock":2}}
+- Exceptions:
+  - ModelState is not valid! See ValidationErrors for details.
+    Volo.Abp.Validation.AbpValidationException: ModelState is not valid! See ValidationErrors for details.
+   at Volo.Abp.AspNetCore.Mvc.Validation.ModelStateValidator.Validate(ModelStateDictionary modelState)
+   at Volo.Abp.AspNetCore.Mvc.Validation.AbpValidationActionFilter.OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+
+2023-10-17 12:41:02.521 +08:00 [INF] Request finished HTTP/1.1 PUT https://localhost:44370/api/ProductService/Product/Update2Async?api-version=1.0 application/json;+charset=utf-8 167 - 400 - application/json;+charset=utf-8 6.3177ms
+2023-10-17 12:41:03.769 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/HealthCheck - -
+2023-10-17 12:41:03.770 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/HealthCheck - - - 200 - text/plain 0.6818ms
+2023-10-17 12:41:05.202 +08:00 [DBG] Transport connection checking...
+2023-10-17 12:41:05.202 +08:00 [DBG] Transport connection healthy!
+2023-10-17 12:41:13.787 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/HealthCheck - -
+2023-10-17 12:41:13.787 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/HealthCheck - - - 200 - text/plain 0.9010ms
+2023-10-17 12:41:23.796 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/HealthCheck - -
+2023-10-17 12:41:23.797 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/HealthCheck - - - 200 - text/plain 0.6008ms
+2023-10-17 12:42:39.357 +08:00 [INF] Starting web host.
+2023-10-17 12:42:42.468 +08:00 [INF] Loaded ABP modules:
+2023-10-17 12:42:42.470 +08:00 [INF] - LKN.Product.ProductHttpApiHostModule
+2023-10-17 12:42:42.470 +08:00 [INF]   - LKN.Product.ProductApplicationModule
+2023-10-17 12:42:42.470 +08:00 [INF]     - LKN.Product.ProductDomainModule
+2023-10-17 12:42:42.470 +08:00 [INF]       - Volo.Abp.Domain.AbpDddDomainModule
+2023-10-17 12:42:42.470 +08:00 [INF]         - Volo.Abp.Auditing.AbpAuditingModule
+2023-10-17 12:42:42.470 +08:00 [INF]           - Volo.Abp.Data.AbpDataModule
+2023-10-17 12:42:42.470 +08:00 [INF]             - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2023-10-17 12:42:42.470 +08:00 [INF]               - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2023-10-17 12:42:42.470 +08:00 [INF]               - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2023-10-17 12:42:42.470 +08:00 [INF]             - Volo.Abp.Uow.AbpUnitOfWorkModule
+2023-10-17 12:42:42.470 +08:00 [INF]             - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2023-10-17 12:42:42.470 +08:00 [INF]           - Volo.Abp.Json.AbpJsonModule
+2023-10-17 12:42:42.470 +08:00 [INF]             - Volo.Abp.Json.SystemTextJson.AbpJsonSystemTextJsonModule
+2023-10-17 12:42:42.470 +08:00 [INF]               - Volo.Abp.Json.AbpJsonAbstractionsModule
+2023-10-17 12:42:42.470 +08:00 [INF]               - Volo.Abp.Timing.AbpTimingModule
+2023-10-17 12:42:42.470 +08:00 [INF]                 - Volo.Abp.Localization.AbpLocalizationModule
+2023-10-17 12:42:42.470 +08:00 [INF]                   - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2023-10-17 12:42:42.470 +08:00 [INF]                   - Volo.Abp.Settings.AbpSettingsModule
+2023-10-17 12:42:42.470 +08:00 [INF]                     - Volo.Abp.Security.AbpSecurityModule
+2023-10-17 12:42:42.470 +08:00 [INF]                   - Volo.Abp.Threading.AbpThreadingModule
+2023-10-17 12:42:42.470 +08:00 [INF]           - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2023-10-17 12:42:42.470 +08:00 [INF]             - Volo.Abp.MultiTenancy.AbpMultiTenancyAbstractionsModule
+2023-10-17 12:42:42.470 +08:00 [INF]           - Volo.Abp.Auditing.AbpAuditingContractsModule
+2023-10-17 12:42:42.470 +08:00 [INF]         - Volo.Abp.EventBus.AbpEventBusModule
+2023-10-17 12:42:42.470 +08:00 [INF]           - Volo.Abp.Guids.AbpGuidsModule
+2023-10-17 12:42:42.470 +08:00 [INF]           - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2023-10-17 12:42:42.470 +08:00 [INF]           - Volo.Abp.DistributedLocking.AbpDistributedLockingAbstractionsModule
+2023-10-17 12:42:42.470 +08:00 [INF]         - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2023-10-17 12:42:42.470 +08:00 [INF]         - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2023-10-17 12:42:42.470 +08:00 [INF]         - Volo.Abp.Specifications.AbpSpecificationsModule
+2023-10-17 12:42:42.470 +08:00 [INF]         - Volo.Abp.Caching.AbpCachingModule
+2023-10-17 12:42:42.470 +08:00 [INF]           - Volo.Abp.Serialization.AbpSerializationModule
+2023-10-17 12:42:42.470 +08:00 [INF]         - Volo.Abp.Domain.AbpDddDomainSharedModule
+2023-10-17 12:42:42.470 +08:00 [INF]       - LKN.Product.ProductDomainSharedModule
+2023-10-17 12:42:42.470 +08:00 [INF]         - Volo.Abp.Validation.AbpValidationModule
+2023-10-17 12:42:42.470 +08:00 [INF]     - LKN.Product.ProductApplicationContractsModule
+2023-10-17 12:42:42.470 +08:00 [INF]       - Volo.Abp.Application.AbpDddApplicationContractsModule
+2023-10-17 12:42:42.470 +08:00 [INF]       - Volo.Abp.Authorization.AbpAuthorizationModule
+2023-10-17 12:42:42.470 +08:00 [INF]         - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2023-10-17 12:42:42.470 +08:00 [INF]     - Volo.Abp.Application.AbpDddApplicationModule
+2023-10-17 12:42:42.470 +08:00 [INF]       - Volo.Abp.Http.AbpHttpAbstractionsModule
+2023-10-17 12:42:42.470 +08:00 [INF]       - Volo.Abp.Features.AbpFeaturesModule
+2023-10-17 12:42:42.470 +08:00 [INF]       - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2023-10-17 12:42:42.470 +08:00 [INF]     - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2023-10-17 12:42:42.470 +08:00 [INF]     - Volo.Abp.Autofac.AbpAutofacModule
+2023-10-17 12:42:42.470 +08:00 [INF]       - Volo.Abp.Castle.AbpCastleCoreModule
+2023-10-17 12:42:42.470 +08:00 [INF]   - LKN.Product.EntityFrameworkCore.ProductEntityFrameworkCoreModule
+2023-10-17 12:42:42.470 +08:00 [INF]     - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2023-10-17 12:42:42.470 +08:00 [INF]   - LKN.Product.ProductHttpApiModule
+2023-10-17 12:42:42.470 +08:00 [INF]     - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2023-10-17 12:42:42.470 +08:00 [INF]       - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2023-10-17 12:42:42.470 +08:00 [INF]         - Volo.Abp.Http.AbpHttpModule
+2023-10-17 12:42:42.470 +08:00 [INF]           - Volo.Abp.Minify.AbpMinifyModule
+2023-10-17 12:42:42.470 +08:00 [INF]       - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2023-10-17 12:42:42.470 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2023-10-17 12:42:42.470 +08:00 [INF]       - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2023-10-17 12:42:42.470 +08:00 [INF]         - Volo.Abp.UI.AbpUiModule
+2023-10-17 12:42:42.470 +08:00 [INF]   - Volo.Abp.AspNetCore.Mvc.UI.MultiTenancy.AbpAspNetCoreMvcUiMultiTenancyModule
+2023-10-17 12:42:42.470 +08:00 [INF]     - Volo.Abp.AspNetCore.Mvc.UI.Theme.Shared.AbpAspNetCoreMvcUiThemeSharedModule
+2023-10-17 12:42:42.470 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Bootstrap.AbpAspNetCoreMvcUiBootstrapModule
+2023-10-17 12:42:42.470 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.AbpAspNetCoreMvcUiModule
+2023-10-17 12:42:42.470 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Packages.AbpAspNetCoreMvcUiPackagesModule
+2023-10-17 12:42:42.470 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingAbstractionsModule
+2023-10-17 12:42:42.470 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Widgets.AbpAspNetCoreMvcUiWidgetsModule
+2023-10-17 12:42:42.470 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingModule
+2023-10-17 12:42:42.470 +08:00 [INF]     - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2023-10-17 12:42:42.470 +08:00 [INF]   - Volo.Abp.Caching.StackExchangeRedis.AbpCachingStackExchangeRedisModule
+2023-10-17 12:42:42.470 +08:00 [INF]   - Volo.Abp.EntityFrameworkCore.MySQL.AbpEntityFrameworkCoreMySQLModule
+2023-10-17 12:42:42.470 +08:00 [INF]   - Volo.Abp.AspNetCore.Serilog.AbpAspNetCoreSerilogModule
+2023-10-17 12:42:42.470 +08:00 [INF]   - Volo.Abp.Swashbuckle.AbpSwashbuckleModule
+2023-10-17 12:42:42.470 +08:00 [INF]   - LKN.Microservices.Infrastructure.InfrastructureModule
+2023-10-17 12:42:42.552 +08:00 [INF] MySettingName => 
+2023-10-17 12:42:42.552 +08:00 [INF] EnvironmentName => Development
+2023-10-17 12:42:42.872 +08:00 [INF] User profile is available. Using 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-17 12:42:42.964 +08:00 [INF] Initialized all ABP modules.
+2023-10-17 12:42:45.533 +08:00 [DBG] ### CAP background task is starting.
+2023-10-17 12:42:46.674 +08:00 [DBG] RabbitMQ configuration:'HostName:localhost, Port:5672, UserName:guest, Password:guest, ExchangeName:cap.default.router'
+2023-10-17 12:42:46.793 +08:00 [DBG] Ensuring all create database tables script are applied.
+2023-10-17 12:42:46.799 +08:00 [INF] Starting default Dispatcher
+2023-10-17 12:42:46.806 +08:00 [INF] Starting the processing server.
+2023-10-17 12:42:46.822 +08:00 [INF] Now listening on: https://localhost:44370
+2023-10-17 12:42:46.822 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-17 12:42:46.823 +08:00 [INF] Hosting environment: Development
+2023-10-17 12:42:46.823 +08:00 [INF] Content root path: D:\test\ABP\abpmicroservice\LKN.Microservices\microservices\LKN.Product.HttpApi.Host
+2023-10-17 12:42:46.871 +08:00 [DBG] Transport connection checking...
+2023-10-17 12:42:46.871 +08:00 [DBG] Transport connection healthy!
+2023-10-17 12:42:46.884 +08:00 [DBG] Collecting expired data from table: cap.published
+2023-10-17 12:42:46.888 +08:00 [INF] ### CAP started!
+2023-10-17 12:42:46.948 +08:00 [DBG] Collecting expired data from table: cap.received
+2023-10-17 12:42:47.773 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/ - -
+2023-10-17 12:42:47.953 +08:00 [INF] Executing endpoint 'LKN.Product.Controllers.HomeController.Index (LKN.Product.HttpApi.Host)'
+2023-10-17 12:42:47.976 +08:00 [INF] Route matched with {action = "Index", controller = "Home", area = "", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Index() on controller LKN.Product.Controllers.HomeController (LKN.Product.HttpApi.Host).
+2023-10-17 12:42:48.123 +08:00 [INF] Executing action method LKN.Product.Controllers.HomeController.Index (LKN.Product.HttpApi.Host) - Validation state: "Valid"
+2023-10-17 12:42:48.126 +08:00 [INF] Executed action method LKN.Product.Controllers.HomeController.Index (LKN.Product.HttpApi.Host), returned result Microsoft.AspNetCore.Mvc.RedirectResult in 0.4069ms.
+2023-10-17 12:42:48.137 +08:00 [INF] Executing RedirectResult, redirecting to /swagger.
+2023-10-17 12:42:48.141 +08:00 [INF] Executed action LKN.Product.Controllers.HomeController.Index (LKN.Product.HttpApi.Host) in 162.5416ms
+2023-10-17 12:42:48.141 +08:00 [INF] Executed endpoint 'LKN.Product.Controllers.HomeController.Index (LKN.Product.HttpApi.Host)'
+2023-10-17 12:42:48.151 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/ - - - 302 0 - 381.0902ms
+2023-10-17 12:42:48.157 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/swagger/index.html - -
+2023-10-17 12:42:48.304 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/swagger/index.html - - - 200 - text/html;charset=utf-8 147.1982ms
+2023-10-17 12:42:48.307 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/_framework/aspnetcore-browser-refresh.js - -
+2023-10-17 12:42:48.308 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/_vs/browserLink - -
+2023-10-17 12:42:48.314 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/_framework/aspnetcore-browser-refresh.js - - - 200 12018 application/javascript;+charset=utf-8 5.9088ms
+2023-10-17 12:42:48.360 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 51.5843ms
+2023-10-17 12:42:48.469 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/swagger/v1/swagger.json - -
+2023-10-17 12:42:48.599 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 130.1807ms
+2023-10-17 12:42:54.834 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/HealthCheck - -
+2023-10-17 12:42:54.847 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/HealthCheck - - - 200 - text/plain 12.9082ms
+2023-10-17 12:43:04.873 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/HealthCheck - -
+2023-10-17 12:43:04.875 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/HealthCheck - - - 200 - text/plain 1.7159ms
+2023-10-17 12:43:14.891 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/HealthCheck - -
+2023-10-17 12:43:14.891 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/HealthCheck - - - 200 - text/plain 0.9155ms
+2023-10-17 12:43:16.877 +08:00 [DBG] Transport connection checking...
+2023-10-17 12:43:16.877 +08:00 [DBG] Transport connection healthy!
+2023-10-17 12:43:24.912 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/HealthCheck - -
+2023-10-17 12:43:24.912 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/HealthCheck - - - 200 - text/plain 0.6835ms
+2023-10-17 12:43:34.942 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/HealthCheck - -
+2023-10-17 12:43:34.943 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/HealthCheck - - - 200 - text/plain 1.0775ms
+2023-10-17 12:43:44.968 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/HealthCheck - -
+2023-10-17 12:43:44.968 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/HealthCheck - - - 200 - text/plain 0.7348ms
+2023-10-17 12:43:46.881 +08:00 [DBG] Transport connection checking...
+2023-10-17 12:43:46.881 +08:00 [DBG] Transport connection healthy!
+2023-10-17 12:43:55.002 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/HealthCheck - -
+2023-10-17 12:43:55.002 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/HealthCheck - - - 200 - text/plain 0.6389ms
+2023-10-17 12:44:05.012 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/HealthCheck - -
+2023-10-17 12:44:05.013 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/HealthCheck - - - 200 - text/plain 0.6522ms
+2023-10-17 12:44:15.036 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/HealthCheck - -
+2023-10-17 12:44:15.036 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/HealthCheck - - - 200 - text/plain 0.8031ms
+2023-10-17 12:44:16.887 +08:00 [DBG] Transport connection checking...
+2023-10-17 12:44:16.887 +08:00 [DBG] Transport connection healthy!
+2023-10-17 12:49:09.666 +08:00 [INF] Starting web host.
+2023-10-17 12:49:13.144 +08:00 [INF] Loaded ABP modules:
+2023-10-17 12:49:13.145 +08:00 [INF] - LKN.Product.ProductHttpApiHostModule
+2023-10-17 12:49:13.145 +08:00 [INF]   - LKN.Product.ProductApplicationModule
+2023-10-17 12:49:13.145 +08:00 [INF]     - LKN.Product.ProductDomainModule
+2023-10-17 12:49:13.145 +08:00 [INF]       - Volo.Abp.Domain.AbpDddDomainModule
+2023-10-17 12:49:13.145 +08:00 [INF]         - Volo.Abp.Auditing.AbpAuditingModule
+2023-10-17 12:49:13.145 +08:00 [INF]           - Volo.Abp.Data.AbpDataModule
+2023-10-17 12:49:13.145 +08:00 [INF]             - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2023-10-17 12:49:13.145 +08:00 [INF]               - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2023-10-17 12:49:13.145 +08:00 [INF]               - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2023-10-17 12:49:13.145 +08:00 [INF]             - Volo.Abp.Uow.AbpUnitOfWorkModule
+2023-10-17 12:49:13.145 +08:00 [INF]             - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2023-10-17 12:49:13.145 +08:00 [INF]           - Volo.Abp.Json.AbpJsonModule
+2023-10-17 12:49:13.145 +08:00 [INF]             - Volo.Abp.Json.SystemTextJson.AbpJsonSystemTextJsonModule
+2023-10-17 12:49:13.145 +08:00 [INF]               - Volo.Abp.Json.AbpJsonAbstractionsModule
+2023-10-17 12:49:13.145 +08:00 [INF]               - Volo.Abp.Timing.AbpTimingModule
+2023-10-17 12:49:13.145 +08:00 [INF]                 - Volo.Abp.Localization.AbpLocalizationModule
+2023-10-17 12:49:13.145 +08:00 [INF]                   - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2023-10-17 12:49:13.145 +08:00 [INF]                   - Volo.Abp.Settings.AbpSettingsModule
+2023-10-17 12:49:13.146 +08:00 [INF]                     - Volo.Abp.Security.AbpSecurityModule
+2023-10-17 12:49:13.146 +08:00 [INF]                   - Volo.Abp.Threading.AbpThreadingModule
+2023-10-17 12:49:13.146 +08:00 [INF]           - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2023-10-17 12:49:13.146 +08:00 [INF]             - Volo.Abp.MultiTenancy.AbpMultiTenancyAbstractionsModule
+2023-10-17 12:49:13.146 +08:00 [INF]           - Volo.Abp.Auditing.AbpAuditingContractsModule
+2023-10-17 12:49:13.146 +08:00 [INF]         - Volo.Abp.EventBus.AbpEventBusModule
+2023-10-17 12:49:13.146 +08:00 [INF]           - Volo.Abp.Guids.AbpGuidsModule
+2023-10-17 12:49:13.146 +08:00 [INF]           - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2023-10-17 12:49:13.146 +08:00 [INF]           - Volo.Abp.DistributedLocking.AbpDistributedLockingAbstractionsModule
+2023-10-17 12:49:13.146 +08:00 [INF]         - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2023-10-17 12:49:13.146 +08:00 [INF]         - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2023-10-17 12:49:13.146 +08:00 [INF]         - Volo.Abp.Specifications.AbpSpecificationsModule
+2023-10-17 12:49:13.146 +08:00 [INF]         - Volo.Abp.Caching.AbpCachingModule
+2023-10-17 12:49:13.146 +08:00 [INF]           - Volo.Abp.Serialization.AbpSerializationModule
+2023-10-17 12:49:13.146 +08:00 [INF]         - Volo.Abp.Domain.AbpDddDomainSharedModule
+2023-10-17 12:49:13.146 +08:00 [INF]       - LKN.Product.ProductDomainSharedModule
+2023-10-17 12:49:13.146 +08:00 [INF]         - Volo.Abp.Validation.AbpValidationModule
+2023-10-17 12:49:13.146 +08:00 [INF]     - LKN.Product.ProductApplicationContractsModule
+2023-10-17 12:49:13.146 +08:00 [INF]       - Volo.Abp.Application.AbpDddApplicationContractsModule
+2023-10-17 12:49:13.146 +08:00 [INF]       - Volo.Abp.Authorization.AbpAuthorizationModule
+2023-10-17 12:49:13.146 +08:00 [INF]         - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2023-10-17 12:49:13.146 +08:00 [INF]     - Volo.Abp.Application.AbpDddApplicationModule
+2023-10-17 12:49:13.146 +08:00 [INF]       - Volo.Abp.Http.AbpHttpAbstractionsModule
+2023-10-17 12:49:13.146 +08:00 [INF]       - Volo.Abp.Features.AbpFeaturesModule
+2023-10-17 12:49:13.146 +08:00 [INF]       - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2023-10-17 12:49:13.146 +08:00 [INF]     - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2023-10-17 12:49:13.146 +08:00 [INF]     - Volo.Abp.Autofac.AbpAutofacModule
+2023-10-17 12:49:13.146 +08:00 [INF]       - Volo.Abp.Castle.AbpCastleCoreModule
+2023-10-17 12:49:13.146 +08:00 [INF]   - LKN.Product.EntityFrameworkCore.ProductEntityFrameworkCoreModule
+2023-10-17 12:49:13.146 +08:00 [INF]     - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2023-10-17 12:49:13.146 +08:00 [INF]   - LKN.Product.ProductHttpApiModule
+2023-10-17 12:49:13.146 +08:00 [INF]     - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2023-10-17 12:49:13.146 +08:00 [INF]       - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2023-10-17 12:49:13.146 +08:00 [INF]         - Volo.Abp.Http.AbpHttpModule
+2023-10-17 12:49:13.146 +08:00 [INF]           - Volo.Abp.Minify.AbpMinifyModule
+2023-10-17 12:49:13.146 +08:00 [INF]       - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2023-10-17 12:49:13.146 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2023-10-17 12:49:13.146 +08:00 [INF]       - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2023-10-17 12:49:13.146 +08:00 [INF]         - Volo.Abp.UI.AbpUiModule
+2023-10-17 12:49:13.146 +08:00 [INF]   - Volo.Abp.AspNetCore.Mvc.UI.MultiTenancy.AbpAspNetCoreMvcUiMultiTenancyModule
+2023-10-17 12:49:13.146 +08:00 [INF]     - Volo.Abp.AspNetCore.Mvc.UI.Theme.Shared.AbpAspNetCoreMvcUiThemeSharedModule
+2023-10-17 12:49:13.146 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Bootstrap.AbpAspNetCoreMvcUiBootstrapModule
+2023-10-17 12:49:13.146 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.AbpAspNetCoreMvcUiModule
+2023-10-17 12:49:13.146 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Packages.AbpAspNetCoreMvcUiPackagesModule
+2023-10-17 12:49:13.146 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingAbstractionsModule
+2023-10-17 12:49:13.146 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Widgets.AbpAspNetCoreMvcUiWidgetsModule
+2023-10-17 12:49:13.146 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingModule
+2023-10-17 12:49:13.146 +08:00 [INF]     - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2023-10-17 12:49:13.146 +08:00 [INF]   - Volo.Abp.Caching.StackExchangeRedis.AbpCachingStackExchangeRedisModule
+2023-10-17 12:49:13.146 +08:00 [INF]   - Volo.Abp.EntityFrameworkCore.MySQL.AbpEntityFrameworkCoreMySQLModule
+2023-10-17 12:49:13.146 +08:00 [INF]   - Volo.Abp.AspNetCore.Serilog.AbpAspNetCoreSerilogModule
+2023-10-17 12:49:13.146 +08:00 [INF]   - Volo.Abp.Swashbuckle.AbpSwashbuckleModule
+2023-10-17 12:49:13.146 +08:00 [INF]   - LKN.Microservices.Infrastructure.InfrastructureModule
+2023-10-17 12:49:13.233 +08:00 [INF] MySettingName => 
+2023-10-17 12:49:13.234 +08:00 [INF] EnvironmentName => Development
+2023-10-17 12:49:13.564 +08:00 [INF] User profile is available. Using 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-17 12:49:13.664 +08:00 [INF] Initialized all ABP modules.
+2023-10-17 12:49:16.289 +08:00 [DBG] ### CAP background task is starting.
+2023-10-17 12:49:17.375 +08:00 [DBG] RabbitMQ configuration:'HostName:localhost, Port:5672, UserName:guest, Password:guest, ExchangeName:cap.default.router'
+2023-10-17 12:49:17.489 +08:00 [DBG] Ensuring all create database tables script are applied.
+2023-10-17 12:49:17.496 +08:00 [INF] Starting default Dispatcher
+2023-10-17 12:49:17.504 +08:00 [INF] Starting the processing server.
+2023-10-17 12:49:17.524 +08:00 [INF] Now listening on: https://localhost:44370
+2023-10-17 12:49:17.524 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-17 12:49:17.524 +08:00 [INF] Hosting environment: Development
+2023-10-17 12:49:17.524 +08:00 [INF] Content root path: D:\test\ABP\abpmicroservice\LKN.Microservices\microservices\LKN.Product.HttpApi.Host
+2023-10-17 12:49:17.565 +08:00 [DBG] Transport connection checking...
+2023-10-17 12:49:17.565 +08:00 [DBG] Transport connection healthy!
+2023-10-17 12:49:17.578 +08:00 [DBG] Collecting expired data from table: cap.published
+2023-10-17 12:49:17.594 +08:00 [INF] ### CAP started!
+2023-10-17 12:49:17.647 +08:00 [DBG] Collecting expired data from table: cap.received
+2023-10-17 12:49:18.103 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/ - -
+2023-10-17 12:49:18.270 +08:00 [INF] Executing endpoint 'LKN.Product.Controllers.HomeController.Index (LKN.Product.HttpApi.Host)'
+2023-10-17 12:49:18.294 +08:00 [INF] Route matched with {action = "Index", controller = "Home", area = "", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Index() on controller LKN.Product.Controllers.HomeController (LKN.Product.HttpApi.Host).
+2023-10-17 12:49:18.437 +08:00 [INF] Executing action method LKN.Product.Controllers.HomeController.Index (LKN.Product.HttpApi.Host) - Validation state: "Valid"
+2023-10-17 12:49:18.441 +08:00 [INF] Executed action method LKN.Product.Controllers.HomeController.Index (LKN.Product.HttpApi.Host), returned result Microsoft.AspNetCore.Mvc.RedirectResult in 0.4117ms.
+2023-10-17 12:49:18.451 +08:00 [INF] Executing RedirectResult, redirecting to /swagger.
+2023-10-17 12:49:18.454 +08:00 [INF] Executed action LKN.Product.Controllers.HomeController.Index (LKN.Product.HttpApi.Host) in 158.2039ms
+2023-10-17 12:49:18.454 +08:00 [INF] Executed endpoint 'LKN.Product.Controllers.HomeController.Index (LKN.Product.HttpApi.Host)'
+2023-10-17 12:49:18.465 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/ - - - 302 0 - 363.9640ms
+2023-10-17 12:49:18.471 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/swagger/index.html - -
+2023-10-17 12:49:18.607 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/swagger/index.html - - - 200 - text/html;charset=utf-8 135.9970ms
+2023-10-17 12:49:18.614 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/_framework/aspnetcore-browser-refresh.js - -
+2023-10-17 12:49:18.622 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/_vs/browserLink - -
+2023-10-17 12:49:18.623 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/_framework/aspnetcore-browser-refresh.js - - - 200 12018 application/javascript;+charset=utf-8 8.7169ms
+2023-10-17 12:49:18.655 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 32.7166ms
+2023-10-17 12:49:18.766 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/swagger/v1/swagger.json - -
+2023-10-17 12:49:18.911 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 144.6954ms
+2023-10-17 12:49:24.927 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/HealthCheck - -
+2023-10-17 12:49:24.938 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/HealthCheck - - - 200 - text/plain 10.6843ms
+2023-10-17 12:49:34.949 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/HealthCheck - -
+2023-10-17 12:49:34.950 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/HealthCheck - - - 200 - text/plain 1.5338ms
+2023-10-17 12:49:40.613 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:44370/api/abp/api-definition - -
+2023-10-17 12:49:40.614 +08:00 [INF] Executing endpoint 'Volo.Abp.AspNetCore.Mvc.ApiExploring.AbpApiDefinitionController.Get (Volo.Abp.AspNetCore.Mvc)'
+2023-10-17 12:49:40.623 +08:00 [INF] Route matched with {area = "abp", action = "Get", controller = "AbpApiDefinition", page = ""}. Executing controller action with signature Volo.Abp.Http.Modeling.ApplicationApiDescriptionModel Get(Volo.Abp.Http.Modeling.ApplicationApiDescriptionModelRequestDto) on controller Volo.Abp.AspNetCore.Mvc.ApiExploring.AbpApiDefinitionController (Volo.Abp.AspNetCore.Mvc).
+2023-10-17 12:49:40.710 +08:00 [INF] Executing action method Volo.Abp.AspNetCore.Mvc.ApiExploring.AbpApiDefinitionController.Get (Volo.Abp.AspNetCore.Mvc) - Validation state: "Valid"
+2023-10-17 12:49:40.719 +08:00 [DBG] ActionApiDescriptionModel.Create: Sample.GetAsync
+2023-10-17 12:49:40.721 +08:00 [DBG] ActionApiDescriptionModel.Create: Sample.GetAuthorizedAsync
+2023-10-17 12:49:40.722 +08:00 [DBG] ActionApiDescriptionModel.Create: Sample.GetAsync
+2023-10-17 12:49:40.722 +08:00 [DBG] ActionApiDescriptionModel.Create: Sample.GetAuthorizedAsync
+2023-10-17 12:49:40.723 +08:00 [DBG] ActionApiDescriptionModel.Create: Products.GetAsyncById
+2023-10-17 12:49:40.725 +08:00 [DBG] ActionApiDescriptionModel.Create: Products.Update2AsyncByInput
+2023-10-17 12:49:40.725 +08:00 [DBG] ActionApiDescriptionModel.Create: Products.CreateAsyncByInput
+2023-10-17 12:49:40.726 +08:00 [DBG] ActionApiDescriptionModel.Create: Products.GetListAsyncByInput
+2023-10-17 12:49:40.726 +08:00 [DBG] ActionApiDescriptionModel.Create: Products.UpdateAsyncByIdAndInput
+2023-10-17 12:49:40.726 +08:00 [DBG] ActionApiDescriptionModel.Create: Products.DeleteAsyncById
+2023-10-17 12:49:40.726 +08:00 [DBG] ActionApiDescriptionModel.Create: Products.GetProductAndImages
+2023-10-17 12:49:40.726 +08:00 [DBG] ActionApiDescriptionModel.Create: Products.GetProductByAttrByCreateProductDto
+2023-10-17 12:49:40.726 +08:00 [DBG] ActionApiDescriptionModel.Create: Products.GetProductTotals
+2023-10-17 12:49:40.726 +08:00 [DBG] ActionApiDescriptionModel.Create: Products.GetProductAndImage
+2023-10-17 12:49:40.727 +08:00 [DBG] ActionApiDescriptionModel.Create: AbpTenant.FindTenantByNameAsyncByName
+2023-10-17 12:49:40.727 +08:00 [DBG] ActionApiDescriptionModel.Create: AbpTenant.FindTenantByIdAsyncById
+2023-10-17 12:49:40.727 +08:00 [DBG] ActionApiDescriptionModel.Create: AbpApplicationConfiguration.GetAsyncByOptions
+2023-10-17 12:49:40.727 +08:00 [DBG] ActionApiDescriptionModel.Create: AbpApplicationLocalization.GetAsyncByInput
+2023-10-17 12:49:40.727 +08:00 [DBG] ActionApiDescriptionModel.Create: AbpApiDefinition.GetByModel
+2023-10-17 12:49:40.730 +08:00 [INF] Executed action method Volo.Abp.AspNetCore.Mvc.ApiExploring.AbpApiDefinitionController.Get (Volo.Abp.AspNetCore.Mvc), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 20.3032ms.
+2023-10-17 12:49:40.735 +08:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.Http.Modeling.ApplicationApiDescriptionModel'.
+2023-10-17 12:49:40.760 +08:00 [INF] Executed action Volo.Abp.AspNetCore.Mvc.ApiExploring.AbpApiDefinitionController.Get (Volo.Abp.AspNetCore.Mvc) in 137.5807ms
+2023-10-17 12:49:40.760 +08:00 [INF] Executed endpoint 'Volo.Abp.AspNetCore.Mvc.ApiExploring.AbpApiDefinitionController.Get (Volo.Abp.AspNetCore.Mvc)'
+2023-10-17 12:49:40.761 +08:00 [INF] Request finished HTTP/1.1 GET https://localhost:44370/api/abp/api-definition - - - 200 - application/json;+charset=utf-8 148.2037ms
+2023-10-17 12:49:40.852 +08:00 [INF] Request starting HTTP/1.1 PUT https://localhost:44370/api/ProductService/Product/Update2Async?api-version=1.0 application/json;+charset=utf-8 167
+2023-10-17 12:49:40.856 +08:00 [INF] Executing endpoint 'LKN.Product.Products.ProductsController.Update2Async (LKN.Product.HttpApi)'
+2023-10-17 12:49:40.862 +08:00 [INF] Route matched with {action = "Update2", controller = "Products", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[LKN.Product.Products.ProductDto] Update2Async(LKN.Product.Products.UpdateProductDto) on controller LKN.Product.Products.ProductsController (LKN.Product.HttpApi).
+2023-10-17 12:49:41.081 +08:00 [WRN] ---------- RemoteServiceErrorInfo ----------
+{
+  "code": null,
+  "message": "Your request is not valid!",
+  "details": "The following errors were detected during validation.\r\n - The ProductUrl field is required.\r\n - The ProductTitle field is required.\r\n - The ProductDescription field is required.\r\n",
+  "data": {},
+  "validationErrors": [
+    {
+      "message": "The ProductUrl field is required.",
+      "members": [
+        "productUrl"
+      ]
+    },
+    {
+      "message": "The ProductTitle field is required.",
+      "members": [
+        "productTitle"
+      ]
+    },
+    {
+      "message": "The ProductDescription field is required.",
+      "members": [
+        "productDescription"
+      ]
+    }
+  ]
+}
+
+2023-10-17 12:49:41.081 +08:00 [WRN] ModelState is not valid! See ValidationErrors for details.
+Volo.Abp.Validation.AbpValidationException: ModelState is not valid! See ValidationErrors for details.
+   at Volo.Abp.AspNetCore.Mvc.Validation.ModelStateValidator.Validate(ModelStateDictionary modelState)
+   at Volo.Abp.AspNetCore.Mvc.Validation.AbpValidationActionFilter.OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+2023-10-17 12:49:41.082 +08:00 [WRN] There are 3 validation errors:
+The ProductUrl field is required. (ProductUrl)
+The ProductTitle field is required. (ProductTitle)
+The ProductDescription field is required. (ProductDescription)
+
+2023-10-17 12:49:41.092 +08:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.Http.RemoteServiceErrorResponse'.
+2023-10-17 12:49:41.132 +08:00 [INF] Executed action LKN.Product.Products.ProductsController.Update2Async (LKN.Product.HttpApi) in 269.619ms
+2023-10-17 12:49:41.132 +08:00 [INF] Executed endpoint 'LKN.Product.Products.ProductsController.Update2Async (LKN.Product.HttpApi)'
+2023-10-17 12:49:41.141 +08:00 [INF] AUDIT LOG: [400: PUT    ] /api/ProductService/Product/Update2Async
+- UserName - UserId                 :  - 
+- ClientIpAddress        : ::1
+- ExecutionDuration      : 277
+- Actions:
+  - LKN.Product.Products.ProductsController.Update2Async (4 ms.)
+    {"input":{"id":"3a0dbecd-d8bc-b847-4c93-82f82bc0d608","productUrl":null,"productTitle":null,"productDescription":null,"productVirtualprice":0,"productPrice":0,"productStock":2}}
+- Exceptions:
+  - ModelState is not valid! See ValidationErrors for details.
+    Volo.Abp.Validation.AbpValidationException: ModelState is not valid! See ValidationErrors for details.
+   at Volo.Abp.AspNetCore.Mvc.Validation.ModelStateValidator.Validate(ModelStateDictionary modelState)
+   at Volo.Abp.AspNetCore.Mvc.Validation.AbpValidationActionFilter.OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+
+2023-10-17 12:49:41.142 +08:00 [INF] Request finished HTTP/1.1 PUT https://localhost:44370/api/ProductService/Product/Update2Async?api-version=1.0 application/json;+charset=utf-8 167 - 400 - application/json;+charset=utf-8 289.9473ms
+2023-10-17 12:54:04.105 +08:00 [INF] Starting web host.
+2023-10-17 12:54:07.671 +08:00 [INF] Loaded ABP modules:
+2023-10-17 12:54:07.672 +08:00 [INF] - LKN.Product.ProductHttpApiHostModule
+2023-10-17 12:54:07.672 +08:00 [INF]   - LKN.Product.ProductApplicationModule
+2023-10-17 12:54:07.672 +08:00 [INF]     - LKN.Product.ProductDomainModule
+2023-10-17 12:54:07.672 +08:00 [INF]       - Volo.Abp.Domain.AbpDddDomainModule
+2023-10-17 12:54:07.672 +08:00 [INF]         - Volo.Abp.Auditing.AbpAuditingModule
+2023-10-17 12:54:07.672 +08:00 [INF]           - Volo.Abp.Data.AbpDataModule
+2023-10-17 12:54:07.672 +08:00 [INF]             - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2023-10-17 12:54:07.672 +08:00 [INF]               - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2023-10-17 12:54:07.672 +08:00 [INF]               - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2023-10-17 12:54:07.672 +08:00 [INF]             - Volo.Abp.Uow.AbpUnitOfWorkModule
+2023-10-17 12:54:07.672 +08:00 [INF]             - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2023-10-17 12:54:07.672 +08:00 [INF]           - Volo.Abp.Json.AbpJsonModule
+2023-10-17 12:54:07.672 +08:00 [INF]             - Volo.Abp.Json.SystemTextJson.AbpJsonSystemTextJsonModule
+2023-10-17 12:54:07.672 +08:00 [INF]               - Volo.Abp.Json.AbpJsonAbstractionsModule
+2023-10-17 12:54:07.672 +08:00 [INF]               - Volo.Abp.Timing.AbpTimingModule
+2023-10-17 12:54:07.672 +08:00 [INF]                 - Volo.Abp.Localization.AbpLocalizationModule
+2023-10-17 12:54:07.673 +08:00 [INF]                   - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2023-10-17 12:54:07.673 +08:00 [INF]                   - Volo.Abp.Settings.AbpSettingsModule
+2023-10-17 12:54:07.673 +08:00 [INF]                     - Volo.Abp.Security.AbpSecurityModule
+2023-10-17 12:54:07.673 +08:00 [INF]                   - Volo.Abp.Threading.AbpThreadingModule
+2023-10-17 12:54:07.673 +08:00 [INF]           - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2023-10-17 12:54:07.673 +08:00 [INF]             - Volo.Abp.MultiTenancy.AbpMultiTenancyAbstractionsModule
+2023-10-17 12:54:07.673 +08:00 [INF]           - Volo.Abp.Auditing.AbpAuditingContractsModule
+2023-10-17 12:54:07.673 +08:00 [INF]         - Volo.Abp.EventBus.AbpEventBusModule
+2023-10-17 12:54:07.673 +08:00 [INF]           - Volo.Abp.Guids.AbpGuidsModule
+2023-10-17 12:54:07.673 +08:00 [INF]           - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2023-10-17 12:54:07.673 +08:00 [INF]           - Volo.Abp.DistributedLocking.AbpDistributedLockingAbstractionsModule
+2023-10-17 12:54:07.673 +08:00 [INF]         - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2023-10-17 12:54:07.673 +08:00 [INF]         - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2023-10-17 12:54:07.673 +08:00 [INF]         - Volo.Abp.Specifications.AbpSpecificationsModule
+2023-10-17 12:54:07.673 +08:00 [INF]         - Volo.Abp.Caching.AbpCachingModule
+2023-10-17 12:54:07.673 +08:00 [INF]           - Volo.Abp.Serialization.AbpSerializationModule
+2023-10-17 12:54:07.673 +08:00 [INF]         - Volo.Abp.Domain.AbpDddDomainSharedModule
+2023-10-17 12:54:07.673 +08:00 [INF]       - LKN.Product.ProductDomainSharedModule
+2023-10-17 12:54:07.673 +08:00 [INF]         - Volo.Abp.Validation.AbpValidationModule
+2023-10-17 12:54:07.673 +08:00 [INF]     - LKN.Product.ProductApplicationContractsModule
+2023-10-17 12:54:07.673 +08:00 [INF]       - Volo.Abp.Application.AbpDddApplicationContractsModule
+2023-10-17 12:54:07.673 +08:00 [INF]       - Volo.Abp.Authorization.AbpAuthorizationModule
+2023-10-17 12:54:07.673 +08:00 [INF]         - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2023-10-17 12:54:07.673 +08:00 [INF]     - Volo.Abp.Application.AbpDddApplicationModule
+2023-10-17 12:54:07.673 +08:00 [INF]       - Volo.Abp.Http.AbpHttpAbstractionsModule
+2023-10-17 12:54:07.673 +08:00 [INF]       - Volo.Abp.Features.AbpFeaturesModule
+2023-10-17 12:54:07.673 +08:00 [INF]       - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2023-10-17 12:54:07.673 +08:00 [INF]     - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2023-10-17 12:54:07.673 +08:00 [INF]     - Volo.Abp.Autofac.AbpAutofacModule
+2023-10-17 12:54:07.673 +08:00 [INF]       - Volo.Abp.Castle.AbpCastleCoreModule
+2023-10-17 12:54:07.673 +08:00 [INF]   - LKN.Product.EntityFrameworkCore.ProductEntityFrameworkCoreModule
+2023-10-17 12:54:07.673 +08:00 [INF]     - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2023-10-17 12:54:07.673 +08:00 [INF]   - LKN.Product.ProductHttpApiModule
+2023-10-17 12:54:07.673 +08:00 [INF]     - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2023-10-17 12:54:07.673 +08:00 [INF]       - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2023-10-17 12:54:07.673 +08:00 [INF]         - Volo.Abp.Http.AbpHttpModule
+2023-10-17 12:54:07.673 +08:00 [INF]           - Volo.Abp.Minify.AbpMinifyModule
+2023-10-17 12:54:07.673 +08:00 [INF]       - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2023-10-17 12:54:07.673 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2023-10-17 12:54:07.673 +08:00 [INF]       - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2023-10-17 12:54:07.673 +08:00 [INF]         - Volo.Abp.UI.AbpUiModule
+2023-10-17 12:54:07.673 +08:00 [INF]   - Volo.Abp.AspNetCore.Mvc.UI.MultiTenancy.AbpAspNetCoreMvcUiMultiTenancyModule
+2023-10-17 12:54:07.673 +08:00 [INF]     - Volo.Abp.AspNetCore.Mvc.UI.Theme.Shared.AbpAspNetCoreMvcUiThemeSharedModule
+2023-10-17 12:54:07.673 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Bootstrap.AbpAspNetCoreMvcUiBootstrapModule
+2023-10-17 12:54:07.673 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.AbpAspNetCoreMvcUiModule
+2023-10-17 12:54:07.673 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Packages.AbpAspNetCoreMvcUiPackagesModule
+2023-10-17 12:54:07.673 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingAbstractionsModule
+2023-10-17 12:54:07.673 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Widgets.AbpAspNetCoreMvcUiWidgetsModule
+2023-10-17 12:54:07.673 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingModule
+2023-10-17 12:54:07.673 +08:00 [INF]     - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2023-10-17 12:54:07.673 +08:00 [INF]   - Volo.Abp.Caching.StackExchangeRedis.AbpCachingStackExchangeRedisModule
+2023-10-17 12:54:07.673 +08:00 [INF]   - Volo.Abp.EntityFrameworkCore.MySQL.AbpEntityFrameworkCoreMySQLModule
+2023-10-17 12:54:07.673 +08:00 [INF]   - Volo.Abp.AspNetCore.Serilog.AbpAspNetCoreSerilogModule
+2023-10-17 12:54:07.673 +08:00 [INF]   - Volo.Abp.Swashbuckle.AbpSwashbuckleModule
+2023-10-17 12:54:07.673 +08:00 [INF]   - LKN.Microservices.Infrastructure.InfrastructureModule
+2023-10-17 12:54:07.768 +08:00 [INF] MySettingName => 
+2023-10-17 12:54:07.768 +08:00 [INF] EnvironmentName => Development
+2023-10-17 12:54:08.069 +08:00 [INF] User profile is available. Using 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-17 12:54:08.170 +08:00 [INF] Initialized all ABP modules.
+2023-10-17 12:54:10.727 +08:00 [DBG] ### CAP background task is starting.
+2023-10-17 12:54:11.958 +08:00 [DBG] RabbitMQ configuration:'HostName:localhost, Port:5672, UserName:guest, Password:guest, ExchangeName:cap.default.router'
+2023-10-17 12:54:12.078 +08:00 [DBG] Ensuring all create database tables script are applied.
+2023-10-17 12:54:12.084 +08:00 [INF] Starting default Dispatcher
+2023-10-17 12:54:12.091 +08:00 [INF] Starting the processing server.
+2023-10-17 12:54:12.108 +08:00 [INF] Now listening on: https://localhost:44370
+2023-10-17 12:54:12.108 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-17 12:54:12.108 +08:00 [INF] Hosting environment: Development
+2023-10-17 12:54:12.108 +08:00 [INF] Content root path: D:\test\ABP\abpmicroservice\LKN.Microservices\microservices\LKN.Product.HttpApi.Host
+2023-10-17 12:54:12.151 +08:00 [DBG] Transport connection checking...
+2023-10-17 12:54:12.151 +08:00 [DBG] Transport connection healthy!
+2023-10-17 12:54:12.164 +08:00 [DBG] Collecting expired data from table: cap.published
+2023-10-17 12:54:12.167 +08:00 [INF] ### CAP started!
+2023-10-17 12:54:12.228 +08:00 [DBG] Collecting expired data from table: cap.received
+2023-10-17 12:54:12.944 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/ - -
+2023-10-17 12:54:13.108 +08:00 [INF] Executing endpoint 'LKN.Product.Controllers.HomeController.Index (LKN.Product.HttpApi.Host)'
+2023-10-17 12:54:13.130 +08:00 [INF] Route matched with {action = "Index", controller = "Home", area = "", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Index() on controller LKN.Product.Controllers.HomeController (LKN.Product.HttpApi.Host).
+2023-10-17 12:54:13.281 +08:00 [INF] Executing action method LKN.Product.Controllers.HomeController.Index (LKN.Product.HttpApi.Host) - Validation state: "Valid"
+2023-10-17 12:54:13.284 +08:00 [INF] Executed action method LKN.Product.Controllers.HomeController.Index (LKN.Product.HttpApi.Host), returned result Microsoft.AspNetCore.Mvc.RedirectResult in 0.3729ms.
+2023-10-17 12:54:13.293 +08:00 [INF] Executing RedirectResult, redirecting to /swagger.
+2023-10-17 12:54:13.297 +08:00 [INF] Executed action LKN.Product.Controllers.HomeController.Index (LKN.Product.HttpApi.Host) in 163.9382ms
+2023-10-17 12:54:13.297 +08:00 [INF] Executed endpoint 'LKN.Product.Controllers.HomeController.Index (LKN.Product.HttpApi.Host)'
+2023-10-17 12:54:13.307 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/ - - - 302 0 - 364.3393ms
+2023-10-17 12:54:13.313 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/swagger/index.html - -
+2023-10-17 12:54:13.445 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/swagger/index.html - - - 200 - text/html;charset=utf-8 132.8683ms
+2023-10-17 12:54:13.455 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/_framework/aspnetcore-browser-refresh.js - -
+2023-10-17 12:54:13.464 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/_framework/aspnetcore-browser-refresh.js - - - 200 12018 application/javascript;+charset=utf-8 9.8001ms
+2023-10-17 12:54:13.465 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/_vs/browserLink - -
+2023-10-17 12:54:13.513 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 47.7487ms
+2023-10-17 12:54:13.624 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/swagger/v1/swagger.json - -
+2023-10-17 12:54:13.716 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/HealthCheck - -
+2023-10-17 12:54:13.722 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/HealthCheck - - - 200 - text/plain 6.5630ms
+2023-10-17 12:54:13.761 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 136.2952ms
+2023-10-17 12:54:23.734 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/HealthCheck - -
+2023-10-17 12:54:23.735 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/HealthCheck - - - 200 - text/plain 1.1454ms
+2023-10-17 12:54:33.745 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/HealthCheck - -
+2023-10-17 12:54:33.745 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/HealthCheck - - - 200 - text/plain 0.8083ms
+2023-10-17 12:54:42.158 +08:00 [DBG] Transport connection checking...
+2023-10-17 12:54:42.158 +08:00 [DBG] Transport connection healthy!
+2023-10-17 12:54:43.781 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/HealthCheck - -
+2023-10-17 12:54:43.783 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/HealthCheck - - - 200 - text/plain 1.3403ms
+2023-10-17 12:54:53.818 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/HealthCheck - -
+2023-10-17 12:54:53.820 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/HealthCheck - - - 200 - text/plain 2.7685ms
+2023-10-17 12:55:04.623 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/HealthCheck - -
+2023-10-17 12:55:04.624 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/HealthCheck - - - 200 - text/plain 1.9913ms
+2023-10-17 12:55:08.170 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:44370/api/abp/api-definition - -
+2023-10-17 12:55:08.172 +08:00 [INF] Executing endpoint 'Volo.Abp.AspNetCore.Mvc.ApiExploring.AbpApiDefinitionController.Get (Volo.Abp.AspNetCore.Mvc)'
+2023-10-17 12:55:08.180 +08:00 [INF] Route matched with {area = "abp", action = "Get", controller = "AbpApiDefinition", page = ""}. Executing controller action with signature Volo.Abp.Http.Modeling.ApplicationApiDescriptionModel Get(Volo.Abp.Http.Modeling.ApplicationApiDescriptionModelRequestDto) on controller Volo.Abp.AspNetCore.Mvc.ApiExploring.AbpApiDefinitionController (Volo.Abp.AspNetCore.Mvc).
+2023-10-17 12:55:08.266 +08:00 [INF] Executing action method Volo.Abp.AspNetCore.Mvc.ApiExploring.AbpApiDefinitionController.Get (Volo.Abp.AspNetCore.Mvc) - Validation state: "Valid"
+2023-10-17 12:55:08.275 +08:00 [DBG] ActionApiDescriptionModel.Create: Sample.GetAsync
+2023-10-17 12:55:08.277 +08:00 [DBG] ActionApiDescriptionModel.Create: Sample.GetAuthorizedAsync
+2023-10-17 12:55:08.278 +08:00 [DBG] ActionApiDescriptionModel.Create: Sample.GetAsync
+2023-10-17 12:55:08.278 +08:00 [DBG] ActionApiDescriptionModel.Create: Sample.GetAuthorizedAsync
+2023-10-17 12:55:08.279 +08:00 [DBG] ActionApiDescriptionModel.Create: Products.GetAsyncById
+2023-10-17 12:55:08.281 +08:00 [DBG] ActionApiDescriptionModel.Create: Products.Update2AsyncByInput
+2023-10-17 12:55:08.281 +08:00 [DBG] ActionApiDescriptionModel.Create: Products.CreateAsyncByInput
+2023-10-17 12:55:08.281 +08:00 [DBG] ActionApiDescriptionModel.Create: Products.GetListAsyncByInput
+2023-10-17 12:55:08.282 +08:00 [DBG] ActionApiDescriptionModel.Create: Products.UpdateAsyncByIdAndInput
+2023-10-17 12:55:08.282 +08:00 [DBG] ActionApiDescriptionModel.Create: Products.DeleteAsyncById
+2023-10-17 12:55:08.282 +08:00 [DBG] ActionApiDescriptionModel.Create: Products.GetProductAndImages
+2023-10-17 12:55:08.282 +08:00 [DBG] ActionApiDescriptionModel.Create: Products.GetProductByAttrByCreateProductDto
+2023-10-17 12:55:08.282 +08:00 [DBG] ActionApiDescriptionModel.Create: Products.GetProductTotals
+2023-10-17 12:55:08.282 +08:00 [DBG] ActionApiDescriptionModel.Create: Products.GetProductAndImage
+2023-10-17 12:55:08.282 +08:00 [DBG] ActionApiDescriptionModel.Create: AbpTenant.FindTenantByNameAsyncByName
+2023-10-17 12:55:08.282 +08:00 [DBG] ActionApiDescriptionModel.Create: AbpTenant.FindTenantByIdAsyncById
+2023-10-17 12:55:08.283 +08:00 [DBG] ActionApiDescriptionModel.Create: AbpApplicationConfiguration.GetAsyncByOptions
+2023-10-17 12:55:08.283 +08:00 [DBG] ActionApiDescriptionModel.Create: AbpApplicationLocalization.GetAsyncByInput
+2023-10-17 12:55:08.283 +08:00 [DBG] ActionApiDescriptionModel.Create: AbpApiDefinition.GetByModel
+2023-10-17 12:55:08.286 +08:00 [INF] Executed action method Volo.Abp.AspNetCore.Mvc.ApiExploring.AbpApiDefinitionController.Get (Volo.Abp.AspNetCore.Mvc), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 19.3573ms.
+2023-10-17 12:55:08.319 +08:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.Http.Modeling.ApplicationApiDescriptionModel'.
+2023-10-17 12:55:08.344 +08:00 [INF] Executed action Volo.Abp.AspNetCore.Mvc.ApiExploring.AbpApiDefinitionController.Get (Volo.Abp.AspNetCore.Mvc) in 163.7821ms
+2023-10-17 12:55:08.344 +08:00 [INF] Executed endpoint 'Volo.Abp.AspNetCore.Mvc.ApiExploring.AbpApiDefinitionController.Get (Volo.Abp.AspNetCore.Mvc)'
+2023-10-17 12:55:08.344 +08:00 [INF] Request finished HTTP/1.1 GET https://localhost:44370/api/abp/api-definition - - - 200 - application/json;+charset=utf-8 173.6120ms
+2023-10-17 12:55:08.404 +08:00 [INF] Request starting HTTP/1.1 PUT https://localhost:44370/api/ProductService/Product/Update2Async?api-version=1.0 application/json;+charset=utf-8 167
+2023-10-17 12:55:08.408 +08:00 [INF] Executing endpoint 'LKN.Product.Products.ProductsController.Update2Async (LKN.Product.HttpApi)'
+2023-10-17 12:55:08.415 +08:00 [INF] Route matched with {action = "Update2", controller = "Products", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[LKN.Product.Products.ProductDto] Update2Async(LKN.Product.Products.UpdateProductDto) on controller LKN.Product.Products.ProductsController (LKN.Product.HttpApi).
+2023-10-17 12:55:08.617 +08:00 [WRN] ---------- RemoteServiceErrorInfo ----------
+{
+  "code": null,
+  "message": "Your request is not valid!",
+  "details": "The following errors were detected during validation.\r\n - The ProductUrl field is required.\r\n - The ProductTitle field is required.\r\n - The ProductDescription field is required.\r\n",
+  "data": {},
+  "validationErrors": [
+    {
+      "message": "The ProductUrl field is required.",
+      "members": [
+        "productUrl"
+      ]
+    },
+    {
+      "message": "The ProductTitle field is required.",
+      "members": [
+        "productTitle"
+      ]
+    },
+    {
+      "message": "The ProductDescription field is required.",
+      "members": [
+        "productDescription"
+      ]
+    }
+  ]
+}
+
+2023-10-17 12:55:08.617 +08:00 [WRN] ModelState is not valid! See ValidationErrors for details.
+Volo.Abp.Validation.AbpValidationException: ModelState is not valid! See ValidationErrors for details.
+   at Volo.Abp.AspNetCore.Mvc.Validation.ModelStateValidator.Validate(ModelStateDictionary modelState)
+   at Volo.Abp.AspNetCore.Mvc.Validation.AbpValidationActionFilter.OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+2023-10-17 12:55:08.618 +08:00 [WRN] There are 3 validation errors:
+The ProductUrl field is required. (ProductUrl)
+The ProductTitle field is required. (ProductTitle)
+The ProductDescription field is required. (ProductDescription)
+
+2023-10-17 12:55:08.640 +08:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.Http.RemoteServiceErrorResponse'.
+2023-10-17 12:55:08.643 +08:00 [INF] Executed action LKN.Product.Products.ProductsController.Update2Async (LKN.Product.HttpApi) in 227.7695ms
+2023-10-17 12:55:08.643 +08:00 [INF] Executed endpoint 'LKN.Product.Products.ProductsController.Update2Async (LKN.Product.HttpApi)'
+2023-10-17 12:55:08.649 +08:00 [INF] AUDIT LOG: [400: PUT    ] /api/ProductService/Product/Update2Async
+- UserName - UserId                 :  - 
+- ClientIpAddress        : ::1
+- ExecutionDuration      : 237
+- Actions:
+  - LKN.Product.Products.ProductsController.Update2Async (1 ms.)
+    {"input":{"id":"3a0dbecd-d8bc-b847-4c93-82f82bc0d608","productUrl":null,"productTitle":null,"productDescription":null,"productVirtualprice":0,"productPrice":0,"productStock":2}}
+- Exceptions:
+  - ModelState is not valid! See ValidationErrors for details.
+    Volo.Abp.Validation.AbpValidationException: ModelState is not valid! See ValidationErrors for details.
+   at Volo.Abp.AspNetCore.Mvc.Validation.ModelStateValidator.Validate(ModelStateDictionary modelState)
+   at Volo.Abp.AspNetCore.Mvc.Validation.AbpValidationActionFilter.OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+
+2023-10-17 12:55:08.649 +08:00 [INF] Request finished HTTP/1.1 PUT https://localhost:44370/api/ProductService/Product/Update2Async?api-version=1.0 application/json;+charset=utf-8 167 - 400 - application/json;+charset=utf-8 245.7243ms
+2023-10-17 12:55:18.823 +08:00 [DBG] Transport connection checking...
+2023-10-17 12:55:18.823 +08:00 [DBG] Transport connection healthy!
+2023-10-17 12:55:18.947 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/HealthCheck - -
+2023-10-17 12:55:18.972 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/HealthCheck - - - 200 - text/plain 24.3986ms
+2023-10-17 13:02:08.165 +08:00 [DBG] Collecting expired data from table: cap.published
+2023-10-17 13:02:08.286 +08:00 [DBG] Transport connection checking...
+2023-10-17 13:02:08.286 +08:00 [DBG] Transport connection healthy!
+2023-10-17 13:02:51.733 +08:00 [DBG] Transport connection checking...
+2023-10-17 13:02:51.733 +08:00 [DBG] Transport connection healthy!
+2023-10-17 13:02:52.013 +08:00 [WRN] Get delayed messages from storage failed. Retrying...
+MySqlConnector.MySqlException (0x80004005): Connect Timeout expired.
+   at MySqlConnector.MySqlConnection.CreateSessionAsync(ConnectionPool pool, Int32 startTickCount, Activity activity, Nullable`1 ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlConnection.cs:line 966
+   at MySqlConnector.MySqlConnection.OpenAsync(Nullable`1 ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlConnection.cs:line 457
+   at DotNetCore.CAP.MySql.MySqlDataStorage.ScheduleMessagesOfDelayedAsync(Func`3 scheduleTask, CancellationToken token)
+   at DotNetCore.CAP.MySql.MySqlDataStorage.ScheduleMessagesOfDelayedAsync(Func`3 scheduleTask, CancellationToken token)
+   at DotNetCore.CAP.Processor.MessageDelayedProcessor.ProcessDelayedAsync(IDataStorage connection, ProcessingContext context)
+2023-10-17 13:02:52.014 +08:00 [WRN] Processor 'DotNetCore.CAP.Processor.CollectorProcessor' failed. Retrying...
+MySqlConnector.MySqlException (0x80004005): Connect Timeout expired.
+   at MySqlConnector.MySqlConnection.CreateSessionAsync(ConnectionPool pool, Int32 startTickCount, Activity activity, Nullable`1 ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlConnection.cs:line 966
+   at MySqlConnector.MySqlConnection.OpenAsync(Nullable`1 ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlConnection.cs:line 457
+   at DotNetCore.CAP.MySql.DbConnectionExtensions.ExecuteNonQueryAsync(DbConnection connection, String sql, DbTransaction transaction, Object[] sqlParams)
+   at DotNetCore.CAP.MySql.MySqlDataStorage.DeleteExpiresAsync(String table, DateTime timeout, Int32 batchCount, CancellationToken token)
+   at DotNetCore.CAP.MySql.MySqlDataStorage.DeleteExpiresAsync(String table, DateTime timeout, Int32 batchCount, CancellationToken token)
+   at DotNetCore.CAP.Processor.CollectorProcessor.ProcessAsync(ProcessingContext context)
+   at DotNetCore.CAP.Processor.InfiniteRetryProcessor.ProcessAsync(ProcessingContext context)
+2023-10-17 13:02:52.014 +08:00 [WRN] Get messages from storage failed. Retrying...
+MySqlConnector.MySqlException (0x80004005): Connect Timeout expired.
+   at MySqlConnector.MySqlConnection.CreateSessionAsync(ConnectionPool pool, Int32 startTickCount, Activity activity, Nullable`1 ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlConnection.cs:line 966
+   at MySqlConnector.MySqlConnection.OpenAsync(Nullable`1 ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlConnection.cs:line 457
+   at DotNetCore.CAP.MySql.DbConnectionExtensions.ExecuteReaderAsync[T](DbConnection connection, String sql, Func`2 readerFunc, DbTransaction transaction, Object[] sqlParams)
+   at DotNetCore.CAP.MySql.MySqlDataStorage.GetMessagesOfNeedRetryAsync(String tableName)
+   at DotNetCore.CAP.MySql.MySqlDataStorage.GetMessagesOfNeedRetryAsync(String tableName)
+   at DotNetCore.CAP.MySql.MySqlDataStorage.GetReceivedMessagesOfNeedRetry()
+   at DotNetCore.CAP.Processor.MessageNeedToRetryProcessor.GetSafelyAsync[T](Func`1 getMessagesAsync)
+2023-10-17 13:02:52.216 +08:00 [INF] Request starting HTTP/1.1 PUT https://localhost:44370/api/ProductService/Product/Update2Async?api-version=1.0 application/json;+charset=utf-8 167
+2023-10-17 13:02:52.217 +08:00 [INF] Executing endpoint 'LKN.Product.Products.ProductsController.Update2Async (LKN.Product.HttpApi)'
+2023-10-17 13:02:52.218 +08:00 [INF] Route matched with {action = "Update2", controller = "Products", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[LKN.Product.Products.ProductDto] Update2Async(LKN.Product.Products.UpdateProductDto) on controller LKN.Product.Products.ProductsController (LKN.Product.HttpApi).
+2023-10-17 13:02:52.222 +08:00 [WRN] ---------- RemoteServiceErrorInfo ----------
+{
+  "code": null,
+  "message": "Your request is not valid!",
+  "details": "The following errors were detected during validation.\r\n - The ProductUrl field is required.\r\n - The ProductTitle field is required.\r\n - The ProductDescription field is required.\r\n",
+  "data": {},
+  "validationErrors": [
+    {
+      "message": "The ProductUrl field is required.",
+      "members": [
+        "productUrl"
+      ]
+    },
+    {
+      "message": "The ProductTitle field is required.",
+      "members": [
+        "productTitle"
+      ]
+    },
+    {
+      "message": "The ProductDescription field is required.",
+      "members": [
+        "productDescription"
+      ]
+    }
+  ]
+}
+
+2023-10-17 13:02:52.222 +08:00 [WRN] ModelState is not valid! See ValidationErrors for details.
+Volo.Abp.Validation.AbpValidationException: ModelState is not valid! See ValidationErrors for details.
+   at Volo.Abp.AspNetCore.Mvc.Validation.ModelStateValidator.Validate(ModelStateDictionary modelState)
+   at Volo.Abp.AspNetCore.Mvc.Validation.AbpValidationActionFilter.OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+2023-10-17 13:02:52.222 +08:00 [WRN] There are 3 validation errors:
+The ProductUrl field is required. (ProductUrl)
+The ProductTitle field is required. (ProductTitle)
+The ProductDescription field is required. (ProductDescription)
+
+2023-10-17 13:02:52.222 +08:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.Http.RemoteServiceErrorResponse'.
+2023-10-17 13:02:52.222 +08:00 [INF] Executed action LKN.Product.Products.ProductsController.Update2Async (LKN.Product.HttpApi) in 4.754ms
+2023-10-17 13:02:52.222 +08:00 [INF] Executed endpoint 'LKN.Product.Products.ProductsController.Update2Async (LKN.Product.HttpApi)'
+2023-10-17 13:02:52.223 +08:00 [INF] AUDIT LOG: [400: PUT    ] /api/ProductService/Product/Update2Async
+- UserName - UserId                 :  - 
+- ClientIpAddress        : ::1
+- ExecutionDuration      : 5
+- Actions:
+  - LKN.Product.Products.ProductsController.Update2Async (0 ms.)
+    {"input":{"id":"3a0dbecd-d8bc-b847-4c93-82f82bc0d608","productUrl":null,"productTitle":null,"productDescription":null,"productVirtualprice":0,"productPrice":0,"productStock":2}}
+- Exceptions:
+  - ModelState is not valid! See ValidationErrors for details.
+    Volo.Abp.Validation.AbpValidationException: ModelState is not valid! See ValidationErrors for details.
+   at Volo.Abp.AspNetCore.Mvc.Validation.ModelStateValidator.Validate(ModelStateDictionary modelState)
+   at Volo.Abp.AspNetCore.Mvc.Validation.AbpValidationActionFilter.OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+
+2023-10-17 13:02:52.223 +08:00 [INF] Request finished HTTP/1.1 PUT https://localhost:44370/api/ProductService/Product/Update2Async?api-version=1.0 application/json;+charset=utf-8 167 - 400 - application/json;+charset=utf-8 7.3611ms
+2023-10-17 13:03:31.095 +08:00 [DBG] Collecting expired data from table: cap.published
+2023-10-17 13:03:31.095 +08:00 [DBG] Transport connection checking...
+2023-10-17 13:03:31.095 +08:00 [DBG] Transport connection healthy!
+2023-10-17 13:03:33.173 +08:00 [DBG] Collecting expired data from table: cap.received
+2023-10-17 13:03:42.327 +08:00 [INF] Request starting HTTP/1.1 PUT https://localhost:44370/api/ProductService/Product/Update2Async?api-version=1.0 application/json;+charset=utf-8 167
+2023-10-17 13:03:42.328 +08:00 [INF] Executing endpoint 'LKN.Product.Products.ProductsController.Update2Async (LKN.Product.HttpApi)'
+2023-10-17 13:03:42.328 +08:00 [INF] Route matched with {action = "Update2", controller = "Products", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[LKN.Product.Products.ProductDto] Update2Async(LKN.Product.Products.UpdateProductDto) on controller LKN.Product.Products.ProductsController (LKN.Product.HttpApi).
+2023-10-17 13:03:42.333 +08:00 [WRN] ---------- RemoteServiceErrorInfo ----------
+{
+  "code": null,
+  "message": "Your request is not valid!",
+  "details": "The following errors were detected during validation.\r\n - The ProductUrl field is required.\r\n - The ProductTitle field is required.\r\n - The ProductDescription field is required.\r\n",
+  "data": {},
+  "validationErrors": [
+    {
+      "message": "The ProductUrl field is required.",
+      "members": [
+        "productUrl"
+      ]
+    },
+    {
+      "message": "The ProductTitle field is required.",
+      "members": [
+        "productTitle"
+      ]
+    },
+    {
+      "message": "The ProductDescription field is required.",
+      "members": [
+        "productDescription"
+      ]
+    }
+  ]
+}
+
+2023-10-17 13:03:42.333 +08:00 [WRN] ModelState is not valid! See ValidationErrors for details.
+Volo.Abp.Validation.AbpValidationException: ModelState is not valid! See ValidationErrors for details.
+   at Volo.Abp.AspNetCore.Mvc.Validation.ModelStateValidator.Validate(ModelStateDictionary modelState)
+   at Volo.Abp.AspNetCore.Mvc.Validation.AbpValidationActionFilter.OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+2023-10-17 13:03:42.333 +08:00 [WRN] There are 3 validation errors:
+The ProductUrl field is required. (ProductUrl)
+The ProductTitle field is required. (ProductTitle)
+The ProductDescription field is required. (ProductDescription)
+
+2023-10-17 13:03:42.333 +08:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.Http.RemoteServiceErrorResponse'.
+2023-10-17 13:03:42.334 +08:00 [INF] Executed action LKN.Product.Products.ProductsController.Update2Async (LKN.Product.HttpApi) in 5.5269ms
+2023-10-17 13:03:42.334 +08:00 [INF] Executed endpoint 'LKN.Product.Products.ProductsController.Update2Async (LKN.Product.HttpApi)'
+2023-10-17 13:03:42.334 +08:00 [INF] AUDIT LOG: [400: PUT    ] /api/ProductService/Product/Update2Async
+- UserName - UserId                 :  - 
+- ClientIpAddress        : ::1
+- ExecutionDuration      : 6
+- Actions:
+  - LKN.Product.Products.ProductsController.Update2Async (4 ms.)
+    {"input":{"id":"3a0dbecd-d8bc-b847-4c93-82f82bc0d608","productUrl":null,"productTitle":null,"productDescription":null,"productVirtualprice":0,"productPrice":0,"productStock":2}}
+- Exceptions:
+  - ModelState is not valid! See ValidationErrors for details.
+    Volo.Abp.Validation.AbpValidationException: ModelState is not valid! See ValidationErrors for details.
+   at Volo.Abp.AspNetCore.Mvc.Validation.ModelStateValidator.Validate(ModelStateDictionary modelState)
+   at Volo.Abp.AspNetCore.Mvc.Validation.AbpValidationActionFilter.OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+
+2023-10-17 13:03:42.334 +08:00 [INF] Request finished HTTP/1.1 PUT https://localhost:44370/api/ProductService/Product/Update2Async?api-version=1.0 application/json;+charset=utf-8 167 - 400 - application/json;+charset=utf-8 6.8033ms
+2023-10-17 13:08:40.771 +08:00 [INF] Starting web host.
+2023-10-17 13:08:43.939 +08:00 [INF] Loaded ABP modules:
+2023-10-17 13:08:43.941 +08:00 [INF] - LKN.Product.ProductHttpApiHostModule
+2023-10-17 13:08:43.941 +08:00 [INF]   - LKN.Product.ProductApplicationModule
+2023-10-17 13:08:43.941 +08:00 [INF]     - LKN.Product.ProductDomainModule
+2023-10-17 13:08:43.941 +08:00 [INF]       - Volo.Abp.Domain.AbpDddDomainModule
+2023-10-17 13:08:43.941 +08:00 [INF]         - Volo.Abp.Auditing.AbpAuditingModule
+2023-10-17 13:08:43.941 +08:00 [INF]           - Volo.Abp.Data.AbpDataModule
+2023-10-17 13:08:43.941 +08:00 [INF]             - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2023-10-17 13:08:43.941 +08:00 [INF]               - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2023-10-17 13:08:43.941 +08:00 [INF]               - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2023-10-17 13:08:43.941 +08:00 [INF]             - Volo.Abp.Uow.AbpUnitOfWorkModule
+2023-10-17 13:08:43.941 +08:00 [INF]             - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2023-10-17 13:08:43.941 +08:00 [INF]           - Volo.Abp.Json.AbpJsonModule
+2023-10-17 13:08:43.941 +08:00 [INF]             - Volo.Abp.Json.SystemTextJson.AbpJsonSystemTextJsonModule
+2023-10-17 13:08:43.941 +08:00 [INF]               - Volo.Abp.Json.AbpJsonAbstractionsModule
+2023-10-17 13:08:43.941 +08:00 [INF]               - Volo.Abp.Timing.AbpTimingModule
+2023-10-17 13:08:43.941 +08:00 [INF]                 - Volo.Abp.Localization.AbpLocalizationModule
+2023-10-17 13:08:43.941 +08:00 [INF]                   - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2023-10-17 13:08:43.941 +08:00 [INF]                   - Volo.Abp.Settings.AbpSettingsModule
+2023-10-17 13:08:43.941 +08:00 [INF]                     - Volo.Abp.Security.AbpSecurityModule
+2023-10-17 13:08:43.941 +08:00 [INF]                   - Volo.Abp.Threading.AbpThreadingModule
+2023-10-17 13:08:43.941 +08:00 [INF]           - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2023-10-17 13:08:43.941 +08:00 [INF]             - Volo.Abp.MultiTenancy.AbpMultiTenancyAbstractionsModule
+2023-10-17 13:08:43.941 +08:00 [INF]           - Volo.Abp.Auditing.AbpAuditingContractsModule
+2023-10-17 13:08:43.941 +08:00 [INF]         - Volo.Abp.EventBus.AbpEventBusModule
+2023-10-17 13:08:43.941 +08:00 [INF]           - Volo.Abp.Guids.AbpGuidsModule
+2023-10-17 13:08:43.941 +08:00 [INF]           - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2023-10-17 13:08:43.941 +08:00 [INF]           - Volo.Abp.DistributedLocking.AbpDistributedLockingAbstractionsModule
+2023-10-17 13:08:43.941 +08:00 [INF]         - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2023-10-17 13:08:43.941 +08:00 [INF]         - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2023-10-17 13:08:43.941 +08:00 [INF]         - Volo.Abp.Specifications.AbpSpecificationsModule
+2023-10-17 13:08:43.941 +08:00 [INF]         - Volo.Abp.Caching.AbpCachingModule
+2023-10-17 13:08:43.941 +08:00 [INF]           - Volo.Abp.Serialization.AbpSerializationModule
+2023-10-17 13:08:43.941 +08:00 [INF]         - Volo.Abp.Domain.AbpDddDomainSharedModule
+2023-10-17 13:08:43.941 +08:00 [INF]       - LKN.Product.ProductDomainSharedModule
+2023-10-17 13:08:43.941 +08:00 [INF]         - Volo.Abp.Validation.AbpValidationModule
+2023-10-17 13:08:43.941 +08:00 [INF]     - LKN.Product.ProductApplicationContractsModule
+2023-10-17 13:08:43.941 +08:00 [INF]       - Volo.Abp.Application.AbpDddApplicationContractsModule
+2023-10-17 13:08:43.941 +08:00 [INF]       - Volo.Abp.Authorization.AbpAuthorizationModule
+2023-10-17 13:08:43.941 +08:00 [INF]         - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2023-10-17 13:08:43.941 +08:00 [INF]     - Volo.Abp.Application.AbpDddApplicationModule
+2023-10-17 13:08:43.941 +08:00 [INF]       - Volo.Abp.Http.AbpHttpAbstractionsModule
+2023-10-17 13:08:43.941 +08:00 [INF]       - Volo.Abp.Features.AbpFeaturesModule
+2023-10-17 13:08:43.941 +08:00 [INF]       - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2023-10-17 13:08:43.941 +08:00 [INF]     - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2023-10-17 13:08:43.941 +08:00 [INF]     - Volo.Abp.Autofac.AbpAutofacModule
+2023-10-17 13:08:43.941 +08:00 [INF]       - Volo.Abp.Castle.AbpCastleCoreModule
+2023-10-17 13:08:43.941 +08:00 [INF]   - LKN.Product.EntityFrameworkCore.ProductEntityFrameworkCoreModule
+2023-10-17 13:08:43.941 +08:00 [INF]     - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2023-10-17 13:08:43.941 +08:00 [INF]   - LKN.Product.ProductHttpApiModule
+2023-10-17 13:08:43.941 +08:00 [INF]     - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2023-10-17 13:08:43.941 +08:00 [INF]       - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2023-10-17 13:08:43.941 +08:00 [INF]         - Volo.Abp.Http.AbpHttpModule
+2023-10-17 13:08:43.941 +08:00 [INF]           - Volo.Abp.Minify.AbpMinifyModule
+2023-10-17 13:08:43.941 +08:00 [INF]       - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2023-10-17 13:08:43.941 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2023-10-17 13:08:43.941 +08:00 [INF]       - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2023-10-17 13:08:43.941 +08:00 [INF]         - Volo.Abp.UI.AbpUiModule
+2023-10-17 13:08:43.941 +08:00 [INF]   - Volo.Abp.AspNetCore.Mvc.UI.MultiTenancy.AbpAspNetCoreMvcUiMultiTenancyModule
+2023-10-17 13:08:43.941 +08:00 [INF]     - Volo.Abp.AspNetCore.Mvc.UI.Theme.Shared.AbpAspNetCoreMvcUiThemeSharedModule
+2023-10-17 13:08:43.941 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Bootstrap.AbpAspNetCoreMvcUiBootstrapModule
+2023-10-17 13:08:43.941 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.AbpAspNetCoreMvcUiModule
+2023-10-17 13:08:43.941 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Packages.AbpAspNetCoreMvcUiPackagesModule
+2023-10-17 13:08:43.941 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingAbstractionsModule
+2023-10-17 13:08:43.941 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Widgets.AbpAspNetCoreMvcUiWidgetsModule
+2023-10-17 13:08:43.941 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingModule
+2023-10-17 13:08:43.941 +08:00 [INF]     - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2023-10-17 13:08:43.941 +08:00 [INF]   - Volo.Abp.Caching.StackExchangeRedis.AbpCachingStackExchangeRedisModule
+2023-10-17 13:08:43.941 +08:00 [INF]   - Volo.Abp.EntityFrameworkCore.MySQL.AbpEntityFrameworkCoreMySQLModule
+2023-10-17 13:08:43.941 +08:00 [INF]   - Volo.Abp.AspNetCore.Serilog.AbpAspNetCoreSerilogModule
+2023-10-17 13:08:43.941 +08:00 [INF]   - Volo.Abp.Swashbuckle.AbpSwashbuckleModule
+2023-10-17 13:08:43.941 +08:00 [INF]   - LKN.Microservices.Infrastructure.InfrastructureModule
+2023-10-17 13:08:44.023 +08:00 [INF] MySettingName => 
+2023-10-17 13:08:44.023 +08:00 [INF] EnvironmentName => Development
+2023-10-17 13:08:44.333 +08:00 [INF] User profile is available. Using 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-17 13:08:44.428 +08:00 [INF] Initialized all ABP modules.
+2023-10-17 13:08:47.016 +08:00 [DBG] ### CAP background task is starting.
+2023-10-17 13:08:48.160 +08:00 [DBG] RabbitMQ configuration:'HostName:localhost, Port:5672, UserName:guest, Password:guest, ExchangeName:cap.default.router'
+2023-10-17 13:08:48.282 +08:00 [DBG] Ensuring all create database tables script are applied.
+2023-10-17 13:08:48.289 +08:00 [INF] Starting default Dispatcher
+2023-10-17 13:08:48.298 +08:00 [INF] Starting the processing server.
+2023-10-17 13:08:48.316 +08:00 [INF] Now listening on: https://localhost:44370
+2023-10-17 13:08:48.316 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-17 13:08:48.316 +08:00 [INF] Hosting environment: Development
+2023-10-17 13:08:48.316 +08:00 [INF] Content root path: D:\test\ABP\abpmicroservice\LKN.Microservices\microservices\LKN.Product.HttpApi.Host
+2023-10-17 13:08:48.360 +08:00 [DBG] Transport connection checking...
+2023-10-17 13:08:48.360 +08:00 [DBG] Transport connection healthy!
+2023-10-17 13:08:48.374 +08:00 [DBG] Collecting expired data from table: cap.published
+2023-10-17 13:08:48.389 +08:00 [INF] ### CAP started!
+2023-10-17 13:08:48.444 +08:00 [DBG] Collecting expired data from table: cap.received
+2023-10-17 13:08:48.999 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/ - -
+2023-10-17 13:08:49.170 +08:00 [INF] Executing endpoint 'LKN.Product.Controllers.HomeController.Index (LKN.Product.HttpApi.Host)'
+2023-10-17 13:08:49.192 +08:00 [INF] Route matched with {action = "Index", controller = "Home", area = "", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Index() on controller LKN.Product.Controllers.HomeController (LKN.Product.HttpApi.Host).
+2023-10-17 13:08:49.337 +08:00 [INF] Executing action method LKN.Product.Controllers.HomeController.Index (LKN.Product.HttpApi.Host) - Validation state: "Valid"
+2023-10-17 13:08:49.340 +08:00 [INF] Executed action method LKN.Product.Controllers.HomeController.Index (LKN.Product.HttpApi.Host), returned result Microsoft.AspNetCore.Mvc.RedirectResult in 0.3939ms.
+2023-10-17 13:08:49.349 +08:00 [INF] Executing RedirectResult, redirecting to /swagger.
+2023-10-17 13:08:49.353 +08:00 [INF] Executed action LKN.Product.Controllers.HomeController.Index (LKN.Product.HttpApi.Host) in 157.7317ms
+2023-10-17 13:08:49.353 +08:00 [INF] Executed endpoint 'LKN.Product.Controllers.HomeController.Index (LKN.Product.HttpApi.Host)'
+2023-10-17 13:08:49.363 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/ - - - 302 0 - 365.6564ms
+2023-10-17 13:08:49.369 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/swagger/index.html - -
+2023-10-17 13:08:49.504 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/swagger/index.html - - - 200 - text/html;charset=utf-8 134.5800ms
+2023-10-17 13:08:49.510 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/_framework/aspnetcore-browser-refresh.js - -
+2023-10-17 13:08:49.524 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/_vs/browserLink - -
+2023-10-17 13:08:49.524 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/_framework/aspnetcore-browser-refresh.js - - - 200 12018 application/javascript;+charset=utf-8 14.1403ms
+2023-10-17 13:08:49.561 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 37.0707ms
+2023-10-17 13:08:49.670 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/swagger/v1/swagger.json - -
+2023-10-17 13:08:49.794 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 124.5590ms
+2023-10-17 13:08:52.762 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/HealthCheck - -
+2023-10-17 13:08:52.768 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/HealthCheck - - - 200 - text/plain 6.0306ms
+2023-10-17 13:09:02.790 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/HealthCheck - -
+2023-10-17 13:09:02.791 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/HealthCheck - - - 200 - text/plain 1.2611ms
+2023-10-17 13:09:12.810 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/HealthCheck - -
+2023-10-17 13:09:12.811 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/HealthCheck - - - 200 - text/plain 0.7229ms
+2023-10-17 13:09:18.360 +08:00 [DBG] Transport connection checking...
+2023-10-17 13:09:18.361 +08:00 [DBG] Transport connection healthy!
+2023-10-17 13:09:22.844 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/HealthCheck - -
+2023-10-17 13:09:22.845 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/HealthCheck - - - 200 - text/plain 0.5519ms
+2023-10-17 13:09:32.864 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/HealthCheck - -
+2023-10-17 13:09:32.865 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/HealthCheck - - - 200 - text/plain 0.9876ms
+2023-10-17 13:09:42.875 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/HealthCheck - -
+2023-10-17 13:09:42.876 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/HealthCheck - - - 200 - text/plain 0.9496ms
+2023-10-17 13:09:48.374 +08:00 [DBG] Transport connection checking...
+2023-10-17 13:09:48.374 +08:00 [DBG] Transport connection healthy!
+2023-10-17 13:09:52.897 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/HealthCheck - -
+2023-10-17 13:09:52.898 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/HealthCheck - - - 200 - text/plain 1.0412ms
+2023-10-17 13:10:02.913 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/HealthCheck - -
+2023-10-17 13:10:02.913 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/HealthCheck - - - 200 - text/plain 0.7661ms
+2023-10-17 13:10:12.932 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/HealthCheck - -
+2023-10-17 13:10:12.933 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/HealthCheck - - - 200 - text/plain 0.5523ms
+2023-10-17 13:10:18.375 +08:00 [DBG] Transport connection checking...
+2023-10-17 13:10:18.375 +08:00 [DBG] Transport connection healthy!
+2023-10-17 13:10:22.944 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/HealthCheck - -
+2023-10-17 13:10:22.945 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/HealthCheck - - - 200 - text/plain 0.7484ms
+2023-10-17 13:10:32.966 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/HealthCheck - -
+2023-10-17 13:10:32.966 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/HealthCheck - - - 200 - text/plain 0.9699ms
+2023-10-17 13:10:42.996 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/HealthCheck - -
+2023-10-17 13:10:42.996 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/HealthCheck - - - 200 - text/plain 0.5876ms
+2023-10-17 13:10:48.384 +08:00 [DBG] Transport connection checking...
+2023-10-17 13:10:48.384 +08:00 [DBG] Transport connection healthy!
+2023-10-17 13:10:53.009 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/HealthCheck - -
+2023-10-17 13:10:53.009 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/HealthCheck - - - 200 - text/plain 0.5865ms
+2023-10-17 13:11:03.049 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/HealthCheck - -
+2023-10-17 13:11:03.051 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/HealthCheck - - - 200 - text/plain 1.8772ms
+2023-10-17 13:11:13.066 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/HealthCheck - -
+2023-10-17 13:11:13.066 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/HealthCheck - - - 200 - text/plain 0.6060ms
+2023-10-17 13:11:18.398 +08:00 [DBG] Transport connection checking...
+2023-10-17 13:11:18.398 +08:00 [DBG] Transport connection healthy!
+2023-10-17 13:11:23.087 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/HealthCheck - -
+2023-10-17 13:11:23.088 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/HealthCheck - - - 200 - text/plain 0.7229ms
+2023-10-17 13:11:33.102 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44370/HealthCheck - -
+2023-10-17 13:11:33.103 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44370/HealthCheck - - - 200 - text/plain 0.5512ms
+2023-10-17 13:11:36.970 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:44370/api/abp/api-definition - -
+2023-10-17 13:11:36.971 +08:00 [INF] Executing endpoint 'Volo.Abp.AspNetCore.Mvc.ApiExploring.AbpApiDefinitionController.Get (Volo.Abp.AspNetCore.Mvc)'
+2023-10-17 13:11:36.979 +08:00 [INF] Route matched with {area = "abp", action = "Get", controller = "AbpApiDefinition", page = ""}. Executing controller action with signature Volo.Abp.Http.Modeling.ApplicationApiDescriptionModel Get(Volo.Abp.Http.Modeling.ApplicationApiDescriptionModelRequestDto) on controller Volo.Abp.AspNetCore.Mvc.ApiExploring.AbpApiDefinitionController (Volo.Abp.AspNetCore.Mvc).
+2023-10-17 13:11:37.044 +08:00 [INF] Executing action method Volo.Abp.AspNetCore.Mvc.ApiExploring.AbpApiDefinitionController.Get (Volo.Abp.AspNetCore.Mvc) - Validation state: "Valid"
+2023-10-17 13:11:37.052 +08:00 [DBG] ActionApiDescriptionModel.Create: Sample.GetAsync
+2023-10-17 13:11:37.055 +08:00 [DBG] ActionApiDescriptionModel.Create: Sample.GetAuthorizedAsync
+2023-10-17 13:11:37.055 +08:00 [DBG] ActionApiDescriptionModel.Create: Sample.GetAsync
+2023-10-17 13:11:37.055 +08:00 [DBG] ActionApiDescriptionModel.Create: Sample.GetAuthorizedAsync
+2023-10-17 13:11:37.056 +08:00 [DBG] ActionApiDescriptionModel.Create: Products.GetAsyncById
+2023-10-17 13:11:37.059 +08:00 [DBG] ActionApiDescriptionModel.Create: Products.Update2AsyncByInput
+2023-10-17 13:11:37.059 +08:00 [DBG] ActionApiDescriptionModel.Create: Products.CreateAsyncByInput
+2023-10-17 13:11:37.059 +08:00 [DBG] ActionApiDescriptionModel.Create: Products.GetListAsyncByInput
+2023-10-17 13:11:37.059 +08:00 [DBG] ActionApiDescriptionModel.Create: Products.UpdateAsyncByIdAndInput
+2023-10-17 13:11:37.059 +08:00 [DBG] ActionApiDescriptionModel.Create: Products.DeleteAsyncById
+2023-10-17 13:11:37.059 +08:00 [DBG] ActionApiDescriptionModel.Create: Products.GetProductAndImages
+2023-10-17 13:11:37.059 +08:00 [DBG] ActionApiDescriptionModel.Create: Products.GetProductByAttrByCreateProductDto
+2023-10-17 13:11:37.060 +08:00 [DBG] ActionApiDescriptionModel.Create: Products.GetProductTotals
+2023-10-17 13:11:37.060 +08:00 [DBG] ActionApiDescriptionModel.Create: Products.GetProductAndImage
+2023-10-17 13:11:37.060 +08:00 [DBG] ActionApiDescriptionModel.Create: AbpTenant.FindTenantByNameAsyncByName
+2023-10-17 13:11:37.060 +08:00 [DBG] ActionApiDescriptionModel.Create: AbpTenant.FindTenantByIdAsyncById
+2023-10-17 13:11:37.060 +08:00 [DBG] ActionApiDescriptionModel.Create: AbpApplicationConfiguration.GetAsyncByOptions
+2023-10-17 13:11:37.060 +08:00 [DBG] ActionApiDescriptionModel.Create: AbpApplicationLocalization.GetAsyncByInput
+2023-10-17 13:11:37.060 +08:00 [DBG] ActionApiDescriptionModel.Create: AbpApiDefinition.GetByModel
+2023-10-17 13:11:37.063 +08:00 [INF] Executed action method Volo.Abp.AspNetCore.Mvc.ApiExploring.AbpApiDefinitionController.Get (Volo.Abp.AspNetCore.Mvc), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 18.5862ms.
+2023-10-17 13:11:37.067 +08:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.Http.Modeling.ApplicationApiDescriptionModel'.
+2023-10-17 13:11:37.095 +08:00 [INF] Executed action Volo.Abp.AspNetCore.Mvc.ApiExploring.AbpApiDefinitionController.Get (Volo.Abp.AspNetCore.Mvc) in 115.665ms
+2023-10-17 13:11:37.095 +08:00 [INF] Executed endpoint 'Volo.Abp.AspNetCore.Mvc.ApiExploring.AbpApiDefinitionController.Get (Volo.Abp.AspNetCore.Mvc)'
+2023-10-17 13:11:37.095 +08:00 [INF] Request finished HTTP/1.1 GET https://localhost:44370/api/abp/api-definition - - - 200 - application/json;+charset=utf-8 124.7684ms
+2023-10-17 13:11:37.157 +08:00 [INF] Request starting HTTP/1.1 PUT https://localhost:44370/api/ProductService/Product?id=3a0dbecd-d8bc-b847-4c93-82f82bc0d608&api-version=1.0 application/json;+charset=utf-8 167
+2023-10-17 13:11:37.162 +08:00 [INF] Executing endpoint 'LKN.Product.Products.ProductsController.UpdateAsync (LKN.Product.HttpApi)'
+2023-10-17 13:11:37.168 +08:00 [INF] Route matched with {action = "Update", controller = "Products", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[LKN.Product.Products.ProductDto] UpdateAsync(System.Guid, LKN.Product.Products.UpdateProductDto) on controller LKN.Product.Products.ProductsController (LKN.Product.HttpApi).
+2023-10-17 13:11:37.359 +08:00 [WRN] ---------- RemoteServiceErrorInfo ----------
+{
+  "code": null,
+  "message": "Your request is not valid!",
+  "details": "The following errors were detected during validation.\r\n - The ProductUrl field is required.\r\n - The ProductTitle field is required.\r\n - The ProductDescription field is required.\r\n",
+  "data": {},
+  "validationErrors": [
+    {
+      "message": "The ProductUrl field is required.",
+      "members": [
+        "productUrl"
+      ]
+    },
+    {
+      "message": "The ProductTitle field is required.",
+      "members": [
+        "productTitle"
+      ]
+    },
+    {
+      "message": "The ProductDescription field is required.",
+      "members": [
+        "productDescription"
+      ]
+    }
+  ]
+}
+
+2023-10-17 13:11:37.359 +08:00 [WRN] ModelState is not valid! See ValidationErrors for details.
+Volo.Abp.Validation.AbpValidationException: ModelState is not valid! See ValidationErrors for details.
+   at Volo.Abp.AspNetCore.Mvc.Validation.ModelStateValidator.Validate(ModelStateDictionary modelState)
+   at Volo.Abp.AspNetCore.Mvc.Validation.AbpValidationActionFilter.OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+2023-10-17 13:11:37.360 +08:00 [WRN] There are 3 validation errors:
+The ProductUrl field is required. (ProductUrl)
+The ProductTitle field is required. (ProductTitle)
+The ProductDescription field is required. (ProductDescription)
+
+2023-10-17 13:11:37.393 +08:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.Http.RemoteServiceErrorResponse'.
+2023-10-17 13:11:37.396 +08:00 [INF] Executed action LKN.Product.Products.ProductsController.UpdateAsync (LKN.Product.HttpApi) in 227.494ms
+2023-10-17 13:11:37.396 +08:00 [INF] Executed endpoint 'LKN.Product.Products.ProductsController.UpdateAsync (LKN.Product.HttpApi)'
+2023-10-17 13:11:37.403 +08:00 [INF] AUDIT LOG: [400: PUT    ] /api/ProductService/Product
+- UserName - UserId                 :  - 
+- ClientIpAddress        : ::1
+- ExecutionDuration      : 235
+- Actions:
+  - LKN.Product.Products.ProductsController.UpdateAsync (2 ms.)
+    {"id":"3a0dbecd-d8bc-b847-4c93-82f82bc0d608","input":{"id":"3a0dbecd-d8bc-b847-4c93-82f82bc0d608","productUrl":null,"productTitle":null,"productDescription":null,"productVirtualprice":0,"productPrice":0,"productStock":2}}
+- Exceptions:
+  - ModelState is not valid! See ValidationErrors for details.
+    Volo.Abp.Validation.AbpValidationException: ModelState is not valid! See ValidationErrors for details.
+   at Volo.Abp.AspNetCore.Mvc.Validation.ModelStateValidator.Validate(ModelStateDictionary modelState)
+   at Volo.Abp.AspNetCore.Mvc.Validation.AbpValidationActionFilter.OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+
+2023-10-17 13:11:37.403 +08:00 [INF] Request finished HTTP/1.1 PUT https://localhost:44370/api/ProductService/Product?id=3a0dbecd-d8bc-b847-4c93-82f82bc0d608&api-version=1.0 application/json;+charset=utf-8 167 - 400 - application/json;+charset=utf-8 245.9808ms
+2023-10-17 14:34:40.664 +08:00 [INF] Starting web host.
+2023-10-17 14:39:07.197 +08:00 [INF] Starting web host.
+2023-10-17 14:40:29.984 +08:00 [INF] Starting web host.
+2023-10-17 14:48:47.361 +08:00 [INF] Starting web host.
+2023-10-17 15:06:19.581 +08:00 [INF] Starting web host.
+2023-10-17 15:13:28.331 +08:00 [INF] Starting web host.
+2023-10-17 15:20:36.094 +08:00 [INF] Starting web host.
+2023-10-17 15:28:26.079 +08:00 [INF] Starting web host.
+2023-10-17 15:34:48.506 +08:00 [INF] Starting web host.
+2023-10-17 15:50:04.646 +08:00 [INF] Starting web host.
+2023-10-17 15:57:45.629 +08:00 [INF] Starting web host.
+2023-10-17 16:05:09.122 +08:00 [INF] Starting web host.
+2023-10-17 16:10:48.670 +08:00 [INF] Starting web host.

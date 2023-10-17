@@ -3,6 +3,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using NLog.Web;
 using Serilog;
 using Serilog.Events;
 
@@ -30,8 +31,8 @@ public class Program
             Log.Information("Starting web host.");
             var builder = WebApplication.CreateBuilder(args);
             builder.Host.AddAppSettingsSecretsJson()
-                .UseAutofac()
-                .UseSerilog();
+                .UseAutofac().UseNLog();
+                //.UseSerilog();
             await builder.AddApplicationAsync<ProductHttpApiHostModule>();
             var app = builder.Build();
             await app.InitializeApplicationAsync();

@@ -18,7 +18,6 @@ namespace LKN.Product.Products
     /// 禁止 ABP 默认的生成的API接口，创建、添加、查询
     /// </summary>
     [RemoteService(IsEnabled = false)]
-    ///[Authorize]
     [Dependency(ServiceLifetime.Singleton)]
     public class ProductAppService : CrudAppService<
         Product,
@@ -35,10 +34,14 @@ namespace LKN.Product.Products
         {
             _productAbpRepository = repository;
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="input"></param>
+        /// <returns></returns>
         public async Task<ProductDto> Update2Async(UpdateProductDto input)
         {
-            return await this.UpdateAsync(input.id,input);
+            return await this.UpdateAsync(input.Id,input);
         }
 
         /// <summary>

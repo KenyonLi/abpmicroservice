@@ -33,7 +33,7 @@ namespace LKN.Product.Products
         /// </summary>
         /// <param name="input"></param>
         /// <returns></returns>
-        [HttpPut("Update2Async"), Compensable(nameof(RecoverStock))]
+        [HttpPut("Update2Async")]
         public async Task<ProductDto> Update2Async(UpdateProductDto input)
         {
             return await _ProductAppService.Update2Async(input);
@@ -48,7 +48,7 @@ namespace LKN.Product.Products
         {
             Console.WriteLine("恢复商品库存");
             input.ProductStock = 10;
-            _ProductAppService.UpdateAsync(input.id, input).Wait();
+            _ProductAppService.UpdateAsync(input.Id, input).Wait();
         }
 
         [HttpPost]
@@ -63,15 +63,16 @@ namespace LKN.Product.Products
             return  _ProductAppService.GetListAsync(input);
         }
 
-        [HttpPut]
-        public Task<ProductDto> UpdateAsync(Guid id, UpdateProductDto input)
+        [HttpPut, Compensable(nameof(RecoverStock))]
+        public async Task<ProductDto> UpdateAsync(Guid id, UpdateProductDto input)
         {
-            throw new NotImplementedException();
+            return await _ProductAppService.UpdateAsync(id,input);
         }
+
         [HttpDelete]
         public Task DeleteAsync(Guid id)
         {
-            throw new NotImplementedException();
+            return _ProductAppService.DeleteAsync(id);
         }
 
         [HttpGet("ProductAndImages")]

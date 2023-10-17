@@ -73,7 +73,7 @@ namespace LKN.OrderDetailsServices.Controllers
         /// </summary>
         /// <returns></returns>
         // [HttpPost("CreateOrder"), SagaStart]
-        [HttpPost("CreateOrder"), SagaStart()] // 开启分布式事务 
+        [HttpPost("CreateOrder"), SagaStart(TimeOut=3)] // 开启分布式事务 
         public OrderDto CreateOrder(CreateOrderDto createOrderDto)
         {
             // 1、创建订单
@@ -84,11 +84,11 @@ namespace LKN.OrderDetailsServices.Controllers
             string guid = "3a0dbecd-d8bc-b847-4c93-82f82bc0d608";
             UpdateProductDto updateProductDto = new UpdateProductDto();
             updateProductDto.ProductStock = 2;
-            updateProductDto.id = Guid.Parse(guid);
-            ProductDto productDto = _ProductAppService.Update2Async(updateProductDto).Result;
+            updateProductDto.Id = Guid.Parse(guid);
+            var productDto = _ProductAppService.UpdateAsync(updateProductDto.Id, updateProductDto).Result;
 
             // 3、执行失败
-            throw new Exception("执行异常");
+            // throw new Exception("执行异常");
             return orderDto;
         }
 

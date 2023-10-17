@@ -1,6 +1,8 @@
 ﻿using Google.Protobuf.WellKnownTypes;
 using LKN.Order;
 using LKN.OrderDetailsServices.EntityFrameworkCore;
+using LKN.Payment;
+using LKN.Product;
 using Microsoft.OpenApi.Models;
 using Servicecomb.Saga.Omega.AspNetCore.Extensions;
 using Volo.Abp;
@@ -15,6 +17,8 @@ namespace LKN.OrderDetailsServices
     [DependsOn(typeof(AbpAspNetCoreMvcModule))]
     [DependsOn(typeof(AbpAutofacModule))]
     [DependsOn(typeof(OrderHttpApiClientModule))]
+    [DependsOn(typeof(PaymentHttpApiClientModule))]
+    [DependsOn(typeof(ProductHttpApiClientModule))]
     public class OrderDetailsServicesModule: AbpModule
     {
         public override void ConfigureServices(ServiceConfigurationContext context)
@@ -63,8 +67,8 @@ namespace LKN.OrderDetailsServices
             // 7、注册saga分布式事务
             context.Services.AddOmegaCore(option => {
                 option.GrpcServerAddress = "localhost:8081"; // 1、协调中心地址  查看 配置文件 application.yaml
-                option.InstanceId = "AggregateService-1";// 2、服务实例Id
-                option.ServiceName = "AggregateService";// 3、服务名称
+                option.InstanceId = "OrderDetailsService-1";// 2、服务实例Id
+                option.ServiceName = "OrderDetailsService";// 3、服务名称
             });
         }
 

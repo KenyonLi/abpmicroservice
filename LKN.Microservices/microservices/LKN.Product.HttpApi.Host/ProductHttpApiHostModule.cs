@@ -35,6 +35,7 @@ using Volo.Abp.VirtualFileSystem;
 using Volo.Abp.EntityFrameworkCore.MySQL;
 using Volo.Abp.AspNetCore.Mvc;
 using LKN.Microservices.Infrastructure;
+using LKN.Microservices.ELK;
 
 namespace LKN.Product;
 
@@ -54,6 +55,7 @@ namespace LKN.Product;
     */
     typeof(AbpEntityFrameworkCoreMySQLModule),
     typeof(AbpAspNetCoreSerilogModule),
+    typeof(ElaticsearchLogstashKibanaModule),
     typeof(AbpSwashbuckleModule),
     typeof(InfrastructureModule)
 

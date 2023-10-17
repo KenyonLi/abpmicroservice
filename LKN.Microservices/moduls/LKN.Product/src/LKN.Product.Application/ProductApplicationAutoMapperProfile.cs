@@ -20,5 +20,6 @@ public class ProductApplicationAutoMapperProfile : Profile
         CreateMap<LKN.Product.Products.Product, LKN.Product.Products.ProductDto>();
         CreateMap<LKN.Product.Products.ProductImage, LKN.Product.Products.ProductImageDto>();
         CreateMap<LKN.Product.Products.ProductImageCreateDto, LKN.Product.Products.ProductImage>();
+
     }
 }
