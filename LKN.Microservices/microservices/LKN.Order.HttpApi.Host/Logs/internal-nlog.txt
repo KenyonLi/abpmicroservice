@@ -39,3 +39,13 @@
 2023-10-17 16:12:48.2890 Warn RabbitMQTarget(Name=RabbitMQTarget): Connection timeout to RabbitMQ instance after 3000ms
 2023-10-17 16:12:51.3042 Warn RabbitMQTarget(Name=RabbitMQTarget): Connection timeout to RabbitMQ instance after 3000ms
 2023-10-17 16:12:55.2202 Warn RabbitMQTarget(Name=RabbitMQTarget): Connection shutdown. ReplyCode=541, ReplyText=Unexpected Exception
+2023-10-17 17:25:51.1983 Warn RabbitMQTarget(Name=RabbitMQTarget): Connection shutdown. ReplyCode=541, ReplyText=Unexpected Exception
+2023-10-17 18:17:03.2048 Warn RabbitMQTarget(Name=RabbitMQTarget): Connection shutdown. ReplyCode=541, ReplyText=Unexpected Exception
+2023-10-17 18:17:13.2424 Warn RabbitMQTarget(Name=RabbitMQTarget): Connection shutdown. ReplyCode=541, ReplyText=Unexpected Exception
+2023-10-17 18:17:59.0594 Warn RabbitMQTarget(Name=RabbitMQTarget): Connection shutdown. ReplyCode=541, ReplyText=Unexpected Exception
+2023-10-17 18:18:02.0890 Warn RabbitMQTarget(Name=RabbitMQTarget): Connection timeout to RabbitMQ instance after 3000ms
+2023-10-17 18:18:05.0954 Warn RabbitMQTarget(Name=RabbitMQTarget): Connection timeout to RabbitMQ instance after 3000ms
+2023-10-17 18:18:09.0882 Warn RabbitMQTarget(Name=RabbitMQTarget): Connection shutdown. ReplyCode=541, ReplyText=Unexpected Exception
+2023-10-17 18:19:22.5237 Warn RabbitMQTarget(Name=RabbitMQTarget): Connection shutdown. ReplyCode=541, ReplyText=Unexpected Exception
+2023-10-17 18:19:32.5318 Warn RabbitMQTarget(Name=RabbitMQTarget): Connection shutdown. ReplyCode=541, ReplyText=Unexpected Exception
+2023-10-17 18:30:06.1837 Warn RabbitMQTarget(Name=RabbitMQTarget): Connection shutdown. ReplyCode=541, ReplyText=Unexpected Exception

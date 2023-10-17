@@ -88,7 +88,7 @@ namespace LKN.OrderDetailsServices.Controllers
             var productDto = _ProductAppService.UpdateAsync(updateProductDto.Id, updateProductDto).Result;
 
             // 3、执行失败
-            // throw new Exception("执行异常");
+            throw new Exception("执行异常");
             return orderDto;
         }
 

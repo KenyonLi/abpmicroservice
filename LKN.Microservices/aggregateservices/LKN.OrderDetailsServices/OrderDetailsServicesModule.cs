@@ -1,8 +1,11 @@
 ﻿using Google.Protobuf.WellKnownTypes;
+using LKN.Microservices.Infrastructure;
+using LKN.Microservices.Infrastructure.sagas;
 using LKN.Order;
 using LKN.OrderDetailsServices.EntityFrameworkCore;
 using LKN.Payment;
 using LKN.Product;
+using Microsoft.EntityFrameworkCore.Infrastructure.Internal;
 using Microsoft.OpenApi.Models;
 using Servicecomb.Saga.Omega.AspNetCore.Extensions;
 using Volo.Abp;
@@ -19,6 +22,7 @@ namespace LKN.OrderDetailsServices
     [DependsOn(typeof(OrderHttpApiClientModule))]
     [DependsOn(typeof(PaymentHttpApiClientModule))]
     [DependsOn(typeof(ProductHttpApiClientModule))]
+    [DependsOn(typeof(InfrastructureModule))]
     public class OrderDetailsServicesModule: AbpModule
     {
         public override void ConfigureServices(ServiceConfigurationContext context)
@@ -63,13 +67,15 @@ namespace LKN.OrderDetailsServices
             {
                 options.UseMySQL();
             });
-
+            //2. 增加心跳检测
+            context.Services.AddHealthChecks();
             // 7、注册saga分布式事务
-            context.Services.AddOmegaCore(option => {
-                option.GrpcServerAddress = "localhost:8081"; // 1、协调中心地址  查看 配置文件 application.yaml
-                option.InstanceId = "OrderDetailsService-1";// 2、服务实例Id
-                option.ServiceName = "OrderDetailsService";// 3、服务名称
-            });
+            //context.Services.AddOmegaCore(option => {
+            //    option.GrpcServerAddress = "localhost:8081"; // 1、协调中心地址  查看 配置文件 application.yaml
+            //    option.InstanceId = "OrderDetailsService-1";// 2、服务实例Id
+            //    option.ServiceName = "OrderDetailsService";// 3、服务名称
+            //});
+            context.Services.AddOmegaCoreCluster("servicecomb-alpha-server", "OrderDetailsServices");
         }
 
         public override void OnApplicationInitialization(ApplicationInitializationContext context)
@@ -92,7 +98,8 @@ namespace LKN.OrderDetailsServices
             app.UseRouting();
             app.UseConfiguredEndpoints();
 
-
+            //2、开始健康检测
+            app.UseHealthChecks("/HealthCheck");
         }
     }
 }

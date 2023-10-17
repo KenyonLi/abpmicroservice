@@ -38,7 +38,17 @@ namespace LKN.Product.Products
         {
             return await _ProductAppService.Update2Async(input);
         }
-
+        /// <summary>
+        /// 更新方法接受
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="input"></param>
+        /// <returns></returns>
+        [HttpPut, Compensable(nameof(RecoverStock))]
+        public async Task<ProductDto> UpdateAsync(Guid id, UpdateProductDto input)
+        {
+            return await _ProductAppService.UpdateAsync(id, input);
+        }
         /// <summary>
         /// 恢复库存
         /// </summary>
@@ -63,11 +73,6 @@ namespace LKN.Product.Products
             return  _ProductAppService.GetListAsync(input);
         }
 
-        [HttpPut, Compensable(nameof(RecoverStock))]
-        public async Task<ProductDto> UpdateAsync(Guid id, UpdateProductDto input)
-        {
-            return await _ProductAppService.UpdateAsync(id,input);
-        }
 
         [HttpDelete]
         public Task DeleteAsync(Guid id)

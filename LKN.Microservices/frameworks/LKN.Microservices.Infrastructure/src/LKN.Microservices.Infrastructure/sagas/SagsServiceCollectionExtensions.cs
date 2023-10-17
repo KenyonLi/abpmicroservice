@@ -1,7 +1,9 @@
 ﻿using LKN.MicroService.Core.Cluster;
 using LKN.Microservices.Infrastructure.Registry;
 using LKN.Microservices.Infrastructure.Registry.Omega;
+using LKN.Microservices.Infrastructure.Registry.Options;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Options;
 using Servicecomb.Saga.Omega.AspNetCore.Extensions;
 using System;
 using System.Collections.Generic;
@@ -18,6 +20,7 @@ namespace LKN.Microservices.Infrastructure.sagas
     {
         public static IServiceCollection AddOmegaCoreCluster(this IServiceCollection services, string omegaServiceName, string ServiceName)
         {
+          
             // 1、注册Omega服务发现
             services.AddSingleton<OmegaConsulServiceDiscovery>();
             ServiceProvider serviceProvider = services.BuildServiceProvider();

@@ -1,6 +1,8 @@
-﻿using Consul;
+﻿using Autofac.Core;
+using Consul;
 using LKN.Microservices.Infrastructure.Registry.Options;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Options;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,6 +24,7 @@ namespace LKN.Microservices.Infrastructure.Registry.Omega
 
         public List<ServiceNode> Discovery(string serviceName)
         {
+           
             ServiceDiscoveryConfig serviceDiscoveryConfig = configuration.GetSection("ConsulDiscovery").Get<ServiceDiscoveryConfig>();
 
             // 1、创建consul客户端连接
