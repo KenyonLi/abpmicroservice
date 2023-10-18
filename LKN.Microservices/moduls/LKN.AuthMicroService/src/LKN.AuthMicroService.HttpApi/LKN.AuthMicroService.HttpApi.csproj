@@ -9,6 +9,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Samples\**" />
+    <EmbeddedResource Remove="Samples\**" />
+    <None Remove="Samples\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Volo.Abp.AspNetCore.Mvc" Version="7.3.0" />
     <ProjectReference Include="..\LKN.AuthMicroService.Application.Contracts\LKN.AuthMicroService.Application.Contracts.csproj" />
   </ItemGroup>

@@ -106,14 +106,6 @@ public class AuthMicroServiceHttpApiHostModule : AbpModule
                  options.Audience = "AuthMicroService";
              });
 
-        //context.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-        //    .AddJwtBearer(options =>
-        //    {
-        //        options.Authority = configuration["AuthServer:Authority"];
-        //        options.RequireHttpsMetadata = Convert.ToBoolean(configuration["AuthServer:RequireHttpsMetadata"]);
-        //        options.Audience = "AuthMicroService";
-        //    });
-
         //Configure<AbpDistributedCacheOptions>(options =>
         //{
         //    options.KeyPrefix = "AuthMicroService:";
@@ -183,7 +175,7 @@ public class AuthMicroServiceHttpApiHostModule : AbpModule
         //{
         //    app.UseMultiTenancy();
         //}
-        //app.UseIdentityServer(); // 增加IdentityServer4
+        app.UseIdentityServer(); // 增加IdentityServer4
         //app.UseAbpRequestLocalization();
         app.UseAuthorization();
         app.UseSwagger();
