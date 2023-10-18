@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <RootNamespace>LKN.AuthMicroService</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.EntityFrameworkCore" Version="7.3.0" />
+    <ProjectReference Include="..\LKN.AuthMicroService.Domain\LKN.AuthMicroService.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

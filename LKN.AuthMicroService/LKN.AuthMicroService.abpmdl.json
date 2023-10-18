@@ -1,0 +1,79 @@
+{
+  "folders": {
+    "items": {
+      "src": {},
+      "test": {},
+      "host": {}
+    }
+  },
+  "packages": {
+    "LKN.AuthMicroService.Domain.Shared": {
+      "path": "src/LKN.AuthMicroService.Domain.Shared/LKN.AuthMicroService.Domain.Shared.abppkg.json",
+      "folder": "src"
+    },
+    "LKN.AuthMicroService.Domain": {
+      "path": "src/LKN.AuthMicroService.Domain/LKN.AuthMicroService.Domain.abppkg.json",
+      "folder": "src"
+    },
+    "LKN.AuthMicroService.Application.Contracts": {
+      "path": "src/LKN.AuthMicroService.Application.Contracts/LKN.AuthMicroService.Application.Contracts.abppkg.json",
+      "folder": "src"
+    },
+    "LKN.AuthMicroService.Application": {
+      "path": "src/LKN.AuthMicroService.Application/LKN.AuthMicroService.Application.abppkg.json",
+      "folder": "src"
+    },
+    "LKN.AuthMicroService.EntityFrameworkCore": {
+      "path": "src/LKN.AuthMicroService.EntityFrameworkCore/LKN.AuthMicroService.EntityFrameworkCore.abppkg.json",
+      "folder": "src"
+    },
+    "LKN.AuthMicroService.MongoDB": {
+      "path": "src/LKN.AuthMicroService.MongoDB/LKN.AuthMicroService.MongoDB.abppkg.json",
+      "folder": "src"
+    },
+    "LKN.AuthMicroService.HttpApi": {
+      "path": "src/LKN.AuthMicroService.HttpApi/LKN.AuthMicroService.HttpApi.abppkg.json",
+      "folder": "src"
+    },
+    "LKN.AuthMicroService.HttpApi.Client": {
+      "path": "src/LKN.AuthMicroService.HttpApi.Client/LKN.AuthMicroService.HttpApi.Client.abppkg.json",
+      "folder": "src"
+    },
+    "LKN.AuthMicroService.TestBase": {
+      "path": "test/LKN.AuthMicroService.TestBase/LKN.AuthMicroService.TestBase.abppkg.json",
+      "folder": "test"
+    },
+    "LKN.AuthMicroService.EntityFrameworkCore.Tests": {
+      "path": "test/LKN.AuthMicroService.EntityFrameworkCore.Tests/LKN.AuthMicroService.EntityFrameworkCore.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "LKN.AuthMicroService.MongoDB.Tests": {
+      "path": "test/LKN.AuthMicroService.MongoDB.Tests/LKN.AuthMicroService.MongoDB.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "LKN.AuthMicroService.Domain.Tests": {
+      "path": "test/LKN.AuthMicroService.Domain.Tests/LKN.AuthMicroService.Domain.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "LKN.AuthMicroService.Application.Tests": {
+      "path": "test/LKN.AuthMicroService.Application.Tests/LKN.AuthMicroService.Application.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "LKN.AuthMicroService.HttpApi.Host": {
+      "path": "host/LKN.AuthMicroService.HttpApi.Host/LKN.AuthMicroService.HttpApi.Host.abppkg.json",
+      "folder": "host"
+    },
+    "LKN.AuthMicroService.HttpApi.Client.ConsoleTestApp": {
+      "path": "test/LKN.AuthMicroService.HttpApi.Client.ConsoleTestApp/LKN.AuthMicroService.HttpApi.Client.ConsoleTestApp.abppkg.json",
+      "folder": "test"
+    },
+    "LKN.AuthMicroService.AuthServer": {
+      "path": "host/LKN.AuthMicroService.AuthServer/LKN.AuthMicroService.AuthServer.abppkg.json",
+      "folder": "host"
+    },
+    "LKN.AuthMicroService.Host.Shared": {
+      "path": "host/LKN.AuthMicroService.Host.Shared/LKN.AuthMicroService.Host.Shared.abppkg.json",
+      "folder": "host"
+    }
+  }
+}

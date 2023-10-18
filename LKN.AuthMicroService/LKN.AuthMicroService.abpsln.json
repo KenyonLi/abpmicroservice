@@ -1,0 +1,7 @@
+{
+  "modules": {
+    "LKN.AuthMicroService": {
+      "path": "LKN.AuthMicroService.abpmdl.json"
+    }
+  }
+}

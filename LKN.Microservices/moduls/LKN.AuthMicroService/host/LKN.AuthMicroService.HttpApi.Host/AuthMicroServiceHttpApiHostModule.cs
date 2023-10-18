@@ -25,13 +25,12 @@ using Volo.Abp.EntityFrameworkCore;
 using Volo.Abp.Localization;
 using Volo.Abp.Modularity;
 using Volo.Abp.MultiTenancy;
-using Volo.Abp.PermissionManagement.EntityFrameworkCore;
 using Volo.Abp.Security.Claims;
-using Volo.Abp.SettingManagement.EntityFrameworkCore;
 using Volo.Abp.Swashbuckle;
-using Volo.Abp.TenantManagement.EntityFrameworkCore;
 using Volo.Abp.VirtualFileSystem;
 using Volo.Abp.EntityFrameworkCore.MySQL;
+using Volo.Abp.AspNetCore.Mvc;
+using Volo.Abp.IdentityServer;
 
 namespace LKN.AuthMicroService;
 
@@ -39,14 +38,12 @@ namespace LKN.AuthMicroService;
     typeof(AuthMicroServiceApplicationModule),
     typeof(AuthMicroServiceEntityFrameworkCoreModule),
     typeof(AuthMicroServiceHttpApiModule),
+
     typeof(AbpAspNetCoreMvcUiMultiTenancyModule),
     typeof(AbpAutofacModule),
     typeof(AbpCachingStackExchangeRedisModule),
     typeof(AbpEntityFrameworkCoreMySQLModule),
     typeof(AbpAuditLoggingEntityFrameworkCoreModule),
-    typeof(AbpPermissionManagementEntityFrameworkCoreModule),
-    typeof(AbpSettingManagementEntityFrameworkCoreModule),
-    typeof(AbpTenantManagementEntityFrameworkCoreModule),
     typeof(AbpAspNetCoreSerilogModule),
     typeof(AbpSwashbuckleModule)
     )]
@@ -57,24 +54,14 @@ public class AuthMicroServiceHttpApiHostModule : AbpModule
     {
         var hostingEnvironment = context.Services.GetHostingEnvironment();
         var configuration = context.Services.GetConfiguration();
-
+        // 去掉表前缀
+        AbpIdentityServerDbProperties.DbTablePrefix = "";
         Configure<AbpDbContextOptions>(options =>
         {
             options.UseMySQL();
         });
 
-
-        if (hostingEnvironment.IsDevelopment())
-        {
-            Configure<AbpVirtualFileSystemOptions>(options =>
-            {
-                options.FileSets.ReplaceEmbeddedByPhysical<AuthMicroServiceDomainSharedModule>(Path.Combine(hostingEnvironment.ContentRootPath, string.Format("..{0}..{0}src{0}LKN.AuthMicroService.Domain.Shared", Path.DirectorySeparatorChar)));
-                options.FileSets.ReplaceEmbeddedByPhysical<AuthMicroServiceDomainModule>(Path.Combine(hostingEnvironment.ContentRootPath, string.Format("..{0}..{0}src{0}LKN.AuthMicroService.Domain", Path.DirectorySeparatorChar)));
-                options.FileSets.ReplaceEmbeddedByPhysical<AuthMicroServiceApplicationContractsModule>(Path.Combine(hostingEnvironment.ContentRootPath, string.Format("..{0}..{0}src{0}LKN.AuthMicroService.Application.Contracts", Path.DirectorySeparatorChar)));
-                options.FileSets.ReplaceEmbeddedByPhysical<AuthMicroServiceApplicationModule>(Path.Combine(hostingEnvironment.ContentRootPath, string.Format("..{0}..{0}src{0}LKN.AuthMicroService.Application", Path.DirectorySeparatorChar)));
-            });
-        }
-
+   
         context.Services.AddAbpSwaggerGenWithOAuth(
             configuration["AuthServer:Authority"],
             new Dictionary<string, string>
@@ -111,26 +98,33 @@ public class AuthMicroServiceHttpApiHostModule : AbpModule
             options.Languages.Add(new LanguageInfo("es", "es", "Español"));
             options.Languages.Add(new LanguageInfo("el", "el", "Ελληνικά"));
         });
-
         context.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-            .AddJwtBearer(options =>
-            {
-                options.Authority = configuration["AuthServer:Authority"];
-                options.RequireHttpsMetadata = Convert.ToBoolean(configuration["AuthServer:RequireHttpsMetadata"]);
-                options.Audience = "AuthMicroService";
-            });
+             .AddJwtBearer(options =>
+             {
+                 options.Authority = configuration["AuthServer:Authority"];
+                 options.RequireHttpsMetadata = Convert.ToBoolean(configuration["AuthServer:RequireHttpsMetadata"]);
+                 options.Audience = "AuthMicroService";
+             });
 
-        Configure<AbpDistributedCacheOptions>(options =>
-        {
-            options.KeyPrefix = "AuthMicroService:";
-        });
+        //context.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+        //    .AddJwtBearer(options =>
+        //    {
+        //        options.Authority = configuration["AuthServer:Authority"];
+        //        options.RequireHttpsMetadata = Convert.ToBoolean(configuration["AuthServer:RequireHttpsMetadata"]);
+        //        options.Audience = "AuthMicroService";
+        //    });
 
-        var dataProtectionBuilder = context.Services.AddDataProtection().SetApplicationName("AuthMicroService");
-        if (!hostingEnvironment.IsDevelopment())
-        {
-            var redis = ConnectionMultiplexer.Connect(configuration["Redis:Configuration"]);
-            dataProtectionBuilder.PersistKeysToStackExchangeRedis(redis, "AuthMicroService-Protection-Keys");
-        }
+        //Configure<AbpDistributedCacheOptions>(options =>
+        //{
+        //    options.KeyPrefix = "AuthMicroService:";
+        //});
+
+        //var dataProtectionBuilder = context.Services.AddDataProtection().SetApplicationName("AuthMicroService");
+        //if (!hostingEnvironment.IsDevelopment())
+        //{
+        //    var redis = ConnectionMultiplexer.Connect(configuration["Redis:Configuration"]);
+        //    dataProtectionBuilder.PersistKeysToStackExchangeRedis(redis, "AuthMicroService-Protection-Keys");
+        //}
 
         context.Services.AddCors(options =>
         {
@@ -150,8 +144,21 @@ public class AuthMicroServiceHttpApiHostModule : AbpModule
                     .AllowCredentials();
             });
         });
+
+        ConfigureConventionalControllers();
     }
 
+    //自动生成 api
+    private void ConfigureConventionalControllers()
+    {
+        Configure<AbpAspNetCoreMvcOptions>(options =>
+        {
+            options.ConventionalControllers.Create(typeof(AuthMicroServiceApplicationModule).Assembly, options =>
+            {
+                options.RootPath = "AuthMicroService";
+            });
+        });
+    }
     public override void OnApplicationInitialization(ApplicationInitializationContext context)
     {
         var app = context.GetApplicationBuilder();
@@ -176,7 +183,8 @@ public class AuthMicroServiceHttpApiHostModule : AbpModule
         //{
         //    app.UseMultiTenancy();
         //}
-        app.UseAbpRequestLocalization();
+        //app.UseIdentityServer(); // 增加IdentityServer4
+        //app.UseAbpRequestLocalization();
         app.UseAuthorization();
         app.UseSwagger();
         app.UseAbpSwaggerUI(options =>

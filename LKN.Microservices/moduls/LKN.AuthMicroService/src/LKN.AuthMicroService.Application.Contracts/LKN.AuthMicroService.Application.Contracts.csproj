@@ -14,4 +14,12 @@
     <ProjectReference Include="..\LKN.AuthMicroService.Domain.Shared\LKN.AuthMicroService.Domain.Shared.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="ApiScopes\" />
+    <Folder Include="Clients\" />
+    <Folder Include="Devices\" />
+    <Folder Include="Grants\" />
+    <Folder Include="IdentityResources\" />
+  </ItemGroup>
+
 </Project>
