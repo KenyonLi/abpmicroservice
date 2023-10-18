@@ -31,6 +31,11 @@ using Volo.Abp.VirtualFileSystem;
 using Volo.Abp.EntityFrameworkCore.MySQL;
 using Volo.Abp.AspNetCore.Mvc;
 using Volo.Abp.IdentityServer;
+using Volo.Abp.Account.Web;
+using Volo.Abp.Account;
+using Volo.Abp.Identity.EntityFrameworkCore;
+using Volo.Abp.Identity;
+using Volo.Abp.PermissionManagement.EntityFrameworkCore;
 
 namespace LKN.AuthMicroService;
 
@@ -41,10 +46,19 @@ namespace LKN.AuthMicroService;
 
     typeof(AbpAspNetCoreMvcUiMultiTenancyModule),
     typeof(AbpAutofacModule),
-    typeof(AbpCachingStackExchangeRedisModule),
+
     typeof(AbpEntityFrameworkCoreMySQLModule),
     typeof(AbpAuditLoggingEntityFrameworkCoreModule),
     typeof(AbpAspNetCoreSerilogModule),
+
+    typeof(AbpAccountApplicationModule),
+    typeof(AbpAccountWebIdentityServerModule),
+
+    typeof(AbpPermissionManagementEntityFrameworkCoreModule),
+    typeof(AbpIdentityEntityFrameworkCoreModule),
+    typeof(AbpIdentityApplicationModule),
+    typeof(AbpIdentityApplicationContractsModule),
+
     typeof(AbpSwashbuckleModule)
     )]
 public class AuthMicroServiceHttpApiHostModule : AbpModule
@@ -61,7 +75,7 @@ public class AuthMicroServiceHttpApiHostModule : AbpModule
             options.UseMySQL();
         });
 
-   
+
         context.Services.AddAbpSwaggerGenWithOAuth(
             configuration["AuthServer:Authority"],
             new Dictionary<string, string>
@@ -70,7 +84,7 @@ public class AuthMicroServiceHttpApiHostModule : AbpModule
             },
             options =>
             {
-                options.SwaggerDoc("v1", new OpenApiInfo {Title = "AuthMicroService API", Version = "v1"});
+                options.SwaggerDoc("v1", new OpenApiInfo { Title = "AuthMicroService API", Version = "v1" });
                 options.DocInclusionPredicate((docName, description) => true);
                 options.CustomSchemaIds(type => type.FullName);
             });
@@ -106,10 +120,10 @@ public class AuthMicroServiceHttpApiHostModule : AbpModule
                  options.Audience = "AuthMicroService";
              });
 
-        //Configure<AbpDistributedCacheOptions>(options =>
-        //{
-        //    options.KeyPrefix = "AuthMicroService:";
-        //});
+        Configure<AbpDistributedCacheOptions>(options =>
+        {
+            options.KeyPrefix = "AuthMicroService:";
+        });
 
         //var dataProtectionBuilder = context.Services.AddDataProtection().SetApplicationName("AuthMicroService");
         //if (!hostingEnvironment.IsDevelopment())

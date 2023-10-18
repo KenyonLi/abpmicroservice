@@ -22,6 +22,6 @@ public class AuthMicroServiceHttpApiHostMigrationsDbContext : AbpDbContext<AuthM
         modelBuilder.ConfigureAuthMicroService();// IdentityServer4表
 
         // 2、创建用户表
-       // modelBuilder.ConfigureIdentity(); // 创建用户表
+        modelBuilder.ConfigureIdentity(); // 创建用户表
     }
 }

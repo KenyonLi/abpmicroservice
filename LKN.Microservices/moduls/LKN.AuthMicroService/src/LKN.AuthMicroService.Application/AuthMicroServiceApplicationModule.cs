@@ -2,6 +2,7 @@
 using Volo.Abp.AutoMapper;
 using Volo.Abp.Modularity;
 using Volo.Abp.Application;
+using Volo.Abp.Identity;
 
 namespace LKN.AuthMicroService;
 
@@ -9,7 +10,8 @@ namespace LKN.AuthMicroService;
     typeof(AuthMicroServiceDomainModule),
     typeof(AuthMicroServiceApplicationContractsModule),
     typeof(AbpDddApplicationModule),
-    typeof(AbpAutoMapperModule)
+    typeof(AbpAutoMapperModule),
+    typeof(AbpIdentityApplicationModule)
     )]
 public class AuthMicroServiceApplicationModule : AbpModule
 {
@@ -18,7 +20,7 @@ public class AuthMicroServiceApplicationModule : AbpModule
         context.Services.AddAutoMapperObjectMapper<AuthMicroServiceApplicationModule>();
         Configure<AbpAutoMapperOptions>(options =>
         {
-            options.AddMaps<AuthMicroServiceApplicationModule>(validate: true);
+            options.AddMaps<AuthMicroServiceApplicationModule>(validate: false);
         });
     }
 }
