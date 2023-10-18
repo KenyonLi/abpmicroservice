@@ -16,7 +16,7 @@ public class AuthMicroServiceApplicationAutoMapperProfile : Profile
         CreateMap<CreateApiResourceDto, ApiResource>();
         CreateMap<ApiResource, ApiResourceDto>();
 
-        CreateMap<CreateApiScopeDto, ApiScope>();
+       // CreateMap<CreateApiScopeDto, ApiScope>();
         //CreateMap<ApiScope, ApiScopeDto>();
 
         //CreateMap<Client, ClientDto>();
