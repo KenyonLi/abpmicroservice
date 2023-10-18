@@ -109,6 +109,24 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Servicecomb.Saga.Omega.Core
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Servicecomb.Saga.Omega.Protocol", "frameworks\Servicecomb.Saga\Servicecomb.Saga.Omega.Protocol\Servicecomb.Saga.Omega.Protocol.csproj", "{6E7BE770-7531-4129-ABF5-8A762F0267F1}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LKN.AuthMicroService", "LKN.AuthMicroService", "{79F4AA53-18D0-467C-AA91-6C9022F22990}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LKN.AuthMicroService.Application", "moduls\LKN.AuthMicroService\src\LKN.AuthMicroService.Application\LKN.AuthMicroService.Application.csproj", "{C4DA067F-DAB3-4AF8-A637-F96272D06330}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LKN.AuthMicroService.Application.Contracts", "moduls\LKN.AuthMicroService\src\LKN.AuthMicroService.Application.Contracts\LKN.AuthMicroService.Application.Contracts.csproj", "{2172BF2F-C076-4DF2-B4CD-C310EC6C5A39}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LKN.AuthMicroService.Domain", "moduls\LKN.AuthMicroService\src\LKN.AuthMicroService.Domain\LKN.AuthMicroService.Domain.csproj", "{19119058-B96A-464E-90EF-AD1046ED1E6E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LKN.AuthMicroService.Domain.Shared", "moduls\LKN.AuthMicroService\src\LKN.AuthMicroService.Domain.Shared\LKN.AuthMicroService.Domain.Shared.csproj", "{3F95AEB6-A7E5-4100-9EA1-841D381D7ACC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LKN.AuthMicroService.EntityFrameworkCore", "moduls\LKN.AuthMicroService\src\LKN.AuthMicroService.EntityFrameworkCore\LKN.AuthMicroService.EntityFrameworkCore.csproj", "{67FFC0BD-AFDD-462E-A04F-334A34756DF6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LKN.AuthMicroService.HttpApi", "moduls\LKN.AuthMicroService\src\LKN.AuthMicroService.HttpApi\LKN.AuthMicroService.HttpApi.csproj", "{7164134E-C443-45A5-8DC4-A9A3D244E31F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LKN.AuthMicroService.HttpApi.Client", "moduls\LKN.AuthMicroService\src\LKN.AuthMicroService.HttpApi.Client\LKN.AuthMicroService.HttpApi.Client.csproj", "{5FD335F8-5D8D-4671-A832-5555E2899E84}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LKN.AuthMicroService.HttpApi.Host", "moduls\LKN.AuthMicroService\host\LKN.AuthMicroService.HttpApi.Host\LKN.AuthMicroService.HttpApi.Host.csproj", "{93263B11-4BB2-4415-B985-3C1B48C10494}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -287,6 +305,38 @@ Global
 		{6E7BE770-7531-4129-ABF5-8A762F0267F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6E7BE770-7531-4129-ABF5-8A762F0267F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6E7BE770-7531-4129-ABF5-8A762F0267F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4DA067F-DAB3-4AF8-A637-F96272D06330}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4DA067F-DAB3-4AF8-A637-F96272D06330}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4DA067F-DAB3-4AF8-A637-F96272D06330}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4DA067F-DAB3-4AF8-A637-F96272D06330}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2172BF2F-C076-4DF2-B4CD-C310EC6C5A39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2172BF2F-C076-4DF2-B4CD-C310EC6C5A39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2172BF2F-C076-4DF2-B4CD-C310EC6C5A39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2172BF2F-C076-4DF2-B4CD-C310EC6C5A39}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19119058-B96A-464E-90EF-AD1046ED1E6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19119058-B96A-464E-90EF-AD1046ED1E6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19119058-B96A-464E-90EF-AD1046ED1E6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19119058-B96A-464E-90EF-AD1046ED1E6E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F95AEB6-A7E5-4100-9EA1-841D381D7ACC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F95AEB6-A7E5-4100-9EA1-841D381D7ACC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F95AEB6-A7E5-4100-9EA1-841D381D7ACC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F95AEB6-A7E5-4100-9EA1-841D381D7ACC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67FFC0BD-AFDD-462E-A04F-334A34756DF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67FFC0BD-AFDD-462E-A04F-334A34756DF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67FFC0BD-AFDD-462E-A04F-334A34756DF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67FFC0BD-AFDD-462E-A04F-334A34756DF6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7164134E-C443-45A5-8DC4-A9A3D244E31F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7164134E-C443-45A5-8DC4-A9A3D244E31F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7164134E-C443-45A5-8DC4-A9A3D244E31F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7164134E-C443-45A5-8DC4-A9A3D244E31F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FD335F8-5D8D-4671-A832-5555E2899E84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FD335F8-5D8D-4671-A832-5555E2899E84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FD335F8-5D8D-4671-A832-5555E2899E84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FD335F8-5D8D-4671-A832-5555E2899E84}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93263B11-4BB2-4415-B985-3C1B48C10494}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93263B11-4BB2-4415-B985-3C1B48C10494}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93263B11-4BB2-4415-B985-3C1B48C10494}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93263B11-4BB2-4415-B985-3C1B48C10494}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -339,6 +389,15 @@ Global
 		{9E3BD320-170C-472A-BF0B-1DCC7E23E22B} = {B88FD9E6-1502-445A-B8F8-9676A1C716EA}
 		{4D5C593D-ED41-42E9-BC95-488340736470} = {B88FD9E6-1502-445A-B8F8-9676A1C716EA}
 		{6E7BE770-7531-4129-ABF5-8A762F0267F1} = {B88FD9E6-1502-445A-B8F8-9676A1C716EA}
+		{79F4AA53-18D0-467C-AA91-6C9022F22990} = {A303F5F7-818E-4A51-8AEE-37B713AF6E7D}
+		{C4DA067F-DAB3-4AF8-A637-F96272D06330} = {79F4AA53-18D0-467C-AA91-6C9022F22990}
+		{2172BF2F-C076-4DF2-B4CD-C310EC6C5A39} = {79F4AA53-18D0-467C-AA91-6C9022F22990}
+		{19119058-B96A-464E-90EF-AD1046ED1E6E} = {79F4AA53-18D0-467C-AA91-6C9022F22990}
+		{3F95AEB6-A7E5-4100-9EA1-841D381D7ACC} = {79F4AA53-18D0-467C-AA91-6C9022F22990}
+		{67FFC0BD-AFDD-462E-A04F-334A34756DF6} = {79F4AA53-18D0-467C-AA91-6C9022F22990}
+		{7164134E-C443-45A5-8DC4-A9A3D244E31F} = {79F4AA53-18D0-467C-AA91-6C9022F22990}
+		{5FD335F8-5D8D-4671-A832-5555E2899E84} = {79F4AA53-18D0-467C-AA91-6C9022F22990}
+		{93263B11-4BB2-4415-B985-3C1B48C10494} = {F3E30637-280A-42CA-9B20-A844E8A68DCA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3322A1F8-4B34-4BD8-89E5-5D14FB922247}
