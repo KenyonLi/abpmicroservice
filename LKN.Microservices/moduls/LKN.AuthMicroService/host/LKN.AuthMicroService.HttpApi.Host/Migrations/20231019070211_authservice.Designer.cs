@@ -12,7 +12,7 @@ using Volo.Abp.EntityFrameworkCore;
 namespace LKN.AuthMicroService.Migrations
 {
     [DbContext(typeof(AuthMicroServiceHttpApiHostMigrationsDbContext))]
-    [Migration("20231019062508_authservice")]
+    [Migration("20231019070211_authservice")]
     partial class authservice
     {
         /// <inheritdoc />

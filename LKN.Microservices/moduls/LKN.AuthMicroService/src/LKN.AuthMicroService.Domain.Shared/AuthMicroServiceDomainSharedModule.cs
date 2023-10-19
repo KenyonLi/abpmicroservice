@@ -6,12 +6,14 @@ using Volo.Abp.Localization.ExceptionHandling;
 using Volo.Abp.Validation;
 using Volo.Abp.Validation.Localization;
 using Volo.Abp.VirtualFileSystem;
+using Volo.Abp.IdentityServer;
 
 namespace LKN.AuthMicroService;
 
 [DependsOn(
     typeof(AbpValidationModule),
-    typeof(AbpDddDomainSharedModule)
+    typeof(AbpDddDomainSharedModule),
+    typeof(AbpIdentityServerDomainSharedModule)
 )]
 public class AuthMicroServiceDomainSharedModule : AbpModule
 {

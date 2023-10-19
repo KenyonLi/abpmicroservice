@@ -35,6 +35,7 @@ using Volo.Abp.Swashbuckle;
 using Volo.Abp.VirtualFileSystem;
 using Volo.Abp.EntityFrameworkCore.MySQL;
 using Volo.Abp.AspNetCore.Mvc;
+using Volo.Abp.IdentityServer;
 
 namespace LKN.AuthMicroService;
 
@@ -44,9 +45,9 @@ namespace LKN.AuthMicroService;
     typeof(AuthMicroServiceHttpApiModule),
     //typeof(AbpAspNetCoreMvcUiMultiTenancyModule),
     typeof(AbpAutofacModule),
-    typeof(AbpCachingStackExchangeRedisModule),
+    //typeof(AbpCachingStackExchangeRedisModule),
     typeof(AbpEntityFrameworkCoreMySQLModule),
-    typeof(AbpAuditLoggingEntityFrameworkCoreModule),
+    //typeof(AbpAuditLoggingEntityFrameworkCoreModule),
     //typeof(AbpPermissionManagementEntityFrameworkCoreModule),
     //typeof(AbpSettingManagementEntityFrameworkCoreModule),
     //typeof(AbpTenantManagementEntityFrameworkCoreModule),
@@ -60,7 +61,8 @@ public class AuthMicroServiceHttpApiHostModule : AbpModule
     {
         var hostingEnvironment = context.Services.GetHostingEnvironment();
         var configuration = context.Services.GetConfiguration();
-
+        // 去掉表前缀
+        AbpIdentityServerDbProperties.DbTablePrefix = "";
         Configure<AbpDbContextOptions>(options =>
         {
             options.UseMySQL();

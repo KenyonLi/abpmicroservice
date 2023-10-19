@@ -18,7 +18,7 @@ public class AuthMicroServiceApplicationModule : AbpModule
         context.Services.AddAutoMapperObjectMapper<AuthMicroServiceApplicationModule>();
         Configure<AbpAutoMapperOptions>(options =>
         {
-            options.AddMaps<AuthMicroServiceApplicationModule>(validate: true);
+            options.AddMaps<AuthMicroServiceApplicationModule>(validate: false);
         });
     }
 }
