@@ -12,8 +12,8 @@ public class AuthMicroServiceHttpApiHostMigrationsDbContextFactory : IDesignTime
         var configuration = BuildConfiguration();
 
         var builder = new DbContextOptionsBuilder<AuthMicroServiceHttpApiHostMigrationsDbContext>()
-            //.UseSqlServer(configuration.GetConnectionString("AuthMicroService"));
             .UseMySql(configuration.GetConnectionString("AuthMicroService"),MySqlServerVersion.LatestSupportedServerVersion);
+
         return new AuthMicroServiceHttpApiHostMigrationsDbContext(builder.Options);
     }
 

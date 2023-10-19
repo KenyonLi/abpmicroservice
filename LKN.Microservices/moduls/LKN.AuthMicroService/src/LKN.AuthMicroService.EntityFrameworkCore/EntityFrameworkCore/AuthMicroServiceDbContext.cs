@@ -1,6 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Volo.Abp.Data;
-using Volo.Abp.DependencyInjection;
 using Volo.Abp.EntityFrameworkCore;
 using Volo.Abp.IdentityServer.ApiResources;
 using Volo.Abp.IdentityServer.ApiScopes;
@@ -13,8 +12,7 @@ using Volo.Abp.IdentityServer.IdentityResources;
 namespace LKN.AuthMicroService.EntityFrameworkCore;
 
 [ConnectionStringName(AuthMicroServiceDbProperties.ConnectionStringName)]
-[ReplaceDbContext(typeof(IIdentityServerDbContext))] // 替换IIdentityServerDbContext
-public class AuthMicroServiceDbContext : AbpDbContext<AuthMicroServiceDbContext>, IAuthMicroServiceDbContext,IIdentityServerDbContext
+public class AuthMicroServiceDbContext : AbpDbContext<AuthMicroServiceDbContext>, IAuthMicroServiceDbContext, IIdentityServerDbContext
 {
     /* Add DbSet for each Aggregate Root here. Example:
      * public DbSet<Question> Questions { get; set; }
@@ -86,6 +84,7 @@ public class AuthMicroServiceDbContext : AbpDbContext<AuthMicroServiceDbContext>
     public DbSet<PersistedGrant> PersistedGrants { get; set; }
 
     public DbSet<DeviceFlowCodes> DeviceFlowCodes { get; set; }
+
     protected override void OnModelCreating(ModelBuilder builder)
     {
         base.OnModelCreating(builder);

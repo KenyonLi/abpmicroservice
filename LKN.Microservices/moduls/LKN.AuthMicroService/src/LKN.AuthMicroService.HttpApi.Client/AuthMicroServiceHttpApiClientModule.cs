@@ -15,7 +15,8 @@ public class AuthMicroServiceHttpApiClientModule : AbpModule
     {
         context.Services.AddHttpClientProxies(
             typeof(AuthMicroServiceApplicationContractsModule).Assembly,
-            RemoteServiceName
+           // AuthMicroServiceRemoteServiceConsts.RemoteServiceName
+           RemoteServiceName
         );
 
         Configure<AbpVirtualFileSystemOptions>(options =>

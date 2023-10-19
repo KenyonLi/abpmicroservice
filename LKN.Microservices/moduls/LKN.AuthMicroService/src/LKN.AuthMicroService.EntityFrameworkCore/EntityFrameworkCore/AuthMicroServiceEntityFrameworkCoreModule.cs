@@ -1,6 +1,5 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using Volo.Abp.EntityFrameworkCore;
-using Volo.Abp.Identity.EntityFrameworkCore;
 using Volo.Abp.IdentityServer.EntityFrameworkCore;
 using Volo.Abp.Modularity;
 
@@ -9,8 +8,7 @@ namespace LKN.AuthMicroService.EntityFrameworkCore;
 [DependsOn(
     typeof(AuthMicroServiceDomainModule),
     typeof(AbpEntityFrameworkCoreModule),
-    typeof(AbpIdentityServerEntityFrameworkCoreModule),//集成
-    typeof(AbpIdentityEntityFrameworkCoreModule) // 集成权限管理
+    typeof(AbpIdentityServerEntityFrameworkCoreModule)// 集成
 )]
 public class AuthMicroServiceEntityFrameworkCoreModule : AbpModule
 {

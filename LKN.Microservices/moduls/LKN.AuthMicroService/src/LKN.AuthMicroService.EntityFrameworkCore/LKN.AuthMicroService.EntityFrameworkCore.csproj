@@ -10,18 +10,8 @@
 
   <ItemGroup>
     <PackageReference Include="Volo.Abp.EntityFrameworkCore" Version="7.3.0" />
-    <PackageReference Include="Volo.Abp.Identity.EntityFrameworkCore" Version="7.3.0" />
     <PackageReference Include="Volo.Abp.IdentityServer.EntityFrameworkCore" Version="7.3.0" />
     <ProjectReference Include="..\LKN.AuthMicroService.Domain\LKN.AuthMicroService.Domain.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="ApiResources\" />
-    <Folder Include="ApiScopes\" />
-    <Folder Include="Clients\" />
-    <Folder Include="Devices\" />
-    <Folder Include="Grants\" />
-    <Folder Include="IdentityResources\" />
   </ItemGroup>
 
 </Project>

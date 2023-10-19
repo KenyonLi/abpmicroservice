@@ -3,8 +3,8 @@
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
     "iisExpress": {
-      "applicationUrl": "https://localhost:44379",
-      "sslPort": 44379
+      "applicationUrl": "https://localhost:44386",
+      "sslPort": 44386
     }
   },
   "profiles": {
@@ -18,8 +18,7 @@
     "LKN.AuthMicroService.DemoApp": {
       "commandName": "Project",
       "launchBrowser": true,
-      "launchUrl": "swagger",
-      "applicationUrl": "https://localhost:44379",
+      "applicationUrl": "https://localhost:44386",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }

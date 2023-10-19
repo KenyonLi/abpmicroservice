@@ -1,8 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using System;
 using Volo.Abp;
-using Volo.Abp.EntityFrameworkCore.Modeling;
-using Volo.Abp.IdentityServer;
 using Volo.Abp.IdentityServer.EntityFrameworkCore;
 
 namespace LKN.AuthMicroService.EntityFrameworkCore;
@@ -13,16 +11,16 @@ public static class AuthMicroServiceDbContextModelCreatingExtensions
         this ModelBuilder builder,Action<AuthMicroServiceModelBuilderConfigurationOptions> optionsAction=null)
     {
         Check.NotNull(builder, nameof(builder));
-        //去掉前缀扩展
+
         var options = new AuthMicroServiceModelBuilderConfigurationOptions(
                AuthMicroServiceDbProperties.DbTablePrefix,
                AuthMicroServiceDbProperties.DbSchema
            );
+
         optionsAction?.Invoke(options);
         // 1、创建IdentityServer4表
         builder.ConfigureIdentityServer();
 
-        // AbpIdentityServerDbProperties.DbTablePrefix = "";
         /* Configure all entities here. Example:
 
         builder.Entity<Question>(b =>

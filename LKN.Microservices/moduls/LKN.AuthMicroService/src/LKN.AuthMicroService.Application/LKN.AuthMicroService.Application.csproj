@@ -11,17 +11,8 @@
   <ItemGroup>
     <PackageReference Include="Volo.Abp.AutoMapper" Version="7.3.0" />
     <PackageReference Include="Volo.Abp.Ddd.Application" Version="7.3.0" />
-    <PackageReference Include="Volo.Abp.Identity.Application" Version="7.3.0" />
     <ProjectReference Include="..\LKN.AuthMicroService.Application.Contracts\LKN.AuthMicroService.Application.Contracts.csproj" />
     <ProjectReference Include="..\LKN.AuthMicroService.Domain\LKN.AuthMicroService.Domain.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="ApiScopes\" />
-    <Folder Include="Clients\" />
-    <Folder Include="Devices\" />
-    <Folder Include="Grants\" />
-    <Folder Include="IdentityResources\" />
   </ItemGroup>
 
 </Project>
