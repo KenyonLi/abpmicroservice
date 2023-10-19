@@ -13,7 +13,9 @@ using Volo.Abp.IdentityServer.IdentityResources;
 namespace LKN.AuthMicroService.EntityFrameworkCore;
 
 [ConnectionStringName(AuthMicroServiceDbProperties.ConnectionStringName)]
-[ReplaceDbContext(typeof(IIdentityServerDbContext))] // 替换IIdentityServerDbContext
+[ReplaceDbContext(typeof(IIdentityServerDbContext))]// 替换IIdentityServerDbContext
+[ReplaceDbContext(typeof(IIdentityServerDbContext))]
+
 public class AuthMicroServiceDbContext : AbpDbContext<AuthMicroServiceDbContext>, IAuthMicroServiceDbContext, IIdentityServerDbContext
 {
     /* Add DbSet for each Aggregate Root here. Example:

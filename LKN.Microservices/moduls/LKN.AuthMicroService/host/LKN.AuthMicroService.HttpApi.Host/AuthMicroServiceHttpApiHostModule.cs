@@ -18,12 +18,10 @@ using Volo.Abp;
 //using Volo.Abp.AspNetCore.Mvc.UI.MultiTenancy;
 //using Volo.Abp.AspNetCore.Mvc.UI.Theme.Shared;
 using Volo.Abp.AspNetCore.Serilog;
-using Volo.Abp.AuditLogging.EntityFrameworkCore;
 using Volo.Abp.Autofac;
 using Volo.Abp.Caching;
 using Volo.Abp.Caching.StackExchangeRedis;
 using Volo.Abp.EntityFrameworkCore;
-using Volo.Abp.EntityFrameworkCore.SqlServer;
 using Volo.Abp.Localization;
 using Volo.Abp.Modularity;
 using Volo.Abp.MultiTenancy;
@@ -36,6 +34,12 @@ using Volo.Abp.VirtualFileSystem;
 using Volo.Abp.EntityFrameworkCore.MySQL;
 using Volo.Abp.AspNetCore.Mvc;
 using Volo.Abp.IdentityServer;
+using Volo.Abp.Identity;
+using Volo.Abp.Identity.EntityFrameworkCore;
+using Volo.Abp.Account.Web;
+using Volo.Abp.Account;
+using Volo.Abp.PermissionManagement.EntityFrameworkCore;
+using Volo.Abp.PermissionManagement;
 
 namespace LKN.AuthMicroService;
 
@@ -43,14 +47,17 @@ namespace LKN.AuthMicroService;
     typeof(AuthMicroServiceApplicationModule),
     typeof(AuthMicroServiceEntityFrameworkCoreModule),
     typeof(AuthMicroServiceHttpApiModule),
-    //typeof(AbpAspNetCoreMvcUiMultiTenancyModule),
+
     typeof(AbpAutofacModule),
-    //typeof(AbpCachingStackExchangeRedisModule),
     typeof(AbpEntityFrameworkCoreMySQLModule),
-    //typeof(AbpAuditLoggingEntityFrameworkCoreModule),
-    //typeof(AbpPermissionManagementEntityFrameworkCoreModule),
-    //typeof(AbpSettingManagementEntityFrameworkCoreModule),
-    //typeof(AbpTenantManagementEntityFrameworkCoreModule),
+    typeof(AbpPermissionManagementEntityFrameworkCoreModule),
+
+    typeof(AbpIdentityEntityFrameworkCoreModule),
+    typeof(AbpIdentityApplicationContractsModule),
+    
+    typeof(AbpAccountWebIdentityServerModule),
+    typeof(AbpAccountApplicationModule),
+
     typeof(AbpAspNetCoreSerilogModule),
     typeof(AbpSwashbuckleModule)
     )]
@@ -63,6 +70,10 @@ public class AuthMicroServiceHttpApiHostModule : AbpModule
         var configuration = context.Services.GetConfiguration();
         // 去掉表前缀
         AbpIdentityServerDbProperties.DbTablePrefix = "";
+        // 去掉
+        AbpIdentityDbProperties.DbTablePrefix = "";
+        AbpPermissionManagementDbProperties.DbTablePrefix = "";
+        
         Configure<AbpDbContextOptions>(options =>
         {
             options.UseMySQL();
@@ -200,6 +211,7 @@ public class AuthMicroServiceHttpApiHostModule : AbpModule
         //    app.UseMultiTenancy();
         //}
         //app.UseAbpRequestLocalization();
+        app.UseIdentityServer(); // 增加IdentityServer4
         app.UseAuthorization();
         app.UseSwagger();
         app.UseAbpSwaggerUI(options =>
