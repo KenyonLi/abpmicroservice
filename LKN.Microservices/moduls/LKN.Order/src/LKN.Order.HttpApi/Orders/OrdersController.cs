@@ -10,6 +10,7 @@ using Volo.Abp.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Configuration;
 using Servicecomb.Saga.Omega.Abstractions.Transaction;
+using Microsoft.AspNetCore.Authorization;
 
 namespace LKN.Order.Orders;
 
@@ -30,6 +31,7 @@ public class OrdersController : OrderController, IOrderAppService
     }
 
     [HttpGet("{id}")]
+    [Authorize] // 校验身份证
     public async Task<OrderDto> GetAsync(Guid id)
     {
         return await _OrderAppService.GetAsync(id);

@@ -1,11 +1,14 @@
 ﻿using DotNetCore.CAP;
+using IdentityModel.Client;
 using LKN.Order.Orders;
 using LKN.Payment.Pays;
 using LKN.Product.Products;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
 using Servicecomb.Saga.Omega.Abstractions.Transaction;
 using System.Threading;
+using Volo.Abp.IdentityModel;
 
 namespace LKN.OrderDetailsServices.Controllers
 {
@@ -17,7 +20,8 @@ namespace LKN.OrderDetailsServices.Controllers
     public class OrderDetailsController : ControllerBase
     {
         private readonly ILogger<OrderDetailsController> _logger;
-
+        //属性依赖注入
+        public IIdentityModelAuthenticationService _authenticator { set; get; } // 1、生成IdentityServer4身份证
         public IProductAppService _ProductAppService { set; get; }
         public IOrderAppService _OrderAppService { set; get; }
         public IPaymentAppService _paymentAppService { set; get; } // 属性依赖注入
@@ -28,14 +32,40 @@ namespace LKN.OrderDetailsServices.Controllers
         {
             _logger = logger;
         }
-
+        /// <summary>
+        ///  获取订单详情聚合服务身份证(Token)
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        [HttpGet("GetToken")]
+        public string GetToken()
+        {
+            IdentityClientConfiguration identityClient = new IdentityClientConfiguration();
+            identityClient.Authority = "https://localhost:44386";
+            identityClient.ClientId = "OrderDetailsServices-Client";
+            identityClient.ClientSecret = "12345";
+            identityClient.GrantType = "client_credentials";
+            return _authenticator.GetAccessTokenAsync(identityClient).Result;
+        }
         /// <summary>
         /// 获取订单详情
         /// </summary>
         /// <returns></returns>
         [HttpGet("{id}")]
-        public async Task<OrderDto> Get(Guid id)
+        public async Task<OrderDto> Get(Guid id, string AccessToken)
         {
+            HttpClient apiClient = new HttpClient();
+            apiClient.SetBearerToken(AccessToken); // 1、设置token到请求头
+            HttpResponseMessage response = await apiClient.GetAsync("https://localhost:44397/api/OrderService/order/" + id);
+            if (!response.IsSuccessStatusCode)
+            {
+                throw new Exception($"API Request Error, StatusCode is : {response.StatusCode} + {response.Content}");
+            }
+            else
+            {
+                string content = await response.Content.ReadAsStringAsync();
+                return JsonConvert.DeserializeObject<OrderDto>(content);
+            }
             // 1、查询订单
             OrderDto orderDto = await _OrderAppService.GetAsync(id);
 

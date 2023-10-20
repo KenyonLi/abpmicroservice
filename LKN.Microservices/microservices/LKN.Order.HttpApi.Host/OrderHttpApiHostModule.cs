@@ -35,6 +35,7 @@ using Volo.Abp.AspNetCore.Mvc;
 using LKN.Microservices.Infrastructure;
 using Nacos.V2.DependencyInjection;
 using LKN.Microservices.ELK;
+using Volo.Abp.Http.Client.IdentityModel;
 
 namespace LKN.Order;
 
@@ -47,12 +48,12 @@ namespace LKN.Order;
     typeof(AbpAspNetCoreMvcUiMultiTenancyModule),
     typeof(AbpAutofacModule),
     typeof(AbpCachingStackExchangeRedisModule),
-    // typeof(AbpEntityFrameworkCoreSqlServerModule),
     typeof(AbpTenantManagementEntityFrameworkCoreModule),
     typeof(AbpEntityFrameworkCoreMySQLModule),
     typeof(AbpAspNetCoreSerilogModule),
     typeof(InfrastructureModule),
     typeof(ElaticsearchLogstashKibanaModule),
+    //typeof(AbpHttpClientIdentityModelModule),// 配置AbpIdentityModel
     typeof(AbpSwashbuckleModule)
     )]
 public class OrderHttpApiHostModule : AbpModule
@@ -117,13 +118,25 @@ public class OrderHttpApiHostModule : AbpModule
             options.Languages.Add(new LanguageInfo("el", "el", "Ελληνικά"));
         });
 
-        context.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+        context.Services.AddAuthentication(options => {
+                options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+            })
             .AddJwtBearer(options =>
             {
                 options.Authority = configuration["AuthServer:Authority"];
                 options.RequireHttpsMetadata = Convert.ToBoolean(configuration["AuthServer:RequireHttpsMetadata"]);
-                options.Audience = "Order";
+                options.Audience = "OrderService";
             });
+
+        // 2、认证中心身份认证
+        //context.Services.AddAuthentication("Bearer")
+        //                   .AddIdentityServerAuthentication(options =>
+        //                   {
+        //                       options.Authority = "https://localhost:44385"; // 1、认证中心地址
+        //                       options.ApiName = "OrderService"; // 2、api名称(项目具体名称)
+        //                       options.RequireHttpsMetadata = false; // 3、https元数据，不需要
+        //                   });
 
         Configure<AbpDistributedCacheOptions>(options =>
         {
@@ -169,7 +182,7 @@ public class OrderHttpApiHostModule : AbpModule
 
 
         //2. 增加心跳检测
-       context.Services.AddHealthChecks();
+       //context.Services.AddHealthChecks();
 
         // 3、使用Cap
         context.Services.AddCap(x => {
@@ -193,6 +206,8 @@ public class OrderHttpApiHostModule : AbpModule
             // 6.4、仪表盘
             x.UseDashboard();
         });
+
+     
     }
     //自动生成 api
     private void ConfigureConventionalControllers()
@@ -228,7 +243,6 @@ public class OrderHttpApiHostModule : AbpModule
         app.UseRouting();
         app.UseCors();
         app.UseAuthentication();
-
         app.UseAbpRequestLocalization();
         app.UseAuthorization();
         app.UseSwagger();
@@ -245,6 +259,6 @@ public class OrderHttpApiHostModule : AbpModule
         app.UseConfiguredEndpoints();
 
         //2、开始健康检测
-        app.UseHealthChecks("/HealthCheck");
+       // app.UseHealthChecks("/HealthCheck");
     }
 }

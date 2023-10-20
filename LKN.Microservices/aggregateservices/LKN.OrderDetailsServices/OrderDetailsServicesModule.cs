@@ -13,6 +13,7 @@ using Volo.Abp.AspNetCore.Mvc;
 using Volo.Abp.AspNetCore.Mvc.ModelBinding.Metadata;
 using Volo.Abp.Autofac;
 using Volo.Abp.EntityFrameworkCore;
+using Volo.Abp.Http.Client.IdentityModel;
 using Volo.Abp.Modularity;
 
 namespace LKN.OrderDetailsServices
@@ -23,6 +24,7 @@ namespace LKN.OrderDetailsServices
     [DependsOn(typeof(PaymentHttpApiClientModule))]
     [DependsOn(typeof(ProductHttpApiClientModule))]
     [DependsOn(typeof(InfrastructureModule))]
+    [DependsOn(typeof(AbpHttpClientIdentityModelModule))]// 配置AbpIdentityModel
     public class OrderDetailsServicesModule: AbpModule
     {
         public override void ConfigureServices(ServiceConfigurationContext context)
@@ -68,7 +70,7 @@ namespace LKN.OrderDetailsServices
                 options.UseMySQL();
             });
             //2. 增加心跳检测
-            context.Services.AddHealthChecks();
+            //context.Services.AddHealthChecks();
             // 7、注册saga分布式事务
             //context.Services.AddOmegaCore(option => {
             //    option.GrpcServerAddress = "localhost:8081"; // 1、协调中心地址  查看 配置文件 application.yaml
@@ -99,7 +101,7 @@ namespace LKN.OrderDetailsServices
             app.UseConfiguredEndpoints();
 
             //2、开始健康检测
-            app.UseHealthChecks("/HealthCheck");
+            ///app.UseHealthChecks("/HealthCheck");
         }
     }
 }
