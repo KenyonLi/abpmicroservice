@@ -532,3 +532,77 @@ Autofac.Core.DependencyResolutionException: An exception was thrown while activa
 2023-10-20 18:19:12.165 +08:00 [INF] Starting web host.
 2023-10-20 18:26:23.897 +08:00 [INF] Starting web host.
 2023-10-20 18:36:04.992 +08:00 [INF] Starting web host.
+2023-10-23 10:10:34.443 +08:00 [INF] Starting web host.
+2023-10-23 10:11:53.016 +08:00 [FTL] Host terminated unexpectedly!
+Volo.Abp.AbpInitializationException: An error occurred during PreConfigureServicesAsync phase of the module LKN.Order.OrderHttpApiModule, LKN.Order.HttpApi, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null. See the inner exception for details.
+ ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at LKN.Microservices.Infrastructure.sagas.SagsServiceCollectionExtensions.<>c__DisplayClass0_0.<AddOmegaCoreCluster>b__0(OmegaOptions option) in D:\test\ABP\abpmicroservice\LKN.Microservices\frameworks\LKN.Microservices.Infrastructure\src\LKN.Microservices.Infrastructure\sagas\SagsServiceCollectionExtensions.cs:line 35
+   at Servicecomb.Saga.Omega.AspNetCore.Extensions.OmegaBuilderExtensions.AddHosting(OmegaBuilder builder, Action`1 options) in D:\test\ABP\abpmicroservice\LKN.Microservices\frameworks\Servicecomb.Saga\Servicecomb.Saga.Omega.AspNetCore\Extensions\OmegaBuilderExtensions.cs:line 52
+   at Servicecomb.Saga.Omega.AspNetCore.Extensions.ServiceCollectionExtensions.AddOmegaCore(IServiceCollection services, Action`1 options, String servcie) in D:\test\ABP\abpmicroservice\LKN.Microservices\frameworks\Servicecomb.Saga\Servicecomb.Saga.Omega.AspNetCore\Extensions\ServiceCollectionExtensions.cs:line 44
+   at Servicecomb.Saga.Omega.AspNetCore.Extensions.ServiceCollectionExtensions.AddOmegaCore(IServiceCollection services, Action`1 options) in D:\test\ABP\abpmicroservice\LKN.Microservices\frameworks\Servicecomb.Saga\Servicecomb.Saga.Omega.AspNetCore\Extensions\ServiceCollectionExtensions.cs:line 37
+   at LKN.Microservices.Infrastructure.sagas.SagsServiceCollectionExtensions.AddOmegaCoreCluster(IServiceCollection services, String omegaServiceName, String ServiceName) in D:\test\ABP\abpmicroservice\LKN.Microservices\frameworks\LKN.Microservices.Infrastructure\src\LKN.Microservices.Infrastructure\sagas\SagsServiceCollectionExtensions.cs:line 33
+   at LKN.Order.OrderHttpApiModule.PreConfigureServices(ServiceConfigurationContext context) in D:\test\ABP\abpmicroservice\LKN.Microservices\moduls\LKN.Order\src\LKN.Order.HttpApi\OrderHttpApiModule.cs:line 33
+   at Volo.Abp.Modularity.AbpModule.PreConfigureServicesAsync(ServiceConfigurationContext context)
+   at Volo.Abp.AbpApplicationBase.ConfigureServicesAsync()
+   --- End of inner exception stack trace ---
+   at Volo.Abp.AbpApplicationBase.ConfigureServicesAsync()
+   at Volo.Abp.AbpApplicationFactory.CreateAsync[TStartupModule](IServiceCollection services, Action`1 optionsAction)
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionApplicationExtensions.AddApplicationAsync[TStartupModule](IServiceCollection services, Action`1 optionsAction)
+   at Microsoft.Extensions.DependencyInjection.WebApplicationBuilderExtensions.AddApplicationAsync[TStartupModule](WebApplicationBuilder builder, Action`1 optionsAction)
+   at LKN.Order.Program.Main(String[] args) in D:\test\ABP\abpmicroservice\LKN.Microservices\microservices\LKN.Order.HttpApi.Host\Program.cs:line 80
+2023-10-23 10:24:50.087 +08:00 [INF] Starting web host.
+2023-10-23 12:25:45.526 +08:00 [INF] Starting web host.
+2023-10-23 12:36:23.454 +08:00 [INF] Starting web host.
+2023-10-23 14:51:27.528 +08:00 [INF] Starting web host.
+2023-10-23 14:52:58.053 +08:00 [INF] Starting web host.
+2023-10-23 14:53:47.621 +08:00 [INF] Starting web host.
+2023-10-23 16:33:23.864 +08:00 [INF] Starting web host.
+2023-10-23 16:39:34.208 +08:00 [INF] Starting web host.
+2023-10-23 17:16:47.375 +08:00 [INF] Starting web host.
+2023-10-23 17:26:06.832 +08:00 [INF] Starting web host.
+2023-10-23 17:36:31.932 +08:00 [INF] Starting web host.
+2023-10-23 17:42:26.145 +08:00 [INF] Starting web host.
+2023-10-23 17:44:06.272 +08:00 [INF] Starting web host.
+2023-10-23 17:44:26.825 +08:00 [FTL] Host terminated unexpectedly!
+Volo.Abp.AbpInitializationException: An error occurred during ConfigureServicesAsync phase of the module LKN.Order.EntityFrameworkCore.OrderEntityFrameworkCoreModule, LKN.Order.EntityFrameworkCore, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null. See the inner exception for details.
+ ---> Volo.Abp.AbpException: LKN.Order.EntityFrameworkCore.OrderDbContext, LKN.Order.EntityFrameworkCore, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null should inherit/implement Volo.Abp.PermissionManagement.EntityFrameworkCore.IPermissionManagementDbContext, Volo.Abp.PermissionManagement.EntityFrameworkCore, Version=7.3.0.0, Culture=neutral, PublicKeyToken=null!
+   at Volo.Abp.DependencyInjection.AbpCommonDbContextRegistrationOptions.ReplaceDbContext(Type otherDbContextType, Type targetDbContextType, MultiTenancySides multiTenancySides)
+   at Microsoft.Extensions.DependencyInjection.AbpEfCoreServiceCollectionExtensions.AddAbpDbContext[TDbContext](IServiceCollection services, Action`1 optionsBuilder)
+   at LKN.Order.EntityFrameworkCore.OrderEntityFrameworkCoreModule.ConfigureServices(ServiceConfigurationContext context) in D:\test\ABP\abpmicroservice\LKN.Microservices\moduls\LKN.Order\src\LKN.Order.EntityFrameworkCore\EntityFrameworkCore\OrderEntityFrameworkCoreModule.cs:line 19
+   at Volo.Abp.Modularity.AbpModule.ConfigureServicesAsync(ServiceConfigurationContext context)
+   at Volo.Abp.AbpApplicationBase.ConfigureServicesAsync()
+   --- End of inner exception stack trace ---
+   at Volo.Abp.AbpApplicationBase.ConfigureServicesAsync()
+   at Volo.Abp.AbpApplicationFactory.CreateAsync[TStartupModule](IServiceCollection services, Action`1 optionsAction)
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionApplicationExtensions.AddApplicationAsync[TStartupModule](IServiceCollection services, Action`1 optionsAction)
+   at Microsoft.Extensions.DependencyInjection.WebApplicationBuilderExtensions.AddApplicationAsync[TStartupModule](WebApplicationBuilder builder, Action`1 optionsAction)
+   at LKN.Order.Program.Main(String[] args) in D:\test\ABP\abpmicroservice\LKN.Microservices\microservices\LKN.Order.HttpApi.Host\Program.cs:line 80
+2023-10-23 17:50:08.194 +08:00 [INF] Starting web host.
+2023-10-23 17:51:34.467 +08:00 [INF] Starting web host.
+2023-10-23 17:52:07.030 +08:00 [INF] Starting web host.
+2023-10-23 17:52:29.049 +08:00 [INF] Starting web host.
+2023-10-23 17:55:02.294 +08:00 [FTL] Host terminated unexpectedly!
+Volo.Abp.AbpInitializationException: An error occurred during ConfigureServicesAsync phase of the module LKN.Order.EntityFrameworkCore.OrderEntityFrameworkCoreModule, LKN.Order.EntityFrameworkCore, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null. See the inner exception for details.
+ ---> Volo.Abp.AbpException: LKN.Order.EntityFrameworkCore.OrderDbContext, LKN.Order.EntityFrameworkCore, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null should inherit/implement Volo.Abp.PermissionManagement.EntityFrameworkCore.IPermissionManagementDbContext, Volo.Abp.PermissionManagement.EntityFrameworkCore, Version=7.3.0.0, Culture=neutral, PublicKeyToken=null!
+   at Volo.Abp.DependencyInjection.AbpCommonDbContextRegistrationOptions.ReplaceDbContext(Type otherDbContextType, Type targetDbContextType, MultiTenancySides multiTenancySides)
+   at Microsoft.Extensions.DependencyInjection.AbpEfCoreServiceCollectionExtensions.AddAbpDbContext[TDbContext](IServiceCollection services, Action`1 optionsBuilder)
+   at LKN.Order.EntityFrameworkCore.OrderEntityFrameworkCoreModule.ConfigureServices(ServiceConfigurationContext context) in D:\test\ABP\abpmicroservice\LKN.Microservices\moduls\LKN.Order\src\LKN.Order.EntityFrameworkCore\EntityFrameworkCore\OrderEntityFrameworkCoreModule.cs:line 19
+   at Volo.Abp.Modularity.AbpModule.ConfigureServicesAsync(ServiceConfigurationContext context)
+   at Volo.Abp.AbpApplicationBase.ConfigureServicesAsync()
+   --- End of inner exception stack trace ---
+   at Volo.Abp.AbpApplicationBase.ConfigureServicesAsync()
+   at Volo.Abp.AbpApplicationFactory.CreateAsync[TStartupModule](IServiceCollection services, Action`1 optionsAction)
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionApplicationExtensions.AddApplicationAsync[TStartupModule](IServiceCollection services, Action`1 optionsAction)
+   at Microsoft.Extensions.DependencyInjection.WebApplicationBuilderExtensions.AddApplicationAsync[TStartupModule](WebApplicationBuilder builder, Action`1 optionsAction)
+   at LKN.Order.Program.Main(String[] args) in D:\test\ABP\abpmicroservice\LKN.Microservices\microservices\LKN.Order.HttpApi.Host\Program.cs:line 80
+2023-10-23 17:59:05.040 +08:00 [INF] Starting web host.
+2023-10-23 18:11:44.774 +08:00 [INF] Starting web host.
+2023-10-23 18:22:50.514 +08:00 [INF] Starting web host.
+2023-10-23 18:44:46.702 +08:00 [INF] Starting web host.
+2023-10-23 18:52:25.970 +08:00 [INF] Starting web host.
+2023-10-23 19:23:22.299 +08:00 [INF] Starting web host.
+2023-10-23 19:45:21.900 +08:00 [INF] Starting web host.
+2023-10-23 20:27:46.140 +08:00 [INF] Starting web host.
+2023-10-23 20:32:15.045 +08:00 [INF] Starting web host.
+2023-10-23 20:37:05.149 +08:00 [INF] Starting web host.
+2023-10-23 20:41:35.580 +08:00 [INF] Starting web host.

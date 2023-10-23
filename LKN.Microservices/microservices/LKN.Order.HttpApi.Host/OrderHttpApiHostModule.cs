@@ -21,13 +21,11 @@ using Volo.Abp.Autofac;
 using Volo.Abp.Caching;
 using Volo.Abp.Caching.StackExchangeRedis;
 using Volo.Abp.EntityFrameworkCore;
-using Volo.Abp.EntityFrameworkCore.SqlServer;
 using Volo.Abp.Localization;
 using Volo.Abp.Modularity;
 using Volo.Abp.MultiTenancy;
 using Volo.Abp.Security.Claims;
 using Volo.Abp.Swashbuckle;
-using Volo.Abp.TenantManagement.EntityFrameworkCore;
 using Volo.Abp.VirtualFileSystem;
 using Microsoft.EntityFrameworkCore;
 using Volo.Abp.EntityFrameworkCore.MySQL;
@@ -36,6 +34,8 @@ using LKN.Microservices.Infrastructure;
 using Nacos.V2.DependencyInjection;
 using LKN.Microservices.ELK;
 using Volo.Abp.Http.Client.IdentityModel;
+using Volo.Abp.PermissionManagement;
+using Volo.Abp.PermissionManagement.EntityFrameworkCore;
 
 namespace LKN.Order;
 
@@ -45,14 +45,15 @@ namespace LKN.Order;
     typeof(OrderEntityFrameworkCoreModule),
     typeof(OrderHttpApiModule),
 
-    typeof(AbpAspNetCoreMvcUiMultiTenancyModule),
+   // typeof(AbpAspNetCoreMvcUiMultiTenancyModule),
     typeof(AbpAutofacModule),
-    typeof(AbpCachingStackExchangeRedisModule),
-    typeof(AbpTenantManagementEntityFrameworkCoreModule),
+  //  typeof(AbpCachingStackExchangeRedisModule),
+    //typeof(AbpTenantManagementEntityFrameworkCoreModule),
     typeof(AbpEntityFrameworkCoreMySQLModule),
     typeof(AbpAspNetCoreSerilogModule),
     typeof(InfrastructureModule),
     typeof(ElaticsearchLogstashKibanaModule),
+    typeof(AbpPermissionManagementEntityFrameworkCoreModule),
     //typeof(AbpHttpClientIdentityModelModule),// 配置AbpIdentityModel
     typeof(AbpSwashbuckleModule)
     )]
@@ -67,6 +68,8 @@ public class OrderHttpApiHostModule : AbpModule
         {
             options.UseMySQL();
         });
+        //去掉前缀
+        AbpPermissionManagementDbProperties.DbTablePrefix = "";
         //自动生成api 
         ConfigureConventionalControllers();
 
@@ -188,17 +191,16 @@ public class OrderHttpApiHostModule : AbpModule
         context.Services.AddCap(x => {
             // 6.1 使用RabbitMQ存储事件
             x.UseRabbitMQ(rb => {
-                rb.HostName = configuration.GetSection("Cap").GetValue<string>("HostName");
-                rb.UserName = configuration.GetSection("Cap").GetValue<string>("UserName");
-                rb.Password = configuration.GetSection("Cap").GetValue<string>("Password");
+                rb.HostName = configuration.GetSection("Cap").GetValue<string>("HostName")??"";
+                rb.UserName = configuration.GetSection("Cap").GetValue<string>("UserName") ?? "";
+                rb.Password = configuration.GetSection("Cap").GetValue<string>("Password") ?? "";
                 rb.Port = configuration.GetSection("Cap").GetValue<int>("Port");
-                rb.VirtualHost = configuration.GetSection("Cap").GetValue<string>("VirtualHost");
+                rb.VirtualHost = configuration.GetSection("Cap").GetValue<string>("VirtualHost") ?? "";
             });
 
             // 6.2 存储消息
             x.UseEntityFramework<OrderDbContext>();
-            x.UseMySql(configuration.GetConnectionString("Order"));
-
+            x.UseMySql(configuration.GetConnectionString("Order")??"");
             // 6.3、消息重试
             x.FailedRetryInterval = configuration.GetSection("Cap").GetValue<int>("FailedRetryInterval");
             x.FailedRetryCount = configuration.GetSection("Cap").GetValue<int>("FailedRetryCount");

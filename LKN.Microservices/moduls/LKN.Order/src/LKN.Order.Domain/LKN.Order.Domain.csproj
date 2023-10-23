@@ -1,16 +1,19 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <Import Project="..\..\common.props" />
 
   <PropertyGroup>
-    <TargetFrameworks>netstandard2.0;netstandard2.1;net7.0</TargetFrameworks>
+    <TargetFrameworks>net7.0</TargetFrameworks>
     <Nullable>enable</Nullable>
     <RootNamespace>LKN.Order</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Volo.Abp.Ddd.Domain" Version="7.3.0" />
-    <ProjectReference Include="..\LKN.Order.Domain.Shared\LKN.Order.Domain.Shared.csproj" />
+	  <PackageReference Include="Volo.Abp.PermissionManagement.Domain" Version="7.3.0" />
+	  <PackageReference Include="Volo.Abp.PermissionManagement.Domain.IdentityServer" Version="7.3.0" />
+	  <PackageReference Include="Volo.Abp.PermissionManagement.Domain.Identity" Version="7.3.0" />
+	  <ProjectReference Include="..\LKN.Order.Domain.Shared\LKN.Order.Domain.Shared.csproj" />
   </ItemGroup>
 
 </Project>

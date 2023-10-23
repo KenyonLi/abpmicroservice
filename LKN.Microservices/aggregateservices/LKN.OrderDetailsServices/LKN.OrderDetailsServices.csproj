@@ -28,6 +28,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\frameworks\LKN.Microservices.CAP\src\LKN.Microservices.CAP\LKN.Microservices.CAP.csproj" />
+    <ProjectReference Include="..\..\frameworks\LKN.Microservices.ClientHttps\src\LKN.Microservices.ClientHttps\LKN.Microservices.ClientHttps.csproj" />
     <ProjectReference Include="..\..\frameworks\LKN.Microservices.Infrastructure\src\LKN.Microservices.Infrastructure\LKN.Microservices.Infrastructure.csproj" />
     <ProjectReference Include="..\..\frameworks\Servicecomb.Saga\Servicecomb.Saga.Omega.AspNetCore\Servicecomb.Saga.Omega.AspNetCore.csproj" />
     <ProjectReference Include="..\..\frameworks\Servicecomb.Saga\Servicecomb.Saga.Omega.Core\Servicecomb.Saga.Omega.Core.csproj" />

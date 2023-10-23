@@ -6,12 +6,13 @@ using Volo.Abp.Localization.ExceptionHandling;
 using Volo.Abp.Validation;
 using Volo.Abp.Validation.Localization;
 using Volo.Abp.VirtualFileSystem;
+using Volo.Abp.PermissionManagement;
 
 namespace LKN.Order;
-
 [DependsOn(
     typeof(AbpValidationModule),
-    typeof(AbpDddDomainSharedModule)
+    typeof(AbpDddDomainSharedModule),
+    typeof(AbpPermissionManagementDomainSharedModule)
 )]
 public class OrderDomainSharedModule : AbpModule
 {

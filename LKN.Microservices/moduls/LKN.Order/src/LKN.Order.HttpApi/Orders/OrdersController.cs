@@ -31,7 +31,7 @@ public class OrdersController : OrderController, IOrderAppService
     }
 
     [HttpGet("{id}")]
-    [Authorize] // 校验身份证
+    [Authorize("select")] // 校验身份证
     public async Task<OrderDto> GetAsync(Guid id)
     {
         return await _OrderAppService.GetAsync(id);

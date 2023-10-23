@@ -1,9 +1,9 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <Import Project="..\..\common.props" />
 
   <PropertyGroup>
-    <TargetFrameworks>netstandard2.0;netstandard2.1;net7.0</TargetFrameworks>
+    <TargetFrameworks>net7.0</TargetFrameworks>
     <Nullable>enable</Nullable>
     <RootNamespace>LKN.Order</RootNamespace>
     <GenerateEmbeddedFilesManifest>true</GenerateEmbeddedFilesManifest>
@@ -11,6 +11,7 @@
 
   <ItemGroup>
     <PackageReference Include="Volo.Abp.Ddd.Domain.Shared" Version="7.3.0" />
+    <PackageReference Include="Volo.Abp.PermissionManagement.Domain.Shared" Version="7.3.0" />
     <PackageReference Include="Volo.Abp.Validation" Version="7.3.0" />
   </ItemGroup>
 

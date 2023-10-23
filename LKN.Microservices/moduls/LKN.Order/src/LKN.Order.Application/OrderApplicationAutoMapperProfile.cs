@@ -21,5 +21,7 @@ public class OrderApplicationAutoMapperProfile : Profile
         CreateMap<CreateOrderDto, LKN.Order.Orders.Order>();
         CreateMap<CreateOrderItemDto, OrderItem>();
         CreateMap<UpdateOrderDto, LKN.Order.Orders.Order>();
+
+        
     }
 }

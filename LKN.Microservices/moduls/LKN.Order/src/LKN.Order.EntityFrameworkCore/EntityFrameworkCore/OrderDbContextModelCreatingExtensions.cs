@@ -3,6 +3,7 @@ using System;
 using System.Reflection.Emit;
 using Volo.Abp;
 using Volo.Abp.EntityFrameworkCore.Modeling;
+using Volo.Abp.PermissionManagement.EntityFrameworkCore;
 
 namespace LKN.Order.EntityFrameworkCore;
 
@@ -13,6 +14,20 @@ public static class OrderDbContextModelCreatingExtensions
         Action<OrderModelBuilderConfigurationOptions> optionsAction = null)
     {
         Check.NotNull(builder, nameof(builder));
+        // 表名的前缀配置
+        var options = new OrderModelBuilderConfigurationOptions(
+            OrderDbProperties.DbTablePrefix,
+            OrderDbProperties.DbSchema
+        );
+        optionsAction?.Invoke(options);
+        //权限配置
+        builder.ConfigurePermissionManagement();
+
+        builder.Entity<LKN.Order.Orders.Order>(b =>
+        {
+            b.ConfigureByConvention();
+            b.HasMany(u => u.OrderItems).WithOne().HasForeignKey(ur => ur.OrderId).IsRequired();
+        });
 
         /* Configure all entities here. Example:
 
@@ -33,18 +48,7 @@ public static class OrderDbContextModelCreatingExtensions
             b.HasIndex(q => q.CreationTime);
         });
         */
-        // 表名的前缀配置
-        var options = new OrderModelBuilderConfigurationOptions(
-            OrderDbProperties.DbTablePrefix,
-            OrderDbProperties.DbSchema
-        );
-        optionsAction?.Invoke(options);
 
-        builder.Entity<LKN.Order.Orders.Order>(b =>
-        {
-            b.ConfigureByConvention();
-            b.HasMany(u => u.OrderItems).WithOne().HasForeignKey(ur => ur.OrderId).IsRequired();
-        });
 
     }
 }

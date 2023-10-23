@@ -32,18 +32,33 @@ namespace LKN.OrderDetailsServices.Controllers
         {
             _logger = logger;
         }
+        ///// <summary>
+        /////  获取订单详情聚合服务身份证(Token)
+        ///// </summary>
+        ///// <param name="id"></param>
+        ///// <returns></returns>
+        //[HttpGet("GetToken")]
+        //public string GetToken()
+        //{
+        //    IdentityClientConfiguration identityClient = new IdentityClientConfiguration();
+        //    identityClient.Authority = "https://localhost:44386";
+        //    identityClient.ClientId = "OrderDetailsServices-Client";
+        //    identityClient.ClientSecret = "12345";
+        //    identityClient.GrantType = "client_credentials";
+        //    return _authenticator.GetAccessTokenAsync(identityClient).Result;
+        //}
         /// <summary>
         ///  获取订单详情聚合服务身份证(Token)
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
         [HttpGet("GetToken")]
-        public string GetToken()
+        public string GetToken(string ClientName, string ClientPassword)
         {
             IdentityClientConfiguration identityClient = new IdentityClientConfiguration();
             identityClient.Authority = "https://localhost:44386";
-            identityClient.ClientId = "OrderDetailsServices-Client";
-            identityClient.ClientSecret = "12345";
+            identityClient.ClientId = ClientName;
+            identityClient.ClientSecret = ClientPassword;
             identityClient.GrantType = "client_credentials";
             return _authenticator.GetAccessTokenAsync(identityClient).Result;
         }
@@ -54,18 +69,18 @@ namespace LKN.OrderDetailsServices.Controllers
         [HttpGet("{id}")]
         public async Task<OrderDto> Get(Guid id, string AccessToken)
         {
-            HttpClient apiClient = new HttpClient();
-            apiClient.SetBearerToken(AccessToken); // 1、设置token到请求头
-            HttpResponseMessage response = await apiClient.GetAsync("https://localhost:44397/api/OrderService/order/" + id);
-            if (!response.IsSuccessStatusCode)
-            {
-                throw new Exception($"API Request Error, StatusCode is : {response.StatusCode} + {response.Content}");
-            }
-            else
-            {
-                string content = await response.Content.ReadAsStringAsync();
-                return JsonConvert.DeserializeObject<OrderDto>(content);
-            }
+            //HttpClient apiClient = new HttpClient();
+            //apiClient.SetBearerToken(AccessToken); // 1、设置token到请求头
+            //HttpResponseMessage response = await apiClient.GetAsync("https://localhost:44397/api/OrderService/order/" + id);
+            //if (!response.IsSuccessStatusCode)
+            //{
+            //    throw new Exception($"API Request Error, StatusCode is : {response.StatusCode} + {response.Content}");
+            //}
+            //else
+            //{
+            //    string content = await response.Content.ReadAsStringAsync();
+            //    return JsonConvert.DeserializeObject<OrderDto>(content);
+            //}
             // 1、查询订单
             OrderDto orderDto = await _OrderAppService.GetAsync(id);
 
@@ -118,7 +133,7 @@ namespace LKN.OrderDetailsServices.Controllers
             var productDto = _ProductAppService.UpdateAsync(updateProductDto.Id, updateProductDto).Result;
 
             // 3、执行失败
-            throw new Exception("执行异常");
+           // throw new Exception("执行异常");
             return orderDto;
         }
 
