@@ -22,7 +22,7 @@ public class AuthMicroServiceHttpApiHostMigrationsDbContext : AbpDbContext<AuthM
         AbpIdentityServerDbProperties.DbTablePrefix = "";
         // 去掉
         AbpIdentityDbProperties.DbTablePrefix = "";
-        AbpPermissionManagementDbProperties.DbTablePrefix = "";
+       // AbpPermissionManagementDbProperties.DbTablePrefix = "";
 
 
         base.OnModelCreating(modelBuilder);
@@ -32,6 +32,6 @@ public class AuthMicroServiceHttpApiHostMigrationsDbContext : AbpDbContext<AuthM
         //创建用户表
         modelBuilder.ConfigureIdentity(); 
         //权限表
-        modelBuilder.ConfigurePermissionManagement();
+       // modelBuilder.ConfigurePermissionManagement();
     }
 }

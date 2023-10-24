@@ -1,4 +1,7 @@
-﻿using Microsoft.IdentityModel.Protocols.OpenIdConnect;
+﻿using LKN.Microservices.ClientHttps;
+using LKN.Order;
+using LKN.Product;
+using Microsoft.IdentityModel.Protocols.OpenIdConnect;
 using Volo.Abp;
 using Volo.Abp.AspNetCore.Mvc;
 using Volo.Abp.Autofac;
@@ -8,8 +11,10 @@ namespace LKN.EbusinessWebSite
 {
     [DependsOn(typeof(AbpAspNetCoreMvcModule))]
     [DependsOn(typeof(AbpAutofacModule))]
-    //[DependsOn(typeof(OrderHttpApiClientModule))]
-    //[DependsOn(typeof(ProductHttpApiClientModule))]
+    [DependsOn(typeof(ClientHttpsModule))]
+
+    [DependsOn(typeof(OrderHttpApiClientModule))]
+    [DependsOn(typeof(ProductHttpApiClientModule))]
     public class EbusinessWebSiteModule: AbpModule
     {
         public override void ConfigureServices(ServiceConfigurationContext context)
@@ -28,9 +33,9 @@ namespace LKN.EbusinessWebSite
                 })
                 .AddOpenIdConnect("oidc", options =>
                 {
-                    options.Authority = "https://localhost:44315";
+                    options.Authority = "https://localhost:44386";
                     options.ClientId = "EbusinessWebSite-Client";
-                    options.ClientSecret = "123456";
+                    options.ClientSecret = "12345";
                     options.RequireHttpsMetadata = false;
                     options.ResponseType = OpenIdConnectResponseType.Code;
                     options.SaveTokens = true;// Token（身份证）

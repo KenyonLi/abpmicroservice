@@ -606,3 +606,114 @@ Volo.Abp.AbpInitializationException: An error occurred during ConfigureServicesA
 2023-10-23 20:32:15.045 +08:00 [INF] Starting web host.
 2023-10-23 20:37:05.149 +08:00 [INF] Starting web host.
 2023-10-23 20:41:35.580 +08:00 [INF] Starting web host.
+2023-10-24 11:38:14.120 +08:00 [INF] Starting web host.
+2023-10-24 11:39:54.205 +08:00 [FTL] Host terminated unexpectedly!
+Volo.Abp.AbpInitializationException: An error occurred during PreConfigureServicesAsync phase of the module LKN.Order.OrderHttpApiModule, LKN.Order.HttpApi, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null. See the inner exception for details.
+ ---> System.AggregateException: One or more errors occurred. (由于目标计算机积极拒绝，无法连接。 (127.0.0.1:8500))
+ ---> System.Net.Http.HttpRequestException: 由于目标计算机积极拒绝，无法连接。 (127.0.0.1:8500)
+ ---> System.Net.Sockets.SocketException (10061): 由于目标计算机积极拒绝，无法连接。
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|281_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.HttpConnectionWaiter`1.WaitForConnectionAsync(Boolean async, CancellationToken requestCancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at Consul.GetRequest`1.Execute(CancellationToken ct)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at LKN.Microservices.Infrastructure.Registry.Omega.OmegaConsulServiceDiscovery.Discovery(String serviceName) in D:\test\ABP\abpmicroservice\LKN.Microservices\frameworks\LKN.Microservices.Infrastructure\src\LKN.Microservices.Infrastructure\Registry\Omega\OmegaConsulServiceDiscovery.cs:line 38
+   at LKN.Microservices.Infrastructure.sagas.SagsServiceCollectionExtensions.AddOmegaCoreCluster(IServiceCollection services, String omegaServiceName, String ServiceName) in D:\test\ABP\abpmicroservice\LKN.Microservices\frameworks\LKN.Microservices.Infrastructure\src\LKN.Microservices.Infrastructure\sagas\SagsServiceCollectionExtensions.cs:line 29
+   at LKN.Order.OrderHttpApiModule.PreConfigureServices(ServiceConfigurationContext context) in D:\test\ABP\abpmicroservice\LKN.Microservices\moduls\LKN.Order\src\LKN.Order.HttpApi\OrderHttpApiModule.cs:line 33
+   at Volo.Abp.Modularity.AbpModule.PreConfigureServicesAsync(ServiceConfigurationContext context)
+   at Volo.Abp.AbpApplicationBase.ConfigureServicesAsync()
+   --- End of inner exception stack trace ---
+   at Volo.Abp.AbpApplicationBase.ConfigureServicesAsync()
+   at Volo.Abp.AbpApplicationFactory.CreateAsync[TStartupModule](IServiceCollection services, Action`1 optionsAction)
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionApplicationExtensions.AddApplicationAsync[TStartupModule](IServiceCollection services, Action`1 optionsAction)
+   at Microsoft.Extensions.DependencyInjection.WebApplicationBuilderExtensions.AddApplicationAsync[TStartupModule](WebApplicationBuilder builder, Action`1 optionsAction)
+   at LKN.Order.Program.Main(String[] args) in D:\test\ABP\abpmicroservice\LKN.Microservices\microservices\LKN.Order.HttpApi.Host\Program.cs:line 80
+2023-10-24 11:40:26.138 +08:00 [INF] Starting web host.
+2023-10-24 11:41:19.964 +08:00 [FTL] Host terminated unexpectedly!
+Volo.Abp.AbpInitializationException: An error occurred during PreConfigureServicesAsync phase of the module LKN.Order.OrderHttpApiModule, LKN.Order.HttpApi, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null. See the inner exception for details.
+ ---> System.AggregateException: One or more errors occurred. (由于目标计算机积极拒绝，无法连接。 (127.0.0.1:8500))
+ ---> System.Net.Http.HttpRequestException: 由于目标计算机积极拒绝，无法连接。 (127.0.0.1:8500)
+ ---> System.Net.Sockets.SocketException (10061): 由于目标计算机积极拒绝，无法连接。
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|281_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.HttpConnectionWaiter`1.WaitForConnectionAsync(Boolean async, CancellationToken requestCancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at Consul.GetRequest`1.Execute(CancellationToken ct)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at LKN.Microservices.Infrastructure.Registry.Omega.OmegaConsulServiceDiscovery.Discovery(String serviceName) in D:\test\ABP\abpmicroservice\LKN.Microservices\frameworks\LKN.Microservices.Infrastructure\src\LKN.Microservices.Infrastructure\Registry\Omega\OmegaConsulServiceDiscovery.cs:line 38
+   at LKN.Microservices.Infrastructure.sagas.SagsServiceCollectionExtensions.AddOmegaCoreCluster(IServiceCollection services, String omegaServiceName, String ServiceName) in D:\test\ABP\abpmicroservice\LKN.Microservices\frameworks\LKN.Microservices.Infrastructure\src\LKN.Microservices.Infrastructure\sagas\SagsServiceCollectionExtensions.cs:line 29
+   at LKN.Order.OrderHttpApiModule.PreConfigureServices(ServiceConfigurationContext context) in D:\test\ABP\abpmicroservice\LKN.Microservices\moduls\LKN.Order\src\LKN.Order.HttpApi\OrderHttpApiModule.cs:line 33
+   at Volo.Abp.Modularity.AbpModule.PreConfigureServicesAsync(ServiceConfigurationContext context)
+   at Volo.Abp.AbpApplicationBase.ConfigureServicesAsync()
+   --- End of inner exception stack trace ---
+   at Volo.Abp.AbpApplicationBase.ConfigureServicesAsync()
+   at Volo.Abp.AbpApplicationFactory.CreateAsync[TStartupModule](IServiceCollection services, Action`1 optionsAction)
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionApplicationExtensions.AddApplicationAsync[TStartupModule](IServiceCollection services, Action`1 optionsAction)
+   at Microsoft.Extensions.DependencyInjection.WebApplicationBuilderExtensions.AddApplicationAsync[TStartupModule](WebApplicationBuilder builder, Action`1 optionsAction)
+   at LKN.Order.Program.Main(String[] args) in D:\test\ABP\abpmicroservice\LKN.Microservices\microservices\LKN.Order.HttpApi.Host\Program.cs:line 80
+2023-10-24 11:41:23.702 +08:00 [INF] Starting web host.
+2023-10-24 11:41:34.335 +08:00 [FTL] Host terminated unexpectedly!
+Volo.Abp.AbpInitializationException: An error occurred during PreConfigureServicesAsync phase of the module LKN.Order.OrderHttpApiModule, LKN.Order.HttpApi, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null. See the inner exception for details.
+ ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at LKN.Microservices.Infrastructure.sagas.SagsServiceCollectionExtensions.<>c__DisplayClass0_0.<AddOmegaCoreCluster>b__0(OmegaOptions option) in D:\test\ABP\abpmicroservice\LKN.Microservices\frameworks\LKN.Microservices.Infrastructure\src\LKN.Microservices.Infrastructure\sagas\SagsServiceCollectionExtensions.cs:line 35
+   at Servicecomb.Saga.Omega.AspNetCore.Extensions.OmegaBuilderExtensions.AddHosting(OmegaBuilder builder, Action`1 options) in D:\test\ABP\abpmicroservice\LKN.Microservices\frameworks\Servicecomb.Saga\Servicecomb.Saga.Omega.AspNetCore\Extensions\OmegaBuilderExtensions.cs:line 52
+   at Servicecomb.Saga.Omega.AspNetCore.Extensions.ServiceCollectionExtensions.AddOmegaCore(IServiceCollection services, Action`1 options, String servcie) in D:\test\ABP\abpmicroservice\LKN.Microservices\frameworks\Servicecomb.Saga\Servicecomb.Saga.Omega.AspNetCore\Extensions\ServiceCollectionExtensions.cs:line 44
+   at Servicecomb.Saga.Omega.AspNetCore.Extensions.ServiceCollectionExtensions.AddOmegaCore(IServiceCollection services, Action`1 options) in D:\test\ABP\abpmicroservice\LKN.Microservices\frameworks\Servicecomb.Saga\Servicecomb.Saga.Omega.AspNetCore\Extensions\ServiceCollectionExtensions.cs:line 37
+   at LKN.Microservices.Infrastructure.sagas.SagsServiceCollectionExtensions.AddOmegaCoreCluster(IServiceCollection services, String omegaServiceName, String ServiceName) in D:\test\ABP\abpmicroservice\LKN.Microservices\frameworks\LKN.Microservices.Infrastructure\src\LKN.Microservices.Infrastructure\sagas\SagsServiceCollectionExtensions.cs:line 33
+   at LKN.Order.OrderHttpApiModule.PreConfigureServices(ServiceConfigurationContext context) in D:\test\ABP\abpmicroservice\LKN.Microservices\moduls\LKN.Order\src\LKN.Order.HttpApi\OrderHttpApiModule.cs:line 33
+   at Volo.Abp.Modularity.AbpModule.PreConfigureServicesAsync(ServiceConfigurationContext context)
+   at Volo.Abp.AbpApplicationBase.ConfigureServicesAsync()
+   --- End of inner exception stack trace ---
+   at Volo.Abp.AbpApplicationBase.ConfigureServicesAsync()
+   at Volo.Abp.AbpApplicationFactory.CreateAsync[TStartupModule](IServiceCollection services, Action`1 optionsAction)
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionApplicationExtensions.AddApplicationAsync[TStartupModule](IServiceCollection services, Action`1 optionsAction)
+   at Microsoft.Extensions.DependencyInjection.WebApplicationBuilderExtensions.AddApplicationAsync[TStartupModule](WebApplicationBuilder builder, Action`1 optionsAction)
+   at LKN.Order.Program.Main(String[] args) in D:\test\ABP\abpmicroservice\LKN.Microservices\microservices\LKN.Order.HttpApi.Host\Program.cs:line 80
+2023-10-24 12:43:33.590 +08:00 [INF] Starting web host.
+2023-10-24 12:44:14.527 +08:00 [FTL] Host terminated unexpectedly!
+Volo.Abp.AbpInitializationException: An error occurred during PreConfigureServicesAsync phase of the module LKN.Order.OrderHttpApiModule, LKN.Order.HttpApi, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null. See the inner exception for details.
+ ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at LKN.Microservices.Infrastructure.sagas.SagsServiceCollectionExtensions.<>c__DisplayClass0_0.<AddOmegaCoreCluster>b__0(OmegaOptions option) in D:\test\ABP\abpmicroservice\LKN.Microservices\frameworks\LKN.Microservices.Infrastructure\src\LKN.Microservices.Infrastructure\sagas\SagsServiceCollectionExtensions.cs:line 35
+   at Servicecomb.Saga.Omega.AspNetCore.Extensions.OmegaBuilderExtensions.AddHosting(OmegaBuilder builder, Action`1 options) in D:\test\ABP\abpmicroservice\LKN.Microservices\frameworks\Servicecomb.Saga\Servicecomb.Saga.Omega.AspNetCore\Extensions\OmegaBuilderExtensions.cs:line 52
+   at Servicecomb.Saga.Omega.AspNetCore.Extensions.ServiceCollectionExtensions.AddOmegaCore(IServiceCollection services, Action`1 options, String servcie) in D:\test\ABP\abpmicroservice\LKN.Microservices\frameworks\Servicecomb.Saga\Servicecomb.Saga.Omega.AspNetCore\Extensions\ServiceCollectionExtensions.cs:line 44
+   at Servicecomb.Saga.Omega.AspNetCore.Extensions.ServiceCollectionExtensions.AddOmegaCore(IServiceCollection services, Action`1 options) in D:\test\ABP\abpmicroservice\LKN.Microservices\frameworks\Servicecomb.Saga\Servicecomb.Saga.Omega.AspNetCore\Extensions\ServiceCollectionExtensions.cs:line 37
+   at LKN.Microservices.Infrastructure.sagas.SagsServiceCollectionExtensions.AddOmegaCoreCluster(IServiceCollection services, String omegaServiceName, String ServiceName) in D:\test\ABP\abpmicroservice\LKN.Microservices\frameworks\LKN.Microservices.Infrastructure\src\LKN.Microservices.Infrastructure\sagas\SagsServiceCollectionExtensions.cs:line 33
+   at LKN.Order.OrderHttpApiModule.PreConfigureServices(ServiceConfigurationContext context) in D:\test\ABP\abpmicroservice\LKN.Microservices\moduls\LKN.Order\src\LKN.Order.HttpApi\OrderHttpApiModule.cs:line 33
+   at Volo.Abp.Modularity.AbpModule.PreConfigureServicesAsync(ServiceConfigurationContext context)
+   at Volo.Abp.AbpApplicationBase.ConfigureServicesAsync()
+   --- End of inner exception stack trace ---
+   at Volo.Abp.AbpApplicationBase.ConfigureServicesAsync()
+   at Volo.Abp.AbpApplicationFactory.CreateAsync[TStartupModule](IServiceCollection services, Action`1 optionsAction)
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionApplicationExtensions.AddApplicationAsync[TStartupModule](IServiceCollection services, Action`1 optionsAction)
+   at Microsoft.Extensions.DependencyInjection.WebApplicationBuilderExtensions.AddApplicationAsync[TStartupModule](WebApplicationBuilder builder, Action`1 optionsAction)
+   at LKN.Order.Program.Main(String[] args) in D:\test\ABP\abpmicroservice\LKN.Microservices\microservices\LKN.Order.HttpApi.Host\Program.cs:line 80
+2023-10-24 12:44:19.079 +08:00 [INF] Starting web host.
+2023-10-24 13:24:44.657 +08:00 [INF] Starting web host.
+2023-10-24 13:25:11.300 +08:00 [INF] Starting web host.

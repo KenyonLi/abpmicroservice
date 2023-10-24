@@ -67,7 +67,7 @@ namespace LKN.OrderDetailsServices.Controllers
         /// </summary>
         /// <returns></returns>
         [HttpGet("{id}")]
-        public async Task<OrderDto> Get(Guid id, string AccessToken)
+        public async Task<OrderDto> Get(Guid id, string AccessToken="")
         {
             //HttpClient apiClient = new HttpClient();
             //apiClient.SetBearerToken(AccessToken); // 1、设置token到请求头

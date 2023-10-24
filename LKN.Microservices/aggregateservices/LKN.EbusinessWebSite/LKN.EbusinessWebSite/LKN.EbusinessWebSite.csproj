@@ -11,4 +11,11 @@
     <PackageReference Include="Volo.Abp.Autofac" Version="7.3.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\frameworks\LKN.Microservices.ClientHttps\src\LKN.Microservices.ClientHttps\LKN.Microservices.ClientHttps.csproj" />
+    <ProjectReference Include="..\..\..\moduls\LKN.AuthMicroService\src\LKN.AuthMicroService.HttpApi.Client\LKN.AuthMicroService.HttpApi.Client.csproj" />
+    <ProjectReference Include="..\..\..\moduls\LKN.Order\src\LKN.Order.HttpApi.Client\LKN.Order.HttpApi.Client.csproj" />
+    <ProjectReference Include="..\..\..\moduls\LKN.Product\src\LKN.Product.HttpApi.Client\LKN.Product.HttpApi.Client.csproj" />
+  </ItemGroup>
+
 </Project>

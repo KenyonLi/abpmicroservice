@@ -40,6 +40,7 @@ using Volo.Abp.Account.Web;
 using Volo.Abp.Account;
 using Volo.Abp.PermissionManagement.EntityFrameworkCore;
 using Volo.Abp.PermissionManagement;
+using Volo.Abp.AspNetCore.Mvc.UI.Theme.Basic;
 
 namespace LKN.AuthMicroService;
 
@@ -52,6 +53,7 @@ namespace LKN.AuthMicroService;
     typeof(AbpEntityFrameworkCoreMySQLModule),
     typeof(AbpPermissionManagementEntityFrameworkCoreModule),
 
+    typeof(AbpIdentityApplicationModule),
     typeof(AbpIdentityEntityFrameworkCoreModule),
     typeof(AbpIdentityApplicationContractsModule),
     
@@ -59,7 +61,11 @@ namespace LKN.AuthMicroService;
     typeof(AbpAccountApplicationModule),
 
     typeof(AbpAspNetCoreSerilogModule),
-    typeof(AbpSwashbuckleModule)
+    typeof(AbpSwashbuckleModule),
+
+    typeof(AbpAspNetCoreMvcModule),
+    typeof(AbpAspNetCoreMvcUiBasicThemeModule)
+    
     )]
 public class AuthMicroServiceHttpApiHostModule : AbpModule
 {
@@ -72,7 +78,7 @@ public class AuthMicroServiceHttpApiHostModule : AbpModule
         AbpIdentityServerDbProperties.DbTablePrefix = "";
         // 去掉
         AbpIdentityDbProperties.DbTablePrefix = "";
-        AbpPermissionManagementDbProperties.DbTablePrefix = "";
+      //  AbpPermissionManagementDbProperties.DbTablePrefix = "";
         
         Configure<AbpDbContextOptions>(options =>
         {
@@ -132,7 +138,7 @@ public class AuthMicroServiceHttpApiHostModule : AbpModule
             options.Languages.Add(new LanguageInfo("el", "el", "Ελληνικά"));
         });
 
-        context.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+        context.Services.AddAuthentication()
             .AddJwtBearer(options =>
             {
                 options.Authority = configuration["AuthServer:Authority"];
@@ -220,6 +226,7 @@ public class AuthMicroServiceHttpApiHostModule : AbpModule
 
             var configuration = context.GetConfiguration();
             options.OAuthClientId(configuration["AuthServer:SwaggerClientId"]);
+            options.OAuthClientSecret(configuration["AuthServer:SwaggerClientSecret"]);
             options.OAuthScopes("AuthMicroService");
         });
         app.UseAuditing();
