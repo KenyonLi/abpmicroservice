@@ -20,18 +20,18 @@ public class AuthMicroServiceHttpApiHostMigrationsDbContext : AbpDbContext<AuthM
     {
         // 1、去掉IdentityServer4前缀
         AbpIdentityServerDbProperties.DbTablePrefix = "";
-        // 去掉
+        //去掉 前缀
         AbpIdentityDbProperties.DbTablePrefix = "";
-       // AbpPermissionManagementDbProperties.DbTablePrefix = "";
+        //去掉 前缀
+        AbpPermissionManagementDbProperties.DbTablePrefix = "";
 
 
         base.OnModelCreating(modelBuilder);
-
         // 2、创建用户表
         modelBuilder.ConfigureAuthMicroService();
         //创建用户表
         modelBuilder.ConfigureIdentity(); 
         //权限表
-       // modelBuilder.ConfigurePermissionManagement();
+        modelBuilder.ConfigurePermissionManagement();
     }
 }

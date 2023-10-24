@@ -10,6 +10,7 @@
 
   <ItemGroup>
     <PackageReference Include="Volo.Abp.EntityFrameworkCore" Version="7.3.0" />
+    <PackageReference Include="Volo.Abp.Identity.EntityFrameworkCore" Version="7.3.0" />
     <PackageReference Include="Volo.Abp.IdentityServer.EntityFrameworkCore" Version="7.3.0" />
     <ProjectReference Include="..\LKN.AuthMicroService.Domain\LKN.AuthMicroService.Domain.csproj" />
   </ItemGroup>

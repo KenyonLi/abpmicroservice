@@ -1,0 +1,196 @@
+2023-10-24 17:04:30.936 +08:00 [INF] Starting web host.
+2023-10-24 17:04:33.391 +08:00 [INF] Loaded ABP modules:
+2023-10-24 17:04:33.392 +08:00 [INF] - LKN.EbusinessWebSite.EbusinessWebSiteModule
+2023-10-24 17:04:33.392 +08:00 [INF]   - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2023-10-24 17:04:33.392 +08:00 [INF]     - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2023-10-24 17:04:33.392 +08:00 [INF]       - Volo.Abp.Auditing.AbpAuditingModule
+2023-10-24 17:04:33.392 +08:00 [INF]         - Volo.Abp.Data.AbpDataModule
+2023-10-24 17:04:33.392 +08:00 [INF]           - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2023-10-24 17:04:33.392 +08:00 [INF]             - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2023-10-24 17:04:33.392 +08:00 [INF]             - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2023-10-24 17:04:33.392 +08:00 [INF]           - Volo.Abp.Uow.AbpUnitOfWorkModule
+2023-10-24 17:04:33.392 +08:00 [INF]           - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2023-10-24 17:04:33.392 +08:00 [INF]         - Volo.Abp.Json.AbpJsonModule
+2023-10-24 17:04:33.392 +08:00 [INF]           - Volo.Abp.Json.SystemTextJson.AbpJsonSystemTextJsonModule
+2023-10-24 17:04:33.392 +08:00 [INF]             - Volo.Abp.Json.AbpJsonAbstractionsModule
+2023-10-24 17:04:33.392 +08:00 [INF]             - Volo.Abp.Timing.AbpTimingModule
+2023-10-24 17:04:33.392 +08:00 [INF]               - Volo.Abp.Localization.AbpLocalizationModule
+2023-10-24 17:04:33.392 +08:00 [INF]                 - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2023-10-24 17:04:33.392 +08:00 [INF]                 - Volo.Abp.Settings.AbpSettingsModule
+2023-10-24 17:04:33.392 +08:00 [INF]                   - Volo.Abp.Security.AbpSecurityModule
+2023-10-24 17:04:33.392 +08:00 [INF]                 - Volo.Abp.Threading.AbpThreadingModule
+2023-10-24 17:04:33.392 +08:00 [INF]         - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2023-10-24 17:04:33.392 +08:00 [INF]           - Volo.Abp.MultiTenancy.AbpMultiTenancyAbstractionsModule
+2023-10-24 17:04:33.392 +08:00 [INF]         - Volo.Abp.Auditing.AbpAuditingContractsModule
+2023-10-24 17:04:33.392 +08:00 [INF]       - Volo.Abp.Http.AbpHttpModule
+2023-10-24 17:04:33.392 +08:00 [INF]         - Volo.Abp.Http.AbpHttpAbstractionsModule
+2023-10-24 17:04:33.392 +08:00 [INF]         - Volo.Abp.Minify.AbpMinifyModule
+2023-10-24 17:04:33.392 +08:00 [INF]       - Volo.Abp.Authorization.AbpAuthorizationModule
+2023-10-24 17:04:33.392 +08:00 [INF]         - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2023-10-24 17:04:33.392 +08:00 [INF]       - Volo.Abp.Validation.AbpValidationModule
+2023-10-24 17:04:33.392 +08:00 [INF]       - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2023-10-24 17:04:33.392 +08:00 [INF]     - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2023-10-24 17:04:33.392 +08:00 [INF]     - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2023-10-24 17:04:33.392 +08:00 [INF]       - Volo.Abp.Application.AbpDddApplicationContractsModule
+2023-10-24 17:04:33.392 +08:00 [INF]     - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2023-10-24 17:04:33.392 +08:00 [INF]       - Volo.Abp.UI.AbpUiModule
+2023-10-24 17:04:33.392 +08:00 [INF]     - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2023-10-24 17:04:33.392 +08:00 [INF]     - Volo.Abp.Application.AbpDddApplicationModule
+2023-10-24 17:04:33.392 +08:00 [INF]       - Volo.Abp.Domain.AbpDddDomainModule
+2023-10-24 17:04:33.392 +08:00 [INF]         - Volo.Abp.EventBus.AbpEventBusModule
+2023-10-24 17:04:33.392 +08:00 [INF]           - Volo.Abp.Guids.AbpGuidsModule
+2023-10-24 17:04:33.392 +08:00 [INF]           - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2023-10-24 17:04:33.392 +08:00 [INF]           - Volo.Abp.DistributedLocking.AbpDistributedLockingAbstractionsModule
+2023-10-24 17:04:33.392 +08:00 [INF]         - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2023-10-24 17:04:33.392 +08:00 [INF]         - Volo.Abp.Specifications.AbpSpecificationsModule
+2023-10-24 17:04:33.392 +08:00 [INF]         - Volo.Abp.Caching.AbpCachingModule
+2023-10-24 17:04:33.392 +08:00 [INF]           - Volo.Abp.Serialization.AbpSerializationModule
+2023-10-24 17:04:33.392 +08:00 [INF]         - Volo.Abp.Domain.AbpDddDomainSharedModule
+2023-10-24 17:04:33.392 +08:00 [INF]       - Volo.Abp.Features.AbpFeaturesModule
+2023-10-24 17:04:33.392 +08:00 [INF]   - Volo.Abp.Autofac.AbpAutofacModule
+2023-10-24 17:04:33.392 +08:00 [INF]     - Volo.Abp.Castle.AbpCastleCoreModule
+2023-10-24 17:04:33.392 +08:00 [INF]   - LKN.Microservices.ClientHttps.ClientHttpsModule
+2023-10-24 17:04:33.392 +08:00 [INF]     - Volo.Abp.Http.Client.IdentityModel.AbpHttpClientIdentityModelModule
+2023-10-24 17:04:33.392 +08:00 [INF]       - Volo.Abp.Http.Client.AbpHttpClientModule
+2023-10-24 17:04:33.392 +08:00 [INF]         - Volo.Abp.RemoteServices.AbpRemoteServicesModule
+2023-10-24 17:04:33.392 +08:00 [INF]       - Volo.Abp.IdentityModel.AbpIdentityModelModule
+2023-10-24 17:04:33.392 +08:00 [INF]   - LKN.Order.OrderHttpApiClientModule
+2023-10-24 17:04:33.392 +08:00 [INF]     - LKN.Order.OrderApplicationContractsModule
+2023-10-24 17:04:33.392 +08:00 [INF]       - LKN.Order.OrderDomainSharedModule
+2023-10-24 17:04:33.392 +08:00 [INF]         - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2023-10-24 17:04:33.392 +08:00 [INF]       - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2023-10-24 17:04:33.392 +08:00 [INF]   - LKN.Product.ProductHttpApiClientModule
+2023-10-24 17:04:33.392 +08:00 [INF]     - LKN.Product.ProductApplicationContractsModule
+2023-10-24 17:04:33.392 +08:00 [INF]       - LKN.Product.ProductDomainSharedModule
+2023-10-24 17:04:33.474 +08:00 [INF] MySettingName => 
+2023-10-24 17:04:33.474 +08:00 [INF] EnvironmentName => Development
+2023-10-24 17:04:33.782 +08:00 [INF] User profile is available. Using 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-24 17:04:33.857 +08:00 [INF] Initialized all ABP modules.
+2023-10-24 17:04:34.150 +08:00 [INF] Now listening on: https://localhost:7132
+2023-10-24 17:04:34.150 +08:00 [INF] Now listening on: http://localhost:5278
+2023-10-24 17:04:34.150 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-24 17:04:34.150 +08:00 [INF] Hosting environment: Development
+2023-10-24 17:04:34.150 +08:00 [INF] Content root path: D:\test\ABP\abpmicroservice\LKN.Microservices\aggregateservices\LKN.EbusinessWebSite\LKN.EbusinessWebSite
+2023-10-24 17:04:35.499 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7132/ - -
+2023-10-24 17:04:35.617 +08:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-10-24 17:04:37.528 +08:00 [INF] AuthenticationScheme: oidc was challenged.
+2023-10-24 17:04:37.537 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7132/ - - - 302 0 - 2038.7222ms
+2023-10-24 17:27:04.462 +08:00 [INF] Starting web host.
+2023-10-24 17:27:06.707 +08:00 [INF] Loaded ABP modules:
+2023-10-24 17:27:06.708 +08:00 [INF] - LKN.EbusinessWebSite.EbusinessWebSiteModule
+2023-10-24 17:27:06.708 +08:00 [INF]   - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2023-10-24 17:27:06.708 +08:00 [INF]     - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2023-10-24 17:27:06.708 +08:00 [INF]       - Volo.Abp.Auditing.AbpAuditingModule
+2023-10-24 17:27:06.708 +08:00 [INF]         - Volo.Abp.Data.AbpDataModule
+2023-10-24 17:27:06.708 +08:00 [INF]           - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2023-10-24 17:27:06.708 +08:00 [INF]             - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2023-10-24 17:27:06.708 +08:00 [INF]             - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2023-10-24 17:27:06.708 +08:00 [INF]           - Volo.Abp.Uow.AbpUnitOfWorkModule
+2023-10-24 17:27:06.708 +08:00 [INF]           - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2023-10-24 17:27:06.708 +08:00 [INF]         - Volo.Abp.Json.AbpJsonModule
+2023-10-24 17:27:06.708 +08:00 [INF]           - Volo.Abp.Json.SystemTextJson.AbpJsonSystemTextJsonModule
+2023-10-24 17:27:06.708 +08:00 [INF]             - Volo.Abp.Json.AbpJsonAbstractionsModule
+2023-10-24 17:27:06.708 +08:00 [INF]             - Volo.Abp.Timing.AbpTimingModule
+2023-10-24 17:27:06.708 +08:00 [INF]               - Volo.Abp.Localization.AbpLocalizationModule
+2023-10-24 17:27:06.708 +08:00 [INF]                 - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2023-10-24 17:27:06.708 +08:00 [INF]                 - Volo.Abp.Settings.AbpSettingsModule
+2023-10-24 17:27:06.708 +08:00 [INF]                   - Volo.Abp.Security.AbpSecurityModule
+2023-10-24 17:27:06.708 +08:00 [INF]                 - Volo.Abp.Threading.AbpThreadingModule
+2023-10-24 17:27:06.708 +08:00 [INF]         - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2023-10-24 17:27:06.708 +08:00 [INF]           - Volo.Abp.MultiTenancy.AbpMultiTenancyAbstractionsModule
+2023-10-24 17:27:06.708 +08:00 [INF]         - Volo.Abp.Auditing.AbpAuditingContractsModule
+2023-10-24 17:27:06.708 +08:00 [INF]       - Volo.Abp.Http.AbpHttpModule
+2023-10-24 17:27:06.708 +08:00 [INF]         - Volo.Abp.Http.AbpHttpAbstractionsModule
+2023-10-24 17:27:06.708 +08:00 [INF]         - Volo.Abp.Minify.AbpMinifyModule
+2023-10-24 17:27:06.708 +08:00 [INF]       - Volo.Abp.Authorization.AbpAuthorizationModule
+2023-10-24 17:27:06.708 +08:00 [INF]         - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2023-10-24 17:27:06.708 +08:00 [INF]       - Volo.Abp.Validation.AbpValidationModule
+2023-10-24 17:27:06.708 +08:00 [INF]       - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2023-10-24 17:27:06.708 +08:00 [INF]     - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2023-10-24 17:27:06.708 +08:00 [INF]     - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2023-10-24 17:27:06.708 +08:00 [INF]       - Volo.Abp.Application.AbpDddApplicationContractsModule
+2023-10-24 17:27:06.708 +08:00 [INF]     - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2023-10-24 17:27:06.708 +08:00 [INF]       - Volo.Abp.UI.AbpUiModule
+2023-10-24 17:27:06.708 +08:00 [INF]     - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2023-10-24 17:27:06.708 +08:00 [INF]     - Volo.Abp.Application.AbpDddApplicationModule
+2023-10-24 17:27:06.708 +08:00 [INF]       - Volo.Abp.Domain.AbpDddDomainModule
+2023-10-24 17:27:06.708 +08:00 [INF]         - Volo.Abp.EventBus.AbpEventBusModule
+2023-10-24 17:27:06.708 +08:00 [INF]           - Volo.Abp.Guids.AbpGuidsModule
+2023-10-24 17:27:06.708 +08:00 [INF]           - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2023-10-24 17:27:06.708 +08:00 [INF]           - Volo.Abp.DistributedLocking.AbpDistributedLockingAbstractionsModule
+2023-10-24 17:27:06.708 +08:00 [INF]         - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2023-10-24 17:27:06.708 +08:00 [INF]         - Volo.Abp.Specifications.AbpSpecificationsModule
+2023-10-24 17:27:06.708 +08:00 [INF]         - Volo.Abp.Caching.AbpCachingModule
+2023-10-24 17:27:06.708 +08:00 [INF]           - Volo.Abp.Serialization.AbpSerializationModule
+2023-10-24 17:27:06.708 +08:00 [INF]         - Volo.Abp.Domain.AbpDddDomainSharedModule
+2023-10-24 17:27:06.708 +08:00 [INF]       - Volo.Abp.Features.AbpFeaturesModule
+2023-10-24 17:27:06.708 +08:00 [INF]   - Volo.Abp.Autofac.AbpAutofacModule
+2023-10-24 17:27:06.708 +08:00 [INF]     - Volo.Abp.Castle.AbpCastleCoreModule
+2023-10-24 17:27:06.708 +08:00 [INF]   - LKN.Microservices.ClientHttps.ClientHttpsModule
+2023-10-24 17:27:06.708 +08:00 [INF]     - Volo.Abp.Http.Client.IdentityModel.AbpHttpClientIdentityModelModule
+2023-10-24 17:27:06.708 +08:00 [INF]       - Volo.Abp.Http.Client.AbpHttpClientModule
+2023-10-24 17:27:06.708 +08:00 [INF]         - Volo.Abp.RemoteServices.AbpRemoteServicesModule
+2023-10-24 17:27:06.708 +08:00 [INF]       - Volo.Abp.IdentityModel.AbpIdentityModelModule
+2023-10-24 17:27:06.708 +08:00 [INF]   - LKN.Order.OrderHttpApiClientModule
+2023-10-24 17:27:06.708 +08:00 [INF]     - LKN.Order.OrderApplicationContractsModule
+2023-10-24 17:27:06.708 +08:00 [INF]       - LKN.Order.OrderDomainSharedModule
+2023-10-24 17:27:06.708 +08:00 [INF]         - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2023-10-24 17:27:06.708 +08:00 [INF]       - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2023-10-24 17:27:06.708 +08:00 [INF]   - LKN.Product.ProductHttpApiClientModule
+2023-10-24 17:27:06.708 +08:00 [INF]     - LKN.Product.ProductApplicationContractsModule
+2023-10-24 17:27:06.708 +08:00 [INF]       - LKN.Product.ProductDomainSharedModule
+2023-10-24 17:27:06.805 +08:00 [INF] MySettingName => 
+2023-10-24 17:27:06.805 +08:00 [INF] EnvironmentName => Development
+2023-10-24 17:27:07.388 +08:00 [INF] User profile is available. Using 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-24 17:27:07.496 +08:00 [INF] Initialized all ABP modules.
+2023-10-24 17:27:07.870 +08:00 [INF] Now listening on: https://localhost:7132
+2023-10-24 17:27:07.870 +08:00 [INF] Now listening on: http://localhost:5278
+2023-10-24 17:27:07.871 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-24 17:27:07.871 +08:00 [INF] Hosting environment: Development
+2023-10-24 17:27:07.871 +08:00 [INF] Content root path: D:\test\ABP\abpmicroservice\LKN.Microservices\aggregateservices\LKN.EbusinessWebSite\LKN.EbusinessWebSite
+2023-10-24 17:27:08.726 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7132/ - -
+2023-10-24 17:27:08.985 +08:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-10-24 17:27:13.428 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: IDX20803: Unable to obtain configuration from: '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+ ---> System.IO.IOException: IDX20804: Unable to retrieve document from: '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+ ---> System.Net.Http.HttpRequestException: 由于目标计算机积极拒绝，无法连接。 (localhost:44386)
+ ---> System.Net.Sockets.SocketException (10061): 由于目标计算机积极拒绝，无法连接。
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|281_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.HttpConnectionWaiter`1.WaitForConnectionAsync(Boolean async, CancellationToken requestCancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at Microsoft.IdentityModel.Protocols.HttpDocumentRetriever.SendAsyncAndRetryOnNetworkError(HttpClient httpClient, Uri uri)
+   at Microsoft.IdentityModel.Protocols.HttpDocumentRetriever.GetDocumentAsync(String address, CancellationToken cancel)
+   --- End of inner exception stack trace ---
+   at Microsoft.IdentityModel.Protocols.HttpDocumentRetriever.GetDocumentAsync(String address, CancellationToken cancel)
+   at Microsoft.IdentityModel.Protocols.OpenIdConnect.OpenIdConnectConfigurationRetriever.GetAsync(String address, IDocumentRetriever retriever, CancellationToken cancel)
+   at Microsoft.IdentityModel.Protocols.ConfigurationManager`1.GetConfigurationAsync(CancellationToken cancel)
+   --- End of inner exception stack trace ---
+   at Microsoft.IdentityModel.Protocols.ConfigurationManager`1.GetConfigurationAsync(CancellationToken cancel)
+   at Microsoft.AspNetCore.Authentication.OpenIdConnect.OpenIdConnectHandler.HandleChallengeAsyncInternal(AuthenticationProperties properties)
+   at Microsoft.AspNetCore.Authentication.OpenIdConnect.OpenIdConnectHandler.HandleChallengeAsync(AuthenticationProperties properties)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.ChallengeAsync(AuthenticationProperties properties)
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.ChallengeAsync(HttpContext context, String scheme, AuthenticationProperties properties)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.<>c__DisplayClass0_0.<<HandleAsync>g__Handle|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-10-24 17:27:13.538 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7132/ - - - 500 - text/html;+charset=utf-8 4812.5189ms
+2023-10-24 17:27:13.545 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7132/_vs/browserLink - -
+2023-10-24 17:27:13.545 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7132/_framework/aspnetcore-browser-refresh.js - -
+2023-10-24 17:27:13.574 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7132/_framework/aspnetcore-browser-refresh.js - - - 200 12010 application/javascript;+charset=utf-8 29.1574ms
+2023-10-24 17:27:13.600 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7132/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 55.8478ms

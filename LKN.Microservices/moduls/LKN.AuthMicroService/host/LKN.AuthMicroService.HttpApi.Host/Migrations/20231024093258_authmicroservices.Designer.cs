@@ -12,8 +12,8 @@ using Volo.Abp.EntityFrameworkCore;
 namespace LKN.AuthMicroService.Migrations
 {
     [DbContext(typeof(AuthMicroServiceHttpApiHostMigrationsDbContext))]
-    [Migration("20231020030411_authmircoservice")]
-    partial class authmircoservice
+    [Migration("20231024093258_authmicroservices")]
+    partial class authmicroservices
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

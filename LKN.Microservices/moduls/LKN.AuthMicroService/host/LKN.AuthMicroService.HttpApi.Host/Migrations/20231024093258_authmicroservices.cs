@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace LKN.AuthMicroService.Migrations
 {
     /// <inheritdoc />
-    public partial class authmircoservice : Migration
+    public partial class authmicroservices : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)

@@ -78,7 +78,8 @@ public class AuthMicroServiceHttpApiHostModule : AbpModule
         AbpIdentityServerDbProperties.DbTablePrefix = "";
         // 去掉
         AbpIdentityDbProperties.DbTablePrefix = "";
-      //  AbpPermissionManagementDbProperties.DbTablePrefix = "";
+
+        AbpPermissionManagementDbProperties.DbTablePrefix = "";
         
         Configure<AbpDbContextOptions>(options =>
         {
