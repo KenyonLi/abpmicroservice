@@ -11,6 +11,7 @@ namespace LKN.EbusinessWebSite
 {
     [DependsOn(typeof(AbpAspNetCoreMvcModule))]
     [DependsOn(typeof(AbpAutofacModule))]
+
     [DependsOn(typeof(ClientHttpsModule))]
 
     [DependsOn(typeof(OrderHttpApiClientModule))]
@@ -42,7 +43,7 @@ namespace LKN.EbusinessWebSite
                     options.Scope.Add("openid");
                     options.Scope.Add("profile");
                     options.Scope.Add("OrderService");
-                    options.Scope.Add("InternalGateway");
+                   // options.Scope.Add("InternalGateway");
                 });
         }
 

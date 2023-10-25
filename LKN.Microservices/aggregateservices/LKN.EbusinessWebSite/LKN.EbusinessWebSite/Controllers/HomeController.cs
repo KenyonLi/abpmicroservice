@@ -35,7 +35,7 @@ namespace LKN.EbusinessWebSite.Controllers
                 string access_token = HttpContext.GetTokenAsync("access_token").Result;
 
                 // 1、查询订单
-                OrderDto orderDto = _OrderAppService.GetAsync(Guid.Empty).Result;
+                OrderDto orderDto = _OrderAppService.GetAsync(Guid.Parse("3a0e6eae-951c-2256-cbf5-31385f879458")).Result;
 
                 /*// 2、查询商品
                 OrderItemDto[] orderItemDtos = orderDto.OrderItems;

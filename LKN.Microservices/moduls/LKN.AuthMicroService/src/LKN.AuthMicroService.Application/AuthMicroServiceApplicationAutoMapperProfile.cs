@@ -21,5 +21,9 @@ public class AuthMicroServiceApplicationAutoMapperProfile : Profile
         CreateMap<Volo.Abp.IdentityServer.ApiScopes.ApiScope, LKN.AuthMicroService.ApiScopes.ApiScopeDto>();
        
         CreateMap<Volo.Abp.IdentityServer.Clients.Client, LKN.AuthMicroService.Clients.ClientDto>();
+
+        CreateMap<LKN.AuthMicroService.IdentityResources.CreateIdentityResourceDto, Volo.Abp.IdentityServer.IdentityResources.IdentityResource>();
+        CreateMap<Volo.Abp.IdentityServer.IdentityResources.IdentityResource, LKN.AuthMicroService.IdentityResources.IdentityResourceDto>();
+
     }
 }

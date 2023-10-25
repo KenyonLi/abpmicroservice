@@ -23,4 +23,8 @@ namespace LKN.AuthMicroService.ApiResources
     {
         public virtual string Type { get; protected set; }
     }
+    public class IdentityResourceProperty { 
+       public virtual string Type { get; protected set; }
+
+    }
 }
