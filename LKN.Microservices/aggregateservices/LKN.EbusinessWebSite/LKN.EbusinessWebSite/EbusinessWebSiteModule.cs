@@ -43,7 +43,7 @@ namespace LKN.EbusinessWebSite
                     options.Scope.Add("openid");
                     options.Scope.Add("profile");
                     options.Scope.Add("OrderService");
-                   // options.Scope.Add("InternalGateway");
+                    options.Scope.Add("InternalGateway");
                 });
         }
 

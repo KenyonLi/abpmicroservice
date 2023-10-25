@@ -725,3 +725,29 @@ Volo.Abp.AbpInitializationException: An error occurred during PreConfigureServic
 2023-10-25 14:52:02.891 +08:00 [INF] Starting web host.
 2023-10-25 15:58:08.549 +08:00 [INF] Starting web host.
 2023-10-25 16:22:02.719 +08:00 [INF] Starting web host.
+2023-10-25 17:34:23.559 +08:00 [INF] Starting web host.
+2023-10-25 17:44:42.102 +08:00 [INF] Starting web host.
+2023-10-25 17:44:53.655 +08:00 [FTL] Host terminated unexpectedly!
+Volo.Abp.AbpInitializationException: An error occurred during PreConfigureServicesAsync phase of the module LKN.Order.OrderHttpApiModule, LKN.Order.HttpApi, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null. See the inner exception for details.
+ ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at LKN.Microservices.Infrastructure.sagas.SagsServiceCollectionExtensions.<>c__DisplayClass0_0.<AddOmegaCoreCluster>b__0(OmegaOptions option) in D:\test\ABP\abpmicroservice\LKN.Microservices\frameworks\LKN.Microservices.Infrastructure\src\LKN.Microservices.Infrastructure\sagas\SagsServiceCollectionExtensions.cs:line 35
+   at Servicecomb.Saga.Omega.AspNetCore.Extensions.OmegaBuilderExtensions.AddHosting(OmegaBuilder builder, Action`1 options) in D:\test\ABP\abpmicroservice\LKN.Microservices\frameworks\Servicecomb.Saga\Servicecomb.Saga.Omega.AspNetCore\Extensions\OmegaBuilderExtensions.cs:line 52
+   at Servicecomb.Saga.Omega.AspNetCore.Extensions.ServiceCollectionExtensions.AddOmegaCore(IServiceCollection services, Action`1 options, String servcie) in D:\test\ABP\abpmicroservice\LKN.Microservices\frameworks\Servicecomb.Saga\Servicecomb.Saga.Omega.AspNetCore\Extensions\ServiceCollectionExtensions.cs:line 44
+   at Servicecomb.Saga.Omega.AspNetCore.Extensions.ServiceCollectionExtensions.AddOmegaCore(IServiceCollection services, Action`1 options) in D:\test\ABP\abpmicroservice\LKN.Microservices\frameworks\Servicecomb.Saga\Servicecomb.Saga.Omega.AspNetCore\Extensions\ServiceCollectionExtensions.cs:line 37
+   at LKN.Microservices.Infrastructure.sagas.SagsServiceCollectionExtensions.AddOmegaCoreCluster(IServiceCollection services, String omegaServiceName, String ServiceName) in D:\test\ABP\abpmicroservice\LKN.Microservices\frameworks\LKN.Microservices.Infrastructure\src\LKN.Microservices.Infrastructure\sagas\SagsServiceCollectionExtensions.cs:line 33
+   at LKN.Order.OrderHttpApiModule.PreConfigureServices(ServiceConfigurationContext context) in D:\test\ABP\abpmicroservice\LKN.Microservices\moduls\LKN.Order\src\LKN.Order.HttpApi\OrderHttpApiModule.cs:line 33
+   at Volo.Abp.Modularity.AbpModule.PreConfigureServicesAsync(ServiceConfigurationContext context)
+   at Volo.Abp.AbpApplicationBase.ConfigureServicesAsync()
+   --- End of inner exception stack trace ---
+   at Volo.Abp.AbpApplicationBase.ConfigureServicesAsync()
+   at Volo.Abp.AbpApplicationFactory.CreateAsync[TStartupModule](IServiceCollection services, Action`1 optionsAction)
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionApplicationExtensions.AddApplicationAsync[TStartupModule](IServiceCollection services, Action`1 optionsAction)
+   at Microsoft.Extensions.DependencyInjection.WebApplicationBuilderExtensions.AddApplicationAsync[TStartupModule](WebApplicationBuilder builder, Action`1 optionsAction)
+   at LKN.Order.Program.Main(String[] args) in D:\test\ABP\abpmicroservice\LKN.Microservices\microservices\LKN.Order.HttpApi.Host\Program.cs:line 80
+2023-10-25 17:47:04.361 +08:00 [INF] Starting web host.
+2023-10-25 17:51:48.222 +08:00 [INF] Starting web host.
+2023-10-25 17:54:14.746 +08:00 [INF] Starting web host.
+2023-10-25 17:56:54.330 +08:00 [INF] Starting web host.
+2023-10-25 18:02:58.788 +08:00 [INF] Starting web host.
+2023-10-25 18:05:29.912 +08:00 [INF] Starting web host.
+2023-10-25 18:13:49.762 +08:00 [INF] Starting web host.

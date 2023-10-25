@@ -1,5 +1,6 @@
 ﻿using InternalGateway.Host.LoadBalancers;
 using LKN.Microservices.ELK;
+using LKN.Microservices.Infrastructure;
 using LKN.Order;
 using LKN.Product;
 using Microsoft.OpenApi.Models;
@@ -23,7 +24,8 @@ namespace InternalGateway.Host
         typeof(ProductHttpApiModule),
         typeof(ElaticsearchLogstashKibanaModule),
         typeof(AbpAspNetCoreSerilogModule),
-        typeof(AbpAspNetCoreMvcModule)
+        typeof(AbpAspNetCoreMvcModule),
+        typeof(InfrastructureModule)
       )]
     public class InternalGatewayHostModule: AbpModule
     {
@@ -51,6 +53,16 @@ namespace InternalGateway.Host
                 .AddCustomLoadBalancer<RandomLoadBalancer>(loadBalancerFactoryFunc)
                 .AddPolly()
                 .AddConsul();
+
+            // 1、添加添加身份验证
+            //context.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+            //                .AddIdentityServerAuthentication("InternalGateway-key", options =>
+            //                {
+            //                    // 1、微服务认证
+            //                    options.Authority = "https://localhost:44315"; // 1、认证中心地址
+            //                    options.ApiName = "InternalGateway"; // 2、api名称(项目具体名称)
+            //                    options.RequireHttpsMetadata = false; // 3、https元数据，不需要
+            //                });
         }
 
         public override void OnApplicationInitialization(ApplicationInitializationContext context)
@@ -60,7 +72,7 @@ namespace InternalGateway.Host
             app.UseCorrelationId();
             app.UseStaticFiles();
             app.UseRouting();
-            app.UseAuthentication();
+            //app.UseAuthentication();
             app.UseAbpClaimsMap();
             app.UseSwagger();
             app.UseSwaggerUI(options =>
