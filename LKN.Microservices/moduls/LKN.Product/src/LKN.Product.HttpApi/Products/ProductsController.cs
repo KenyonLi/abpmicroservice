@@ -10,6 +10,7 @@ using Servicecomb.Saga.Omega.Abstractions.Transaction;
 using Microsoft.AspNetCore.Http;
 using Volo.Abp.Caching;
 using Microsoft.Extensions.Caching.Distributed;
+using LKN.Microservices.Infrastructure.Redis;
 
 namespace LKN.Product.Products
 {
@@ -42,6 +43,43 @@ namespace LKN.Product.Products
             }
             return productDto;
         }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="input"></param>
+        /// <returns></returns>
+        [HttpPut]
+        public async Task<ProductDto> UpdateAsync(Guid id, UpdateProductDto input)
+        {
+            //throw new Exception("扣减库存失败");
+            #region 1、传统
+            {
+                /* ProductDto productDto = await _ProductAppService.UpdateAsync(id, input);*/
+            }
+            #endregion
+
+            #region 2、分布式锁(多实例)
+            {
+                RedisLock redisLock = new RedisLock();
+                redisLock.Lock();
+                ProductDto productDto = await _ProductAppService.UpdateAsync(id, input);
+                redisLock.UnLock();
+                return productDto;
+            }
+            #endregion
+
+            #region 2、线程锁(单实例)
+            {
+                /*lock ()
+                {
+                    ProductDto productDto = await _ProductAppService.UpdateAsync(id, input);
+                }
+                
+                return productDto;*/
+            }
+            #endregion
+        }
 
         /// <summary>
         /// 更新方法接受
@@ -53,17 +91,17 @@ namespace LKN.Product.Products
         {
             return await _ProductAppService.Update2Async(input);
         }
-        /// <summary>
-        /// 更新方法接受
-        /// </summary>
-        /// <param name="id"></param>
-        /// <param name="input"></param>
-        /// <returns></returns>
-        [HttpPut/*, Compensable(nameof(RecoverStock))*/]
-        public async Task<ProductDto> UpdateAsync(Guid id, UpdateProductDto input)
-        {
-            return await _ProductAppService.UpdateAsync(id, input);
-        }
+        ///// <summary>
+        ///// 更新方法接受
+        ///// </summary>
+        ///// <param name="id"></param>
+        ///// <param name="input"></param>
+        ///// <returns></returns>
+        //[HttpPut/*, Compensable(nameof(RecoverStock))*/]
+        //public async Task<ProductDto> UpdateAsync(Guid id, UpdateProductDto input)
+        //{
+        //    return await _ProductAppService.UpdateAsync(id, input);
+        //}
         /// <summary>
         /// 恢复库存
         /// </summary>
