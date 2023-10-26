@@ -4,7 +4,7 @@ using Volo.Abp.MongoDB;
 
 namespace LKN.Product.MongoDB;
 
-[ConnectionStringName(ProductDbProperties.ConnectionMonogDBStringName)]
+[ConnectionStringName(ProductDbProperties.ConnectionMonogDBStringName)]//需要创建一个远程连接字符串地址
 public class ProductMongoDbContext : AbpMongoDbContext, IProductMongoDbContext
 {
     /* Add mongo collections here. Example:
