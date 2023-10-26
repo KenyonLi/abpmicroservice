@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Http;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,6 +21,8 @@ namespace LKN.Product.Products
 
 
         public  Task<ProductDto> Update2Async(UpdateProductDto input);
+
+        public  Task SaveOrderPictrueAsync(IFormFile formFile);
 
     }
 }

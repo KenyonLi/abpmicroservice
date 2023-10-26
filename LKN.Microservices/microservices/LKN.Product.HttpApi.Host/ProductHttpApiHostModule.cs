@@ -37,6 +37,8 @@ using Volo.Abp.AspNetCore.Mvc;
 using LKN.Microservices.Infrastructure;
 using LKN.Microservices.Infrastructure.sagas;
 using LKN.Microservices.ELK;
+using Volo.Abp.BlobStoring;
+using Volo.Abp.BlobStoring.Minio;
 
 namespace LKN.Product;
 
@@ -47,7 +49,7 @@ namespace LKN.Product;
 
     typeof(AbpAspNetCoreMvcUiMultiTenancyModule),
     typeof(AbpAutofacModule),
-    typeof(AbpCachingStackExchangeRedisModule),
+    //typeof(AbpCachingStackExchangeRedisModule),
     /*typeof(AbpEntityFrameworkCoreSqlServerModule),
     typeof(AbpAuditLoggingEntityFrameworkCoreModule),
     typeof(AbpPermissionManagementEntityFrameworkCoreModule),
@@ -140,12 +142,12 @@ public class ProductHttpApiHostModule : AbpModule
             options.KeyPrefix = "Product:";
         });
 
-        var dataProtectionBuilder = context.Services.AddDataProtection().SetApplicationName("Product");
-        if (!hostingEnvironment.IsDevelopment())
-        {
-            var redis = ConnectionMultiplexer.Connect(configuration["Redis:Configuration"]);
-            dataProtectionBuilder.PersistKeysToStackExchangeRedis(redis, "Product-Protection-Keys");
-        }
+        //var dataProtectionBuilder = context.Services.AddDataProtection().SetApplicationName("Product");
+        //if (!hostingEnvironment.IsDevelopment())
+        //{
+        //    var redis = ConnectionMultiplexer.Connect(configuration["Redis:Configuration"]);
+        //    dataProtectionBuilder.PersistKeysToStackExchangeRedis(redis, "Product-Protection-Keys");
+        //}
 
         context.Services.AddCors(options =>
         {
@@ -189,8 +191,31 @@ public class ProductHttpApiHostModule : AbpModule
             // 6.4、仪表盘
             x.UseDashboard();
         });
+
         // 添加 分布式事务
         context.Services.AddOmegaCoreCluster("servicecomb-alpha-server", "ProductServices");
+
+        // 4、使用Minio
+        Configure<AbpBlobStoringOptions>(options =>
+        {
+            options.Containers.ConfigureDefault(container =>
+            {
+                container.UseMinio(minio =>
+                {
+                    minio.EndPoint = "127.0.0.1:9000";
+                    minio.AccessKey = "minioadmin";
+                    minio.SecretKey = "minioadmin";
+                    minio.BucketName = "productservice"; // 存储文件数据库
+                    minio.CreateBucketIfNotExists = true; // 桶不存在，就创建
+                });
+            });
+        });
+
+        // 5、使用Redis
+        Configure<AbpDistributedCacheOptions>(options =>
+        {
+            options.KeyPrefix = "ProductService:";
+        });
     }
 
     //自动生成 api

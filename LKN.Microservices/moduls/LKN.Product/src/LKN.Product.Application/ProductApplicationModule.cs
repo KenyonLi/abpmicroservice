@@ -3,6 +3,8 @@ using Volo.Abp.AutoMapper;
 using Volo.Abp.Modularity;
 using Volo.Abp.Application;
 using Volo.Abp.Autofac;
+using Volo.Abp.BlobStoring.Minio;
+using Volo.Abp.BlobStoring;
 
 namespace LKN.Product;
 
@@ -11,7 +13,9 @@ namespace LKN.Product;
     typeof(ProductApplicationContractsModule),
     typeof(AbpDddApplicationModule),
     typeof(AbpAutoMapperModule),
-    typeof(AbpAutofacModule)
+    typeof(AbpAutofacModule),
+    typeof(AbpBlobStoringModule),
+    typeof(AbpBlobStoringMinioModule)
     )]
 public class ProductApplicationModule : AbpModule
 {

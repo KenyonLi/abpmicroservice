@@ -1,5 +1,6 @@
 ﻿using DotNetCore.CAP;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
@@ -9,6 +10,7 @@ using System.Threading.Tasks;
 using Volo.Abp;
 using Volo.Abp.Application.Dtos;
 using Volo.Abp.Application.Services;
+using Volo.Abp.BlobStoring;
 using Volo.Abp.DependencyInjection;
 using Volo.Abp.Domain.Repositories;
 
@@ -29,7 +31,7 @@ namespace LKN.Product.Products
         ICapSubscribe
     {
         public IProductAbpRepository _productAbpRepository;
-
+        public IBlobContainer _blobContainer { set; get; } // 存储文件到Minio
         public ProductAppService(IProductAbpRepository repository) : base(repository)
         {
             _productAbpRepository = repository;
@@ -81,6 +83,15 @@ namespace LKN.Product.Products
             throw new NotImplementedException();
         }
 
-       
+
+        public async Task SaveOrderPictrueAsync(IFormFile formFile)
+        {
+            // 1、保存商品图片到Minio
+            await _blobContainer.SaveAsync(formFile.FileName, formFile.OpenReadStream(), true); // true就是覆盖
+            // 1、删除
+            // 2、查询 stream  oss 系统
+            //_blobContainer.SaveAsync
+        }
+
     }
 }

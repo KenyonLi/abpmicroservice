@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 using Volo.Abp.Application.Dtos;
 using Volo.Abp;
 using Servicecomb.Saga.Omega.Abstractions.Transaction;
+using Microsoft.AspNetCore.Http;
+using Volo.Abp.Caching;
+using Microsoft.Extensions.Caching.Distributed;
 
 namespace LKN.Product.Products
 {
@@ -15,18 +18,30 @@ namespace LKN.Product.Products
     public class ProductsController : ProductController, IProductAppService
     {
         private readonly IProductAppService _ProductAppService;
-
+        public IDistributedCache<ProductDto> _distributedCache { set; get; } // 使用redis
         public ProductsController(IProductAppService ProductAppService)
         {
             _ProductAppService = ProductAppService;
         }
-
+        /// <summary>
+        /// 查询商品API
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         [HttpGet("{id}")]
         public async Task<ProductDto> GetAsync(Guid id)
         {
-            return await _ProductAppService.GetAsync(id);
+            ProductDto productDto = await _distributedCache.GetAsync(id.ToString());
+            if (productDto == null)
+            {
+                productDto = await _ProductAppService.GetAsync(id);
+                await _distributedCache.SetAsync(id.ToString(), productDto, new DistributedCacheEntryOptions()
+                {
+                    AbsoluteExpiration = DateTimeOffset.Now.AddMinutes(60) // 设置过期时间
+                });
+            }
+            return productDto;
         }
-
 
         /// <summary>
         /// 更新方法接受
@@ -70,7 +85,7 @@ namespace LKN.Product.Products
         [HttpGet]
         public Task<PagedResultDto<ProductDto>> GetListAsync(PagedAndSortedResultRequestDto input)
         {
-            return  _ProductAppService.GetListAsync(input);
+            return _ProductAppService.GetListAsync(input);
         }
 
 
@@ -103,6 +118,16 @@ namespace LKN.Product.Products
         {
             throw new NotImplementedException();
         }
- 
+
+        /// <summary>
+        /// 上传图片接口
+        /// </summary>
+        /// <param name="formFile"></param>
+        /// <returns></returns>
+        [HttpPost("SaveOrderPictrue")]
+        public Task SaveOrderPictrueAsync(IFormFile formFile)
+        {
+            return _ProductAppService.SaveOrderPictrueAsync(formFile);
+        }
     }
 }

@@ -7,11 +7,13 @@ using Microsoft.Extensions.DependencyInjection;
 using Servicecomb.Saga.Omega.AspNetCore.Extensions;
 using LKN.Microservices.Infrastructure.sagas;
 using LKN.Microservices.Infrastructure;
+using Volo.Abp.Caching.StackExchangeRedis;
 
 namespace LKN.Product;
 
 [DependsOn(
     typeof(ProductApplicationContractsModule),
+    typeof(AbpCachingStackExchangeRedisModule),
     typeof(AbpAspNetCoreMvcModule))]
 public class ProductHttpApiModule : AbpModule
 {
