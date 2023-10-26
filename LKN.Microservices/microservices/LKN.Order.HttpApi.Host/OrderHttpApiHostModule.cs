@@ -31,8 +31,10 @@ using Microsoft.EntityFrameworkCore;
 using Volo.Abp.EntityFrameworkCore.MySQL;
 using Volo.Abp.AspNetCore.Mvc;
 using LKN.Microservices.Infrastructure;
-using Nacos.V2.DependencyInjection;
+using LKN.Microservices.Infrastructure.sagas;
 using LKN.Microservices.ELK;
+
+using Nacos.V2.DependencyInjection;
 using Volo.Abp.Http.Client.IdentityModel;
 using Volo.Abp.PermissionManagement;
 using Volo.Abp.PermissionManagement.EntityFrameworkCore;
@@ -183,9 +185,8 @@ public class OrderHttpApiHostModule : AbpModule
         //    options.RegistryAddress = configuration["ConsulRegistry:RegistryAddress"];//"http://localhost:8500";
         //});
 
-
         //2. 增加心跳检测
-       //context.Services.AddHealthChecks();
+        context.Services.AddHealthChecks();
 
         // 3、使用Cap
         context.Services.AddCap(x => {
@@ -209,7 +210,9 @@ public class OrderHttpApiHostModule : AbpModule
             x.UseDashboard();
         });
 
-     
+        //添加 sage 分布式事务
+        context.Services.AddOmegaCoreCluster("servicecomb-alpha-server", "OrderServices");
+          
     }
     //自动生成 api
     private void ConfigureConventionalControllers()
@@ -261,6 +264,6 @@ public class OrderHttpApiHostModule : AbpModule
         app.UseConfiguredEndpoints();
 
         //2、开始健康检测
-       // app.UseHealthChecks("/HealthCheck");
+        app.UseHealthChecks("/HealthCheck");
     }
 }

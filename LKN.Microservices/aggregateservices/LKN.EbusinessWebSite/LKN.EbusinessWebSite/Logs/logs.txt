@@ -8813,3 +8813,506 @@ System.AggregateException: One or more errors occurred. (Internal Server Error)
 2023-10-25 18:22:37.355 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7132/_framework/aspnetcore-browser-refresh.js - -
 2023-10-25 18:22:37.356 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7132/_framework/aspnetcore-browser-refresh.js - - - 200 12010 application/javascript;+charset=utf-8 0.9796ms
 2023-10-25 18:22:37.420 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7132/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 64.4390ms
+2023-10-26 09:26:11.869 +08:00 [INF] Starting web host.
+2023-10-26 09:26:14.434 +08:00 [INF] Loaded ABP modules:
+2023-10-26 09:26:14.435 +08:00 [INF] - LKN.EbusinessWebSite.EbusinessWebSiteModule
+2023-10-26 09:26:14.435 +08:00 [INF]   - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2023-10-26 09:26:14.435 +08:00 [INF]     - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2023-10-26 09:26:14.435 +08:00 [INF]       - Volo.Abp.Auditing.AbpAuditingModule
+2023-10-26 09:26:14.435 +08:00 [INF]         - Volo.Abp.Data.AbpDataModule
+2023-10-26 09:26:14.435 +08:00 [INF]           - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2023-10-26 09:26:14.435 +08:00 [INF]             - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2023-10-26 09:26:14.435 +08:00 [INF]             - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2023-10-26 09:26:14.435 +08:00 [INF]           - Volo.Abp.Uow.AbpUnitOfWorkModule
+2023-10-26 09:26:14.435 +08:00 [INF]           - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2023-10-26 09:26:14.435 +08:00 [INF]         - Volo.Abp.Json.AbpJsonModule
+2023-10-26 09:26:14.435 +08:00 [INF]           - Volo.Abp.Json.SystemTextJson.AbpJsonSystemTextJsonModule
+2023-10-26 09:26:14.435 +08:00 [INF]             - Volo.Abp.Json.AbpJsonAbstractionsModule
+2023-10-26 09:26:14.435 +08:00 [INF]             - Volo.Abp.Timing.AbpTimingModule
+2023-10-26 09:26:14.435 +08:00 [INF]               - Volo.Abp.Localization.AbpLocalizationModule
+2023-10-26 09:26:14.435 +08:00 [INF]                 - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2023-10-26 09:26:14.435 +08:00 [INF]                 - Volo.Abp.Settings.AbpSettingsModule
+2023-10-26 09:26:14.435 +08:00 [INF]                   - Volo.Abp.Security.AbpSecurityModule
+2023-10-26 09:26:14.435 +08:00 [INF]                 - Volo.Abp.Threading.AbpThreadingModule
+2023-10-26 09:26:14.435 +08:00 [INF]         - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2023-10-26 09:26:14.435 +08:00 [INF]           - Volo.Abp.MultiTenancy.AbpMultiTenancyAbstractionsModule
+2023-10-26 09:26:14.435 +08:00 [INF]         - Volo.Abp.Auditing.AbpAuditingContractsModule
+2023-10-26 09:26:14.435 +08:00 [INF]       - Volo.Abp.Http.AbpHttpModule
+2023-10-26 09:26:14.435 +08:00 [INF]         - Volo.Abp.Http.AbpHttpAbstractionsModule
+2023-10-26 09:26:14.435 +08:00 [INF]         - Volo.Abp.Minify.AbpMinifyModule
+2023-10-26 09:26:14.435 +08:00 [INF]       - Volo.Abp.Authorization.AbpAuthorizationModule
+2023-10-26 09:26:14.435 +08:00 [INF]         - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2023-10-26 09:26:14.435 +08:00 [INF]       - Volo.Abp.Validation.AbpValidationModule
+2023-10-26 09:26:14.435 +08:00 [INF]       - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2023-10-26 09:26:14.435 +08:00 [INF]     - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2023-10-26 09:26:14.435 +08:00 [INF]     - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2023-10-26 09:26:14.435 +08:00 [INF]       - Volo.Abp.Application.AbpDddApplicationContractsModule
+2023-10-26 09:26:14.435 +08:00 [INF]     - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2023-10-26 09:26:14.435 +08:00 [INF]       - Volo.Abp.UI.AbpUiModule
+2023-10-26 09:26:14.435 +08:00 [INF]     - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2023-10-26 09:26:14.435 +08:00 [INF]     - Volo.Abp.Application.AbpDddApplicationModule
+2023-10-26 09:26:14.435 +08:00 [INF]       - Volo.Abp.Domain.AbpDddDomainModule
+2023-10-26 09:26:14.435 +08:00 [INF]         - Volo.Abp.EventBus.AbpEventBusModule
+2023-10-26 09:26:14.435 +08:00 [INF]           - Volo.Abp.Guids.AbpGuidsModule
+2023-10-26 09:26:14.435 +08:00 [INF]           - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2023-10-26 09:26:14.435 +08:00 [INF]           - Volo.Abp.DistributedLocking.AbpDistributedLockingAbstractionsModule
+2023-10-26 09:26:14.435 +08:00 [INF]         - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2023-10-26 09:26:14.435 +08:00 [INF]         - Volo.Abp.Specifications.AbpSpecificationsModule
+2023-10-26 09:26:14.435 +08:00 [INF]         - Volo.Abp.Caching.AbpCachingModule
+2023-10-26 09:26:14.435 +08:00 [INF]           - Volo.Abp.Serialization.AbpSerializationModule
+2023-10-26 09:26:14.435 +08:00 [INF]         - Volo.Abp.Domain.AbpDddDomainSharedModule
+2023-10-26 09:26:14.435 +08:00 [INF]       - Volo.Abp.Features.AbpFeaturesModule
+2023-10-26 09:26:14.435 +08:00 [INF]   - Volo.Abp.Autofac.AbpAutofacModule
+2023-10-26 09:26:14.435 +08:00 [INF]     - Volo.Abp.Castle.AbpCastleCoreModule
+2023-10-26 09:26:14.435 +08:00 [INF]   - LKN.Microservices.ClientHttps.ClientHttpsModule
+2023-10-26 09:26:14.435 +08:00 [INF]     - Volo.Abp.Http.Client.IdentityModel.AbpHttpClientIdentityModelModule
+2023-10-26 09:26:14.435 +08:00 [INF]       - Volo.Abp.Http.Client.AbpHttpClientModule
+2023-10-26 09:26:14.435 +08:00 [INF]         - Volo.Abp.RemoteServices.AbpRemoteServicesModule
+2023-10-26 09:26:14.435 +08:00 [INF]       - Volo.Abp.IdentityModel.AbpIdentityModelModule
+2023-10-26 09:26:14.435 +08:00 [INF]   - LKN.Order.OrderHttpApiClientModule
+2023-10-26 09:26:14.435 +08:00 [INF]     - LKN.Order.OrderApplicationContractsModule
+2023-10-26 09:26:14.435 +08:00 [INF]       - LKN.Order.OrderDomainSharedModule
+2023-10-26 09:26:14.435 +08:00 [INF]         - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2023-10-26 09:26:14.435 +08:00 [INF]       - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2023-10-26 09:26:14.435 +08:00 [INF]   - LKN.Product.ProductHttpApiClientModule
+2023-10-26 09:26:14.435 +08:00 [INF]     - LKN.Product.ProductApplicationContractsModule
+2023-10-26 09:26:14.435 +08:00 [INF]       - LKN.Product.ProductDomainSharedModule
+2023-10-26 09:26:14.511 +08:00 [INF] MySettingName => 
+2023-10-26 09:26:14.511 +08:00 [INF] EnvironmentName => Development
+2023-10-26 09:26:14.848 +08:00 [INF] User profile is available. Using 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-26 09:26:14.929 +08:00 [INF] Initialized all ABP modules.
+2023-10-26 09:26:15.194 +08:00 [INF] Now listening on: https://localhost:7132
+2023-10-26 09:26:15.194 +08:00 [INF] Now listening on: http://localhost:5278
+2023-10-26 09:26:15.194 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-26 09:26:15.194 +08:00 [INF] Hosting environment: Development
+2023-10-26 09:26:15.194 +08:00 [INF] Content root path: D:\test\ABP\abpmicroservice\LKN.Microservices\aggregateservices\LKN.EbusinessWebSite\LKN.EbusinessWebSite
+2023-10-26 09:26:16.164 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7132/ - -
+2023-10-26 09:26:16.307 +08:00 [INF] Executing endpoint 'LKN.EbusinessWebSite.Controllers.HomeController.Index (LKN.EbusinessWebSite)'
+2023-10-26 09:26:16.324 +08:00 [INF] Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller LKN.EbusinessWebSite.Controllers.HomeController (LKN.EbusinessWebSite).
+2023-10-26 09:26:16.512 +08:00 [INF] Executing action method LKN.EbusinessWebSite.Controllers.HomeController.Index (LKN.EbusinessWebSite) - Validation state: "Valid"
+2023-10-26 09:26:19.148 +08:00 [INF] Start processing HTTP request GET https://localhost:7101/api/abp/api-definition
+2023-10-26 09:26:19.149 +08:00 [INF] Sending HTTP request GET https://localhost:7101/api/abp/api-definition
+2023-10-26 09:26:19.660 +08:00 [INF] Received HTTP response headers after 508.461ms - 200
+2023-10-26 09:26:19.661 +08:00 [INF] End processing HTTP request after 514.7587ms - 200
+2023-10-26 09:26:33.884 +08:00 [INF] Start processing HTTP request GET https://localhost:7101/api/OrderService/order/3a0e6eae-951c-2256-cbf5-31385f879458?api-version=1.0
+2023-10-26 09:26:33.884 +08:00 [INF] Sending HTTP request GET https://localhost:7101/api/OrderService/order/3a0e6eae-951c-2256-cbf5-31385f879458?api-version=1.0
+2023-10-26 09:26:35.706 +08:00 [INF] Received HTTP response headers after 1821.4347ms - 200
+2023-10-26 09:26:35.706 +08:00 [INF] End processing HTTP request after 1821.8486ms - 200
+2023-10-26 09:26:38.721 +08:00 [INF] Executed action method LKN.EbusinessWebSite.Controllers.HomeController.Index (LKN.EbusinessWebSite), returned result Microsoft.AspNetCore.Mvc.ViewResult in 22205.9776ms.
+2023-10-26 09:26:41.274 +08:00 [INF] Executing ViewResult, running view Index.
+2023-10-26 09:26:42.008 +08:00 [INF] Executed ViewResult - view Index executed in 3273.8284ms.
+2023-10-26 09:26:42.012 +08:00 [INF] Executed action LKN.EbusinessWebSite.Controllers.HomeController.Index (LKN.EbusinessWebSite) in 25687.2636ms
+2023-10-26 09:26:42.012 +08:00 [INF] Executed endpoint 'LKN.EbusinessWebSite.Controllers.HomeController.Index (LKN.EbusinessWebSite)'
+2023-10-26 09:26:42.037 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7132/lib/bootstrap/dist/css/bootstrap.min.css - -
+2023-10-26 09:26:42.037 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7132/_framework/aspnetcore-browser-refresh.js - -
+2023-10-26 09:26:42.037 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7132/_vs/browserLink - -
+2023-10-26 09:26:42.038 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7132/lib/jquery/dist/jquery.min.js - -
+2023-10-26 09:26:42.038 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7132/LKN.EbusinessWebSite.styles.css?v=4NkfOe0V6AhU03of3Vjx0sBmU3h-EqCZ6MA0VhNSLm0 - -
+2023-10-26 09:26:42.042 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7132/css/site.css?v=pAGv4ietcJNk_EwsQZ5BN9-K4MuNYS2a9wl4Jw-q9D0 - -
+2023-10-26 09:26:42.054 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7132/lib/bootstrap/dist/js/bootstrap.bundle.min.js - -
+2023-10-26 09:26:42.054 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7132/ - - - 200 - text/html;+charset=utf-8 25876.5410ms
+2023-10-26 09:26:42.061 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7132/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0 - -
+2023-10-26 09:26:42.070 +08:00 [INF] The file /lib/jquery/dist/jquery.min.js was not modified
+2023-10-26 09:26:42.070 +08:00 [INF] The file /css/site.css was not modified
+2023-10-26 09:26:42.070 +08:00 [INF] The file /js/site.js was not modified
+2023-10-26 09:26:42.070 +08:00 [INF] The file /lib/bootstrap/dist/css/bootstrap.min.css was not modified
+2023-10-26 09:26:42.070 +08:00 [INF] The file /lib/bootstrap/dist/js/bootstrap.bundle.min.js was not modified
+2023-10-26 09:26:42.071 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7132/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0 - - - 304 - application/javascript 9.5864ms
+2023-10-26 09:26:42.071 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7132/lib/jquery/dist/jquery.min.js - - - 304 - application/javascript 32.7177ms
+2023-10-26 09:26:42.071 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7132/lib/bootstrap/dist/css/bootstrap.min.css - - - 304 - text/css 33.8111ms
+2023-10-26 09:26:42.071 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7132/css/site.css?v=pAGv4ietcJNk_EwsQZ5BN9-K4MuNYS2a9wl4Jw-q9D0 - - - 304 - text/css 29.9350ms
+2023-10-26 09:26:42.071 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7132/lib/bootstrap/dist/js/bootstrap.bundle.min.js - - - 304 - application/javascript 18.0868ms
+2023-10-26 09:26:42.081 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7132/_framework/aspnetcore-browser-refresh.js - - - 200 12010 application/javascript;+charset=utf-8 44.2385ms
+2023-10-26 09:26:42.093 +08:00 [INF] Sending file. Request path: '/LKN.EbusinessWebSite.styles.css'. Physical path: 'D:\test\ABP\abpmicroservice\LKN.Microservices\aggregateservices\LKN.EbusinessWebSite\LKN.EbusinessWebSite\obj\Debug\net7.0\scopedcss\bundle\LKN.EbusinessWebSite.styles.css'
+2023-10-26 09:26:42.093 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7132/LKN.EbusinessWebSite.styles.css?v=4NkfOe0V6AhU03of3Vjx0sBmU3h-EqCZ6MA0VhNSLm0 - - - 200 1137 text/css 54.6109ms
+2023-10-26 09:26:42.120 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7132/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 83.1559ms
+2023-10-26 09:31:55.719 +08:00 [INF] Starting web host.
+2023-10-26 09:31:57.911 +08:00 [INF] Loaded ABP modules:
+2023-10-26 09:31:57.912 +08:00 [INF] - LKN.EbusinessWebSite.EbusinessWebSiteModule
+2023-10-26 09:31:57.912 +08:00 [INF]   - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2023-10-26 09:31:57.912 +08:00 [INF]     - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2023-10-26 09:31:57.912 +08:00 [INF]       - Volo.Abp.Auditing.AbpAuditingModule
+2023-10-26 09:31:57.912 +08:00 [INF]         - Volo.Abp.Data.AbpDataModule
+2023-10-26 09:31:57.912 +08:00 [INF]           - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2023-10-26 09:31:57.912 +08:00 [INF]             - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2023-10-26 09:31:57.912 +08:00 [INF]             - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2023-10-26 09:31:57.912 +08:00 [INF]           - Volo.Abp.Uow.AbpUnitOfWorkModule
+2023-10-26 09:31:57.912 +08:00 [INF]           - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2023-10-26 09:31:57.912 +08:00 [INF]         - Volo.Abp.Json.AbpJsonModule
+2023-10-26 09:31:57.912 +08:00 [INF]           - Volo.Abp.Json.SystemTextJson.AbpJsonSystemTextJsonModule
+2023-10-26 09:31:57.912 +08:00 [INF]             - Volo.Abp.Json.AbpJsonAbstractionsModule
+2023-10-26 09:31:57.912 +08:00 [INF]             - Volo.Abp.Timing.AbpTimingModule
+2023-10-26 09:31:57.912 +08:00 [INF]               - Volo.Abp.Localization.AbpLocalizationModule
+2023-10-26 09:31:57.912 +08:00 [INF]                 - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2023-10-26 09:31:57.912 +08:00 [INF]                 - Volo.Abp.Settings.AbpSettingsModule
+2023-10-26 09:31:57.912 +08:00 [INF]                   - Volo.Abp.Security.AbpSecurityModule
+2023-10-26 09:31:57.912 +08:00 [INF]                 - Volo.Abp.Threading.AbpThreadingModule
+2023-10-26 09:31:57.912 +08:00 [INF]         - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2023-10-26 09:31:57.912 +08:00 [INF]           - Volo.Abp.MultiTenancy.AbpMultiTenancyAbstractionsModule
+2023-10-26 09:31:57.912 +08:00 [INF]         - Volo.Abp.Auditing.AbpAuditingContractsModule
+2023-10-26 09:31:57.912 +08:00 [INF]       - Volo.Abp.Http.AbpHttpModule
+2023-10-26 09:31:57.912 +08:00 [INF]         - Volo.Abp.Http.AbpHttpAbstractionsModule
+2023-10-26 09:31:57.912 +08:00 [INF]         - Volo.Abp.Minify.AbpMinifyModule
+2023-10-26 09:31:57.912 +08:00 [INF]       - Volo.Abp.Authorization.AbpAuthorizationModule
+2023-10-26 09:31:57.912 +08:00 [INF]         - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2023-10-26 09:31:57.912 +08:00 [INF]       - Volo.Abp.Validation.AbpValidationModule
+2023-10-26 09:31:57.912 +08:00 [INF]       - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2023-10-26 09:31:57.912 +08:00 [INF]     - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2023-10-26 09:31:57.912 +08:00 [INF]     - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2023-10-26 09:31:57.912 +08:00 [INF]       - Volo.Abp.Application.AbpDddApplicationContractsModule
+2023-10-26 09:31:57.912 +08:00 [INF]     - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2023-10-26 09:31:57.913 +08:00 [INF]       - Volo.Abp.UI.AbpUiModule
+2023-10-26 09:31:57.913 +08:00 [INF]     - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2023-10-26 09:31:57.913 +08:00 [INF]     - Volo.Abp.Application.AbpDddApplicationModule
+2023-10-26 09:31:57.913 +08:00 [INF]       - Volo.Abp.Domain.AbpDddDomainModule
+2023-10-26 09:31:57.913 +08:00 [INF]         - Volo.Abp.EventBus.AbpEventBusModule
+2023-10-26 09:31:57.913 +08:00 [INF]           - Volo.Abp.Guids.AbpGuidsModule
+2023-10-26 09:31:57.913 +08:00 [INF]           - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2023-10-26 09:31:57.913 +08:00 [INF]           - Volo.Abp.DistributedLocking.AbpDistributedLockingAbstractionsModule
+2023-10-26 09:31:57.913 +08:00 [INF]         - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2023-10-26 09:31:57.913 +08:00 [INF]         - Volo.Abp.Specifications.AbpSpecificationsModule
+2023-10-26 09:31:57.913 +08:00 [INF]         - Volo.Abp.Caching.AbpCachingModule
+2023-10-26 09:31:57.913 +08:00 [INF]           - Volo.Abp.Serialization.AbpSerializationModule
+2023-10-26 09:31:57.913 +08:00 [INF]         - Volo.Abp.Domain.AbpDddDomainSharedModule
+2023-10-26 09:31:57.913 +08:00 [INF]       - Volo.Abp.Features.AbpFeaturesModule
+2023-10-26 09:31:57.913 +08:00 [INF]   - Volo.Abp.Autofac.AbpAutofacModule
+2023-10-26 09:31:57.913 +08:00 [INF]     - Volo.Abp.Castle.AbpCastleCoreModule
+2023-10-26 09:31:57.913 +08:00 [INF]   - LKN.Microservices.ClientHttps.ClientHttpsModule
+2023-10-26 09:31:57.913 +08:00 [INF]     - Volo.Abp.Http.Client.IdentityModel.AbpHttpClientIdentityModelModule
+2023-10-26 09:31:57.913 +08:00 [INF]       - Volo.Abp.Http.Client.AbpHttpClientModule
+2023-10-26 09:31:57.913 +08:00 [INF]         - Volo.Abp.RemoteServices.AbpRemoteServicesModule
+2023-10-26 09:31:57.913 +08:00 [INF]       - Volo.Abp.IdentityModel.AbpIdentityModelModule
+2023-10-26 09:31:57.913 +08:00 [INF]   - LKN.Order.OrderHttpApiClientModule
+2023-10-26 09:31:57.913 +08:00 [INF]     - LKN.Order.OrderApplicationContractsModule
+2023-10-26 09:31:57.913 +08:00 [INF]       - LKN.Order.OrderDomainSharedModule
+2023-10-26 09:31:57.913 +08:00 [INF]         - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2023-10-26 09:31:57.913 +08:00 [INF]       - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2023-10-26 09:31:57.913 +08:00 [INF]   - LKN.Product.ProductHttpApiClientModule
+2023-10-26 09:31:57.913 +08:00 [INF]     - LKN.Product.ProductApplicationContractsModule
+2023-10-26 09:31:57.913 +08:00 [INF]       - LKN.Product.ProductDomainSharedModule
+2023-10-26 09:31:57.995 +08:00 [INF] MySettingName => 
+2023-10-26 09:31:57.995 +08:00 [INF] EnvironmentName => Development
+2023-10-26 09:31:58.272 +08:00 [INF] User profile is available. Using 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-26 09:31:58.340 +08:00 [INF] Initialized all ABP modules.
+2023-10-26 09:31:58.601 +08:00 [INF] Now listening on: https://localhost:7132
+2023-10-26 09:31:58.601 +08:00 [INF] Now listening on: http://localhost:5278
+2023-10-26 09:31:58.601 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-26 09:31:58.601 +08:00 [INF] Hosting environment: Development
+2023-10-26 09:31:58.602 +08:00 [INF] Content root path: D:\test\ABP\abpmicroservice\LKN.Microservices\aggregateservices\LKN.EbusinessWebSite\LKN.EbusinessWebSite
+2023-10-26 09:31:59.420 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7132/ - -
+2023-10-26 09:31:59.548 +08:00 [INF] Executing endpoint 'LKN.EbusinessWebSite.Controllers.HomeController.Index (LKN.EbusinessWebSite)'
+2023-10-26 09:31:59.563 +08:00 [INF] Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller LKN.EbusinessWebSite.Controllers.HomeController (LKN.EbusinessWebSite).
+2023-10-26 09:31:59.741 +08:00 [INF] Executing action method LKN.EbusinessWebSite.Controllers.HomeController.Index (LKN.EbusinessWebSite) - Validation state: "Valid"
+2023-10-26 09:32:03.672 +08:00 [INF] Start processing HTTP request GET https://localhost:7171/api/abp/api-definition
+2023-10-26 09:32:03.673 +08:00 [INF] Sending HTTP request GET https://localhost:7171/api/abp/api-definition
+2023-10-26 09:32:37.690 +08:00 [ERR] ---------- RemoteServiceErrorInfo ----------
+{
+  "code": null,
+  "message": "对不起,在处理你的请求期间,产生了一个服务器内部错误!",
+  "details": null,
+  "data": {},
+  "validationErrors": null
+}
+
+2023-10-26 09:32:37.690 +08:00 [ERR] One or more errors occurred. (由于目标计算机积极拒绝，无法连接。 (localhost:7171))
+System.AggregateException: One or more errors occurred. (由于目标计算机积极拒绝，无法连接。 (localhost:7171))
+ ---> System.Net.Http.HttpRequestException: 由于目标计算机积极拒绝，无法连接。 (localhost:7171)
+ ---> System.Net.Sockets.SocketException (10061): 由于目标计算机积极拒绝，无法连接。
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|281_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.HttpConnectionWaiter`1.WaitForConnectionAsync(Boolean async, CancellationToken requestCancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.<SendAsync>g__Core|5_0(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.<SendAsync>g__Core|5_0(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at Volo.Abp.Http.Client.DynamicProxying.ApiDescriptionFinder.GetApiDescriptionFromServerAsync(HttpClient client, String baseUrl)
+   at Volo.Abp.Http.Client.DynamicProxying.ApiDescriptionCache.GetAsync(String baseUrl, Func`1 factory)
+   at Volo.Abp.Http.Client.DynamicProxying.ApiDescriptionFinder.GetApiDescriptionAsync(HttpClient client, String baseUrl)
+   at Volo.Abp.Http.Client.DynamicProxying.ApiDescriptionFinder.FindActionAsync(HttpClient client, String baseUrl, Type serviceType, MethodInfo method)
+   at Volo.Abp.Http.Client.DynamicProxying.DynamicHttpProxyInterceptor`1.GetActionApiDescriptionModel(IAbpMethodInvocation invocation)
+   at Volo.Abp.Http.Client.DynamicProxying.DynamicHttpProxyInterceptor`1.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Validation.ValidationInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at LKN.EbusinessWebSite.Controllers.HomeController.Index() in D:\test\ABP\abpmicroservice\LKN.Microservices\aggregateservices\LKN.EbusinessWebSite\LKN.EbusinessWebSite\Controllers\HomeController.cs:line 38
+   at lambda_method797(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ExceptionContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeNextResourceFilter()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-10-26 09:32:37.708 +08:00 [INF] Executed action LKN.EbusinessWebSite.Controllers.HomeController.Index (LKN.EbusinessWebSite) in 38135.3471ms
+2023-10-26 09:32:37.711 +08:00 [INF] Executed endpoint 'LKN.EbusinessWebSite.Controllers.HomeController.Index (LKN.EbusinessWebSite)'
+2023-10-26 09:32:37.713 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.AggregateException: One or more errors occurred. (由于目标计算机积极拒绝，无法连接。 (localhost:7171))
+ ---> System.Net.Http.HttpRequestException: 由于目标计算机积极拒绝，无法连接。 (localhost:7171)
+ ---> System.Net.Sockets.SocketException (10061): 由于目标计算机积极拒绝，无法连接。
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|281_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.HttpConnectionWaiter`1.WaitForConnectionAsync(Boolean async, CancellationToken requestCancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.<SendAsync>g__Core|5_0(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.<SendAsync>g__Core|5_0(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at Volo.Abp.Http.Client.DynamicProxying.ApiDescriptionFinder.GetApiDescriptionFromServerAsync(HttpClient client, String baseUrl)
+   at Volo.Abp.Http.Client.DynamicProxying.ApiDescriptionCache.GetAsync(String baseUrl, Func`1 factory)
+   at Volo.Abp.Http.Client.DynamicProxying.ApiDescriptionFinder.GetApiDescriptionAsync(HttpClient client, String baseUrl)
+   at Volo.Abp.Http.Client.DynamicProxying.ApiDescriptionFinder.FindActionAsync(HttpClient client, String baseUrl, Type serviceType, MethodInfo method)
+   at Volo.Abp.Http.Client.DynamicProxying.DynamicHttpProxyInterceptor`1.GetActionApiDescriptionModel(IAbpMethodInvocation invocation)
+   at Volo.Abp.Http.Client.DynamicProxying.DynamicHttpProxyInterceptor`1.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Validation.ValidationInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at LKN.EbusinessWebSite.Controllers.HomeController.Index() in D:\test\ABP\abpmicroservice\LKN.Microservices\aggregateservices\LKN.EbusinessWebSite\LKN.EbusinessWebSite\Controllers\HomeController.cs:line 38
+   at lambda_method797(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ExceptionContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeNextResourceFilter()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-10-26 09:32:37.878 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7132/ - - - 500 - text/html;+charset=utf-8 38459.0027ms
+2023-10-26 09:32:37.886 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7132/_vs/browserLink - -
+2023-10-26 09:32:37.886 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7132/_framework/aspnetcore-browser-refresh.js - -
+2023-10-26 09:32:37.901 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7132/_framework/aspnetcore-browser-refresh.js - - - 200 12010 application/javascript;+charset=utf-8 14.8171ms
+2023-10-26 09:32:37.931 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7132/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 44.5721ms
+2023-10-26 09:47:22.143 +08:00 [INF] Starting web host.
+2023-10-26 09:47:26.365 +08:00 [INF] Loaded ABP modules:
+2023-10-26 09:47:26.366 +08:00 [INF] - LKN.EbusinessWebSite.EbusinessWebSiteModule
+2023-10-26 09:47:26.366 +08:00 [INF]   - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2023-10-26 09:47:26.366 +08:00 [INF]     - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2023-10-26 09:47:26.366 +08:00 [INF]       - Volo.Abp.Auditing.AbpAuditingModule
+2023-10-26 09:47:26.366 +08:00 [INF]         - Volo.Abp.Data.AbpDataModule
+2023-10-26 09:47:26.366 +08:00 [INF]           - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2023-10-26 09:47:26.366 +08:00 [INF]             - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2023-10-26 09:47:26.366 +08:00 [INF]             - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2023-10-26 09:47:26.366 +08:00 [INF]           - Volo.Abp.Uow.AbpUnitOfWorkModule
+2023-10-26 09:47:26.366 +08:00 [INF]           - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2023-10-26 09:47:26.366 +08:00 [INF]         - Volo.Abp.Json.AbpJsonModule
+2023-10-26 09:47:26.366 +08:00 [INF]           - Volo.Abp.Json.SystemTextJson.AbpJsonSystemTextJsonModule
+2023-10-26 09:47:26.366 +08:00 [INF]             - Volo.Abp.Json.AbpJsonAbstractionsModule
+2023-10-26 09:47:26.366 +08:00 [INF]             - Volo.Abp.Timing.AbpTimingModule
+2023-10-26 09:47:26.366 +08:00 [INF]               - Volo.Abp.Localization.AbpLocalizationModule
+2023-10-26 09:47:26.366 +08:00 [INF]                 - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2023-10-26 09:47:26.366 +08:00 [INF]                 - Volo.Abp.Settings.AbpSettingsModule
+2023-10-26 09:47:26.366 +08:00 [INF]                   - Volo.Abp.Security.AbpSecurityModule
+2023-10-26 09:47:26.366 +08:00 [INF]                 - Volo.Abp.Threading.AbpThreadingModule
+2023-10-26 09:47:26.366 +08:00 [INF]         - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2023-10-26 09:47:26.366 +08:00 [INF]           - Volo.Abp.MultiTenancy.AbpMultiTenancyAbstractionsModule
+2023-10-26 09:47:26.366 +08:00 [INF]         - Volo.Abp.Auditing.AbpAuditingContractsModule
+2023-10-26 09:47:26.366 +08:00 [INF]       - Volo.Abp.Http.AbpHttpModule
+2023-10-26 09:47:26.366 +08:00 [INF]         - Volo.Abp.Http.AbpHttpAbstractionsModule
+2023-10-26 09:47:26.366 +08:00 [INF]         - Volo.Abp.Minify.AbpMinifyModule
+2023-10-26 09:47:26.366 +08:00 [INF]       - Volo.Abp.Authorization.AbpAuthorizationModule
+2023-10-26 09:47:26.366 +08:00 [INF]         - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2023-10-26 09:47:26.366 +08:00 [INF]       - Volo.Abp.Validation.AbpValidationModule
+2023-10-26 09:47:26.366 +08:00 [INF]       - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2023-10-26 09:47:26.366 +08:00 [INF]     - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2023-10-26 09:47:26.366 +08:00 [INF]     - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2023-10-26 09:47:26.366 +08:00 [INF]       - Volo.Abp.Application.AbpDddApplicationContractsModule
+2023-10-26 09:47:26.366 +08:00 [INF]     - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2023-10-26 09:47:26.366 +08:00 [INF]       - Volo.Abp.UI.AbpUiModule
+2023-10-26 09:47:26.366 +08:00 [INF]     - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2023-10-26 09:47:26.366 +08:00 [INF]     - Volo.Abp.Application.AbpDddApplicationModule
+2023-10-26 09:47:26.366 +08:00 [INF]       - Volo.Abp.Domain.AbpDddDomainModule
+2023-10-26 09:47:26.366 +08:00 [INF]         - Volo.Abp.EventBus.AbpEventBusModule
+2023-10-26 09:47:26.366 +08:00 [INF]           - Volo.Abp.Guids.AbpGuidsModule
+2023-10-26 09:47:26.366 +08:00 [INF]           - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2023-10-26 09:47:26.366 +08:00 [INF]           - Volo.Abp.DistributedLocking.AbpDistributedLockingAbstractionsModule
+2023-10-26 09:47:26.366 +08:00 [INF]         - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2023-10-26 09:47:26.366 +08:00 [INF]         - Volo.Abp.Specifications.AbpSpecificationsModule
+2023-10-26 09:47:26.366 +08:00 [INF]         - Volo.Abp.Caching.AbpCachingModule
+2023-10-26 09:47:26.366 +08:00 [INF]           - Volo.Abp.Serialization.AbpSerializationModule
+2023-10-26 09:47:26.366 +08:00 [INF]         - Volo.Abp.Domain.AbpDddDomainSharedModule
+2023-10-26 09:47:26.366 +08:00 [INF]       - Volo.Abp.Features.AbpFeaturesModule
+2023-10-26 09:47:26.366 +08:00 [INF]   - Volo.Abp.Autofac.AbpAutofacModule
+2023-10-26 09:47:26.366 +08:00 [INF]     - Volo.Abp.Castle.AbpCastleCoreModule
+2023-10-26 09:47:26.366 +08:00 [INF]   - LKN.Microservices.ClientHttps.ClientHttpsModule
+2023-10-26 09:47:26.366 +08:00 [INF]     - Volo.Abp.Http.Client.IdentityModel.AbpHttpClientIdentityModelModule
+2023-10-26 09:47:26.366 +08:00 [INF]       - Volo.Abp.Http.Client.AbpHttpClientModule
+2023-10-26 09:47:26.366 +08:00 [INF]         - Volo.Abp.RemoteServices.AbpRemoteServicesModule
+2023-10-26 09:47:26.366 +08:00 [INF]       - Volo.Abp.IdentityModel.AbpIdentityModelModule
+2023-10-26 09:47:26.366 +08:00 [INF]   - LKN.Order.OrderHttpApiClientModule
+2023-10-26 09:47:26.366 +08:00 [INF]     - LKN.Order.OrderApplicationContractsModule
+2023-10-26 09:47:26.366 +08:00 [INF]       - LKN.Order.OrderDomainSharedModule
+2023-10-26 09:47:26.366 +08:00 [INF]         - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2023-10-26 09:47:26.366 +08:00 [INF]       - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2023-10-26 09:47:26.366 +08:00 [INF]   - LKN.Product.ProductHttpApiClientModule
+2023-10-26 09:47:26.366 +08:00 [INF]     - LKN.Product.ProductApplicationContractsModule
+2023-10-26 09:47:26.366 +08:00 [INF]       - LKN.Product.ProductDomainSharedModule
+2023-10-26 09:47:26.448 +08:00 [INF] MySettingName => 
+2023-10-26 09:47:26.448 +08:00 [INF] EnvironmentName => Development
+2023-10-26 09:47:26.821 +08:00 [INF] User profile is available. Using 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-26 09:47:26.883 +08:00 [INF] Initialized all ABP modules.
+2023-10-26 09:47:27.172 +08:00 [INF] Now listening on: https://localhost:7132
+2023-10-26 09:47:27.172 +08:00 [INF] Now listening on: http://localhost:5278
+2023-10-26 09:47:27.175 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-26 09:47:27.175 +08:00 [INF] Hosting environment: Development
+2023-10-26 09:47:27.175 +08:00 [INF] Content root path: D:\test\ABP\abpmicroservice\LKN.Microservices\aggregateservices\LKN.EbusinessWebSite\LKN.EbusinessWebSite
+2023-10-26 09:47:28.469 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7132/ - -
+2023-10-26 09:47:28.629 +08:00 [INF] Executing endpoint 'LKN.EbusinessWebSite.Controllers.HomeController.Index (LKN.EbusinessWebSite)'
+2023-10-26 09:47:28.646 +08:00 [INF] Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller LKN.EbusinessWebSite.Controllers.HomeController (LKN.EbusinessWebSite).
+2023-10-26 09:47:28.836 +08:00 [INF] Executing action method LKN.EbusinessWebSite.Controllers.HomeController.Index (LKN.EbusinessWebSite) - Validation state: "Valid"
+2023-10-26 09:47:28.867 +08:00 [INF] Start processing HTTP request GET https://localhost:7171/api/abp/api-definition
+2023-10-26 09:47:28.868 +08:00 [INF] Sending HTTP request GET https://localhost:7171/api/abp/api-definition
+2023-10-26 09:51:36.361 +08:00 [INF] Starting web host.
+2023-10-26 09:51:38.509 +08:00 [INF] Loaded ABP modules:
+2023-10-26 09:51:38.510 +08:00 [INF] - LKN.EbusinessWebSite.EbusinessWebSiteModule
+2023-10-26 09:51:38.510 +08:00 [INF]   - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2023-10-26 09:51:38.510 +08:00 [INF]     - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2023-10-26 09:51:38.510 +08:00 [INF]       - Volo.Abp.Auditing.AbpAuditingModule
+2023-10-26 09:51:38.510 +08:00 [INF]         - Volo.Abp.Data.AbpDataModule
+2023-10-26 09:51:38.510 +08:00 [INF]           - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2023-10-26 09:51:38.510 +08:00 [INF]             - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2023-10-26 09:51:38.510 +08:00 [INF]             - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2023-10-26 09:51:38.510 +08:00 [INF]           - Volo.Abp.Uow.AbpUnitOfWorkModule
+2023-10-26 09:51:38.510 +08:00 [INF]           - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2023-10-26 09:51:38.510 +08:00 [INF]         - Volo.Abp.Json.AbpJsonModule
+2023-10-26 09:51:38.510 +08:00 [INF]           - Volo.Abp.Json.SystemTextJson.AbpJsonSystemTextJsonModule
+2023-10-26 09:51:38.510 +08:00 [INF]             - Volo.Abp.Json.AbpJsonAbstractionsModule
+2023-10-26 09:51:38.510 +08:00 [INF]             - Volo.Abp.Timing.AbpTimingModule
+2023-10-26 09:51:38.510 +08:00 [INF]               - Volo.Abp.Localization.AbpLocalizationModule
+2023-10-26 09:51:38.510 +08:00 [INF]                 - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2023-10-26 09:51:38.510 +08:00 [INF]                 - Volo.Abp.Settings.AbpSettingsModule
+2023-10-26 09:51:38.510 +08:00 [INF]                   - Volo.Abp.Security.AbpSecurityModule
+2023-10-26 09:51:38.510 +08:00 [INF]                 - Volo.Abp.Threading.AbpThreadingModule
+2023-10-26 09:51:38.510 +08:00 [INF]         - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2023-10-26 09:51:38.510 +08:00 [INF]           - Volo.Abp.MultiTenancy.AbpMultiTenancyAbstractionsModule
+2023-10-26 09:51:38.510 +08:00 [INF]         - Volo.Abp.Auditing.AbpAuditingContractsModule
+2023-10-26 09:51:38.510 +08:00 [INF]       - Volo.Abp.Http.AbpHttpModule
+2023-10-26 09:51:38.510 +08:00 [INF]         - Volo.Abp.Http.AbpHttpAbstractionsModule
+2023-10-26 09:51:38.510 +08:00 [INF]         - Volo.Abp.Minify.AbpMinifyModule
+2023-10-26 09:51:38.510 +08:00 [INF]       - Volo.Abp.Authorization.AbpAuthorizationModule
+2023-10-26 09:51:38.510 +08:00 [INF]         - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2023-10-26 09:51:38.510 +08:00 [INF]       - Volo.Abp.Validation.AbpValidationModule
+2023-10-26 09:51:38.510 +08:00 [INF]       - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2023-10-26 09:51:38.510 +08:00 [INF]     - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2023-10-26 09:51:38.510 +08:00 [INF]     - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2023-10-26 09:51:38.510 +08:00 [INF]       - Volo.Abp.Application.AbpDddApplicationContractsModule
+2023-10-26 09:51:38.510 +08:00 [INF]     - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2023-10-26 09:51:38.510 +08:00 [INF]       - Volo.Abp.UI.AbpUiModule
+2023-10-26 09:51:38.510 +08:00 [INF]     - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2023-10-26 09:51:38.510 +08:00 [INF]     - Volo.Abp.Application.AbpDddApplicationModule
+2023-10-26 09:51:38.510 +08:00 [INF]       - Volo.Abp.Domain.AbpDddDomainModule
+2023-10-26 09:51:38.510 +08:00 [INF]         - Volo.Abp.EventBus.AbpEventBusModule
+2023-10-26 09:51:38.510 +08:00 [INF]           - Volo.Abp.Guids.AbpGuidsModule
+2023-10-26 09:51:38.510 +08:00 [INF]           - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2023-10-26 09:51:38.510 +08:00 [INF]           - Volo.Abp.DistributedLocking.AbpDistributedLockingAbstractionsModule
+2023-10-26 09:51:38.510 +08:00 [INF]         - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2023-10-26 09:51:38.510 +08:00 [INF]         - Volo.Abp.Specifications.AbpSpecificationsModule
+2023-10-26 09:51:38.510 +08:00 [INF]         - Volo.Abp.Caching.AbpCachingModule
+2023-10-26 09:51:38.510 +08:00 [INF]           - Volo.Abp.Serialization.AbpSerializationModule
+2023-10-26 09:51:38.510 +08:00 [INF]         - Volo.Abp.Domain.AbpDddDomainSharedModule
+2023-10-26 09:51:38.510 +08:00 [INF]       - Volo.Abp.Features.AbpFeaturesModule
+2023-10-26 09:51:38.510 +08:00 [INF]   - Volo.Abp.Autofac.AbpAutofacModule
+2023-10-26 09:51:38.510 +08:00 [INF]     - Volo.Abp.Castle.AbpCastleCoreModule
+2023-10-26 09:51:38.510 +08:00 [INF]   - LKN.Microservices.ClientHttps.ClientHttpsModule
+2023-10-26 09:51:38.510 +08:00 [INF]     - Volo.Abp.Http.Client.IdentityModel.AbpHttpClientIdentityModelModule
+2023-10-26 09:51:38.510 +08:00 [INF]       - Volo.Abp.Http.Client.AbpHttpClientModule
+2023-10-26 09:51:38.510 +08:00 [INF]         - Volo.Abp.RemoteServices.AbpRemoteServicesModule
+2023-10-26 09:51:38.510 +08:00 [INF]       - Volo.Abp.IdentityModel.AbpIdentityModelModule
+2023-10-26 09:51:38.510 +08:00 [INF]   - LKN.Order.OrderHttpApiClientModule
+2023-10-26 09:51:38.510 +08:00 [INF]     - LKN.Order.OrderApplicationContractsModule
+2023-10-26 09:51:38.510 +08:00 [INF]       - LKN.Order.OrderDomainSharedModule
+2023-10-26 09:51:38.510 +08:00 [INF]         - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2023-10-26 09:51:38.510 +08:00 [INF]       - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2023-10-26 09:51:38.510 +08:00 [INF]   - LKN.Product.ProductHttpApiClientModule
+2023-10-26 09:51:38.510 +08:00 [INF]     - LKN.Product.ProductApplicationContractsModule
+2023-10-26 09:51:38.510 +08:00 [INF]       - LKN.Product.ProductDomainSharedModule
+2023-10-26 09:51:38.584 +08:00 [INF] MySettingName => 
+2023-10-26 09:51:38.584 +08:00 [INF] EnvironmentName => Development
+2023-10-26 09:51:38.864 +08:00 [INF] User profile is available. Using 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-26 09:51:38.955 +08:00 [INF] Initialized all ABP modules.
+2023-10-26 09:51:39.385 +08:00 [INF] Now listening on: https://localhost:7132
+2023-10-26 09:51:39.385 +08:00 [INF] Now listening on: http://localhost:5278
+2023-10-26 09:51:39.385 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-26 09:51:39.386 +08:00 [INF] Hosting environment: Development
+2023-10-26 09:51:39.386 +08:00 [INF] Content root path: D:\test\ABP\abpmicroservice\LKN.Microservices\aggregateservices\LKN.EbusinessWebSite\LKN.EbusinessWebSite
+2023-10-26 09:51:40.253 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7132/ - -
+2023-10-26 09:51:40.408 +08:00 [INF] Executing endpoint 'LKN.EbusinessWebSite.Controllers.HomeController.Index (LKN.EbusinessWebSite)'
+2023-10-26 09:51:40.423 +08:00 [INF] Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller LKN.EbusinessWebSite.Controllers.HomeController (LKN.EbusinessWebSite).
+2023-10-26 09:51:40.616 +08:00 [INF] Executing action method LKN.EbusinessWebSite.Controllers.HomeController.Index (LKN.EbusinessWebSite) - Validation state: "Valid"
+2023-10-26 09:51:40.645 +08:00 [INF] Start processing HTTP request GET https://localhost:7171/api/abp/api-definition
+2023-10-26 09:51:40.646 +08:00 [INF] Sending HTTP request GET https://localhost:7171/api/abp/api-definition
+2023-10-26 09:51:41.285 +08:00 [INF] Received HTTP response headers after 636.9447ms - 200
+2023-10-26 09:51:41.286 +08:00 [INF] End processing HTTP request after 642.5934ms - 200
+2023-10-26 09:51:44.279 +08:00 [INF] Start processing HTTP request GET https://localhost:7171/api/OrderService/order/3a0e6eae-951c-2256-cbf5-31385f879458?api-version=1.0
+2023-10-26 09:51:44.279 +08:00 [INF] Sending HTTP request GET https://localhost:7171/api/OrderService/order/3a0e6eae-951c-2256-cbf5-31385f879458?api-version=1.0
+2023-10-26 09:51:49.309 +08:00 [INF] Received HTTP response headers after 5030.3949ms - 200
+2023-10-26 09:51:49.309 +08:00 [INF] End processing HTTP request after 5030.8352ms - 200
+2023-10-26 09:51:49.350 +08:00 [INF] Executed action method LKN.EbusinessWebSite.Controllers.HomeController.Index (LKN.EbusinessWebSite), returned result Microsoft.AspNetCore.Mvc.ViewResult in 8731.0755ms.
+2023-10-26 09:51:52.042 +08:00 [INF] Executing ViewResult, running view Index.
+2023-10-26 09:51:52.691 +08:00 [INF] Executed ViewResult - view Index executed in 3331.4556ms.
+2023-10-26 09:51:52.694 +08:00 [INF] Executed action LKN.EbusinessWebSite.Controllers.HomeController.Index (LKN.EbusinessWebSite) in 12270.4327ms
+2023-10-26 09:51:52.695 +08:00 [INF] Executed endpoint 'LKN.EbusinessWebSite.Controllers.HomeController.Index (LKN.EbusinessWebSite)'
+2023-10-26 09:51:52.722 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7132/LKN.EbusinessWebSite.styles.css?v=4NkfOe0V6AhU03of3Vjx0sBmU3h-EqCZ6MA0VhNSLm0 - -
+2023-10-26 09:51:52.722 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7132/_framework/aspnetcore-browser-refresh.js - -
+2023-10-26 09:51:52.722 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7132/_vs/browserLink - -
+2023-10-26 09:51:52.738 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7132/ - - - 200 - text/html;+charset=utf-8 12485.5145ms
+2023-10-26 09:51:52.759 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7132/_framework/aspnetcore-browser-refresh.js - - - 200 12010 application/javascript;+charset=utf-8 37.0789ms
+2023-10-26 09:51:52.782 +08:00 [INF] Sending file. Request path: '/LKN.EbusinessWebSite.styles.css'. Physical path: 'D:\test\ABP\abpmicroservice\LKN.Microservices\aggregateservices\LKN.EbusinessWebSite\LKN.EbusinessWebSite\obj\Debug\net7.0\scopedcss\bundle\LKN.EbusinessWebSite.styles.css'
+2023-10-26 09:51:52.782 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7132/LKN.EbusinessWebSite.styles.css?v=4NkfOe0V6AhU03of3Vjx0sBmU3h-EqCZ6MA0VhNSLm0 - - - 200 1137 text/css 59.8749ms
+2023-10-26 09:51:52.801 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7132/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 78.8308ms

@@ -12,7 +12,6 @@ namespace LKN.Order;
 
 [DependsOn(
     typeof(OrderApplicationContractsModule),
-    typeof(InfrastructureModule),
     typeof(AbpAspNetCoreMvcModule))]
 public class OrderHttpApiModule : AbpModule
 {
@@ -30,7 +29,7 @@ public class OrderHttpApiModule : AbpModule
         //});
  
 
-        context.Services.AddOmegaCoreCluster("servicecomb-alpha-server", "OrderServices");
+        //context.Services.AddOmegaCoreCluster("servicecomb-alpha-server", "OrderServices");
     }
 
     public override void ConfigureServices(ServiceConfigurationContext context)

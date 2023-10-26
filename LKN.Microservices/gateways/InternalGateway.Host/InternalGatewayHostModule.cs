@@ -3,6 +3,7 @@ using LKN.Microservices.ELK;
 using LKN.Microservices.Infrastructure;
 using LKN.Order;
 using LKN.Product;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.OpenApi.Models;
 using Ocelot.Cache.CacheManager;
 using Ocelot.Configuration;
@@ -24,8 +25,7 @@ namespace InternalGateway.Host
         typeof(ProductHttpApiModule),
         typeof(ElaticsearchLogstashKibanaModule),
         typeof(AbpAspNetCoreSerilogModule),
-        typeof(AbpAspNetCoreMvcModule),
-        typeof(InfrastructureModule)
+        typeof(AbpAspNetCoreMvcModule)
       )]
     public class InternalGatewayHostModule: AbpModule
     {
@@ -50,19 +50,22 @@ namespace InternalGateway.Host
 
             // 1、添加ocelot
             context.Services.AddOcelot(configuration)
-                .AddCustomLoadBalancer<RandomLoadBalancer>(loadBalancerFactoryFunc)
+                .AddCustomLoadBalancer(loadBalancerFactoryFunc)
                 .AddPolly()
                 .AddConsul();
 
             // 1、添加添加身份验证
-            //context.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-            //                .AddIdentityServerAuthentication("InternalGateway-key", options =>
-            //                {
-            //                    // 1、微服务认证
-            //                    options.Authority = "https://localhost:44315"; // 1、认证中心地址
-            //                    options.ApiName = "InternalGateway"; // 2、api名称(项目具体名称)
-            //                    options.RequireHttpsMetadata = false; // 3、https元数据，不需要
-            //                });
+            context.Services.AddAuthentication(options => {
+                                options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                                options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+                            })
+                            .AddJwtBearer(options =>
+                            {
+                                options.Authority = configuration["AuthServer:Authority"];// 1、认证中心地址
+                                options.Audience = "InternalGateway"; //2、api名称(项目具体名称)
+                                // 3、https元数据，不需要
+                                options.RequireHttpsMetadata = Convert.ToBoolean(configuration["AuthServer:RequireHttpsMetadata"]);
+                            });
         }
 
         public override void OnApplicationInitialization(ApplicationInitializationContext context)
@@ -72,7 +75,7 @@ namespace InternalGateway.Host
             app.UseCorrelationId();
             app.UseStaticFiles();
             app.UseRouting();
-            //app.UseAuthentication();
+            app.UseAuthentication();//开启权限验证
             app.UseAbpClaimsMap();
             app.UseSwagger();
             app.UseSwaggerUI(options =>
@@ -91,7 +94,6 @@ namespace InternalGateway.Host
                     app2.UseConfiguredEndpoints();
                 }
             );
-            //app.UseOcelotSwagger();
             // 2、使用ocelot
             app.UseOcelot().Wait();
             

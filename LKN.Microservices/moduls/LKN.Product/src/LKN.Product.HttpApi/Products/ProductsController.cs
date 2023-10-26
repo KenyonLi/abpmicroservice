@@ -44,7 +44,7 @@ namespace LKN.Product.Products
         /// <param name="id"></param>
         /// <param name="input"></param>
         /// <returns></returns>
-        [HttpPut, Compensable(nameof(RecoverStock))]
+        [HttpPut/*, Compensable(nameof(RecoverStock))*/]
         public async Task<ProductDto> UpdateAsync(Guid id, UpdateProductDto input)
         {
             return await _ProductAppService.UpdateAsync(id, input);

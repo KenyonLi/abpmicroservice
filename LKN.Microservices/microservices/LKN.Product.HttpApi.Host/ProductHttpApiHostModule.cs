@@ -35,6 +35,7 @@ using Volo.Abp.VirtualFileSystem;
 using Volo.Abp.EntityFrameworkCore.MySQL;
 using Volo.Abp.AspNetCore.Mvc;
 using LKN.Microservices.Infrastructure;
+using LKN.Microservices.Infrastructure.sagas;
 using LKN.Microservices.ELK;
 
 namespace LKN.Product;
@@ -188,6 +189,8 @@ public class ProductHttpApiHostModule : AbpModule
             // 6.4、仪表盘
             x.UseDashboard();
         });
+        // 添加 分布式事务
+        context.Services.AddOmegaCoreCluster("servicecomb-alpha-server", "ProductServices");
     }
 
     //自动生成 api

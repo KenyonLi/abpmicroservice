@@ -12,7 +12,6 @@ namespace LKN.Product;
 
 [DependsOn(
     typeof(ProductApplicationContractsModule),
-    typeof(InfrastructureModule),
     typeof(AbpAspNetCoreMvcModule))]
 public class ProductHttpApiModule : AbpModule
 {
@@ -41,6 +40,6 @@ public class ProductHttpApiModule : AbpModule
         //    option.InstanceId = "ProductServices-1";// 2、服务实例Id
         //    option.ServiceName = "ProductServices";// 3、服务名称
         //});
-        context.Services.AddOmegaCoreCluster("servicecomb-alpha-server", "ProductServices");
+        //context.Services.AddOmegaCoreCluster("servicecomb-alpha-server", "ProductServices");
     }
 }

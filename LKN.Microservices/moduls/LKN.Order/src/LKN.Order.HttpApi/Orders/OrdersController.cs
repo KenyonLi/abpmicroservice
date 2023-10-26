@@ -37,7 +37,7 @@ public class OrdersController : OrderController, IOrderAppService
         return await _OrderAppService.GetAsync(id);
     }
 
-    [HttpPost, Compensable(nameof(DeleteOrder))]
+    [HttpPost/*,Compensable(nameof(DeleteOrder))*/]
     public async Task<OrderDto> CreateAsync(CreateOrderDto input)
     {
         _logger.LogInformation("创建订单");

@@ -11,3 +11,6 @@
 2023-10-25 18:21:31.8085 Warn RabbitMQTarget(Name=RabbitMQTarget): Connection shutdown. ReplyCode=541, ReplyText=Unexpected Exception
 2023-10-25 18:21:41.8528 Warn RabbitMQTarget(Name=RabbitMQTarget): Connection shutdown. ReplyCode=541, ReplyText=Unexpected Exception
 2023-10-25 18:22:37.3890 Warn RabbitMQTarget(Name=RabbitMQTarget): Connection shutdown. ReplyCode=541, ReplyText=Unexpected Exception
+2023-10-26 09:19:28.6561 Warn RabbitMQTarget(Name=RabbitMQTarget): Connection shutdown. ReplyCode=541, ReplyText=Unexpected Exception
+2023-10-26 09:32:37.7073 Warn RabbitMQTarget(Name=RabbitMQTarget): Connection shutdown. ReplyCode=541, ReplyText=Unexpected Exception
+2023-10-26 09:32:47.7985 Warn RabbitMQTarget(Name=RabbitMQTarget): Connection shutdown. ReplyCode=541, ReplyText=Unexpected Exception
