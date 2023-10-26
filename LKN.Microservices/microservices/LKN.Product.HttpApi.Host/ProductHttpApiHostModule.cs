@@ -39,12 +39,15 @@ using LKN.Microservices.Infrastructure.sagas;
 using LKN.Microservices.ELK;
 using Volo.Abp.BlobStoring;
 using Volo.Abp.BlobStoring.Minio;
+using LKN.Product.MongoDB;
+using Volo.Abp.Uow;
 
 namespace LKN.Product;
 
 [DependsOn(
     typeof(ProductApplicationModule),
     typeof(ProductEntityFrameworkCoreModule),
+    typeof(ProductMongoDbModule),
     typeof(ProductHttpApiModule),
 
     typeof(AbpAspNetCoreMvcUiMultiTenancyModule),
@@ -60,6 +63,8 @@ namespace LKN.Product;
     typeof(AbpAspNetCoreSerilogModule),
     typeof(ElaticsearchLogstashKibanaModule),
     typeof(AbpSwashbuckleModule),
+
+
     typeof(InfrastructureModule)
 
     )]
@@ -215,6 +220,12 @@ public class ProductHttpApiHostModule : AbpModule
         Configure<AbpDistributedCacheOptions>(options =>
         {
             options.KeyPrefix = "ProductService:";
+        });
+
+        // 6、使用不开启默认事务（支持单节点MonogDB）
+        Configure<AbpUnitOfWorkDefaultOptions>(options =>
+        {
+            options.TransactionBehavior = UnitOfWorkTransactionBehavior.Disabled;
         });
     }
 

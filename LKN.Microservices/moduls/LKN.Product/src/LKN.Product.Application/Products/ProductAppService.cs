@@ -30,9 +30,17 @@ namespace LKN.Product.Products
         UpdateProductDto>, IProductAppService,
         ICapSubscribe
     {
-        public IProductAbpRepository _productAbpRepository;
+        //public IProductAbpRepository _productAbpRepository;
         public IBlobContainer _blobContainer { set; get; } // 存储文件到Minio
-        public ProductAppService(IProductAbpRepository repository) : base(repository)
+        /// <summary>
+        /// 
+        /// </summary>
+        public IProductMongoDBRepository _productAbpRepository { set; get; }//  选择MongoDB
+        /// <summary>
+        /// MongoDB 和 EF 只能选择一个，使用时，需要修改
+        /// </summary>
+        /// <param name="repository"></param>
+        public ProductAppService(IProductMongoDBRepository repository) : base(repository)
         {
             _productAbpRepository = repository;
         }
@@ -72,10 +80,12 @@ namespace LKN.Product.Products
         public IEnumerable<ProductDto> GetProductByAttr(ProductAttrQueryDto createProductDto)
         {
             // 1、查询所有和图片
-            IEnumerable<Product> products = _productAbpRepository.GetProductByName(createProductDto.productName);
+            // IEnumerable<Product> products = _productAbpRepository.GetProductByName(createProductDto.productName);
 
             // 2、然后映射
-            return ObjectMapper.Map<IEnumerable<Product>, List<ProductDto>>(products);
+            //return ObjectMapper.Map<IEnumerable<Product>, List<ProductDto>>(products);
+
+            return null;
         }
 
         public ProductTotaLDto GetProductTotals()

@@ -7,4 +7,6 @@ public static class ProductDbProperties
     public static string? DbSchema { get; set; } = null;
 
     public const string ConnectionStringName = "Product";
+    public const string ConnectionMonogDBStringName = "ProductMonogDB";
+
 }

@@ -41,6 +41,7 @@
     <ProjectReference Include="..\..\moduls\LKN.Product\src\LKN.Product.Application\LKN.Product.Application.csproj" />
     <ProjectReference Include="..\..\moduls\LKN.Product\src\LKN.Product.EntityFrameworkCore\LKN.Product.EntityFrameworkCore.csproj" />
     <ProjectReference Include="..\..\moduls\LKN.Product\src\LKN.Product.HttpApi\LKN.Product.HttpApi.csproj" />
+    <ProjectReference Include="..\..\moduls\LKN.Product\src\LKN.Product.MongoDB\LKN.Product.MongoDB.csproj" />
   </ItemGroup>
 
   <ItemGroup>
