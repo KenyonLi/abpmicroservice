@@ -3,6 +3,8 @@ using Volo.Abp.AutoMapper;
 using Volo.Abp.Modularity;
 using Volo.Abp.Application;
 using Volo.Abp.PermissionManagement;
+using Volo.Abp.BackgroundJobs.Hangfire;
+using Volo.Abp.BackgroundWorkers.Hangfire;
 
 namespace LKN.Order;
 [DependsOn(
@@ -10,6 +12,8 @@ namespace LKN.Order;
     typeof(OrderApplicationContractsModule),
     typeof(AbpDddApplicationModule),
     typeof(AbpPermissionManagementApplicationModule),
+     //typeof(AbpBackgroundJobsHangfireModule),
+    typeof(AbpBackgroundWorkersHangfireModule),
     typeof(AbpAutoMapperModule)
     )]
 public class OrderApplicationModule : AbpModule

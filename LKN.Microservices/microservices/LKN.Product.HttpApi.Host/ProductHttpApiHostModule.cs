@@ -227,8 +227,22 @@ public class ProductHttpApiHostModule : AbpModule
         {
             options.TransactionBehavior = UnitOfWorkTransactionBehavior.Disabled;
         });
-    }
 
+
+        //ConfigureHangfire(context, configuration);
+    }
+    ///// <summary>
+    ///// 
+    ///// </summary>
+    ///// <param name="context"></param>
+    ///// <param name="configuration"></param>
+    //private void ConfigureHangfire(ServiceConfigurationContext context, IConfiguration configuration)
+    //{
+    //    context.Services.AddHangfire(config =>
+    //    {
+    //        config.UseServerStorage(configuration.GetConnectionString("Default"));
+    //    });
+    //}
     //自动生成 api
     private void ConfigureConventionalControllers()
     {
@@ -279,5 +293,6 @@ public class ProductHttpApiHostModule : AbpModule
         app.UseAbpSerilogEnrichers();
         app.UseConfiguredEndpoints();
         app.UseHealthChecks("/HealthCheck");
+        //app.UseHangfireDashboard();
     }
 }
